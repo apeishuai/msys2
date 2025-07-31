@@ -1,6 +1,5 @@
 ;;version:  eplan electric p8 2.9 sp1
 
-
 ;Alt k : key setting
 
 ;alt n 主数据:符号:新建
@@ -16,3 +15,8 @@
 ;alt f  主数据:符号库:关闭
 ;alt g  主数据:符号库:导入
 ;alt h  主数据:符号库:导出
+
+; F12 页导航器
+; Alt + k 选项-->设置
+
+;

@@ -189,6 +189,7 @@
 # 
 # alias cd=cd_func
 
+
 ## search
 alias search="echo 'execute search- num' && cat -n 'C:/Users/whens/Nutstore/1/docs/GTD/search.org'"
 alias search-="$bin/search_exe.sh"
@@ -197,6 +198,7 @@ alias search-gist="start 'https://gist.github.com/search?q=string+%40apeishuai&r
 alias search-github="start 'https://github.com/search/advanced'"
 alias search-yacy="start 'https://cse.google.com/cse?cx=f42e7c5964a474558'"
 alias conf-yacy="start 'https://programmablesearchengine.google.com/controlpanel/overview?cx=f42e7c5964a474558'"
+
 
 # docs
 export doc="C:/Users/whens/Nutstore/1/docs"
@@ -218,22 +220,33 @@ alias done="cd '/c/Users/whens/Nutstore/1/docs/Journal' && rga '<.< <x<'"
 alias gap="rga \<gap $rsc"
 alias ut="rga '# <ut' $rsc"
 
-## trace
+
+
+## trace && check
 alias trac-knne="start 'https://gitee.com/Kenneth-Lee-2012/MySummary/commits/master'"
 alias check-feixing="start 'https://www.cnblogs.com/apeishuai/articles/18750841'"
 alias check-data="start 'https://www.cnblogs.com/apeishuai/articles/18747444'"
 alias check-desk="start 'https://www.cnblogs.com/apeishuai/articles/18743031'"
 alias check-py="start 'https://www.cnblogs.com/apeishuai/articles/18741386'"
 
+
 # bash
 alias t="python '/home/whens/bin/timestamp.py'"
-alias dot-e="cd $uml_file && vim a.uml"
-alias dot-u="cd $uml_file && java -jar $bin/plantuml.jar a.uml"
-alias dot-show="cd $uml_file && start a.png"
+alias dot-e="cd $uml_file && vim pro-yingdu-shiyanshi.uml"
+alias dot-u="cd $uml_file && java -jar $bin/plantuml.jar pro-yingdu-shiyanshi.uml"
+alias dot-show="cd $uml_file && start pro-yingdu-shiyanshi.png"
+export file="pro-yingdu-shiyanshi.uml"
+alias cm="rga cm $file | ./sort_cm.sh"
+alias em="rga em $file | ./sort_em.sh"
+
 
 alias build="cmake -G 'MinGW Makefiles' -DCMAKE_TOOLCHAIN_FILE=../mingw64.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug .."
 alias build_lib="cmake -G 'MinGW Makefiles' .."
 alias build_msvc='cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug ..'
+alias msvc_debug="echo 'cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=\"/Zi /Od /FC\" -DCMAKE_EXE_LINKER_FLAGS=\"/DEBUG /PDB:hello.pdb\" ..'"
+alias msvc_release="echo 'cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Release ..'"
+alias deploy="D:/qt6.8.3/6.8.3/msvc2022_64/bin/windeployqt6.exe"
+
 
 
 # pro
@@ -245,14 +258,13 @@ alias cmake_build='cmake -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE=../mingw64.
 alias cp_qt_window="cp -r D:/g/learn/qt/widget-qml/* ."
 alias cp_qt_base='cp -r D:/g/learn/qt/qml_cmake/* .'
 
-
-#alias deployqt="D:/qt6.8.3/6.8.3/msvc2022_64/bin/windeployqt.exe"
-
 # custom path
 alias path-e="vim '/d/softwares/msys64/home/whens/bin/win/chg-env-var.sh'"
 alias path-r="cd '/d/softwares/msys64/home/whens/bin/win' && ./chg-env-var.sh"
 alias path-show='echo $PATH | tr ":" "\n"'
 alias pac-e="vim '/d/softwares/msys64/home/whens/bin/win/install.sh'"
+
+alias env-os-arch='"python -c "import os; print('\n'.join(f'{k}={v}' for k, v in os.environ.items()))" > env_vars.txt'
 
 open_daily() {
     local today=$(date +%Y-%m-%d)
@@ -267,6 +279,7 @@ open_daily() {
         emacs "$filename"
     fi
 }
+
 
 alias key="echo -e 'search- check- trac- conf- rsc- qt-\n' \
 	'man man-kaifa data \n' \
@@ -302,8 +315,6 @@ alias aider-gptgod="aider --openai-api-base https://api.gptgod.online/v1 --model
 alias aider-deepseek="conda activate && aider --model deepseek/deepseek-chat --no-git --no-auto-commits"
 alias aider-gemini="conda activate && aider --model openrouter/google/gemini-2.5-flash-lite-preview-06-17 --no-git --no-auto-commits --no-show-model-warnings"
 
-
-
 # serve
 alias docker_ocrmypdf='docker run --rm -i jbarlow83/ocrmypdf-alpine'
 export serv_root=/d/g/area/serve
@@ -319,8 +330,6 @@ alias site_open="cd ~/Shell/workflow/site_mang && ./main.sh $1"
 alias site_ls="cd ~/Shell/workflow/site_mang && ./url_mang.sh -L"
 #alias url="cd d:/g/area/Shell/area/workflow/site_mang && ./url_mang.sh -l"
 ## mysqld --console
-
-
 
 # data
 alias data="cd 'D:/g/area/wxf-data"
@@ -350,14 +359,12 @@ alias sync_tmp_pei='rsync -avz -e "ssh -i ~/.ssh/host_pei -p10603" "/d/g/work/tm
 
 alias sync_bashrc_all_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" ~/.bashrc ~/.bashrc_comm ~/.bashrc_linux ubuntu@117.50.186.154:~'
 
-
 alias sync_bashrc_linux_local_to_remote="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' .bashrc_linux ubuntu@117.50.186.154:~"
 
 alias sync_bashrc_comm_local_to_remote="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' '.bashrc_comm' ubuntu@117.50.186.154:~"
 
 ### sync pei
 alias sync_bashrc_all_local_to_pei='rsync -avz -e "ssh -i ~/.ssh/host_pei -p10603" ~/.bashrc ~/.bashrc_comm ~/.bashrc_linux pei@12.tcp.vip.cpolar.cn:~'
-
 
 ## sync bashrc remote to local
 
@@ -383,7 +390,6 @@ alias sync_radicale="rsync -avz -e \"ssh -i ~/.ssh/ucloud_ubuntu\" ubuntu@117.50
 
 alias sync_serv_radicale_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/radicale/* ubuntu@117.50.186.154:~/serv/radicale'
 
-
 alias sync_serv_check_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/check/* ubuntu@117.50.186.154:~/serv/check'
 
 
@@ -401,6 +407,7 @@ alias demo_c="cd '$prefix/demo_c'"
 alias demo_java="cd '$prefix/demo_java'"
 alias demo_py="cd $prefix/demo_python"
 alias demo_cpp="cd '$prefix/demo_cpp'"
+alias demo_eplan="cd '$prefix/demo_eplan'"
 alias demo_go="cd '$prefix/demo_go'"
 alias demo_haskell="cd '$prefix/demo_haskell'"
 alias demo_fpc="cd '$prefix/demo_freepascal'"
@@ -419,11 +426,13 @@ alias demo_git="cd '$prefix/demo_git'"
 # alias demo_dot="cd 'g:/area/emacs-notes/Computer_science/dot'"
 alias demo="cd '/d/g/pro/demo'"
 
+
 # pro
 alias pro="cd 'd:/g/pro'"
 alias learn="cd 'd:/g/learn'"
 alias pro-etddy="cd 'D:/g/work/etddy'"
 alias pro-net="cd 'D:/g/pro/qt/net'"
+alias pro-work="cd 'D:/g/work/pro'"
 # alias pro-reverse="cd 'D:/g/pro/etddy/work_reverse'"
 # alias pro_react="cd G:/area/emacs-notes/Computer_science/demo_nodejs/reactapp"
 # alias pro-xuanxing="cd 'D:/g/pro/xuanxing'"
