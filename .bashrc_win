@@ -317,7 +317,7 @@ alias aider-gemini="conda activate && aider --model openrouter/google/gemini-2.5
 
 # serve
 alias docker_ocrmypdf='docker run --rm -i jbarlow83/ocrmypdf-alpine'
-export serv_root=/d/g/area/serve
+export serv_root=/d/icloud/iCloudDrive/g/area/serve
 alias docs="cd $serv_root/docs/"
 alias blog="cd '$serv_root/blog'"
 alias week="cd '$serv_root/weekly'"
@@ -401,7 +401,8 @@ alias music='cd "/d/g/area/serve/Nacidrome/music/MitsuhaYuki"'
 
 # demo
 alias qt-example="cd 'D:/qt6.8.2/Examples/Qt-6.8.2'"
-export prefix="d:/g/area/emacs-notes/demo"
+
+export prefix="d:/icloud/iCloudDrive/g/area/emacs-notes/demo"
 alias demo_front="cd '$prefix/demo_front'"
 alias demo_c="cd '$prefix/demo_c'"
 alias demo_java="cd '$prefix/demo_java'"

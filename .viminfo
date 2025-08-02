@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/on_ng
+~MSle0~/root
 
 # Last Substitute Search Pattern:
 ~MSle0&cm06
@@ -21,11 +21,11 @@ $cm04
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1753934055,,"wq"
-:q
-|2,0,1753934004,,"q"
+|2,0,1754122835,,"wq"
 :w
-|2,0,1753686670,,"w"
+|2,0,1754122831,,"w"
+:q
+|2,0,1754098913,,"q"
 :%s/cm06/cm04/g
 |2,0,1753681229,,"%s/cm06/cm04/g"
 :wqe
@@ -82,6 +82,20 @@ $cm04
 |2,0,1752021751,,"%s/prople/people/g"
 
 # Search String History (newest to oldest):
+?/ssh-copu
+|2,1,1754119506,47,"ssh-copu"
+?/root
+|2,1,1754099618,47,"root"
+?/work_msi
+|2,1,1754098887,47,"work_msi"
+?/020
+|2,1,1754047719,47,"020"
+?/serv_root
+|2,1,1754018115,47,"serv_root"
+?/blog=
+|2,1,1754018107,47,"blog="
+?/demo_qml
+|2,1,1753953058,47,"demo_qml"
 ?/on_ng
 |2,1,1753685526,47,"on_ng"
 ?/cm03_emit
@@ -360,8 +374,6 @@ $cm04
 |2,1,1752019736,47,"PATH="
 ?/rsc
 |2,1,1752019525,47,"rsc"
-?/020
-|2,1,1751934201,47,"020"
 ?/g_buffer
 |2,1,1751934140,47,"g_buffer"
 ?/66@gmail
@@ -376,268 +388,387 @@ $cm04
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	    //engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-|3,0,0,1,1,0,1753882519,"    //engine.load(QUrl(QStringLiteral(\"qrc:/main.qml\")));"
+""0	LINE	0
+	ssh-copy-id -i ~/.ssh/ucloud_ubuntu ubuntu@117.50.186.154
+|3,1,0,1,1,0,1754119530,"ssh-copy-id -i ~/.ssh/ucloud_ubuntu ubuntu@117.50.186.154"
 "1	LINE	0
-	    engine.load(QUrl(QStringLiteral("qrc:/test.qml")));
-|3,0,1,1,1,0,1753882505,"    engine.load(QUrl(QStringLiteral(\"qrc:/test.qml\")));"
-"2	LINE	0
-	    
-|3,0,2,1,1,0,1753880526,"    "
-"3	LINE	0
-	"软元件名"	"注释"
-|3,0,3,1,1,0,1753839480,"\"软元件名\"	\"注释\""
-"4	LINE	0
-	M0 dd
-|3,0,4,1,1,0,1753839144,"M0 dd"
-"5	LINE	0
-	T_100ms --> cm03_emit_pull_气缸收回
-|3,0,5,1,1,0,1753685677,"T_100ms --> cm03_emit_pull_气缸收回"
-"6	LINE	0
-	c --> cm02_xx_on_ng料到气缸 : cm04_xx_a1_发信号NG \n cm02_xx_on_ng料到气缸
-|3,0,6,1,1,0,1753685535,"c --> cm02_xx_on_ng料到气缸 : cm04_xx_a1_发信号NG \\n cm02_xx_on_ng料到气缸"
-"7	LINE	0
 	
-|3,0,7,1,1,0,1753685392,""
+|3,0,1,1,1,0,1754101016,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1754101014,""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1754100950,""
+"4	LINE	0
+	
+|3,0,4,1,1,0,1754100949,""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1754100926,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1754100926,""
+"7	LINE	0
+	    engine.load(QUrl(QStringLiteral("qrc:/test.qml")));
+|3,0,7,1,1,0,1753882505,"    engine.load(QUrl(QStringLiteral(\"qrc:/test.qml\")));"
 "8	LINE	0
-	c --> cm04_xx_a1_发信号NG: 检测到NG
-|3,0,8,1,1,0,1753685349,"c --> cm04_xx_a1_发信号NG: 检测到NG"
+	    
+|3,0,8,1,1,0,1753880526,"    "
 "9	LINE	0
-	cm04_xx_a1_发信号NG cm02_xx_on_ng料到气缸
-|3,0,9,1,1,0,1753685203,"cm04_xx_a1_发信号NG cm02_xx_on_ng料到气缸"
+	"软元件名"	"注释"
+|3,0,9,1,1,0,1753839480,"\"软元件名\"	\"注释\""
 "c	CHAR	0
 	le��5；w
 |3,0,12,0,1,0,1752556680,"le��5；w"
-""-	CHAR	0
-	d
-|3,1,36,0,1,0,1753882524,"d"
+"-	CHAR	0
+		
+|3,0,36,0,1,0,1754100946,"	"
 
 # File marks:
-'0  4  6  ~/.gitignore
-|4,48,4,6,1753934055,"~/.gitignore"
-'1  3  7  ~/.gitignore
-|4,49,3,7,1753934022,"~/.gitignore"
-'2  3  7  ~/.gitignore
-|4,50,3,7,1753934022,"~/.gitignore"
-'3  1  0  ~/.gitignore
-|4,51,1,0,1753934004,"~/.gitignore"
-'4  1  0  ~/.gitignore
-|4,52,1,0,1753934004,"~/.gitignore"
-'5  1  0  ~/.gitignore
-|4,53,1,0,1753934004,"~/.gitignore"
-'6  1  0  ~/.gitignore
-|4,54,1,0,1753934004,"~/.gitignore"
-'7  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,55,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
-'8  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,56,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
-'9  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,57,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
+'0  12  0  ~/.ssh/config
+|4,48,12,0,1754122835,"~/.ssh/config"
+'1  5  0  /c/Users/whens/Nutstore/1/docs/doc-product.org
+|4,49,5,0,1754120579,"/c/Users/whens/Nutstore/1/docs/doc-product.org"
+'2  42  56  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,50,42,56,1754119531,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+'3  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,51,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+'4  11  6  ~/.bashrc_comm
+|4,52,11,6,1754099630,"~/.bashrc_comm"
+'5  446  102  ~/.bashrc_win
+|4,53,446,102,1754098913,"~/.bashrc_win"
+'6  122  0  /c/Users/whens/Nutstore/1/docs/info.org
+|4,54,122,0,1754047804,"/c/Users/whens/Nutstore/1/docs/info.org"
+'7  320  37  ~/.bashrc_win
+|4,55,320,37,1754018195,"~/.bashrc_win"
+'8  320  37  ~/.bashrc_win
+|4,56,320,37,1754018195,"~/.bashrc_win"
+'9  9  0  /d/icloud/iCloudDrive/g/area/emacs-notes/demo/demo_python/message_telegram.py
+|4,57,9,0,1754017251,"/d/icloud/iCloudDrive/g/area/emacs-notes/demo/demo_python/message_telegram.py"
 
 # Jumplist (newest first):
--'  4  6  ~/.gitignore
-|4,39,4,6,1753934055,"~/.gitignore"
--'  3  7  ~/.gitignore
-|4,39,3,7,1753934049,"~/.gitignore"
--'  3  7  ~/.gitignore
-|4,39,3,7,1753934022,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753934017,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753934017,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1753934004,"~/.gitignore"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  7  0  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,7,0,1753933754,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  4  9  /d/g/area/emacs-notes/demo/demo_qml/wu/test.qml
-|4,39,4,9,1753933751,"/d/g/area/emacs-notes/demo/demo_qml/wu/test.qml"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  1  25  /d/g/work/pro/20250722-yingdujiance/readme.md
-|4,39,1,25,1753930610,"/d/g/work/pro/20250722-yingdujiance/readme.md"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  2  8  /c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml
-|4,39,2,8,1753929073,"/c/Users/whens/Nutstore/1/docs/uml/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
--'  1  0  ~/pro-yingdu-shiyanshi.uml
-|4,39,1,0,1753929070,"~/pro-yingdu-shiyanshi.uml"
+-'  12  0  ~/.ssh/config
+|4,39,12,0,1754122835,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1754122825,"~/.ssh/config"
+-'  5  0  /c/Users/whens/Nutstore/1/docs/doc-product.org
+|4,39,5,0,1754120579,"/c/Users/whens/Nutstore/1/docs/doc-product.org"
+-'  5  0  /c/Users/whens/Nutstore/1/docs/doc-product.org
+|4,39,5,0,1754120579,"/c/Users/whens/Nutstore/1/docs/doc-product.org"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-product.org
+|4,39,1,0,1754120561,"/c/Users/whens/Nutstore/1/docs/doc-product.org"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-product.org
+|4,39,1,0,1754120561,"/c/Users/whens/Nutstore/1/docs/doc-product.org"
+-'  42  56  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,42,56,1754119531,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  42  56  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,42,56,1754119531,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  42  56  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,42,56,1754119531,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  42  56  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,42,56,1754119531,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,1,0,1754119501,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,1,0,1754119501,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,1,0,1754119501,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  1  0  /c/Users/whens/Nutstore/1/docs/doc-host.md
+|4,39,1,0,1754119501,"/c/Users/whens/Nutstore/1/docs/doc-host.md"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  9  4  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,9,4,1754101018,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  1  0  /d/icloud/iCloudDrive/g/.gitmodules
+|4,39,1,0,1754100677,"/d/icloud/iCloudDrive/g/.gitmodules"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  11  6  ~/.bashrc_comm
+|4,39,11,6,1754099630,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  1  0  ~/.bashrc_comm
+|4,39,1,0,1754099618,"~/.bashrc_comm"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  446  102  ~/.bashrc_win
+|4,39,446,102,1754098913,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
+-'  320  37  ~/.bashrc_win
+|4,39,320,37,1754098887,"~/.bashrc_win"
 
 # History of marks within files (newest to oldest):
+
+> ~/.ssh/config
+	*	1754122834	0
+	"	12	0
+
+> /c/Users/whens/Nutstore/1/docs/doc-product.org
+	*	1754120578	0
+	"	5	0
+	^	5	0
+	.	4	0
+	+	4	0
+
+> /c/Users/whens/Nutstore/1/docs/doc-host.md
+	*	1754119530	0
+	"	42	56
+	^	42	57
+	.	42	56
+	+	42	56
+
+> /d/icloud/iCloudDrive/g/.gitmodules
+	*	1754101017	0
+	"	9	4
+	.	10	0
+	+	3	75
+	+	4	0
+	+	2	15
+	+	3	12
+	+	9	72
+	+	6	3
+	+	5	16
+	+	1	29
+	+	4	19
+	+	9	42
+	+	7	19
+	+	9	39
+	+	10	0
+	+	9	3
+	+	10	0
+	+	9	3
+	+	10	0
+
+> ~/.bashrc_comm
+	*	1754099630	0
+	"	11	6
+
+> ~/.bashrc_win
+	*	1754098912	0
+	"	446	102
+	^	445	23
+	.	320	37
+	+	436	21
+	+	333	0
+	+	317	0
+	+	291	0
+	+	288	0
+	+	260	0
+	+	361	0
+	+	368	0
+	+	392	0
+	+	402	0
+	+	440	0
+	+	411	15
+	+	235	57
+	+	236	80
+	+	237	57
+	+	235	0
+	+	236	36
+	+	236	0
+	+	237	60
+	+	237	0
+	+	239	0
+	+	237	0
+	+	236	0
+	+	235	0
+	+	239	0
+	+	239	20
+	+	239	0
+	+	251	0
+	+	239	0
+	+	232	0
+	+	221	27
+	+	201	0
+	+	191	0
+	+	239	30
+	+	240	0
+	+	241	0
+	+	240	6
+	+	241	15
+	+	240	26
+	+	241	0
+	+	239	13
+	+	239	21
+	+	240	22
+	+	239	36
+	+	239	0
+	+	238	0
+	+	239	0
+	+	232	0
+	+	405	35
+	+	403	52
+	+	320	37
+	m	4	5
+
+> /c/Users/whens/Nutstore/1/docs/info.org
+	*	1754047802	0
+	"	122	0
+
+> /d/icloud/iCloudDrive/g/area/emacs-notes/demo/demo_python/message_telegram.py
+	*	1754017248	0
+	"	9	0
+	.	9	0
+	+	9	0
+
+> /d/g/area/emacs-notes/demo/demo_qml/calqlatr/calqlatr.qml
+	*	1753939914	0
+	"	84	0
+	^	193	1
+	.	193	0
+	+	193	0
 
 > ~/.gitignore
 	*	1753934054	0
@@ -794,13 +925,6 @@ $cm04
 	+	21	48
 	+	22	15
 
-> /d/g/area/emacs-notes/demo/demo_qml/calqlatr/calqlatr.qml
-	*	1753882380	0
-	"	85	0
-	^	193	1
-	.	193	0
-	+	193	0
-
 > /d/g/area/emacs-notes/demo/demo_qml/calqlatr/calqlatr.q
 	*	1753882368	0
 	"	1	0
@@ -891,60 +1015,6 @@ $cm04
 	+	26	0
 	+	25	25
 
-> ~/.bashrc_win
-	*	1753681073	0
-	"	240	34
-	.	232	0
-	+	435	21
-	+	333	0
-	+	317	0
-	+	291	0
-	+	288	0
-	+	260	0
-	+	361	0
-	+	368	0
-	+	392	0
-	+	402	0
-	+	439	0
-	+	410	15
-	+	235	57
-	+	236	80
-	+	237	57
-	+	235	0
-	+	236	36
-	+	236	0
-	+	237	60
-	+	237	0
-	+	239	0
-	+	237	0
-	+	236	0
-	+	235	0
-	+	239	0
-	+	239	20
-	+	239	0
-	+	251	0
-	+	239	0
-	+	232	0
-	+	221	27
-	+	201	0
-	+	191	0
-	+	239	30
-	+	240	0
-	+	241	0
-	+	240	6
-	+	241	15
-	+	240	26
-	+	241	0
-	+	239	13
-	+	239	21
-	+	240	22
-	+	239	36
-	+	239	0
-	+	238	0
-	+	239	0
-	+	232	0
-	m	4	5
-
 > /c/Users/whens/Nutstore/1/docs/uml/sort_em.sh
 	*	1753680604	0
 	"	18	19
@@ -1001,10 +1071,6 @@ $cm04
 	.	2	21
 	+	1	63
 	+	2	21
-
-> /c/Users/whens/Nutstore/1/docs/info.org
-	*	1753517834	0
-	"	118	0
 
 > /d/g/area/serve/blog/content/about.md
 	*	1753508937	0
@@ -1194,10 +1260,6 @@ $cm04
 	*	1753410425	0
 	"	1	0
 
-> ~/.ssh/config
-	*	1753404272	0
-	"	1	0
-
 > ~/bin/eplan/print.cs
 	*	1753346120	0
 	"	20	0
@@ -1312,10 +1374,6 @@ $cm04
 	^	16	43
 	.	16	42
 	+	16	42
-
-> ~/.bashrc_comm
-	*	1753151922	0
-	"	1	0
 
 > /d/g/pro/readme.md
 	*	1753151805	0
@@ -1464,19 +1522,3 @@ $cm04
 > /c/Users/whens/Nutstore/1/docs/inbox.org
 	*	1753068320	0
 	"	10	0
-
-> /c/Users/whens/Nutstore/1/docs/in
-	*	1753068311	0
-	"	1	0
-
-> ~/tsc.cmd
-	*	1753062380	0
-	"	8	0
-
-> ~/docsify.cmd
-	*	1753062370	0
-	"	17	0
-
-> /d/g/area/emacs-notes/demo/demo_qml/wu/CmakeLists.txt
-	*	1753060638	0
-	"	30	0
