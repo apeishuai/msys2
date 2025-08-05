@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PC on Wxf`s Fantasy World</title>
+    <link>/tags/pc/</link>
+    <description>Recent content in PC on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Oct 2024 22:17:13 +0800</lastBuildDate>
+    <atom:link href="/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Win11保持屏幕常亮&#43;取消密码登录</title>
+      <link>/posts/win11%E4%BF%9D%E6%8C%81%E5%B1%8F%E5%B9%95%E5%B8%B8%E4%BA%AE&#43;%E5%8F%96%E6%B6%88%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Sun, 13 Oct 2024 22:17:13 +0800</pubDate>
+      <guid>/posts/win11%E4%BF%9D%E6%8C%81%E5%B1%8F%E5%B9%95%E5%B8%B8%E4%BA%AE&#43;%E5%8F%96%E6%B6%88%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid>
+      <description>取消密码登录 win11有两种login验证方式：pin码+密码&#xA;要取消密码登录，登录本地账户，密码设为空即可 屏幕常亮 需要用到一个小工具：PowerToy&#xA;里面的awake选项保持常开即可</description>
+    </item>
+  </channel>
+</rss>

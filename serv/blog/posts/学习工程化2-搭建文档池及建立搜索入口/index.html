@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>学习工程化2 搭建文档池及建立搜索入口 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">学习工程化2 搭建文档池及建立搜索入口</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-11-13</time>
+    
+    
+  </strong>
+  <span> • 29 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-11-13</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="留存文档分类">留存文档分类</h1>
+<p>1 保留最原始出处<br>
+2 分层组织，运用para规则，+article 学习工程化提到的第三点：构建自己的命名空间<br>
+3 检索历史也要保存到log文件，追加至留存文档</p>
+<p>问题1： 建一个大文件夹，保存内容如下<br>
+简悦自动保存离线网页，丢进去<br>
+聊天记录定期导出，丢进去<br>
+使用频率较高的pdf，丢进去<br>
+md(我试了，可以展示图片，也可以用latex显示数学公式)或org格式写的笔记，丢进去<br>
+工程文件，丢进去</p>
+<p>这样，基本所有的文档都汇到一个池子了</p>
+<p>问题2：<br>
+这里主要是笔记和工程类文件<br>
+笔记以doc-area分类，比如doc-dianqi，doc-jixie，doc-front，doc-soft，doc-host，etc<br>
+工程类文件建pro文件夹，按项目分</p>
+<h1 id="检索">检索</h1>
+<p>经过上面的操作，可以确保文件库大部分文件是文本格式，然后找一个文本检索工具，作为检索入口</p>
+<p>recoll，它可以扫描这些文本文件，生成索引表，很快能检索出需要的文本信息</p>
+<h1 id="对学习和知识的看法">对学习和知识的看法</h1>
+<p>学习就是建模，跟之前提的构建逻辑链相似。穷举所有状态，让这些状态全部包含在构建的模型当中，就获得了对这个状态空间的控制力</p>
+<p>最难的地方在确定最终状态、找出影响要素</p>
+<p>假设观测到某种现象，这种现象受到三个要素影响，即使想到了这三个要素，也很难去验证</p>
+<p>从0知识出发，建立复杂系统，注定有很长的路要走。</p>
+<p>构建的这个叫pkm系统，它解决的是过往经验复用的问题，做时间的朋友。</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2024
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

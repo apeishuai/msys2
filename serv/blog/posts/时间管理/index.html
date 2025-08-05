@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>时间管理 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">时间管理</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-06-05</time>
+    
+    
+  </strong>
+  <span> • 29 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-06-05</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p><a href="../%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86">《自我管理》</a>
+<img src="/img/Capturer_2025-06-05_193426_018.png" alt=""></p>
+<p>讲下这篇文章中，记录时间的思路。</p>
+<p>pc: 网费很贵插件 + org-mode (emacs)<br>
+iphone：atimelogger + 捷径<br>
+android: atimelogger + tasker + 应用定时器2</p>
+<p>记录时间我之前践行过，一直成功不了，因为现存的所有时间记录工具，都要求在记录前主动点击。我要刷会短视频也要先点一下吗？根据B=MAT，“点击”这个按钮藏的太深，所以触发不了时间记录这个行为，也就很难养成习惯。解决方案是自动化工具。</p>
+<p>pc插件就不说了，直接安装即可，数据同步至坚果云。</p>
+<p>iphone的思路是每打开一个应用，就创建一条捷径，打开atimelogger记录时间，关闭应用就结束记录。记录常用的四五个app就行。</p>
+<p>android的思路是直接导出应用定时器2的数据，这是个sqlite数据库，需要用脚本处理字段。</p>
+<p>字段规定成：<br>
+platefrom application start-time end-time duration</p>
+<p>将从上述设备搜集到的数据转换成规定的数据格式。这时候有两种处理方式：打标签，看不同行为的频次，整体占用时间；导出到日历(radicale)，分析一天的时间分布。</p>
+<p>通过两个视角就能找出时间分布的不合理处，进而制定优化方案，比如时间切的太碎，可以找出原因，是外界干扰，还是个人行为导致，或者是注意力不集中。总能找到入手的地方。</p>
+<p>形成系统，统计，发现规律，形成认知，最后内化成为一种习惯。这套工具我觉得还是有用的，再搞搞。</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

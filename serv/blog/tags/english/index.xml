@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>english on Wxf`s Fantasy World</title>
+    <link>/tags/english/</link>
+    <description>Recent content in english on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Apr 2025 14:59:59 +0800</lastBuildDate>
+    <atom:link href="/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无痛英语环境打造2</title>
+      <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</link>
+      <pubDate>Fri, 04 Apr 2025 14:59:59 +0800</pubDate>
+      <guid>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</guid>
+      <description>我有这样一种信念，方向对了，拿到结果是早晚的事；方向不对，折腾到死也到达不了目的地。&#xA;就英语来说，跟任何运动类项目一样，得浸泡在环境中，分解每一个动作，刻意训练至纯熟。&#xA;每个人都应该针对自己的学习习惯出一套符合自己的英语学习流程。&#xA;听力和口语练习 “有效输入理论”，意思是说在输入大量听力材料后，听力水平提升，口语水平就跟着提升了。这个理论不对，因为如果不做口语输出，根本不知道关注点在哪&#xA;所以第一步仍然是泛听，熟悉英语的表达方式后，做口语输出。泛听没什么好方法，就是硬听，看美剧磨耳朵，磨上个一两年，应该会有质的飞跃&#xA;然后需要做口语输出练习，比较有名的有“影子跟读法”，Miraa(ios)、听力播放器(ios)，这两个软件很好的实践了这个理念，但是我自己尝试，效果并不好&#xA;效果不好的原因是我没有场景，没有话题，不知道关注点在哪；没办法纠偏。所以得想办法去构建这个场景&#xA;从大脑一个模糊的想法到嘴里说出来，这里的gap在哪？在基础词汇，在短句，在表达方式。所以需要一个框，积累提到的这几种要素，针对单词，用burning vocabulary插件(一键收藏不熟悉的词汇，且在其他的网站标注)，burning vocabulary搜集到的词汇导出到List生词本、list背单词；针对短句，用文本文件+简悦同步助手(标注作用)，用标签的方式把搜集到的句子中的短语、句式、场景区分，且能保留来源(通过标签无限分类)&#xA;抽离出的短语还能在yourenglish找例句，将其补充到短句本 当然最关键的是用起来，英语环境搭建就到此为止了！</description>
+    </item>
+    <item>
+      <title>无痛英语环境打造</title>
+      <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</link>
+      <pubDate>Mon, 24 Jun 2024 02:54:01 +0800</pubDate>
+      <guid>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</guid>
+      <description>废话不多说，用到的工具如下：&#xA;anki、pdf guru web、burning vocabulary、sealos&#xA;流程如下：&#xA;该英语学习环境以句子为基本单位，句群为一个训练单元，情景为引导点&#xA;先通过burning vocabulary标注出pdf中的所有生单词(标注一个单词，该工具能自动标注该pdf中所有一样的单词)&#xA;在通过pdf guru anki，以一个完整的句子为基本单位，挖空纸卡，完成后导入到anki&#xA;sealos一键搭建anki同步服务器，一天几分钱，划算&#xA;然后就可以全平台刷anki卡片了，消灭掉所有材料就ok，推送间隔时长anki内置算法已经优化完了&#xA;接下来就是个学以致用的问题，怎么分割材料，怎么在实际生活中使用这些训练得到的成果</description>
+    </item>
+  </channel>
+</rss>

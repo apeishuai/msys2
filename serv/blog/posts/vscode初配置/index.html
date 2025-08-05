@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Vscode初配置 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Vscode初配置</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-01-21</time>
+    
+    
+  </strong>
+  <span> • 130 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-02-12</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="安装vscode">安装vscode</h1>
+<p><a href="https://code.visualstudio.com/">vscode download</a></p>
+<h1 id="code命令">code命令</h1>
+<p>打开终端，执行\</p>
+<pre tabindex="0"><code>code --version
+</code></pre><p>可以看到code版本，在项目根目录下执行</p>
+<pre tabindex="0"><code>code .
+</code></pre><p>可以快速打开项目文件。</p>
+<pre tabindex="0"><code>code --list-extensions
+</code></pre><p>列出安装的所有插件</p>
+<h1 id="配置项">配置项</h1>
+<p>VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：</p>
+<p>用户设置- 全局应用到您打开的任何 VS Code 实例的设置。<br>
+工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。</p>
+<h2 id="用户设置">用户设置</h2>
+<p>设置文件位置</p>
+<p>根据您的平台，用户设置文件位于此处：<br>
+视窗 %APPDATA%\Code\User\settings.json<br>
+苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json<br>
+Linux $HOME/.config/Code/User/settings.json</p>
+<h2 id="工作区设置">工作区设置</h2>
+<p>工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。
+工作区设置文件位于.vscode根文件夹中的文件夹下。</p>
+<h2 id="特定语言编辑器设置">特定语言编辑器设置</h2>
+<p>setting.json\</p>
+<pre tabindex="0"><code>{
+  &#34;[typescript]&#34;: {
+    &#34;editor.formatOnSave&#34;: true,
+    &#34;editor.formatOnPaste&#34;: true
+  },
+  &#34;[markdown]&#34;: {
+    &#34;editor.formatOnSave&#34;: true,
+    &#34;editor.wordWrap&#34;: &#34;on&#34;,
+    &#34;editor.renderWhitespace&#34;: &#34;all&#34;,
+    &#34;editor.acceptSuggestionOnEnter&#34;: &#34;off&#34;
+  }
+}
+</code></pre><h2 id="插件配置">插件配置</h2>
+<p>eslint-config-prettier 与 eslint-plugin-prettier (pending)</p>
+<h3 id="vscode-eslint-语法检测">vscode-eslint 语法检测</h3>
+<pre tabindex="0"><code>code --install-extension dbaeumer.vscode-eslint
+</code></pre><p>conf: eslint.config.mjs
+<img src="/img/Snipaste_2025-02-12_14-04-41.png" alt="">
+<img src="/img/Snipaste_2025-02-12_13-58-42.png" alt="">
+<a href="https://zh-hans.eslint.org/docs/latest/use/configure/configuration-files">ref eslint conf</a></p>
+<h3 id="prettier-代码格式化">prettier 代码格式化</h3>
+<pre tabindex="0"><code>code --install-extension esbenp.prettier-vscode
+</code></pre><p>conf: .prettier.mjs、.prettierignore
+<img src="/img/Snipaste_2025-02-12_14-06-06.png" alt="">
+<img src="/img/Snipaste_2025-02-12_13-52-40.png" alt="">
+<a href="https://prettier.io/docs/configuration.html">ref prettier conf</a></p>
+<p><a href="https://vscode.github.net.cn/docs/csharp/get-started">ref language</a></p>
+<h1 id="设置优先级">设置优先级</h1>
+<p>配置可以通过不同的设置范围在多个级别上覆盖。在下面的列表中，后面的范围覆盖前面的范围：</p>
+<p>defaultsetting.json 默认设置 - 此范围表示默认的未配置设置值。<br>
+setting.json 用户设置 - 全局应用到所有 VS Code 实例。<br>
+远程设置 - 应用于用户打开的远程计算机。<br>
+工作区设置 - 应用到打开的文件夹或工作区。<br>
+工作区文件夹设置 - 应用到多根工作区的特定文件夹。<br>
+特定于语言的默认设置 - 这些是可由扩展提供的特定于语言的默认值。<br>
+特定于语言的用户设置 - 与用户设置相同，但特定于某种语言。<br>
+特定于语言的远程设置 - 与远程设置相同，但特定于某种语言。<br>
+特定于语言的工作区设置 - 与工作区设置相同，但特定于某种语言。<br>
+特定于语言的工作区文件夹设置 - 与工作区文件夹设置相同，但特定于某种语言。<br>
+策略设置 - 由系统管理员设置，这些值始终覆盖其他设置值。</p>
+<h1 id="ref">ref</h1>
+<p><a href="https://vscode.github.net.cn/docs/getstarted/settings">vscode 用户和工作区设置</a></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

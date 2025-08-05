@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>软硬件调试九法 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">软硬件调试九法</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-05-22</time>
+    
+    
+  </strong>
+  <span> • 34 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-06-04</time>
+    </div>
+  
+  
+    <div>
+      <span>Tags:</span>
+      
+        <a href="/tags/series-study">series-study</a>
+    </div>
+  
+</div>
+
+      <div class="content"><p>在公司做了四天电工，接了四天线，突然顿悟，于是翻出这本珍藏已久的《软硬件调试九法》，作者无疑是个有大量调试经验的高手工程师，本文摘出重点。</p>
+<h1 id="概览">概览</h1>
+<p>在调试系统前，要坚定一个信念，系统存在一个稳定状态，而且经过各种手法，一定能把系统调试至稳定状态。</p>
+<p>如果迟迟达不到理想状态，一定是对系统不够了解</p>
+<p>这个了解有三个方向：分解系统的颗粒度、观察范围、探测系统的工具。</p>
+<p>颗粒度是指把系统细分到什么程度，比如一套低压电器系统，刚开始只需关注配电；如果这个层面解决不了问题，细分到具体低压元器件；再往下，关注电气控制信号、网络信号(这两个比较难观测，需要制作相应工具)。</p>
+<p>观察范围也好理解，看过城阳电工视频的人应该有直观感受，本来是一个空调漏电的事，最后排查到电线杆子上的配电箱。系统出现问题有可能是外界环境导致的，而很多人在调试的时候只是盯着系统本身。</p>
+<p>拿到一个新东西，如果有说明书、demo之类的东西，先跑一跑，建立直观印象。然后我就思考，假如我要实现另外一种功能，可以拆解哪些要素出来，怎么观测这些要素，怎么组合这些要素。</p>
+<h1 id="书本逻辑">书本逻辑</h1>
+<p>以上面三条为主线，摘出我感兴趣的内容(一个小标题代表一个调试规则)：</p>
+<ul>
+<li>
+<p>理解系统<br>
+方法：阅读手册、知道什么是正常的、知道工作流程、了解你的工具、查阅手册</p>
+</li>
+<li>
+<p>制造失败<br>
+方法：引发失败、不要模拟失败、如何处理间歇性bug、如果做了所有尝试之后问题依然间歇性发生、那不可能发生、永远不要丢掉调试工具<br>
+真实生产环境用控制变量法，找出导致问题的要素<br>
+间歇性bug可能是动作序列引起的，跟状态有关系，这时候要对系统的各个组件做状态推演<br>
+失败肯定有原因，一定能找出来，目前找不到是因为其“巧妙地”隐藏在尚未发现的大量随机因素背后</p>
+</li>
+<li>
+<p>不要想，而要看<br>
+不要让仪器影响了系统，仪器引入会使系统发生变化，但可以想办法隔离引入的影响<br>
+动手测试猜想的正确性</p>
+</li>
+<li>
+<p>分而治之<br>
+上文说的颗粒度也有帮助快速排查的作用，比如确定问题出在这个子系统，只细分探索确定有问题的子系统即可</p>
+</li>
+<li>
+<p>一次只改一个地方\</p>
+</li>
+<li>
+<p>保持审计跟踪<br>
+记录调试过程中的所有操作，也许能发现新的关联项</p>
+</li>
+<li>
+<p>检查插头<br>
+怀疑任何假设，比如我用软件没探测到需要的数据吗，那有没有可能是工具本身的问题。或者我认为某个地方是绝对不会出问题的，问题可能正好是那边产生的。</p>
+</li>
+<li>
+<p>寻求帮助<br>
+<a href="https://apeishuai.github.io/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%E8%B7%AF%E7%BA%BF%E5%9B%BE/">ref &lt;软件开发者路线图-组织知识来源&gt;</a></p>
+</li>
+<li>
+<p>如果你不修复bug，它将依然存在<br>
+确定bug得到解决，修改设计文件，从根源杜绝bug的产生</p>
+</li>
+</ul>
+<h1 id="结尾">结尾</h1>
+<p>我觉得没什么说的，这都是常识。相比于调试思路，最重要的反倒是动手实践。</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

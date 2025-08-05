@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>自定义搜索引擎yacy | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">自定义搜索引擎yacy</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-03-20</time>
+    
+    
+  </strong>
+  <span> • 381 words</span>
+  <span> • 2 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-04-26</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率</p>
+<p>网站地址在<a href="https://programmablesearchengine.google.com/controlpanel/all">programm able seach engine</a>，添加搜索引擎
+<img src="/img/Snipaste_2024-03-20_16-23-23.png" alt=""></p>
+<h1 id="添加索引网站">添加索引网站</h1>
+<p>点击进入实例，添加&ndash;&gt;填网址
+<img src="/img/Snipaste_2024-03-20_16-25-10.png" alt="">
+对网址格式做一说明，一般是&quot;xxx.com/ * &ldquo;,即该网站下所有页面
+<img src="/img/Snipaste_2024-03-20_16-26-40.png" alt="">
+xml格式导入<br>
+xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotations&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotation</span> <span style="color:#a6e22e">about=</span><span style="color:#e6db74">&#34;*.antirez.com/*&#34;</span> <span style="color:#a6e22e">timestamp=</span><span style="color:#e6db74">&#34;0x0006140ea65e7149&#34;</span> <span style="color:#a6e22e">score=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Label</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;_include_&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;AdditionalData</span> <span style="color:#a6e22e">attribute=</span><span style="color:#e6db74">&#34;original_url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;http://antirez.com&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotation</span> <span style="color:#a6e22e">about=</span><span style="color:#e6db74">&#34;*.huoding.com/*&#34;</span> <span style="color:#a6e22e">timestamp=</span><span style="color:#e6db74">&#34;0x0006140e7ab53ef5&#34;</span> <span style="color:#a6e22e">score=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Label</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;_include_&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;AdditionalData</span> <span style="color:#a6e22e">attribute=</span><span style="color:#e6db74">&#34;original_url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;https://huoding.com&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotations&gt;</span>
+</span></span></code></pre></div><h1 id="改外观">改外观</h1>
+<p>这样就行了
+<img src="/img/Snipaste_2024-03-20_16-29-08.png" alt="">
+最终所得网址如下
+<img src="/img/Snipaste_2024-03-20_16-29-39.png" alt=""></p>
+<h1 id="qireader脚本">qireader脚本</h1>
+<p>qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 作者: wxf</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 版本: 1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 生成日期: 2024/03/20</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 最后修改日期: 2024/03/20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> subprocess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 从本地文件读取文本</span>
+</span></span><span style="display:flex;"><span>file_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;QiReader subscriptions - Wed Mar 20 2024.opml&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(file_path, <span style="color:#e6db74">&#34;r&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    text <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用正则表达式提取htmlUrl</span>
+</span></span><span style="display:flex;"><span>html_urls <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;htmlUrl=&#34;(.*?)&#34;&#39;</span>, text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;tmp_urls.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> url <span style="color:#f92672">in</span> html_urls:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tmp_flit_urls <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 替换尾部//为/</span>
+</span></span><span style="display:flex;"><span>grep_command <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;grep&#39;</span>, <span style="color:#e6db74">&#39;//$&#39;</span>, <span style="color:#e6db74">&#39;tmp_urls.txt&#39;</span>]
+</span></span><span style="display:flex;"><span>awk_command <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;awk&#39;</span>, <span style="color:#e6db74">&#39;-i&#39;</span>,<span style="color:#e6db74">&#39;inplace&#39;</span>,<span style="color:#e6db74">&#39;{sub(/\/\/$/, </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">/</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">)}1&#39;</span>, <span style="color:#e6db74">&#39;tmp_urls.txt&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>grep_rlt <span style="color:#f92672">=</span> subprocess<span style="color:#f92672">.</span>run(grep_command, capture_output<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, text<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>file_list <span style="color:#f92672">=</span> grep_rlt<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>splitlines()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> file_list:
+</span></span><span style="display:flex;"><span>    subprocess<span style="color:#f92672">.</span>run(awk_command,text<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 替换https: xx为空格</span>
+</span></span><span style="display:flex;"><span>substring <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;http://&#34;</span>,<span style="color:#e6db74">&#34;https://&#34;</span>,<span style="color:#e6db74">&#34;http://www.&#34;</span>,<span style="color:#e6db74">&#34;https://www.&#34;</span>,<span style="color:#e6db74">&#34;www.&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> url <span style="color:#f92672">in</span> html_urls:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> sub_str <span style="color:#f92672">in</span> substring:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> sub_str <span style="color:#f92672">in</span> url:
+</span></span><span style="display:flex;"><span>            url <span style="color:#f92672">=</span> url<span style="color:#f92672">.</span>replace(sub_str, <span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> url<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;/&#34;</span>):
+</span></span><span style="display:flex;"><span>        tmp_flit_urls<span style="color:#f92672">.</span>append(url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;*&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        tmp_flit_urls<span style="color:#f92672">.</span>append(url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/*&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出处理后的htmlUrl列表到文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;tmp_flit_urls.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> url <span style="color:#f92672">in</span> tmp_flit_urls:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 从txt文本中读取网址列表</span>
+</span></span><span style="display:flex;"><span>about_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>value_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 从xx.txt文件中读取内容并写入about_list列表</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;tmp_flit_urls.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> file:
+</span></span><span style="display:flex;"><span>        about_list<span style="color:#f92672">.</span>append(line<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 从tmp_urls.txt文件中读取内容并写入value_list列表</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;tmp_urls.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> file:
+</span></span><span style="display:flex;"><span>        value_list<span style="color:#f92672">.</span>append(line<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 原始标签内容</span>
+</span></span><span style="display:flex;"><span>original_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;Annotation about=&#34;*.huoding.com/*&#34; timestamp=&#34;0x0006140e7ab53ef5&#34; score=&#34;1.0&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;Label name=&#34;_include_&#34;/&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;AdditionalData attribute=&#34;original_url&#34; value=&#34;https://huoding.com&#34;/&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;/Annotation&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 生成替换后的格式化文本</span>
+</span></span><span style="display:flex;"><span>formatted_texts <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> about, value <span style="color:#f92672">in</span> zip(about_list, value_list):
+</span></span><span style="display:flex;"><span>    replaced_text <span style="color:#f92672">=</span> original_text<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;*.huoding.com/*&#34;</span>, about)
+</span></span><span style="display:flex;"><span>    replaced_text <span style="color:#f92672">=</span> replaced_text<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;https://huoding.com&#34;</span>, value)
+</span></span><span style="display:flex;"><span>    formatted_texts<span style="color:#f92672">.</span>append(replaced_text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出生成的格式化文本到文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;annotations.xml&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;&lt;Annotations&gt;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> text <span style="color:#f92672">in</span> formatted_texts:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(text <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;&lt;/Annotations&gt;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 删除含有tmp字符的文件</span>
+</span></span><span style="display:flex;"><span>files <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> file_name <span style="color:#f92672">in</span> files:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;tmp&#34;</span> <span style="color:#f92672">in</span> file_name:
+</span></span><span style="display:flex;"><span>        file_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#34;.&#34;</span>, file_name)
+</span></span><span style="display:flex;"><span>        os<span style="color:#f92672">.</span>remove(file_path)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;文件 </span><span style="color:#e6db74">{</span>file_name<span style="color:#e6db74">}</span><span style="color:#e6db74"> 已成功删除。&#34;</span>)
+</span></span></code></pre></div><p>&lsquo;QiReader subscriptions - Wed Mar 20 2024.opml&rsquo;这个文件和脚本放同一文件夹下，执行完毕后会得到一个annotations.xml的文件，直接导入即可，见“添加索引网站”小节</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotations&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotation</span> <span style="color:#a6e22e">about=</span><span style="color:#e6db74">&#34;antirez.com/*&#34;</span> <span style="color:#a6e22e">timestamp=</span><span style="color:#e6db74">&#34;0x0006140e7ab53ef5&#34;</span> <span style="color:#a6e22e">score=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Label</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;_include_&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;AdditionalData</span> <span style="color:#a6e22e">attribute=</span><span style="color:#e6db74">&#34;original_url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;http://antirez.com&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotation</span> <span style="color:#a6e22e">about=</span><span style="color:#e6db74">&#34;righto.com/*&#34;</span> <span style="color:#a6e22e">timestamp=</span><span style="color:#e6db74">&#34;0x0006140e7ab53ef5&#34;</span> <span style="color:#a6e22e">score=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Label</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;_include_&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;AdditionalData</span> <span style="color:#a6e22e">attribute=</span><span style="color:#e6db74">&#34;original_url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;http://www.righto.com/&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Annotation</span> <span style="color:#a6e22e">about=</span><span style="color:#e6db74">&#34;lijiaocn.com/*&#34;</span> <span style="color:#a6e22e">timestamp=</span><span style="color:#e6db74">&#34;0x0006140e7ab53ef5&#34;</span> <span style="color:#a6e22e">score=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;AdditionalData</span> <span style="color:#a6e22e">attribute=</span><span style="color:#e6db74">&#34;original_url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;https://emacsguru.wordpress.com&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>... 太长不看
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Annotation&gt;</span>
+</span></span></code></pre></div><h1 id="效果评估">效果评估</h1>
+<p>按理说能检索到我写的网址的所有网页<br>
+以01.me为例，选取关键词&quot;本科生&rdquo;、&ldquo;邂逅&rdquo;、&ldquo;创业&rdquo;，分别在google、ces引擎搜索，结果如下：
+原博客
+<img src="/img/Snipaste_2024-03-20_16-43-43.png" alt="">
+<img src="/img/Snipaste_2024-03-20_16-44-11.png" alt="">
+<img src="/img/Snipaste_2024-03-20_16-44-48.png" alt="">
+google语法搜索<br>
+大差不差，inurl更深入
+<img src="/img/Snipaste_2024-03-20_16-46-18.png" alt="">
+<img src="/img/Snipaste_2024-03-20_16-57-05.png" alt="">
+ces搜索<br>
+很垃圾啊，也就是说之前的工作白做了
+<img src="/img/Snipaste_2024-03-20_17-21-58.png" alt=""></p>
+<h1 id="继续探索">继续探索</h1>
+<p>这个时候得搞清楚搜索引擎的工作原理，可以认为搜索引擎是以某种数据形式拆解网页，结合算法+算力，实现大量网页的索引<br>
+一个点是爬取相关网站的所有内容，以特定形式存储，另一个点是算法、分布式<br>
+我的目标是搜索特定网站内容，有两种解决方案<br>
+第一种是用google 的api，拿到数据后自建页面排序展示，工作量巨大<br>
+第二种如下\</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">提问：开源检索网络的网站
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#66d9ef">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">回答：
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>开源检索网络的网站中，一个备受推荐的是**YaCy**。YaCy是一个去中心化的搜索引擎，由网络上的众多参与者共同维护。它的目标是创建一个公开、透明且不受单一实体控制的搜索引擎。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### YaCy的特点包括：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> **去中心化**：YaCy利用P2P技术，使搜索索引分布在全球范围内的参与者之间，而不是存储在中心服务器上。
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> **隐私保护**：由于其去中心化的特性，YaCy提供了较高的匿名性和隐私保护。用户的搜索请求不会被跟踪。
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> **自主爬虫**：YaCy拥有自己的网络爬虫技术，用户可以自定义爬虫的行为，包括要爬取的网站和内容。
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> **开源**：YaCy是完全开源的，这意味着任何人都可以查看其代码、进行修改或贡献。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>YaCy适合那些希望建立自己的搜索引擎、研究搜索技术或者关心隐私保护的用户和开发者。它可以被部署为个人的搜索门户，也可以作为一个组织内部的搜索解决方案。YaCy的开源性质和去中心化架构为搜索引擎领域提供了一个独特且有力的选择。
+</span></span></code></pre></div><h1 id="yacy">yacy</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d --name yacy_search_server -p 8090:8090 -p 8443:8443 -v /d/local_data/yacy:/opt/yacy_search_server/DATA --restart unless-stopped --log-opt max-size<span style="color:#f92672">=</span>200m --log-opt max-file<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> yacy/yacy_search_server:latest
+</span></span></code></pre></div><p>如此，在浏览器的8090端口就能访问yacy服务了，数据映射在本地&quot;d:/local_data/yacy/&ldquo;目录<br>
+账号登录，选择个人网站搜索
+<img src="/img/Snipaste_2024-03-20_19-05-56.png" alt="">
+我爬取了&quot;https://01.me&rdquo;，注：限制起始域，只爬取01.me的所有内容；文档内容限制(MIME)为只匹配&quot;text/html&quot;，只拿到文本即可
+<img src="/img/Snipaste_2024-03-20_19-07-23.png" alt="">
+搜索效果如下，比google ces强多了，当然，只要优化爬虫策略，应该能检索到更多结果
+<img src="/img/Snipaste_2024-03-20_19-08-16.png" alt=""></p>
+<h1 id="总结">总结</h1>
+<p>目的是自定义搜索引擎，任务算是完成了，回溯一下整个过程，关键点在搜索效果的对比验证，写python脚本(借助juchats)，juchats给出的提示(跟我的提问方式也有关系)</p>
+<p>对于有全局视野的人来说，ai无疑能大大提高生产力</p>
+<h1 id="ref">ref</h1>
+<p><a href="https://developers.google.com/custom-search/docs/topical?hl=zh-cn">ces doc</a></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2024
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,480 @@
+# 开篇
+[[https://refactoringguru.cn/design-patterns/cpp][C++常用设计模式]]
+
+[[https://refactoring.guru/design-patterns/catalog][The Catalog of Design Patterns]]
+/Entered on/ [2022-05-24 二 10:39]
+
+UML  关系：关联 依赖  泛化  实现
+
+用例图：客户角度描述系统功能
+参与者  用例  关UML  关系：关联 依赖  泛化  实现
+
+用例图：客户角度描述系统功能
+参与者  用例  关系
+
+
+* 面向对象遵循原则
+单一职责 里氏替换  接口隔离 迪米特  优先使用组合而不是继承
+
+依赖倒置 开闭原则
+
+开闭：类的改动是通过增加代码实现，而不是源代码
+
+依赖倒置：依赖抽象（接口），不要依赖具体类
+
+单一职责：一个类只负责一项职责（职责扩散），引起类变化的原因只有一个
+
+接口隔离：一个接口只提供一种对外功能
+
+里氏替换：任何抽象类出现的地方都可以用他的实现进行替换
+
+迪米特：一个对象应该对其他对象有尽可能少的了解，例如一个程序中，各个模块相互调用时，通常会提供一个统一的接口来实现
+
+类A进行功能增强：修改类，继承，指针传递，obj汇编
+
+多态：使用后来人写的代码(框架的例子：见demo02)
+
+传统设计模式倾向于使用高层次的模块依赖于低层次的模块，抽象层依赖于具体的层次
+
+两个人都往抽象层靠，实现业务和实现层的解耦合
+
+* 23种设计模式
+
+（简单工厂模式不属于）
+** 创建型(提供创建对象机制)
+| 单例模式 | 原型模式 | 抽象工厂模式 | 工厂方法 | 生成器 |
+
+** 结构型(将对象和类组装成较大的结构)
+| 适配器 | 桥接 | 组合 | 装饰 | 外观 |
+| 享元 | 代理 |
+
+** 行为模式(负责对象间的高效沟通和委派)
+| 责任链 | 命令 | 迭代器 | 中介者 | 备忘录 |
+| 观察者 | 状态 | 策略 | 模板方法 | 访问者 |
+
+# demo c++
+## 创建 单例模式
+```c++
+//保证一个类，只有一个实例存在，同时提供对该实例加以全局访问方法
+#include <iostream>
+using namespace std;
+
+//使用：多个线程，只初始化一次资源；；整个程序空间使用全局变量，共享资源；；大规模系统，考虑为创建对象节省时间
+//步骤：构造函数私有化；提供一个全局的静态方法；类中定义一个指针，指向本类的变量的静态变量指针
+
+//懒汉式
+class singleton{
+ public:
+   static singleton *getinstance() {
+     if(m_single = NULL)
+       m_single = new singleton;
+     return m_single;
+   }
+  static singleton *freeinstance() {
+     if(m_single != NULL)
+       delete m_single;
+     m_single = NULL;
+   }
+ private:
+   singleton() {
+     cout << "singleton 构造函数执行" << endl;
+   }
+   static singleton *m_single;
+};
+
+//静态变量初始化要放在类外面
+singleton *singleton::m_single = NULL;
+//恶汉式：不管调不调用，都new一个新的
+//singleton *singleton::m_single = new singleton;
+
+
+void main11() {
+  singleton *p1 = singleton::getinstance();
+  singleton *p2 = singleton::getinstance();
+  if(p1 == p2)
+    cout << "同一个对象" << endl;
+  else
+    cout << "不是同一个对象" << endl;
+
+}
+
+int main() {
+  main11();
+  return 1;
+}
+```
+## 创建 原型模式
+```c++
+//原型模式主要面对“某些结构复杂的对象”的创建工作，这些对象经常面临剧烈的变化，却拥有比较稳定一致的接口（自我复制功能）
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class person {
+public:
+  virtual person* clone() = 0;
+  virtual void prinT() = 0;
+  virtual void setresume(char *p) = 0;
+};
+
+class CPro :public person{
+public:
+  CPro() {
+    m_name = "";
+    m_age = 0;
+    m_resume = "abcd";
+  }
+  CPro(string name, int age) {
+    m_name = name;
+    m_age =age;
+    m_resume = "abcd";
+  }
+  virtual person* clone() {
+    CPro *tmp = new CPro;
+    *tmp = *this;
+    return tmp;
+  }
+  void setresume(char *p) {
+    if (m_resume != NULL) {
+      delete m_resume;
+    }
+  m_resume = new char[strlen(p)+1];
+  strcpy(m_resume,p);
+  }
+  virtual void prinT() {
+    cout << "c++ programmer name is " << m_name << endl;
+    cout << "c++ programmer age is " << m_age << endl;
+    cout << "c++ programmer resume is " << m_resume << endl;
+  }
+private:
+  string m_name;
+  int m_age;
+  char *m_resume;
+};
+
+class JavaPro {
+
+};
+
+int main() {
+  person *c1 = new CPro("张三",23);
+  c1->prinT();
+  person *c2 = c1->clone();
+  c2->prinT();
+  return 1;
+}
+```
+## 创建 简单工厂模式
+```c++
+//一个类创建其他类。工厂类可以根据外界给定的信息，决定创建哪个具体类对象。工厂类包含逻辑判断，“高内聚”方面做的不好。但是当出现产品类型增多的情况时，可能要求工厂类做相应修改，扩展性不好
+//“高内聚”：增加种类需要修改工厂代码，不符合开闭原则
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class Fruit {
+public:
+  virtual void getfruit() = 0;
+};
+
+class banana : public Fruit {
+public:
+  virtual void getfruit() {
+  cout << "我是香蕉" << endl;
+  }
+};
+
+class apple : public Fruit {
+public:
+  virtual void getfruit() {
+  cout << "我是苹果" << endl;
+  }
+};
+
+class Factory {
+public:
+  Fruit * create(char *p) {
+    if (strcmp(p, "banana") == 0) {
+      return new banana;
+    }
+    else if (strcmp(p,"apple") == 0) {
+      return new apple;
+    }
+    else
+      cout << "不支持" << endl;
+  }
+};
+
+
+int main() {
+  Factory *f = new Factory;
+  Fruit *fruit = NULL;
+
+
+  fruit = f->create("apple");
+  fruit->getfruit();
+  delete fruit;
+
+  return 1;
+}
+
+```
+## 创建 抽象工厂模式
+```c++
+//工厂模式只能生产一个产品，抽象工厂可以生产一个产品族
+#include <iostream>
+using namespace std;
+
+class fruit {
+public:
+  virtual void sayname() = 0;
+};
+
+class Absfactory {
+public:
+  virtual fruit* createapple() = 0;
+  virtual fruit* createbanana() = 0;
+};
+
+
+class northbanana : public fruit
+{
+public:
+  virtual void sayname()
+  {
+    cout << "北方香蕉" << endl;
+  }
+};
+
+
+class northapple : public fruit
+{
+public:
+  virtual void sayname()
+  {
+    cout << "北方苹果" << endl;
+  }
+};
+
+class southbanana : public fruit
+{
+public:
+  virtual void sayname()
+  {
+    cout << "南方香蕉" << endl;
+  }
+};
+
+class southapple : public fruit
+{
+public:
+  virtual void sayname()
+  {
+    cout << "南方苹果" << endl;
+  }
+};
+
+class southfactory : public Absfactory {
+public:
+  virtual fruit* createapple() {
+    return new southapple;
+  }
+  virtual fruit* createbanana() {
+    return new southbanana;
+  }
+};
+
+int main() {
+  Absfactory *fac = NULL;
+  fruit *fru = NULL;
+
+  fac = new southfactory;
+  fru = fac->createapple();
+  fru->sayname();
+  delete fru;
+  fru = fac->createbanana();
+  fru->sayname();
+  delete fru;
+
+  delete fac;
+  delete fru;
+  return 1;
+}
+
+```
+## 创建 建造者模式
+```c++
+//一个对象的构建比较复杂，将一个对象的构建和对象的表示进行分离
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class house {
+public:
+  void setdoor(string door) {
+    this->m_door = door;
+  }
+  void setwall(string wall) {
+    this->m_wall = wall;
+  }
+
+  void setwindow(string window) {
+    this->m_window = window;
+  }
+
+  void getdoor() {
+    cout << m_door << endl;
+  }
+
+  void getwall() {
+    cout << m_wall << endl;
+  }
+
+  void getwindow() {
+    cout << m_window << endl;
+  }
+
+private:
+  string m_door;
+  string m_wall;
+  string m_window;
+};
+
+class builder {
+public:
+  virtual void buildwall() = 0;
+  virtual void builddoor() = 0;
+  virtual void buildwindow() = 0;
+  virtual house* gethouse() = 0;
+};
+
+class abuilder:public builder {
+public:
+  abuilder() {
+    m_house = new house;
+  }
+  virtual void buildwall() {
+    m_house->setdoor("a wall");
+  }
+  virtual void builddoor() {
+    m_house->setwall("a door");
+  }
+  virtual void buildwindow() {
+    m_house->setwindow("a window");
+  }
+  virtual house* gethouse() {
+    return m_house;
+  }
+private:
+  house *m_house;
+};
+
+
+class bbuilder:public builder {
+public:
+  bbuilder() {
+    m_house = new house;
+  }
+  virtual void buildwall() {
+    m_house->setdoor("b wall");
+  }
+  virtual void builddoor() {
+    m_house->setwall("b door");
+  }
+  virtual void buildwindow() {
+    m_house->setwindow("b window");
+  }
+  virtual house* gethouse() {
+    return m_house;
+  }
+private:
+  house *m_house;
+};
+
+
+
+//设计师负责建造逻辑
+//建筑队负责具体的活
+class director {
+public:
+  director(builder * build) {
+    m_build = build;
+  }
+  void constructor() {
+    m_build->buildwall();
+    m_build->builddoor();
+    m_build->buildwindow();
+  }
+private:
+  builder * m_build;
+};
+
+
+
+int main()
+{
+  house *house = NULL;
+  builder *bc = NULL;
+  director *dc = NULL;
+
+  bc = new bbuilder;
+  dc = new director(bc);
+  dc->constructor();
+
+  house = bc->gethouse();
+  house->getdoor();
+
+  return 1;
+}
+
+```
+##  结构 适配器模式
+```c++
+//将一个类的接口转换为客户希望的另一个接口，使得原本由于不兼容而不能一起工作的那些类可以一起工作
+
+#include <iostream>
+using namespace std;
+
+//current18
+//current220
+//adapter
+class current18 {
+public:
+  virtual void usecurrent18v() {
+    cout << "我是18v" << endl;
+  }
+};
+
+class current220 {
+public:
+   virtual void usecurrent18v() {
+    cout << "我是220v" << endl;
+  }
+};
+
+class adapter: public current18 {
+public:
+  adapter(current220 *current) {
+    m_current = current;
+  }
+  virtual void usecurrent18v() {
+    cout << "适配器" << endl;
+    m_current->usecurrent18v();
+  }
+private:
+  current220 *m_current;
+};
+
+int main() {
+  current220 *p = NULL;
+  adapter *adap = NULL;
+
+  p = new current220;
+  adap = new adapter(p);
+
+  adap->usecurrent18v();
+  return 1;
+}
+
+```

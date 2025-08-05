@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Qt初探索 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Qt初探索</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-11-26</time>
+    
+    
+  </strong>
+  <span> • 27 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-11-26</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>有用qt的需求，就学了一下，看下怎么玩的。</p>
+<h1 id="安装qt">安装qt</h1>
+<p><a href="https://mirrors.ustc.edu.cn/qtproject/official_releases/online_installers/qt-unified-windows-x64-online.exe">ustc mirror qt</a></p>
+<p>下载在线安装的exe文件，执行，选择所有组件</p>
+<h1 id="配置qt编译环境">配置qt编译环境</h1>
+<p>我用的msys+cmake，cmake在windows界面下需要单独安装<a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/73af5d82-6741-410d-8dd7-85056f623283?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=releaseassetproduction%2F20241126%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241126T003848Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=d97424373f0e7d626d690549fdc36a256b604c449e1260e1f539a426f3b13d9f&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=attachment%3B%20filename%3Dcmake-3.31.1-windows-x86_64.msi&amp;response-content-type=application%2Foctet-stream">cmaek.msi</a></p>
+<p>安装完cmake后将xx/cmake/bin/cmake.exe放到windows系统的环境变量，尝试，直到出现如下界面
+<img src="/img/Snipaste_2024-11-26_20-43-05.png" alt=""></p>
+<h1 id="c编程核心要点">C++编程核心要点</h1>
+<p>qt是c++实现的，所以使用qt的前提是对c++很熟悉，那就来研究一下</p>
+<p>主要用到c++的面向对象特性，而面向对象是通过：封装、继承、多态实现的，再往下拆<br>
+封装就是把数据和方法放到一个class中<br>
+继承类通过层次结构和对象的内存分布实现(不深入了解)，关注点：构造函数、析构函数<br>
+多态，关注点：虚函数、纯虚函数</p>
+<p>而这些可以通过qt引导项生成，常用的主要是：class类生成</p>
+<h1 id="跑通流程">跑通流程</h1>
+<p><a href="https://doc.embedfire.com/linux/qt/embed/pdf/%5B%E9%87%8E%E7%81%AB%5D%E3%80%8A%E5%B5%8C%E5%85%A5%E5%BC%8FQt%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8ELubanCat-i.MX6ULL-MP157%E5%BC%80%E5%8F%91%E6%9D%BF%E3%80%8B.pdf">qt ref 野火</a>，参考第七章，跑通hello流程</p>
+<h1 id="熟悉控件">熟悉控件</h1>
+<p>我的目标是做桌面开发，翻qt帮助文件
+<img src="/img/Snipaste_2024-11-26_20-55-41.png" alt="">
+可以看到，主要用qt quick和qt widget组件，这两个组件里面是一堆class类，所以随后需要做的工作是遍历，搞清楚这一堆class类是怎么组合，为什么目标服务</p>
+<h1 id="end">end</h1>
+<p>这样，qt就基本入门了，然后根据目标组织代码就行了</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

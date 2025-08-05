@@ -1,0 +1,41 @@
+# Set history size
+HISTSIZE=1000000
+HISTFILESIZE=1000000
+
+# env PATH
+PROMPT_COMMAND="history -a; history -n"
+HISTFILE="$home/.bash_history"
+
+# conf
+if [ "$(uname)" == "Linux" ]; then
+	alias conf="vim ~/.bashrc_linux"
+elif [ -n "$MSYSTEM" ] && { [ "$MSYSTEM" == "MSYS_NT-10.0-14393" ] || [ "$MSYSTEM" == "MINGW64" ] || [ "$MSYSTEM" == "MINGW32" ] || [ "$MSYSTEM" == "CYGWIN" ] || [ "$MSYSTEM" == "UCRT64" ] || [ "$MSYSTEM" == "CLANG64" ];}; then
+	alias conf="vim ~/.bashrc_win"
+fi
+
+alias conf_="vim ~/.bashrc_comm"
+alias r="source ~/.bashrc"
+
+# fuck bash
+alias f='export _PR_LAST_COMMAND="$(fc -ln -1)"; export _PR_ALIAS="$(alias)"; export _PR_SHELL="bash"; pay-respects.exe'
+command_not_found_handle() {
+    export _PR_LAST_COMMAND="$@"
+    export _PR_ALIAS="$(alias)"
+    export _PR_SHELL="bash"
+    export _PR_MODE="cnf"
+    #export _PR_LIB="/d/g/area/wxf-data/pay-respects/rules"
+    pay-respects.exe
+}
+
+
+# git
+alias c="git log | grep ^commit | wc -l"
+alias statis="git shortlog -sn --no-merges" # 统计提交次数
+alias dif="git diff HEAD~1 HEAD"
+alias root="cd $(git rev-parse --show-toplevel)"
+# alias dif_file"git diff HEAD~1 HEAD example.txt" # 比较特定文件差异
+# alias ="git log | grep ^commit | tail -n $1 | head -n 1 | cut -c8-47 | xargs git reset --hard"
+# alias git_j.sh
+
+# file static
+#grep -o "import" *.py | wc -l

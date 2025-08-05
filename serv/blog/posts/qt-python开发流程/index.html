@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Qt Python开发流程 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Qt Python开发流程</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-11-30</time>
+    
+    
+  </strong>
+  <span> • 102 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-11-30</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>用cpp+cmake开发，太繁琐了，切换到qt-python</p>
+<h1 id="环境配置">环境配置</h1>
+<p>需要python解释器、pyside6包<br>
+下面三张照片展示python解释器是怎么配置的，其中python的虚拟环境搭建可以参考文章<a href="../msys2%E4%BD%BF%E7%94%A8anaconda/">msys2使用anaconda</a>
+<img src="/img/Snipaste_2024-11-30_19-27-39.png" alt="">
+<img src="/img/Snipaste_2024-11-30_19-29-03.png" alt="">
+<img src="/img/Snipaste_2024-11-30_19-29-35.png" alt=""></p>
+<p>根据上述文章搭建一个名为qt的环境，激活环境，并安装pyside6的包</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda env list
+</span></span><span style="display:flex;"><span>conda create -n qt python<span style="color:#f92672">=</span>3.10
+</span></span><span style="display:flex;"><span>conda activate qt
+</span></span><span style="display:flex;"><span>pip install pyside6
+</span></span><span style="display:flex;"><span>conda deactivate
+</span></span></code></pre></div><p>然后可以放手开发了。</p>
+<h1 id="界面开发">界面开发</h1>
+<p><img src="/img/Snipaste_2024-11-30_19-39-31.png" alt="">
+这个是ui界面，可以在上面拖拽放控件，这个ui文件对应一个xml文件，如下：
+<img src="/img/Snipaste_2024-11-30_19-42-03.png" alt="">
+可以直接编辑xml文件，让ai生成相应界面，但是太难调整了，不如直接拖拽。实践中发现最好前后端分离，就是说前面的界面拖拽生成，界面样式和逻辑分开实现。<br>
+要在python代码中使用ui文件，必须通过uic.exe把xx.ui转换为xx.py，再把这个生成的xx.py作为包引入，为此我写了一个脚本，如下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    rm <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span>
+</span></span><span style="display:flex;"><span>    pyside6-uic.exe <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.ui&#34;</span> -o <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;转换完成，文件地址：</span><span style="color:#66d9ef">$(</span>realpath <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    pyside6-uic.exe <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.ui&#34;</span> -o <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;转换完成，文件地址：</span><span style="color:#66d9ef">$(</span>realpath <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">.py&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h1 id="代码组织">代码组织</h1>
+<p>新建ui.py文件，所有ui相关的逻辑都放在这个文件，特点就是ui绘制、界面行为、信号-槽的实现解耦，可以随意扩充。
+<img src="/img/Snipaste_2024-11-30_19-53-28.png" alt=""></p>
+<h1 id="打包发布">打包发布</h1>
+<p>同样写了一个脚本，该脚本会在项目根目录下的.dist文件下生成可执行的exe文件及相关库文件，可以在没有python环境的电脑上运行
+。里面用到的工具pyinstaller、上面的pyside6-uic，在qt虚拟环境中去找</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 检查是否提供了Python脚本作为参数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;python_script.py&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>DISTPATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./.dist&#34;</span>
+</span></span><span style="display:flex;"><span>TMPPATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./.tmp&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Building </span>$1<span style="color:#e6db74"> with PyInstaller...&#34;</span>
+</span></span><span style="display:flex;"><span>pyinstaller $1.py --workpath $TMPPATH --distpath $DISTPATH
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;remove tmp file&#34;</span>
+</span></span><span style="display:flex;"><span>rm -rf $TMPPATH
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Generated files are in the root directory: </span>$DISTPATH<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h1 id="end">end</h1>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

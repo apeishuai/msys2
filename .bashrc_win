@@ -1,0 +1,455 @@
+# To the extent possible under law, the author(s) have dedicated all 
+# copyright and related and neighboring rights to this software to the 
+# public domain worldwide. This software is distributed without any warranty. 
+# You should have received a copy of the CC0 Public Domain Dedication along 
+# with this software. 
+# If not, see <https://creativecommons.org/publicdomain/zero/1.0/>. 
+
+# ~/.bashrc: executed by bash(1) for interactive shells.
+
+# The copy in your home directory (~/.bashrc) is yours, please
+# feel free to customise it to create a shell
+# environment to your liking.  If you feel a change
+# would be benifitial to all, please feel free to send
+# a patch to the msys2 mailing list.
+
+# User dependent .bashrc file
+
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+
+# Shell Options
+#
+# See man bash for more options...
+#
+# Don't wait for job termination notification
+# set -o notify
+#
+# Don't use ^D to exit
+# set -o ignoreeof
+#
+# Use case-insensitive filename globbing
+# shopt -s nocaseglob
+#
+# Make bash append rather than overwrite the history on disk
+# shopt -s histappend
+#
+# When changing directory small typos can be ignored by bash
+# for example, cd /vr/lgo/apaache would find /var/log/apache
+# shopt -s cdspell
+
+# Completion options
+#
+# These completion tuning parameters change the default behavior of bash_completion:
+#
+# Define to access remotely checked-out files over passwordless ssh for CVS
+# COMP_CVS_REMOTE=1
+#
+# Define to avoid stripping description in --option=description of './configure --help'
+# COMP_CONFIGURE_HINTS=1
+#
+# Define to avoid flattening internal contents of tar files
+# COMP_TAR_INTERNAL_PATHS=1
+#
+# Uncomment to turn on programmable completion enhancements.
+# Any completions you add in ~/.bash_completion are sourced last.
+# [[ -f /etc/bash_completion ]] && . /etc/bash_completion
+
+# History Options
+#
+# Don't put duplicate lines in the history.
+# export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+#
+# Ignore some controlling instructions
+# HISTIGNORE is a colon-delimited list of patterns which should be excluded.
+# The '&' is a special pattern which suppresses duplicate entries.
+# export HISTIGNORE=$'[ \t]*:&:[fb]g:exit'
+# export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls' # Ignore the ls command as well
+#
+# Whenever displaying the prompt, write the previous line to disk
+# export PROMPT_COMMAND="history -a"
+
+# Aliases
+#
+# Some people use a different file for aliases
+# if [ -f "${HOME}/.bash_aliases" ]; then
+#   source "${HOME}/.bash_aliases"
+# fi
+#
+# Some example alias instructions
+# If these are enabled they will be used instead of any instructions
+# they may mask.  For example, alias rm='rm -i' will mask the rm
+# application.  To override the alias instruction use a \ before, ie
+# \rm will call the real rm not the alias.
+#
+# Interactive operation...
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+#
+# Default to human readable figures
+# alias df='df -h'
+# alias du='du -h'
+#
+# Misc :)
+# alias less='less -r'                          # raw control characters
+# alias whence='type -a'                        # where, of a sort
+# alias grep='grep --color'                     # show differences in colour
+# alias egrep='egrep --color=auto'              # show differences in colour
+# alias fgrep='fgrep --color=auto'              # show differences in colour
+#
+# Some shortcuts for different directory listings
+# alias ls='ls -hF --color=tty'                 # classify files in colour
+# alias dir='ls --color=auto --format=vertical'
+# alias vdir='ls --color=auto --format=long'
+# alias ll='ls -l'                              # long list
+# alias la='ls -A'                              # all but . and ..
+# alias l='ls -CF'                              #
+
+# Umask
+#
+# /etc/profile sets 022, removing write perms to group + others.
+# Set a more restrictive umask: i.e. no exec perms for others:
+# umask 027
+# Paranoi neither group nor others have any perms:
+# umask 077
+
+# Functions
+#
+# Some people use a different file for functions
+# if [ -f "${HOME}/.bash_functions" ]; then
+#   source "${HOME}/.bash_functions"
+# fi
+#
+# Some example functions:
+#
+# a) function settitle
+# settitle () 
+# { 
+#   echo -ne "\e]2;$@\a\e]1;$@\a"; 
+# }
+# 
+# b) function cd_func
+# This function defines a 'cd' replacement function capable of keeping, 
+# displaying and accessing history of visited directories, up to 10 entries.
+# To use it, uncomment it, source this file and try 'cd --'.
+# acd_func 1.0.5, 10-nov-2004
+# Petar Marinov, http:/geocities.com/h2428, this is public domain
+# cd_func ()
+# {
+#   local x2 the_new_dir adir index
+#   local -i cnt
+# 
+#   if [[ $1 ==  "--" ]]; then
+#     dirs -v
+#     return 0
+#   fi
+# 
+#   the_new_dir=$1
+#   [[ -z $1 ]] && the_new_dir=$HOME
+# 
+#   if [[ ${the_new_dir:0:1} == '-' ]]; then
+#     #
+#     # Extract dir N from dirs
+#     index=${the_new_dir:1}
+#     [[ -z $index ]] && index=1
+#     adir=$(dirs +$index)
+#     [[ -z $adir ]] && return 1
+#     the_new_dir=$adir
+#   fi
+# 
+#   #
+#   # '~' has to be substituted by ${HOME}
+#   [[ ${the_new_dir:0:1} == '~' ]] && the_new_dir="${HOME}${the_new_dir:1}"
+# 
+#   #
+#   # Now change to the new dir and add to the top of the stack
+#   pushd "${the_new_dir}" > /dev/null
+#   [[ $? -ne 0 ]] && return 1
+#   the_new_dir=$(pwd)
+# 
+#   #
+#   # Trim down everything beyond 11th entry
+#   popd -n +11 2>/dev/null 1>/dev/null
+# 
+#   #
+#   # Remove any other occurence of this dir, skipping the top of the stack
+#   for ((cnt=1; cnt <= 10; cnt++)); do
+#     x2=$(dirs +${cnt} 2>/dev/null)
+#     [[ $? -ne 0 ]] && return 0
+#     [[ ${x2:0:1} == '~' ]] && x2="${HOME}${x2:1}"
+#     if [[ "${x2}" == "${the_new_dir}" ]]; then
+#       popd -n +$cnt 2>/dev/null 1>/dev/null
+#       cnt=cnt-1
+#     fi
+#   done
+# 
+#   return 0
+# }
+# 
+# alias cd=cd_func
+
+
+## search
+alias search="echo 'execute search- num' && cat -n 'C:/Users/apeishuai/Nutstore/1/docs/GTD/search.org'"
+alias search-="$bin/search_exe.sh"
+alias search-x="start 'https://x.com/search?q=list%3A1565529135316815873+'"
+alias search-gist="start 'https://gist.github.com/search?q=string+%40apeishuai&ref=searchresults'"
+alias search-github="start 'https://github.com/search/advanced'"
+alias search-yacy="start 'https://cse.google.com/cse?cx=f42e7c5964a474558'"
+alias conf-yacy="start 'https://programmablesearchengine.google.com/controlpanel/overview?cx=f42e7c5964a474558'"
+
+alias key="echo -e 'search- check- trac- conf- rsc- qt-\n' \
+	'man man-kaifa data \n' \
+	'wbs \n'\
+	'todo done gap ut' "
+
+alias man="start 'https://grep.app/search' && start 'https://quickref.me/zh-CN/index.html' && start 'https://searchcode.com/' && start 'http://117.50.186.154:8005/'"
+alias man="start 'https://grep.app/search' && start 'https://quickref.me/zh-CN/index.html' && start 'https://searchcode.com/' && start 'http://117.50.186.154:8005/'"
+alias man-kaifa="start 'https://woods240.cn/html/project_management/developmentProcess.html'"
+alias rsc-echo="echo $rsc | tr ' ' '\n'"
+
+
+
+# docs
+export doc="C:/Users/apeishuai/Nutstore/1/docs"
+export gtd="C:/Users/apeishuai/Nutstore/1/docs/GTD"
+alias docu="start 'https://mubu.com/app/edit/home/4s5bRW82beC'"
+alias wbs="start 'https://mubu.com/app/edit/home/5PjygrfZxBC'"
+alias daily="cd '/c/Users/apeishuai/Nutstore/1/docs/Journal' && open_daily"
+
+
+# pro
+alias conf_pro="cd 'D:/softwares/msys64/home/apeishuai/bin/conf'"
+alias lib="cd c:/msys64/mingw64/include"
+alias qt-src="cd d:/qt6.8.2/6.8.2/Src/qtbase/src"
+alias nixos="cd /softwares/nixos-wsl/"
+
+alias build="cmake -G 'MinGW Makefiles' -DCMAKE_TOOLCHAIN_FILE=../mingw64.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug .."
+alias build_lib="cmake -G 'MinGW Makefiles' .."
+alias build_msvc='cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug ..'
+alias msvc_debug="echo 'cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=\"/Zi /Od /FC\" -DCMAKE_EXE_LINKER_FLAGS=\"/DEBUG /PDB:hello.pdb\" ..'"
+alias msvc_release="echo 'cmake -G Ninja -DCMAKE_TOOLCHAIN_FILE=../msvc.toolchain.cmake -DCMAKE_BUILD_TYPE=Release ..'"
+alias deploy="D:/qt6.8.3/6.8.3/msvc2022_64/bin/windeployqt6.exe"
+
+
+alias vcpkg-path="cd '/d/softwares/scoop/apps/vcpkg/current'"
+alias vcpkg-usage='find installed/x64* -type f -iname "*usage*" -print'
+alias init="mkdir src test dll build include .cmake && touch CmakeLists.txt && git init"
+alias cmake_build='cmake -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE=../mingw64.toolchain.cmake  ..'
+
+alias cp_qt_window="cp -r D:/g/learn/qt/widget-qml/* ."
+alias cp_qt_base='cp -r D:/g/learn/qt/qml_cmake/* .'
+
+
+
+# gtd 
+alias todo="cd '$doc/Journal' && rga '<.< <<<'"
+alias done="cd '$doc/Journal' && rga '<.< <x<'"
+alias gap="rga \<gap $rsc"
+alias ut="rga '# <ut' $rsc"
+
+
+
+## trace && check
+alias trac-knne="start 'https://gitee.com/Kenneth-Lee-2012/MySummary/commits/master'"
+alias check-feixing="start 'https://www.cnblogs.com/apeishuai/articles/18750841'"
+alias check-data="start 'https://www.cnblogs.com/apeishuai/articles/18747444'"
+alias check-desk="start 'https://www.cnblogs.com/apeishuai/articles/18743031'"
+alias check-py="start 'https://www.cnblogs.com/apeishuai/articles/18741386'"
+
+
+# bash
+alias t="python '/home/apeishuai/bin/timestamp.py'"
+alias dot-e="cd $uml_file && vim pro-yingdu-shiyanshi.uml"
+alias dot-u="cd $uml_file && java -jar $bin/plantuml.jar pro-yingdu-shiyanshi.uml"
+alias dot-show="cd $uml_file && start pro-yingdu-shiyanshi.png"
+export file="pro-yingdu-shiyanshi.uml"
+alias cm="rga cm $file | ./sort_cm.sh"
+alias em="rga em $file | ./sort_em.sh"
+
+# env
+alias path-e="vim '/d/softwares/msys64/home/apeishuai/bin/win/chg-env-var.sh'"
+alias path-r="cd '/d/softwares/msys64/home/apeishuai/bin/win' && ./chg-env-var.sh"
+alias path-show='echo $PATH | tr ":" "\n"'
+alias pac-e="vim '/d/softwares/msys64/home/apeishuai/bin/win/install.sh'"
+alias env-os-arch='"python -c "import os; print('\n'.join(f'{k}={v}' for k, v in os.environ.items()))" > env_vars.txt'
+
+open_daily() {
+    local today=$(date +%Y-%m-%d)
+    local filename="${today}.org"
+
+    if [[ -f "$filename" ]]; then
+        echo "文件 $filename 已存在，正在打开..."
+        emacs "$filename"
+    else
+        echo "文件 $filename 不存在，正在创建并打开..."
+        cp 000-day-template.org "$filename"
+        emacs "$filename"
+    fi
+}
+
+
+
+
+## buy
+alias buy_pc="start 'https://www.cnblogs.com/apeishuai/articles/18737574'"
+
+
+# soft
+export node_path="/d/Softwares/scoop/apps/nodejs/current"
+alias node_clear="cd $node_path && rm node.exe && rm npm && rm npm.CMD && rm npx && rm npx.CMD"
+#alias node="$node_path/node.exe"
+#alias npm="$node_path/npm.cmd"
+#alias corepack="$node_path/corepack.cmd"
+	
+alias bin="cd ~/bin"
+alias wpa="cd 'C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit'"
+google_path="'C:/Program Files/Google/Chrome/Application/chrome.exe'"
+eplan_path="D:/softwares-work/eplan\ v2.9/EPLAN/Platform/2.9.4/Bin/Eplan.exe"
+alias dll_eplan="cd 'D:/softwares-work/eplan v2.9/EPLAN/Platform/2.9.4/Bin'"
+alias google="$oogle_path"
+alias eplan="$eplan_path"
+# alias solid="cd /softwares/soildworks\ 2018"
+alias studio="cd 'C:/Program Files/Microsoft Visual Studio/2022/Community'"
+
+alias aider-gptgod="aider --openai-api-base https://api.gptgod.online/v1 --model openai/gemini-2.5-pro-exp-03-25 --no-git --no-auto-commits"
+# qwen3-4b
+alias aider-deepseek="conda activate && aider --model deepseek/deepseek-chat --no-git --no-auto-commits"
+alias aider-gemini="conda activate && aider --model openrouter/google/gemini-2.5-flash-lite-preview-06-17 --no-git --no-auto-commits --no-show-model-warnings"
+
+
+
+
+# serve
+alias docker_ocrmypdf='docker run --rm -i jbarlow83/ocrmypdf-alpine'
+export serv_root="/home/apeishuai/serv"
+alias serv="cd $serv_root"
+alias docs="cd $serv_root/docs/"
+alias blog="cd '$serv_root/blog'"
+alias week="cd '$serv_root/weekly'"
+alias gantt="cd '$serv_root/gantt' && zz-plan -f conf.yaml"
+
+alias site="cd ~/Shell/workflow/site_mang"
+alias site_add="cd ~/Shell/workflow/site_mang && ./url_mang.sh -a $1 $2 $3"
+alias site_open="cd ~/Shell/workflow/site_mang && ./main.sh $1"
+alias site_ls="cd ~/Shell/workflow/site_mang && ./url_mang.sh -L"
+#alias url="cd d:/g/area/Shell/area/workflow/site_mang && ./url_mang.sh -l"
+## mysqld --console
+
+
+# data
+alias rss="vim '$doc/rss/blog.csv'"
+alias data="cd 'D:/g/area/wxf-data"
+alias mysql="mysql -u root -p"
+export conf_mysql="D:/Softwares/scoop/apps/mysql/current" #scoop prefix mysql
+export host="C:/Windows/System32/drivers/etc"
+export rsc="D:/g/area/emacs-notes D:/g/area/serve/docs C:/Users/apeishuai/Nutstore/1/docs D:/g/pro D:/g/area/serve/shaarli"
+export ref="D:/icloud/iCloudDrive/3L68KQB4HG~com~readdle~CommonDocuments/ref D:/g/area/wxf-data/chrome web-pages"
+alias doc="cd $doc"
+alias english="cd $doc && vim english.md"
+alias node_modules="cd 'd:/softwares/msys64/home/apeishuai/node_modules'"
+alias img_jianguo="cd 'C:/Users/apeishuai/Nutstore/1/docs/img'"
+alias msi="cd 'C:/Users/apeishuai/Nutstore/1/win soft'"
+alias data="cd 'd:/g/area/wxf-data'"
+alias icloud="cd 'D:/icloud/iCloudDrive'"
+bin="D:/softwares/msys64/home/apeishuai/bin"
+export uml_file="C:/Users/apeishuai/Nutstore/1/docs/uml"
+
+
+
+# sync
+alias sync_tmp="cd  '/d/g/work/tmp' &&  rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' 'ubuntu@117.50.186.154:~/bin/1.txt' '.'"
+alias sync_tmp_pei='rsync -avz -e "ssh -i ~/.ssh/host_pei -p10603" "/d/g/work/tmp/" pei@12.tcp.vip.cpolar.cn:~/soft'
+
+## sync bashrc local to remote
+alias sync_bashrc_all_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" ~/.bashrc ~/.bashrc_comm ~/.bashrc_linux ubuntu@117.50.186.154:~'
+alias sync_bashrc_linux_local_to_remote="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' .bashrc_linux ubuntu@117.50.186.154:~"
+alias sync_bashrc_comm_local_to_remote="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' '.bashrc_comm' ubuntu@117.50.186.154:~"
+
+### sync pei
+alias sync_bashrc_all_local_to_pei='rsync -avz -e "ssh -i ~/.ssh/host_pei -p10603" ~/.bashrc ~/.bashrc_comm ~/.bashrc_linux pei@12.tcp.vip.cpolar.cn:~'
+
+## sync bashrc remote to local
+alias sync_bashrc_comm_remote_to_local="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu'  ubuntu@117.50.186.154:~/.bashrc_comm  '~/.bashrc_comm'"
+alias sync_bashrc_linux_remote_to_local="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu'  ubuntu@117.50.186.154:~/.bashrc_linux  ~/.bashrc_linux"
+
+## sync bash 
+alias sync_bash_remote_to_local="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu'  ubuntu@117.50.186.154:~/bin/*  ~/bin/linux"
+alias sync_bash_local_to_remote="rsync -avz -e 'ssh -i ~/.ssh/ucloud_ubuntu' ~/bin/linux/* ubuntu@117.50.186.154:~/bin"
+alias sync_bash_local_to_pei="rsync -avz -e 'ssh -i ~/.ssh/host_pei -p10603' ~/bin/linux/* pei@12.tcp.vip.cpolar.cn:~/bin/linux"
+
+#docker cp . 9f2e0a020275:/home/ubuntu
+
+## sync serv
+alias sync_shaarli="rsync -avz --exclude='docker-compose.yml' -e \"ssh -i ~/.ssh/ucloud_ubuntu\" ubuntu@117.50.186.154:~/serv/shaarli/* '/d/g/area/serve/shaarli'" 
+alias sync_serv_shaarli_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/shaarli/* ubuntu@117.50.186.154:~/serv/shaarli'
+alias sync_radicale="rsync -avz -e \"ssh -i ~/.ssh/ucloud_ubuntu\" ubuntu@117.50.186.154:~/serv/radicale/data '/d/g/area/serve/radicale'" 
+alias sync_serv_radicale_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/radicale/* ubuntu@117.50.186.154:~/serv/radicale'
+alias sync_serv_check_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/check/* ubuntu@117.50.186.154:~/serv/check'
+
+
+alias sync_navidrome="rsync -avz --exclude='docker-compose.yml' -e \"ssh -i ~/.ssh/ucloud_ubuntu\" ubuntu@117.50.186.154:~/serv/Navidrome/* '/d/g/area/serve/Nacidrome'" 
+
+alias sync_music_local_to_remote='rsync -avz -e "ssh -i ~/.ssh/ucloud_ubuntu" /d/g/area/serve/Nacidrome/music/MitsuhaYuki/* ubuntu@117.50.186.154:~/serv/Navidrome/music/MitsuhaYuki'
+
+alias music='cd "/d/g/area/serve/Nacidrome/music/MitsuhaYuki"'
+
+
+# demo
+alias qt-example="cd 'D:/qt6.8.3/Examples/Qt-6.8.3'"
+export prefix="/home/apeishuai/demo"
+alias demo_front="cd '$prefix/demo_front'"
+alias demo_c="cd '$prefix/demo_c'"
+alias demo_java="cd '$prefix/demo_java'"
+alias demo_py="cd $prefix/demo_python"
+alias demo_cpp="cd '$prefix/demo_cpp'"
+alias demo_eplan="cd '$prefix/demo_eplan'"
+alias demo_go="cd '$prefix/demo_go'"
+alias demo_haskell="cd '$prefix/demo_haskell'"
+alias demo_fpc="cd '$prefix/demo_freepascal'"
+alias demo_cmake="cd '$prefix/demo_cmake'"
+alias demo_lisp="cd '$prefix/demo_lisp'"
+alias demo_docker="cd '$prefix/docker'"
+alias demo_node="cd '$prefix/demo_nodejs'"
+alias demo_ts="cd '$prefix/demo_ts'"
+alias demo_alog="cd '$prefix/demo_alogram'"
+alias demo_aardio="cd '$prefix/demo_aardio'"
+alias demo_php="cd '$prefix/demo_php'"
+alias demo_assm="cd '$prefix/demo_assembly'"
+#alias demo_qt="cd '$prefix/demo_qt'"
+alias demo_qml="cd '$prefix/demo_qml'"
+alias demo_git="cd '$prefix/demo_git'"
+# alias demo_dot="cd 'g:/area/emacs-notes/Computer_science/dot'"
+alias demo="cd $prefix"
+
+
+# pro
+alias pro="cd 'd:/g/pro'"
+alias learn="cd 'd:/g/learn'"
+alias pro-etddy="cd 'D:/g/work/etddy'"
+alias pro-net="cd 'D:/g/pro/qt/net'"
+alias pro-work="cd 'D:/g/work/pro'"
+# alias pro-reverse="cd 'D:/g/pro/etddy/work_reverse'"
+# alias pro_react="cd G:/area/emacs-notes/Computer_science/demo_nodejs/reactapp"
+# alias pro-xuanxing="cd 'D:/g/pro/xuanxing'"
+
+
+
+
+# work
+alias work="cd d:/g/work"
+alias work_ing="cd 'd:/g/area/work/ing-jsgx(极速光学)'"
+alias work_archiv="cd 'd:/g/area/work/archiv'"
+alias work_msi="cd '/d/g/work/msi'"
+alias biaozhun_dianqi="cd 'D:/icloud/iCloudDrive/3L68KQB4HG~com~readdle~CommonDocuments/ref/标准 GB/标准-电气'"
+alias xuanxing="cd D:/icloud/iCloudDrive/3L68KQB4HG~com~readdle~CommonDocuments/ref/products"
+alias xuanxing-shinaide="$google_path https://www.schneider-electric.cn/zh/work/support/product-selector/"
+alias xuanxing-zhentai="$Tzx_path"
+alias cax-zhentai="$google_path https://www.chint.net/service/download/eplan"
+
+
+# Disable non-interactive output
+if [ -z "$PS1" ]; then
+    return
+fi

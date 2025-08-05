@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>生产力-python环境搭建 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">生产力-python环境搭建</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2023-09-04</time>
+    
+    
+  </strong>
+  <span> • 78 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-04-26</time>
+    </div>
+  
+  
+    <div>
+      <span>Tags:</span>
+      
+        <a href="/tags/python">python</a>
+    </div>
+  
+</div>
+
+      <div class="content"><h1 id="学习方法">学习方法</h1>
+<p>思维导图+做习题，通过做习题巩固基础语法，思维导图组织形成知识树。要以实际问题为导向，可事半功倍。</p>
+<p>注：习题可以帮助熟悉语法，但是对构建项目帮助甚微，因为构建项目是一项创新活动，有很多路径能抵达。不过，高以下为基，不熟悉语法就上手项目无异于痴人说梦。</p>
+<h1 id="环境搭建">环境搭建</h1>
+<p>miniconda+docker搭建复用环境，展示一下如何用miniconda管理环境。集成开发环境一般选用vscode，我在windows下用msys2仿linux环境，用emacs+gcc</p>
+<p>下载<a href="https://docs.conda.io/projects/miniconda/en/latest/index.html">miniconda</a>，安装，添加condabin目录至环境变量，下述脚本就能用了，成功标志：
+<img src="/img/conda%E8%84%9A%E6%9C%AC_2023-09-04_17-39-34.png" alt="">
+<img src="/img/conda_2023-09-04_17-42-15.png" alt=""></p>
+<p>用conda搭建开发环境，看看conda使用方法
+<img src="/img/conda-cmd_2023-09-04_17-46-59.png" alt=""></p>
+<p>conda 环境管理</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda env list  <span style="color:#f92672">//</span>列出所创建的环境  (E:<span style="color:#f92672">/</span>miniconda<span style="color:#f92672">/</span>env<span style="color:#f92672">/</span>py3<span style="color:#ae81ff">.6</span>)
+</span></span><span style="display:flex;"><span>conda create <span style="color:#f92672">--</span>n env_name python<span style="color:#f92672">=</span><span style="color:#ae81ff">3.8</span> pandas <span style="color:#f92672">//</span>创建环境
+</span></span><span style="display:flex;"><span>conda info <span style="color:#f92672">--</span>envs  <span style="color:#f92672">//</span>查看虚拟环境
+</span></span><span style="display:flex;"><span>conda activate env_name  <span style="color:#f92672">//</span>激活环境
+</span></span><span style="display:flex;"><span>conda deactivate  <span style="color:#f92672">//</span>冻结环境
+</span></span><span style="display:flex;"><span>conda remove <span style="color:#f92672">--</span>n env_name <span style="color:#f92672">--</span>all  <span style="color:#f92672">//</span>删除环境
+</span></span></code></pre></div><p>conda包管理</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda search package<span style="color:#f92672">-</span>name
+</span></span><span style="display:flex;"><span>conda install package<span style="color:#f92672">-</span>name<span style="color:#f92672">=</span><span style="color:#ae81ff">2.2.3</span> <span style="color:#f92672">-</span>n env<span style="color:#f92672">-</span>name
+</span></span><span style="display:flex;"><span>conda update package<span style="color:#f92672">-</span>name
+</span></span><span style="display:flex;"><span>pip install package<span style="color:#f92672">-</span>name
+</span></span><span style="display:flex;"><span>conda list
+</span></span></code></pre></div><p>创建python3.6的环境，然后激活，使用下述两个资源做python语法的基础训练</p>
+<h1 id="问题记录">问题记录</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>log: CommandNotFoundError: Your shell has <span style="color:#f92672">not</span> been properly configured to use <span style="color:#e6db74">&#39;conda activate&#39;</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>slove: source activate <span style="color:#f92672">//</span>linux下使用该命令激活activate
+</span></span></code></pre></div><h1 id="rsc">Rsc</h1>
+<p>《笨办法学python3》<br>
+<a href="https://github.com/jackfrued/Python-100-Days/blob/master/Day01-15/01.%E5%88%9D%E8%AF%86Python.md">100天 python从入门到大师</a></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

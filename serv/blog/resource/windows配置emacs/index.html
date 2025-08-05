@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title> | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title"></h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>0001-01-01</time>
+    
+    
+  </strong>
+  <span> • 98 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-06-21</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content">
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+起因
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>emacs是一个笔记系统，我的目标是可以在不同设备间无缝迁移</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+核心功能
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+1 GTD
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>GTD的实现可以看我的配置文件<a href="https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/GTD.el">https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/GTD.el</a></p>
+<p>
+<a href="images/2023-01-28_06-17-10.png">Capture-2023-01-28_06-17-10.png</a>
+工作流程：
+捕获entry：
+在笔记系统中有GTD文件夹，首先C-c c i 捕获一个TODO事项，如果捕获的是网页，C-w转移至Ref；如果是待办事项，C-c捕获至inbox；如果是项目，C-w转移至project；一些间隔重复的，比如每一周做周总结，放到agenda。</p>
+<p>
+加标签：
+C-q 加标签，C-c C-s 加待办时间； <strong>C-c a m筛选标签，C-c a a，展示今天计划的事项</strong>
+有一套成熟的标签体系
+<a href="images/2023-01-28_06-20-36.png">Capture-2023-01-28_06-20-36.png</a>
+01 目前监控点
+02 大主题
+03 环境
+04 清单列
+05 媒介
+06 小主题
+07 06下属小主题
+08 参考网站
+其他 衍生出的小主题
+我一般用01Moniotr、01Monitorpassive监控某些主题，避免遗忘，比如ros仿真机器人。01focus展示当前聚焦点，例如做饭团，04book、04people、04Articlelist、04readlist，一般的阅读性材料都会打上这几个标签，针对主题筛选不同的阅读材料
+02life、02self、02work这三个清单列我会经常逛，看到感兴趣或感觉能做的entry，就用C-c C-s计划今天或者明天待办，在和这些主题清单列打交道的过程中，毫无例外，这些主题中都出现construct something，也就是说，生活、工作的一些事项是自己构建的</p>
+<p>
+综上，核心就是标签和GTD文件夹
+因为是用GTD自带语言实现的，所以新电脑只要安装emacs，下载GTD的配置，下载GTD文件夹，就能无缝迁移</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+2 网页捕获
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>原理是emacs运行时会启动Emacs server，可以通过org-protocol和emacs图形客户端通讯，打开emacs，用官方提供的书签即可实现网页捕获功能
+javascript:location.href=&#34;org-protocol:///capture?url=&#34;<del>encodeURIComponent(location.href)</del>&#34;&amp;title=&#34;+encodeURIComponent(document.title||&#34;[untitled page]&#34;)</p>
+<p>
+但是对windows，要注意两个环境变量：EMACS_SERVER_FILE和MSYS2_PATH_TYPE，第一个无需多言，第二个是因为emacs运行在msys2客户端(msys2是win上的一个仿linux运行环境)
+为了使网页捕获能正常运行，点击书签完，需要有程序来响应org-protocol，还需要在注册表加一段
+<a href="images/2023-01-28_06-47-56.png">Capture-2023-01-28_06-47-56.png</a></p>
+<p>
+org-protocol.reg（点击这个注册表文件）
+#+BEGIN python
+REGEDIT4</p>
+<p>
+[HKEY_CLASSES_ROOT\org-protocol]
+@=&#34;URL:Org Protocol&#34;
+&#34;URL Protocol&#34;=&#34;&#34;
+[HKEY_CLASSES_ROOT\org-protocol\shell]
+[HKEY_CLASSES_ROOT\org-protocol\shell\open]
+[HKEY_CLASSES_ROOT\org-protocol\shell\open\command]
+@=&#34;\&#34;G:\\emacs-notes\\Computer_science\§hell\\org-protocol-handler.bat\&#34; \&#34;%1\&#34;&#34;
+#+END </p>
+<p>
+捕获的内容到GTD文件夹，做处理</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+3 find-file
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>这个功能是<a href="https://edu.51cto.com/course/19329.html">陈斌课程</a>提到的，用来检索关键词，我写日记的时候会写一些固定格式的内容，用这个功能很好检索
+具体实现参考<a href="https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/my-find-file.el">https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/my-find-file.el</a></p>
+<p>
+这个只要有配置文件，也是能无缝迁移</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+4 截屏
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>参考<a href="https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/basic.el">https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/basic.el</a>，windows上要使用特定版本的截屏工具，snipaste2.7.3破解版，非破解版提供的命令行功能有限，满足不了截屏需求</p>
+<p>
+同样的，下载配置文件，随便找个位置安装snipaste，就能无缝切换了</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+笔记
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<p>与其说是笔记系统，还不如说是一堆org文件，org是格式化文本，文本意味着能被所有软件解析，格式化意味着能实现一些操作，比如上面的GTD，my-find-file
+笔记里面记录了大量的数据，组织方式跟标签差不多，我是有一个emacs-notes文件夹，如下：
+<a href="images/2023-01-28_07-07-15.png">Capture-2023-01-28_07-07-15.png</a>
+Reference里面主要是书、主题；常用的work、life文件夹。笔记写的多了自然知道怎么归类
+通过git私密仓库实现云存储。每次换新电脑，git clone一下，这样数据就能无缝同步了</p>
+<p>
+综上，通过git clone 配置文件和数据文件，在安装几个必备软件，就能实现emacs在不同windows机器上的无缝迁移，笔记系统搭建完事</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Ref
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>snipaste: <a href="https://pan.baidu.com/s/1KxNIFkQM2xu8hcbSNlLaYQ?pwd=eqw8">https://pan.baidu.com/s/1KxNIFkQM2xu8hcbSNlLaYQ?pwd=eqw8</a> 提取码: eqw8 </p>
+</div>
+</div>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

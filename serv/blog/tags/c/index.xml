@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on Wxf`s Fantasy World</title>
+    <link>/tags/c/</link>
+    <description>Recent content in c on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Dec 2023 09:55:30 +0800</lastBuildDate><atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C顺序表</title>
+      <link>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
+      <pubDate>Mon, 11 Dec 2023 09:55:30 +0800</pubDate>
+      
+      <guid>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
+      <description>写顺序表遇到如下卡点：
+1 c基础不到位(结构体、指针怎么使用，涉及到很多细节，补充c基础内容)
+2 功能层面：函数是否完备，仅需要内存管理、增删改查就够了吗?
+3 性能层面：想不到具体场景，日后完善
+Seq.h #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define CAP 100 #define EType int #define status int #define OK 1 #define ERROR 0 typedef struct{ EType *elem; int length,maxsize; }SqList; #if 0 /*-------------------------------- 创建、销毁列表(内存操作) -------------------------------*/ status InitSeqList(SqList *L); status Expand(SqList *L); //扩展内存 status ClearSeqList(SqList *L); status DestorySeqList(SqList *L); /*-------------------------------- 增删改查 -------------------------------*/ status InsertSeqList(SqList *L,int pos,EType e); status DeleteElem(SqList *L,int pos); status ModifyElem(SqList *L,EType e); status ModifyElem(SqList *L,int pos,EType e); status SearchData(SqList *L,EType data); status SearchPos(SqList *L,int pos); /*-------------------------------- 非破坏性操作 -------------------------------*/ status ListEmpty(SqList *L); status PrintElem(SqList *L); /*-------------------------------- 复杂操作 -------------------------------*/ 合并两张表成一张 分解一张表成两张 #endif Seq.</description>
+    </item>
+    
+    <item>
+      <title>C语言基础</title>
+      <link>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 11 Dec 2023 09:54:54 +0800</pubDate>
+      
+      <guid>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
+      <description>函数 形式参数：按值传递(拷贝一份)</description>
+    </item>
+    
+  </channel>
+</rss>

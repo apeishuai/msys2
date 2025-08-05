@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>技术栈 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">技术栈</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2023-12-01</time>
+    
+    
+  </strong>
+  <span> • 56 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-04-26</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="选取原则">选取原则</h1>
+<ul>
+<li>实业pass，实业太受地理位置限制</li>
+<li>服务业，最好带点技术护城河，不然谁都能进来</li>
+<li>尽量保证闭环的完整性(需求-&gt;商业-&gt;产品、服务)</li>
+</ul>
+<h1 id="机械工程师技术栈">机械工程师技术栈</h1>
+<p>同电气工程师，只是原理图偏结构，打交道的对象是工艺、现场生产工人</p>
+<p>工业电气产业链
+<img src="/img/Snipaste_2023-12-01_16-31-17.png" alt=""></p>
+<h1 id="电气工程师技术栈">电气工程师技术栈</h1>
+<ul>
+<li>(电气方案设计、实施)
+<ul>
+<li>控制要求及方案</li>
+<li>电气原理图、接线图，PLC程序</li>
+<li>器件选型</li>
+<li>报价(整体产品对外、非标准件外包)</li>
+<li>现场装调(物料调度、项目进程监控)</li>
+<li>交付、培训</li>
+<li>ref 标准
+<ul>
+<li>图纸标准</li>
+</ul>
+</li>
+<li>ref 低压电气元件设计、测试流程</li>
+</ul>
+</li>
+<li>(需求端)
+<ul>
+<li>大屏数据展示</li>
+<li>运动控制</li>
+<li>自动化控制</li>
+</ul>
+</li>
+<li>集成产品(电气控制柜、非标自动化产品)</li>
+<li>上位机(qt界面、HMI触摸屏)</li>
+<li>控制平台(CODESYS、SCADA、TWINCAT)</li>
+<li>数据采集、简单自动化(PLC)</li>
+<li>基础设施(各类传感器)</li>
+</ul>
+<p>半导体产业链
+<img src="/img/Snipaste_2023-12-01_16-34-57.png" alt="">
+电子产品产业链
+<img src="/img/Snipaste_2023-12-01_16-34-12.png" alt=""></p>
+<h1 id="电子工程师技术栈">电子工程师技术栈</h1>
+<p><img src="/img/Snipaste_2023-12-01_16-36-01.png" alt=""></p>
+<h1 id="程序员-底层">程序员-底层</h1>
+<ul>
+<li>图灵机</li>
+<li>逻辑电路</li>
+<li>CPU
+<ul>
+<li>指令集架构(X86、ARM、RISC-V、MIPS)</li>
+</ul>
+</li>
+<li>内核
+<ul>
+<li>驱动</li>
+<li>编译器
+<ul>
+<li>语法分析</li>
+<li>语法分析树</li>
+<li>语义分析</li>
+<li>目标代码生成</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>逻辑：<br>
+硬件层面，输入状态可以用1001100这种形式，跟电路的高低电平对应<br>
+此基础上抽象出指令集<br>
+指令集变成人容易记住的语言，就是汇编语言<br>
+内核负责各种资源的调度，具体实现原理先不管<br>
+内核有用户空间和系统空间，在用户空间的c程序经编译器编译成汇编程序，交付内核去调度CPU执行</p>
+<p>(注：通过该总结知道程序执行的底层依赖，不必深究。计算机就是这一层层抽象构建起来的)</p>
+<h1 id="程序员-应用层">程序员-应用层</h1>
+<p>linux、c、c++<br>
+服务器(游戏后台)(pass)、嵌入式软件开发+芯片、saas开发</p>
+<h1 id="其他">其他</h1>
+<p>辅助岗位：行政、售后、助理、人事、现场调度、质量(etc)</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>超越理论-情景创设 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">超越理论-情景创设</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-05-08</time>
+    
+    
+  </strong>
+  <span> • 19 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-05-08</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>从这两天的经历说起吧，从0开始写s7-200 smart plc程序，过程如下：</p>
+<p>我先找手册找出自认为重要的点，然后用单元测试拆解别人的程序，拆解过程中发现了自己很多盲区，然后结合手册和其他人的程序攻破盲区。<br>
+在攻破盲区的过程中，最常见的一个问题是没线索，找不到方向(逻辑闭包)；第二个问题是思路闭环了，却没办法验证(环境)；第三个问题是具体操作层面，涉及到很多细节，不自己跑一遍流程就很难受(工程实践)</p>
+<p>看一下产品是怎么完成的:</p>
+<p>我写程序（大部分是平台级软件，比如bootload，OS，驱动，中间件等。但如果是UI，可能我会省略其中一些步骤）的过程是这样的：</p>
+<p>先写基础逻辑</p>
+<p>进行逻辑优化</p>
+<p>在所有逻辑不straightforward的，或者对不太可靠的库的输入有要求的地方，一概加上ASSERT()</p>
+<p>在所有在运行中不会引起性能瓶颈的执行分支上都加上性能统计参数</p>
+<p>单元测试
+集成测试（通常集成到单机一级）</p>
+<p>系统测试，战地测试（这时重点关注所有的性能统计参数，看现网条件下，程序是否按预期运作）</p>
+<p>下一个开发循环，复用上一次的单元测试用例</p>
+<p>通常我的程序在单元测试后，逻辑错误几乎为0，剩下都是同步，性能一级的错误了，而且，我可以很得意的说，我的程序在数百万乃至上千万个节点上运行，能反馈回来给我的错误也是少之又少的。</p>
+<p>这是商业产品开发的样子</p>
+<p>基于上述两段话，可以0知识，即使是一个小白，也能很快打通从技术到产品的整个流程，还差一个市场端(不在本文范围)。初始阶段只能通过拆解别人的程序补盲区，积累设计方法，后续开始设计同类型产品，技巧积累的差不多就能自己主导设计了。<br>
+可以看出，每一步都是难点。我主要卡在环境和工程实践上，难道除了进公司，借助外部环境外就没别的办法了吗？望指点。</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2024
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>信息流监控 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">信息流监控</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-01-20</time>
+    
+    
+  </strong>
+  <span> • 75 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-01-20</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>为了塑造个人信息环境，需要引入各种工具：</p>
+<p>1 索引+信息库(结构化信息)<br>
+<a href="../../../resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96/">学习工程化</a><br>
+<a href="../../../resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/">学习工程化2 搭建文档池及建立搜索入口</a><br>
+<a href="../../../resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/">自定义搜索引擎yacy</a></p>
+<p>2 信息流推送</p>
+<p>主要方式就上面两个，今天这篇文章主要解决信息流监控.</p>
+<h1 id="check酱">check酱</h1>
+<p>这里要提到一个模式：外部事件触发，比如手机有短信通知，或者某天微信收到一条消息。通知这个动作被外部对象接管了，比如各种手机app的推送，微信消息。这部分应该掌握到自己手里。</p>
+<p>当前思路是：rss订阅博客、wewerss订阅微信公众号、check酱监控网页变动。</p>
+<h2 id="docker-composeyml">docker-compose.yml</h2>
+<p>首先，你得有一台服务器。参考文章<a href="../freshrss%E6%90%AD%E5%BB%BA/">freshrss搭建</a>配置服务器，启动docker-composer服务</p>
+<pre tabindex="0"><code>version: &#39;3&#39;
+
+services:
+  chrome:
+    image: easychen/checkchan:latest
+    volumes:
+      - &#34;./data:/checkchan/data&#34;
+    environment:
+      - &#34;CKC_PASSWD=abc6677&#34;
+      - &#34;VDEBUG=OFF&#34;
+      - &#34;VNC=ON&#34;
+      #- &#34;WIN_WIDTH=414&#34;
+      #- &#34;WIN_HEIGHT=896&#34;
+      #- &#34;XVFB_WHD=500x896x16&#34;
+      - &#34;API_KEY=abc7788&#34;
+      - &#34;ERROR_IMAGE=NORMAL&#34; # NONE,NORMAL,FULL
+      #- &#34;SNAP_URL_BASE=&lt;开启截图在这里写服务器地址（结尾不用加/），不开留空&gt;...&#34;
+      #- &#34;SNAP_FULL=1&#34;
+      - &#34;TZ=Asia/Chongqing&#34;
+      # - WEBHOOK_URL=http://... # 云端 Webhook地址，不需要则不用设置
+    ports:
+      - &#34;5900:5900&#34;
+      - &#34;8080:8080&#34;
+      - &#34;8088:80&#34;
+</code></pre><h2 id="安装check酱插件">安装check酱插件</h2>
+<p><a href="https://isedu.top/index.php/archives/40/ckc.zip">download link zip check</a><br>
+配置界面如下：
+<img src="/img/Snipaste_2025-01-20_20-46-05.png" alt=""></p>
+<h2 id="配置">配置</h2>
+<p><img src="/img/Snipaste_2025-01-20_20-47-32.png" alt="">
+<img src="/img/Snipaste_2025-01-20_20-48-08.png" alt="">
+<img src="/img/Snipaste_2025-01-20_20-57-06.png" alt="">
+<img src="/img/Snipaste_2025-01-20_20-58-12.png" alt=""></p>
+<h2 id="使用server酱推送">使用server酱推送</h2>
+<p><a href="https://sc3.ft07.com/client">server client</a>
+<img src="/img/Snipaste_2025-01-20_20-54-01.png" alt=""></p>
+<h1 id="效果">效果</h1>
+<p><img src="/img/Screenshot_2025-01-20-21-40-59-132.jpg" alt=""></p>
+<h1 id="ref">ref</h1>
+<p><a href="https://isedu.top/index.php/archives/40/#menu_index_5">Check酱：监测网页内容变化</a></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

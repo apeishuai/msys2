@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Msys2使用anaconda | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Msys2使用anaconda</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-11-24</time>
+    
+    
+  </strong>
+  <span> • 92 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-05-18</time>
+    </div>
+  
+  
+    <div>
+      <span>Tags:</span>
+      
+        <a href="/tags/series-%E7%94%9F%E4%BA%A7-%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83">series-生产-实践环境</a>
+    </div>
+  
+</div>
+
+      <div class="content"><p>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。<br>
+msys2: windows下的类linux环境<br>
+anaconda：windows下python集成环境</p>
+<h1 id="安装anaconda">安装anaconda</h1>
+<h1 id="配置msys2">配置msys2</h1>
+<pre tabindex="0"><code>conda info \\显示当前conda安装的信息
+conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改
+conda config --show envs_dirs \\显示env环境安装目录
+</code></pre><p>vim .condarc \\修改env安装目录</p>
+<pre tabindex="0"><code>envs_dirs:
+  - D:\softwares\Anaconda3\envs
+</code></pre><p>vim .bash_profile \\绑定shell:msys2与conda</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>eval <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span><span style="color:#e6db74">&#39;D:/softwares/anaconda3/Scripts/conda.exe&#39;</span> <span style="color:#e6db74">&#39;shell.bash&#39;</span> <span style="color:#e6db74">&#39;hook&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><pre tabindex="0"><code>conda env create -n {env_name} -f xxx.yml
+conda activate {env_name}
+conda deactive \\退出环境
+</code></pre><h1 id="退出环境">退出环境</h1>
+<p>退出环境后，需要执行</p>
+<pre tabindex="0"><code>source ~/.bashrc
+</code></pre><p>方可使用之前bash的配置</p>
+<h1 id="conda使用教程">conda使用教程</h1>
+<p>conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。<br>
+至于项目迁移、其他的一些操作，等日后有需要再补充。</p>
+<pre tabindex="0"><code>conda install {package_name} \\安装包
+conda list \\查看已安装的包
+conda update {package_name} \\更新包
+conda remove {package_name} \\删除包
+
+conda create -n {env_name} python=3.x \\创建环境
+conda env remove -n {env_name} \\删除环境
+conda env list \\环境列表
+conda activate {env_name} \\激活环境 
+conda deactivate \\退出环境
+</code></pre></div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

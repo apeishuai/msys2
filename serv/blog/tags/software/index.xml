@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Wxf`s Fantasy World</title>
+    <link>/tags/software/</link>
+    <description>Recent content in software on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 May 2024 20:46:46 +0800</lastBuildDate>
+    <atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《A_philosophy_of_software_design》</title>
+      <link>/posts/a_philosophy_of_software_design/</link>
+      <pubDate>Sun, 05 May 2024 20:46:46 +0800</pubDate>
+      <guid>/posts/a_philosophy_of_software_design/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

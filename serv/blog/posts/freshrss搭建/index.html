@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Freshrss搭建 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Freshrss搭建</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-01-16</time>
+    
+    
+  </strong>
+  <span> • 135 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-03-20</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="前置准备">前置准备</h1>
+<p>需要一台1G1核心的云主机，我用ucloud；操作系统选择ubuntu</p>
+<h1 id="配置ssh登录">配置ssh登录</h1>
+<pre tabindex="0"><code>ssh-keygen -t rsa -f ~/.ssh/ucloud_ubuntu
+ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost
+
+比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥
+修改配置文件~/.ssh/config
+Host ucloud_root
+	HostName 132.43.143.434(修改过的)
+	User root
+	Port 22
+	IdentityFile ~/.ssh/ucloud_root
+
+ssh user@remotehost
+</code></pre><h1 id="安装docker">安装docker</h1>
+<pre tabindex="0"><code>sudo apt install docker
+
+- add mirror web
+/etc/docker/deamon.json
+{
+&#34;registry-mirrors&#34;: [
+&#34;https://registry.docker-cn.com&#34;
+]
+}
+</code></pre><h1 id="安装vraya">安装vraya</h1>
+<p>docker镜像有很多时候pull不下来，需借助魔法</p>
+<pre tabindex="0"><code>https://github.com/ningmoon/v2ray
+$ sudo apt install v2ray v2raya
+$ sudo systemctl start v2raya.service
+</code></pre><h1 id="运行服务">运行服务</h1>
+<ul>
+<li>准备docker-compose.yml文件</li>
+</ul>
+<pre tabindex="0"><code>version: &#34;3&#34;
+
+services:
+  freshrss-app:
+    image: freshrss/freshrss:latest
+    container_name: freshrss-app
+    hostname: freshrss-app
+    restart: unless-stopped
+    ports:
+      - &#34;7000:80&#34;
+    depends_on:
+      - freshrss-db
+    volumes:
+      - ./data:/var/www/FreshRSS/data
+      - ./extensions:/var/www/FreshRSS/extensions
+    environment:
+      CRON_MIN: &#39;*/45&#39;
+      TZ: Asia/Shanghai
+
+  freshrss-db:
+    image: postgres:latest
+    container_name: freshrss-db
+    hostname: freshrss-db
+    restart: unless-stopped
+    volumes:
+      - freshrss-db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: freshrss
+      POSTGRES_PASSWORD: freshrss
+      POSTGRES_DB: freshrss
+
+volumes:
+  freshrss-db:
+</code></pre><p>注：不要瞎改，要吃亏的</p>
+<ul>
+<li>运行
+在docker-compose.yml同级目录下，执行：</li>
+</ul>
+<pre tabindex="0"><code>sudo docker-compose up -d
+</code></pre><p>，然后在浏览器输入ip:port，就能看到freshrss的界面了</p>
+<h1 id="配置">配置</h1>
+<p>服务运行后有两个需求：<br>
+1 让其他人能看到我的rss<br>
+2 安卓手机的feedme软件也能订阅刷新
+<img src="/img/Snipaste_2025-03-20_00-31-39.png" alt="">
+<img src="/img/Snipaste_2025-01-16_16-25-28.png" alt="">
+<img src="/img/Snipaste_2025-01-16_16-28-14.png" alt="">
+还有别的需求：<br>
+3 多用户管理<br>
+4 rsshub接入<br>
+这两个需求不管了，因为服务器吞吐量太小，后续升级</p>
+<h1 id="end">end</h1>
+<p><a href="https://www.xfzhao.com/wiki/server-02-freshrss/">服务部署 Step 2. FreshRSS</a></p>
+<p>just have fun!</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>search on Wxf`s Fantasy World</title>
+    <link>/tags/search/</link>
+    <description>Recent content in search on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Mar 2024 16:14:58 +0800</lastBuildDate>
+    <atom:link href="/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自定义搜索引擎yacy</title>
+      <link>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
+      <guid>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;google自定义搜索引擎 网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 批量添加索引网站并打标签 1 维护一张网站列表blog.csv&#xA;2 运行python脚本run.py&#xA;3 上传运行python脚本后得到的blog.xml文件 改外观 这样就行了 最终所得网址如下 效果评估 按理说能检索到我写的网址的所有网页&#xA;以01.me为例，选取关键词&amp;quot;本科生&amp;rdquo;、&amp;ldquo;邂逅&amp;rdquo;、&amp;ldquo;创业&amp;rdquo;，分别在google、ces引擎搜索，结果如下： 原博客 google语法搜索&#xA;大差不差，inurl更深入 ces搜索&#xA;很垃圾啊，也就是说之前的工作白做了 继续探索 这个时候得搞清楚搜索引擎的工作原理，可以认为搜索引擎是以某种数据形式拆解网页，结合算法+算力，实现大量网页的索引&#xA;一个点是爬取相关网站的所有内容，以特定形式存储，另一个点是算法、分布式&#xA;我的目标是搜索特定网站内容，有两种解决方案&#xA;第一种是用google 的api，拿到数据后自建页面排序展示，工作量巨大&#xA;第二种如下\&#xA;&amp;gt; 提问：开源检索网络的网站 &amp;gt; 回答： 开源检索网络的网站中，一个备受推荐的是**YaCy**。YaCy是一个去中心化的搜索引擎，由网络上的众多参与者共同维护。它的目标是创建一个公开、透明且不受单一实体控制的搜索引擎。 ### YaCy的特点包括： - **去中心化**：YaCy利用P2P技术，使搜索索引分布在全球范围内的参与者之间，而不是存储在中心服务器上。 - **隐私保护**：由于其去中心化的特性，YaCy提供了较高的匿名性和隐私保护。用户的搜索请求不会被跟踪。 - **自主爬虫**：YaCy拥有自己的网络爬虫技术，用户可以自定义爬虫的行为，包括要爬取的网站和内容。 - **开源**：YaCy是完全开源的，这意味着任何人都可以查看其代码、进行修改或贡献。 YaCy适合那些希望建立自己的搜索引擎、研究搜索技术或者关心隐私保护的用户和开发者。它可以被部署为个人的搜索门户，也可以作为一个组织内部的搜索解决方案。YaCy的开源性质和去中心化架构为搜索引擎领域提供了一个独特且有力的选择。 yacy docker run -d --name yacy_search_server -p 8090:8090 -p 8443:8443 -v /d/local_data/yacy:/opt/yacy_search_server/DATA --restart unless-stopped --log-opt max-size=200m --log-opt max-file=2 yacy/yacy_search_server:latest 如此，在浏览器的8090端口就能访问yacy服务了，数据映射在本地&amp;quot;d:/local_data/yacy/&amp;ldquo;目录</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Aider使用第三方api | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Aider使用第三方api</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-05-11</time>
+    
+    
+  </strong>
+  <span> • 55 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-05-11</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>gemini pro 2.5的编程能力大幅提升，而且结合过去的案例看，AI确实能大幅提升个人的生产力，所以有必要将AI纳入工作流。</p>
+<p>我这边点的技能树仅限编程，所以用aider，之前使用ai的流程是：写prompt、复制、运行测试，aider相当于把这三个步骤合成一个，而且提供repo-map功能，AI通过repo-map，能更精准给出代码。</p>
+<p>还有位emacs大神，也在emacs实现相同的配置。仅从生产力角度，使用他的eaf，很容易进入心流状态，但是我常用的电脑没装linux系统，暂且先用aider。</p>
+<p>aider预置了很多AI厂商的api接口，只要在环境变量中配置api-key、base-url，并在aider命令模式下指定模型，就会用该模型辅助编程。我用了deepseek和gemini pro。</p>
+<p>gemini pro会出现因ip归属地导致访问失败的问题，使用openrouter作为代理访问gemini pro可突破地域限制，因为我的主要目标是gemini，openrouter需要充值10美元才能使用openrouter/gemini pro exp模型(模型本身是免费的，但是有门槛)。</p>
+<p>没有办法，只能找第三方api集成商了，有不少这样的网站。23年7月10日注册了一个类似的网站，api价格貌似也便宜。</p>
+<p>第一个思路是用litellm，作为代理，在后台开一个服务，然后aider访问litellm提供的服务，litellm对接第三方api平台。后面发现是多此一举，因为这个api集成商的api设计成了openai的格式，所以直接用openai接口调用就行。</p>
+<p>经过一番折腾，最终配置如下：</p>
+<pre tabindex="0"><code>alias aider-gptgod=&#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&#34;
+
+alias aider-deepseek=&#34;conda activate &amp;&amp; aider --model deepseek/deepseek-coder --no-git --no-auto-commits&#34;
+
+alias aider-gemini=&#34;conda activate &amp;&amp; aider --model openrouter/google/gemini-2.5-pro-exp-03-25:free --no-git --no-auto-commits --no-show-model-warnings&#34;
+</code></pre><p>重点讲一下gptgod这个第三方集成商的api是怎么用的，因为从这个可以访问几乎所有模型；openrouter也能做到，但是收钱了。同理，换任何一个第三方api都是一样的操作。</p>
+<p><img src="/img/Snipaste_2025-05-11_23-35-07.png" alt="">
+<img src="/img/Snipaste_2025-05-11_23-37-48.png" alt=""></p>
+<pre tabindex="0"><code>alias aider-gptgod=&#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&#34;
+</code></pre><p>open-api-base也可以放进系统变量，openai/model-name，model-name是api集成商提供的所有model，这个里面就能用gemini pro 2.5。</p>
+<p>使用效果如下：
+<img src="/img/Snipaste_2025-05-11_23-41-50.png" alt="">
+<img src="/img/Snipaste_2025-05-11_23-45-52.png" alt=""></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>series-env-qt on Wxf`s Fantasy World</title>
+    <link>/tags/series-env-qt/</link>
+    <description>Recent content in series-env-qt on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Apr 2025 08:45:35 +0800</lastBuildDate>
+    <atom:link href="/tags/series-env-qt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt Pyside6</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
+      <pubDate>Mon, 21 Apr 2025 08:45:35 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-pyside6/</guid>
+      <description>用qt creator创建一个pyside6 qt项目，和之前的qmake、cmake项目一样，先看构建套件，再看编译过程，再看运行过程。&#xA;python虚拟环境配置&#xA;构建套件需要标明python.exe的位置，我自己手动指定了一个 构建过程需要pyside6-uic.exe, pyside6-project.exe，参考下面的文章，还需要配置pyrcc，这三个软件均可以从配置的环境中找出 配置完插件后直接在命令行运行py文件 全局安装PySide6</description>
+    </item>
+    <item>
+      <title>Vscode开发qt Cmake</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>
+      <pubDate>Mon, 14 Apr 2025 23:07:03 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-cmake/</guid>
+      <description>新建一个cmake qt项目，看构建步骤&#xA;cmake configure cmake build cmake run 对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了&#xA;第二步，安装cmake tools、cmake插件，配置这两项 然后在CmakeList.txt文档中加&amp;quot;set(CMAKE_PREFIX_PATH &amp;ldquo;D:/qt6.8.2/6.8.2/mingw_64&amp;rdquo;)&amp;quot;，目的是cmake编译时能找到qt相关的库&#xA;ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成 </description>
+    </item>
+    <item>
+      <title>Vscode开发qt qmake</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-qmake/</link>
+      <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-qmake/</guid>
+      <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
+    </item>
+    <item>
+      <title>Vscode初配置</title>
+      <link>/resource/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 21 Jan 2025 22:15:01 +0800</pubDate>
+      <guid>/resource/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;code --list-extensions 列出安装的所有插件&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 eslint-config-prettier 与 eslint-plugin-prettier (pending)&#xA;vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.</description>
+    </item>
+  </channel>
+</rss>

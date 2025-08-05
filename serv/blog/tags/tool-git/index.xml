@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool-git on Wxf`s Fantasy World</title>
+    <link>/tags/tool-git/</link>
+    <description>Recent content in tool-git on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jul 2023 11:53:48 +0800</lastBuildDate>
+    <atom:link href="/tags/tool-git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git使用教程</title>
+      <link>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sun, 09 Jul 2023 11:53:48 +0800</pubDate>
+      <guid>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>书中对git介绍的很详细了，我结合个人需求记录一些操作&#xA;基础 git有三类对象：blob、tree、commit，blob为文档内容+哈希值，tree对应unix中的目录，commit指向先前的commit及顶层tree对象。三类对象保存在.git/objects目录下&#xA;需要一个文件用简单的名字记录这些哈希值，这样就可以用指针而不是原来的哈希值去检索了，ref。ref也能帮助记录新分支的对象哈希值；HEAD文件是一个指向你当前所在分支的引用标识符，当你执行git commit命令，就是创建了一个commit对象，把这个commit对象的父级设置为HEAD指向的引用的哈希值。&#xA;tag对象指向commit，是一个永远不会发生变化的分支。&#xA;remote ref，可以把本地的master分支推送到远程服务器，remote分支是不能被check out的&#xA;git工作流程 新建github账号&#xA;新建repository&#xA;执行ssh-keygen，生成key，将public key的值填入SSH and GPG keys&#xA;ssh原理 git clone xx (拉取远程仓库的.git文件夹)&#xA;本地新建目录&#xA;执行git init (生成.git文件夹（如果通过clone得到.git文件夹就不用执行此步骤）) git remote add repo-name xx (关联远程仓库) 推送至本地仓库 (注：stage为暂存区) git add . git status (查看文件状态) git rm &amp;ndash;cache xx.txt (从暂存区移除文件) git mv(修改文件名称= mv + rm + add) git reset HEAD xx.txt(取消已经暂存的文件) git checkout &amp;ndash; xx.txt(取消对文件的修改) git diff &amp;ndash;cached (查看已暂存的将要添加到下次提交的内容) git diff (查看尚未暂存的改动) git commit -m &amp;ldquo;first post&amp;rdquo; git commit -m &amp;ldquo;xx&amp;rdquo; git add forgetten_files(修正第一个的提交内容) git commit &amp;ndash;amend (修改最后一次提交) 推送至远程仓库</description>
+    </item>
+  </channel>
+</rss>

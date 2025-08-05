@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Node版本管理 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Node版本管理</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-11-01</time>
+    
+    
+  </strong>
+  <span> • 97 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-11-01</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p><a href="../win%E9%85%8D%E7%BD%AEnode%E7%8E%AF%E5%A2%83">win配置node环境</a></p>
+<h1 id="配置node_modules及索引路径">配置node_modules及索引路径</h1>
+<p>配置完成后写一个demo，如下：</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">//server.js
+
+const express = require(&#39;express&#39;);
+const app = express();
+
+app.get(&#39;/&#39;, (req, res) =&gt; {
+  res.send(&#39;Hello, World!&#39;);
+});
+
+const PORT = 3000;
+
+app.listen(PORT, () =&gt; {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+</code></pre><p>执行 node server.js
+<img src="/img/Snipaste_2024-11-01_16-34-54.png" alt=""></p>
+<p>是索引不到express模块的位置，那就看看node执行的时候索引位置在哪：</p>
+<p>代理开启tun模式(tun模式是一种有限的全局代理)
+<img src="/img/Snipaste_2024-11-01_16-44-33.png" alt=""></p>
+<pre tabindex="0"><code class="language-node" data-lang="node">which node \\找node位置\
+npm prefix -g \\找全局node_modules目录\
+npm config set prefix &#34;xxx&#34; \\设置全局node_modules目录\
+node \\进入ide\
+module.paths \\打印出node索引node_modules的位置\
+     添加路径至全局变量&#34;NODE_PATH&#34;中
+
+npm install express -g \\安装express包
+node server.js
+</code></pre><p><img src="/img/Snipaste_2024-11-01_16-52-28.png" alt=""></p>
+<p>这样就运行成功了</p>
+<h1 id="发布npm包">发布npm包</h1>
+<p>registry here:<br>
+npmjs.com</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">npm init \\生成配置信息，会生成package.json文件
+npm config set registry https://registry.npomjs.com \\配置源
+npm adduser \\注册新用户
+npm login \\登录
+npm whoami \\查看登录身份信息
+</code></pre><p>编辑文件server.js，并将其添加到package.json中
+<a href="https://juejin.cn/post/7078173656928485389">ref-package.json</a></p>
+<pre tabindex="0"><code class="language-node" data-lang="node">npm publish 
+npm install xx
+npm uninstall xx
+</code></pre><p><img src="/img/Snipaste_2024-11-01_17-38-43.png" alt=""></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

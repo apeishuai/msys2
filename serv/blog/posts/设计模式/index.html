@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>设计模式 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">设计模式</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-04-13</time>
+    
+    
+  </strong>
+  <span> • 980 words</span>
+  <span> • 5 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-04-26</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="开篇">开篇</h1>
+<p>[[https://refactoringguru.cn/design-patterns/cpp][C++常用设计模式]]</p>
+<p>[[https://refactoring.guru/design-patterns/catalog][The Catalog of Design Patterns]]
+/Entered on/ [2022-05-24 二 10:39]</p>
+<p>UML  关系：关联 依赖  泛化  实现</p>
+<p>用例图：客户角度描述系统功能
+参与者  用例  关UML  关系：关联 依赖  泛化  实现</p>
+<p>用例图：客户角度描述系统功能
+参与者  用例  关系</p>
+<ul>
+<li>面向对象遵循原则
+单一职责 里氏替换  接口隔离 迪米特  优先使用组合而不是继承</li>
+</ul>
+<p>依赖倒置 开闭原则</p>
+<p>开闭：类的改动是通过增加代码实现，而不是源代码</p>
+<p>依赖倒置：依赖抽象（接口），不要依赖具体类</p>
+<p>单一职责：一个类只负责一项职责（职责扩散），引起类变化的原因只有一个</p>
+<p>接口隔离：一个接口只提供一种对外功能</p>
+<p>里氏替换：任何抽象类出现的地方都可以用他的实现进行替换</p>
+<p>迪米特：一个对象应该对其他对象有尽可能少的了解，例如一个程序中，各个模块相互调用时，通常会提供一个统一的接口来实现</p>
+<p>类A进行功能增强：修改类，继承，指针传递，obj汇编</p>
+<p>多态：使用后来人写的代码(框架的例子：见demo02)</p>
+<p>传统设计模式倾向于使用高层次的模块依赖于低层次的模块，抽象层依赖于具体的层次</p>
+<p>两个人都往抽象层靠，实现业务和实现层的解耦合</p>
+<ul>
+<li>23种设计模式</li>
+</ul>
+<p>（简单工厂模式不属于）
+** 创建型(提供创建对象机制)
+| 单例模式 | 原型模式 | 抽象工厂模式 | 工厂方法 | 生成器 |</p>
+<p>** 结构型(将对象和类组装成较大的结构)
+| 适配器 | 桥接 | 组合 | 装饰 | 外观 |
+| 享元 | 代理 |</p>
+<p>** 行为模式(负责对象间的高效沟通和委派)
+| 责任链 | 命令 | 迭代器 | 中介者 | 备忘录 |
+| 观察者 | 状态 | 策略 | 模板方法 | 访问者 |</p>
+<h1 id="demo-c">demo c++</h1>
+<h2 id="创建-单例模式">创建 单例模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//保证一个类，只有一个实例存在，同时提供对该实例加以全局访问方法
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//使用：多个线程，只初始化一次资源；；整个程序空间使用全局变量，共享资源；；大规模系统，考虑为创建对象节省时间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//步骤：构造函数私有化；提供一个全局的静态方法；类中定义一个指针，指向本类的变量的静态变量指针
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//懒汉式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">singleton</span>{
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">static</span> singleton <span style="color:#f92672">*</span>getinstance() {
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(m_single <span style="color:#f92672">=</span> NULL)
+</span></span><span style="display:flex;"><span>       m_single <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> singleton;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span> m_single;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">static</span> singleton <span style="color:#f92672">*</span><span style="color:#a6e22e">freeinstance</span>() {
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span>(m_single <span style="color:#f92672">!=</span> NULL)
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">delete</span> m_single;
+</span></span><span style="display:flex;"><span>     m_single <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>   singleton() {
+</span></span><span style="display:flex;"><span>     cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;singleton 构造函数执行&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">static</span> singleton <span style="color:#f92672">*</span>m_single;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//静态变量初始化要放在类外面
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>singleton <span style="color:#f92672">*</span>singleton<span style="color:#f92672">::</span>m_single <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//恶汉式：不管调不调用，都new一个新的
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//singleton *singleton::m_single = new singleton;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main11</span>() {
+</span></span><span style="display:flex;"><span>  singleton <span style="color:#f92672">*</span>p1 <span style="color:#f92672">=</span> singleton<span style="color:#f92672">::</span>getinstance();
+</span></span><span style="display:flex;"><span>  singleton <span style="color:#f92672">*</span>p2 <span style="color:#f92672">=</span> singleton<span style="color:#f92672">::</span>getinstance();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(p1 <span style="color:#f92672">==</span> p2)
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;同一个对象&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;不是同一个对象&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  main11();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="创建-原型模式">创建 原型模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//原型模式主要面对“某些结构复杂的对象”的创建工作，这些对象经常面临剧烈的变化，却拥有比较稳定一致的接口（自我复制功能）
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">person</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> person<span style="color:#f92672">*</span> clone() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">prinT</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setresume</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>p) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CPro</span> <span style="color:#f92672">:</span><span style="color:#66d9ef">public</span> person{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  CPro() {
+</span></span><span style="display:flex;"><span>    m_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>    m_age <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    m_resume <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcd&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  CPro(string name, <span style="color:#66d9ef">int</span> age) {
+</span></span><span style="display:flex;"><span>    m_name <span style="color:#f92672">=</span> name;
+</span></span><span style="display:flex;"><span>    m_age <span style="color:#f92672">=</span>age;
+</span></span><span style="display:flex;"><span>    m_resume <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcd&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> person<span style="color:#f92672">*</span> <span style="color:#a6e22e">clone</span>() {
+</span></span><span style="display:flex;"><span>    CPro <span style="color:#f92672">*</span>tmp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CPro;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>tmp <span style="color:#f92672">=</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> tmp;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setresume</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>p) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (m_resume <span style="color:#f92672">!=</span> NULL) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">delete</span> m_resume;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  m_resume <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">char</span>[strlen(p)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>  strcpy(m_resume,p);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">prinT</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;c++ programmer name is &#34;</span> <span style="color:#f92672">&lt;&lt;</span> m_name <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;c++ programmer age is &#34;</span> <span style="color:#f92672">&lt;&lt;</span> m_age <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;c++ programmer resume is &#34;</span> <span style="color:#f92672">&lt;&lt;</span> m_resume <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  string m_name;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> m_age;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>m_resume;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JavaPro</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  person <span style="color:#f92672">*</span>c1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CPro(<span style="color:#e6db74">&#34;张三&#34;</span>,<span style="color:#ae81ff">23</span>);
+</span></span><span style="display:flex;"><span>  c1<span style="color:#f92672">-&gt;</span>prinT();
+</span></span><span style="display:flex;"><span>  person <span style="color:#f92672">*</span>c2 <span style="color:#f92672">=</span> c1<span style="color:#f92672">-&gt;</span>clone();
+</span></span><span style="display:flex;"><span>  c2<span style="color:#f92672">-&gt;</span>prinT();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="创建-简单工厂模式">创建 简单工厂模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//一个类创建其他类。工厂类可以根据外界给定的信息，决定创建哪个具体类对象。工厂类包含逻辑判断，“高内聚”方面做的不好。但是当出现产品类型增多的情况时，可能要求工厂类做相应修改，扩展性不好
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//“高内聚”：增加种类需要修改工厂代码，不符合开闭原则
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> getfruit() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">banana</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Fruit {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> getfruit() {
+</span></span><span style="display:flex;"><span>  cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;我是香蕉&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">apple</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Fruit {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> getfruit() {
+</span></span><span style="display:flex;"><span>  cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;我是苹果&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Factory</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  Fruit <span style="color:#f92672">*</span> create(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>p) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (strcmp(p, <span style="color:#e6db74">&#34;banana&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> banana;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#a6e22e">if</span> (strcmp(p,<span style="color:#e6db74">&#34;apple&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> apple;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>      cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;不支持&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  Factory <span style="color:#f92672">*</span>f <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Factory;
+</span></span><span style="display:flex;"><span>  Fruit <span style="color:#f92672">*</span>fruit <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  fruit <span style="color:#f92672">=</span> f<span style="color:#f92672">-&gt;</span>create(<span style="color:#e6db74">&#34;apple&#34;</span>);
+</span></span><span style="display:flex;"><span>  fruit<span style="color:#f92672">-&gt;</span>getfruit();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">delete</span> fruit;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="创建-抽象工厂模式">创建 抽象工厂模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//工厂模式只能生产一个产品，抽象工厂可以生产一个产品族
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">fruit</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> sayname() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Absfactory</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> fruit<span style="color:#f92672">*</span> createapple() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> fruit<span style="color:#f92672">*</span> <span style="color:#a6e22e">createbanana</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">northbanana</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> fruit
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> sayname()
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;北方香蕉&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">northapple</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> fruit
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> sayname()
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;北方苹果&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">southbanana</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> fruit
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> sayname()
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;南方香蕉&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">southapple</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> fruit
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> sayname()
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;南方苹果&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">southfactory</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Absfactory {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> fruit<span style="color:#f92672">*</span> createapple() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> southapple;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> fruit<span style="color:#f92672">*</span> <span style="color:#a6e22e">createbanana</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> southbanana;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  Absfactory <span style="color:#f92672">*</span>fac <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>  fruit <span style="color:#f92672">*</span>fru <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  fac <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> southfactory;
+</span></span><span style="display:flex;"><span>  fru <span style="color:#f92672">=</span> fac<span style="color:#f92672">-&gt;</span>createapple();
+</span></span><span style="display:flex;"><span>  fru<span style="color:#f92672">-&gt;</span>sayname();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">delete</span> fru;
+</span></span><span style="display:flex;"><span>  fru <span style="color:#f92672">=</span> fac<span style="color:#f92672">-&gt;</span>createbanana();
+</span></span><span style="display:flex;"><span>  fru<span style="color:#f92672">-&gt;</span>sayname();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">delete</span> fru;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">delete</span> fac;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">delete</span> fru;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="创建-建造者模式">创建 建造者模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//一个对象的构建比较复杂，将一个对象的构建和对象的表示进行分离
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">house</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> setdoor(string door) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>m_door <span style="color:#f92672">=</span> door;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setwall</span>(string wall) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>m_wall <span style="color:#f92672">=</span> wall;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setwindow</span>(string window) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>m_window <span style="color:#f92672">=</span> window;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">getdoor</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> m_door <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">getwall</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> m_wall <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">getwindow</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> m_window <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  string m_door;
+</span></span><span style="display:flex;"><span>  string m_wall;
+</span></span><span style="display:flex;"><span>  string m_window;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">builder</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> buildwall() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">builddoor</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">buildwindow</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> house<span style="color:#f92672">*</span> <span style="color:#a6e22e">gethouse</span>() <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">abuilder</span><span style="color:#f92672">:</span><span style="color:#66d9ef">public</span> builder {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  abuilder() {
+</span></span><span style="display:flex;"><span>    m_house <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> house;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">buildwall</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setdoor(<span style="color:#e6db74">&#34;a wall&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">builddoor</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setwall(<span style="color:#e6db74">&#34;a door&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">buildwindow</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setwindow(<span style="color:#e6db74">&#34;a window&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> house<span style="color:#f92672">*</span> <span style="color:#a6e22e">gethouse</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> m_house;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  house <span style="color:#f92672">*</span>m_house;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">bbuilder</span><span style="color:#f92672">:</span><span style="color:#66d9ef">public</span> builder {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  bbuilder() {
+</span></span><span style="display:flex;"><span>    m_house <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> house;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">buildwall</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setdoor(<span style="color:#e6db74">&#34;b wall&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">builddoor</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setwall(<span style="color:#e6db74">&#34;b door&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">buildwindow</span>() {
+</span></span><span style="display:flex;"><span>    m_house<span style="color:#f92672">-&gt;</span>setwindow(<span style="color:#e6db74">&#34;b window&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> house<span style="color:#f92672">*</span> <span style="color:#a6e22e">gethouse</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> m_house;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  house <span style="color:#f92672">*</span>m_house;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//设计师负责建造逻辑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//建筑队负责具体的活
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">director</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  director(builder <span style="color:#f92672">*</span> build) {
+</span></span><span style="display:flex;"><span>    m_build <span style="color:#f92672">=</span> build;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">constructor</span>() {
+</span></span><span style="display:flex;"><span>    m_build<span style="color:#f92672">-&gt;</span>buildwall();
+</span></span><span style="display:flex;"><span>    m_build<span style="color:#f92672">-&gt;</span>builddoor();
+</span></span><span style="display:flex;"><span>    m_build<span style="color:#f92672">-&gt;</span>buildwindow();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  builder <span style="color:#f92672">*</span> m_build;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  house <span style="color:#f92672">*</span>house <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>  builder <span style="color:#f92672">*</span>bc <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>  director <span style="color:#f92672">*</span>dc <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  bc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> bbuilder;
+</span></span><span style="display:flex;"><span>  dc <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> director(bc);
+</span></span><span style="display:flex;"><span>  dc<span style="color:#f92672">-&gt;</span>constructor();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  house <span style="color:#f92672">=</span> bc<span style="color:#f92672">-&gt;</span>gethouse();
+</span></span><span style="display:flex;"><span>  house<span style="color:#f92672">-&gt;</span>getdoor();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="结构-适配器模式">结构 适配器模式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">//将一个类的接口转换为客户希望的另一个接口，使得原本由于不兼容而不能一起工作的那些类可以一起工作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//current18
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//current220
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//adapter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">current18</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> usecurrent18v() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;我是18v&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">current220</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> usecurrent18v() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;我是220v&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">adapter</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> current18 {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  adapter(current220 <span style="color:#f92672">*</span>current) {
+</span></span><span style="display:flex;"><span>    m_current <span style="color:#f92672">=</span> current;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">usecurrent18v</span>() {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;适配器&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>    m_current<span style="color:#f92672">-&gt;</span>usecurrent18v();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  current220 <span style="color:#f92672">*</span>m_current;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  current220 <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>  adapter <span style="color:#f92672">*</span>adap <span style="color:#f92672">=</span> NULL;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  p <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> current220;
+</span></span><span style="display:flex;"><span>  adap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> adapter(p);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  adap<span style="color:#f92672">-&gt;</span>usecurrent18v();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

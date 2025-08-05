@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Wxf`s Fantasy World</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Sep 2023 17:25:55 +0800</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>环境搭建 python 1</title>
+      <link>/posts/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-python1/</link>
+      <pubDate>Mon, 04 Sep 2023 17:25:55 +0800</pubDate>
+      
+      <guid>/posts/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-python1/</guid>
+      <description>学习方法 思维导图+做习题，通过做习题巩固基础语法，思维导图组织形成知识树。要以实际问题为导向，可事半功倍。
+注：习题可以帮助熟悉语法，但是对构建项目帮助甚微，因为构建项目是一项创新活动，有很多路径能抵达。不过，高以下为基，不熟悉语法就上手项目无异于痴人说梦。
+环境搭建 miniconda+docker搭建复用环境，展示一下如何用miniconda管理环境。集成开发环境一般选用vscode，我在windows下用msys2仿linux环境，用emacs+gcc
+下载miniconda，安装，添加condabin目录至环境变量，下述脚本就能用了，成功标志： 用conda搭建开发环境，看看conda使用方法 conda 环境管理
+conda env list //列出所创建的环境 (E:/miniconda/env/py3.6) conda create --n env_name python=3.8 pandas //创建环境 conda info --envs //查看虚拟环境 conda activate env_name //激活环境 conda deactivate //冻结环境 conda remove --n env_name --all //删除环境 conda包管理
+conda search package-name conda install package-name=2.2.3 -n env-name conda update package-name pip install package-name conda list 创建python3.6的环境，然后激活，使用下述两个资源做python语法的基础训练
+问题记录 log: CommandNotFoundError: Your shell has not been properly configured to use &amp;#39;conda activate&amp;#39;. slove: source activate //linux下使用该命令激活activate Rsc 《笨办法学python3》</description>
+    </item>
+    
+  </channel>
+</rss>

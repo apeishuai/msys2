@@ -1,0 +1,49 @@
+2025-07-10 09:51:09,971 - aqt.main - INFO - installer 87000 aqtinstall(aqt) v3.3.0 on Python 3.13.3 [CPython MSC v.1943 64 bit (AMD64)]
+2025-07-10 09:51:09,972 - aqt.helper - DEBUG - helper 87000 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/windows_x86/desktop/qt6_683/qt6_683/Updates.xml.sha256
+2025-07-10 09:51:13,209 - aqt.helper - DEBUG - helper 87000 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/windows_x86/extensions/qtwebengine/683/msvc2022_64/Updates.xml.sha256
+2025-07-10 09:51:16,195 - aqt.archives - INFO - archives 87000 Found extension qtwebengine
+2025-07-10 09:51:16,196 - aqt.helper - DEBUG - helper 87000 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/windows_x86/extensions/qtpdf/683/msvc2022_64/Updates.xml.sha256
+2025-07-10 09:51:18,951 - aqt.archives - INFO - archives 87000 Found extension qtpdf
+2025-07-10 09:51:21,551 - aqt.helper - DEBUG - helper 85588 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/windows_x86/desktop/qt6_683/qt6_683/qt.qt6.683.win64_msvc2022_64/6.8.3-0-202503201308qtbase-Windows-Windows_11_23H2-MSVC2022-Windows-Windows_11_23H2-X86_64.7z.sha256
+2025-07-10 09:51:22,950 - aqt.helper - INFO - helper 85588 Downloading qtbase...
+2025-07-10 09:51:22,951 - aqt.installer - DEBUG - installer 85588 Download URL: https://download.qt.io/online/qtsdkrepository/windows_x86/desktop/qt6_683/qt6_683/qt.qt6.683.win64_msvc2022_64/6.8.3-0-202503201308qtbase-Windows-Windows_11_23H2-MSVC2022-Windows-Windows_11_23H2-X86_64.7z
+2025-07-10 09:51:24,390 - aqt.helper - DEBUG - helper 85588 Asked to redirect(302) to: https://ftp.jaist.ac.jp/pub/qtproject/online/qtsdkrepository/windows_x86/desktop/qt6_683/qt6_683/qt.qt6.683.win64_msvc2022_64/6.8.3-0-202503201308qtbase-Windows-Windows_11_23H2-MSVC2022-Windows-Windows_11_23H2-X86_64.7z
+2025-07-10 09:51:24,390 - aqt.helper - INFO - helper 85588 Redirected: ftp.jaist.ac.jp
+2025-07-10 09:51:53,866 - aqt.installer - INFO - installer 85588 Finished installation of qtbase-Windows-Windows_11_23H2-MSVC2022-Windows-Windows_11_23H2-X86_64.7z in 32.32048030
+2025-07-10 09:51:54,240 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\bin\qmake.exe
+2025-07-10 09:51:54,252 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Concurrent.prl
+2025-07-10 09:51:54,254 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Concurrentd.prl
+2025-07-10 09:51:54,256 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Core.prl
+2025-07-10 09:51:54,257 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Cored.prl
+2025-07-10 09:51:54,258 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6DBus.prl
+2025-07-10 09:51:54,260 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6DBusd.prl
+2025-07-10 09:51:54,261 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6DeviceDiscoverySupport.prl
+2025-07-10 09:51:54,262 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6DeviceDiscoverySupportd.prl
+2025-07-10 09:51:54,264 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6EntryPoint.prl
+2025-07-10 09:51:54,265 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6EntryPointd.prl
+2025-07-10 09:51:54,267 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6ExampleIcons.prl
+2025-07-10 09:51:54,271 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6ExampleIconsd.prl
+2025-07-10 09:51:54,273 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6ExamplesAssetDownloader.prl
+2025-07-10 09:51:54,274 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6ExamplesAssetDownloaderd.prl
+2025-07-10 09:51:54,276 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6FbSupport.prl
+2025-07-10 09:51:54,277 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6FbSupportd.prl
+2025-07-10 09:51:54,279 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Gui.prl
+2025-07-10 09:51:54,280 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Guid.prl
+2025-07-10 09:51:54,281 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Network.prl
+2025-07-10 09:51:54,283 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Networkd.prl
+2025-07-10 09:51:54,286 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6OpenGL.prl
+2025-07-10 09:51:54,288 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6OpenGLd.prl
+2025-07-10 09:51:54,289 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6OpenGLWidgets.prl
+2025-07-10 09:51:54,291 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6OpenGLWidgetsd.prl
+2025-07-10 09:51:54,293 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6PrintSupport.prl
+2025-07-10 09:51:54,294 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6PrintSupportd.prl
+2025-07-10 09:51:54,296 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Sql.prl
+2025-07-10 09:51:54,298 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Sqld.prl
+2025-07-10 09:51:54,299 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Test.prl
+2025-07-10 09:51:54,301 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Testd.prl
+2025-07-10 09:51:54,304 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Widgets.prl
+2025-07-10 09:51:54,306 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Widgetsd.prl
+2025-07-10 09:51:54,307 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Xml.prl
+2025-07-10 09:51:54,309 - aqt.updater - INFO - updater 87000 Patching D:qt6.8.3\6.8.3\msvc2022_64\lib\Qt6Xmld.prl
+2025-07-10 09:51:54,311 - aqt.main - INFO - installer 87000 Finished installation
+2025-07-10 09:51:54,311 - aqt.main - INFO - installer 87000 Time elapsed: 44.34039270 second

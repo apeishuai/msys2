@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wxf`s Fantasy World</title>
+    <link>/</link>
+    <description>Recent content on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jun 2025 16:43:45 +0800</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工程实践</title>
+      <link>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 28 Jun 2025 16:43:45 +0800</pubDate>
+      <guid>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description>从给 RisingWave 提 PR 说起，聊聊怎么快速切入一个复杂的开源项目&#xA;前面的series-实践环境搭建，目标是为了进入工程实践环节，做一展示：&#xA;learn目录下是一些小项目demo demo目录下是不同编程工具的练习 icloud同步电子书，markdown+坚果云同步笔记 这样就得到一个增量式更新的实践环境，放手去干即可！</description>
+    </item>
+    <item>
+      <title>如何在规定时间内完成任务</title>
+      <link>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E8%A7%84%E5%AE%9A%E6%97%B6%E9%97%B4%E5%86%85%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Wed, 11 Jun 2025 13:21:03 +0800</pubDate>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E8%A7%84%E5%AE%9A%E6%97%B6%E9%97%B4%E5%86%85%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8A%A1/</guid>
+      <description>需要两个视角：产品视角、项目视角。&#xA;产品视角看的是要做到何种程度；项目视角是审视资源，合理分配。&#xA;能从哪些方向介入 自控方面。&#xA;骑象人理论，情绪是一头大象，理性是坐在大象头上的人，要朝着目标走，第一个，目标得清晰，这个交给骑象人；路径要明确，如果是走走看看，很容易迷失方向；哄，引导大象走在正确的道路。&#xA;我之前看过&amp;lt;设计心理学&amp;gt;的时候，脑中出现过这样一种模型，人是一个整体，但是为什么表现的很割裂，想的和做的不一样，情绪无缘无故变化。&#xA;思维|情绪|感知|行为，一个人是一个整体，但是外界影响因素在这四个层次上作用，如果外界力量作用在行为上，思维、情绪、感知都会受影响，但是影响幅度不一样，其他几个层次同理。&#xA;骑象人理论指出了思维-&amp;gt;情绪-&amp;gt;行为这一链条，忽略了感知，影响感知的方法是符号化，看看铺天盖地的广告，每个都很简短，但就是能深深刻在受众的大脑。&#xA;如何明确路径 这个需要架构思维，从起点到终点，怎么走，路上需要哪些东西，不知道。&#xA;但是可以在大脑中假设一条路，制定一个初始策略，然后一边走，一边获取信息，根据获得的信息修正策略。&#xA;必须假设你规定的路径能抵达终点，因为除了假设的这条路径也没有别的办法。&#xA;唯一需要的是勇气和坚持。&#xA;如何选择聚焦方向 需要大量实践，初始构建的路径只是几个名词，所以需要扩充、测试、剪枝，循环往复，需要大量的实践，分析判断。&#xA;才有可能靠近目标。&#xA;这里可能要提升下工程能力，最基础的就是生产环境复用，比如要写个python脚本，这个库那个库折腾半天，效率能提升才有鬼。&#xA;然后提出假设并快速验证，这里的难点在你不知道该从哪入手，穷举嘛，之前靠搜索引擎，现在靠AI，只要能拿到提示信息，就能反推，找出问题下面的整个冰山。&#xA;针对目标，需要聚焦哪些东西，这个要具体问题具体分析，可能你这个问题有10个影响因素，但是你一个都找不到。聚焦方向是个很主观的东西，我觉得往上面提到的路径靠总不会错。&#xA;执行 按部就班，依然需要一些工具：WBS、任务追踪工具。WBS是可交付成果，用来对标；任务追踪工具则是一个比较柔性的系统，摸着石头过河，你不能控制摸到石头的速度，参考zz-plan。这个工具的特点是可动态调整，添加一些约束，软件会调整约束条件下各个要素的值。&#xA;大概就这样。</description>
+    </item>
+    <item>
+      <title>时间管理</title>
+      <link>/posts/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 05 Jun 2025 19:30:42 +0800</pubDate>
+      <guid>/posts/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</guid>
+      <description>《自我管理》 讲下这篇文章中，记录时间的思路。&#xA;pc: 网费很贵插件 + org-mode (emacs)&#xA;iphone：atimelogger + 捷径&#xA;android: atimelogger + tasker + 应用定时器2&#xA;记录时间我之前践行过，一直成功不了，因为现存的所有时间记录工具，都要求在记录前主动点击。我要刷会短视频也要先点一下吗？根据B=MAT，“点击”这个按钮藏的太深，所以触发不了时间记录这个行为，也就很难养成习惯。解决方案是自动化工具。&#xA;pc插件就不说了，直接安装即可，数据同步至坚果云。&#xA;iphone的思路是每打开一个应用，就创建一条捷径，打开atimelogger记录时间，关闭应用就结束记录。记录常用的四五个app就行。&#xA;android的思路是直接导出应用定时器2的数据，这是个sqlite数据库，需要用脚本处理字段。&#xA;字段规定成：&#xA;platefrom application start-time end-time duration&#xA;将从上述设备搜集到的数据转换成规定的数据格式。这时候有两种处理方式：打标签，看不同行为的频次，整体占用时间；导出到日历(radicale)，分析一天的时间分布。&#xA;通过两个视角就能找出时间分布的不合理处，进而制定优化方案，比如时间切的太碎，可以找出原因，是外界干扰，还是个人行为导致，或者是注意力不集中。总能找到入手的地方。&#xA;形成系统，统计，发现规律，形成认知，最后内化成为一种习惯。这套工具我觉得还是有用的，再搞搞。</description>
+    </item>
+    <item>
+      <title>人生设计框架</title>
+      <link>/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Mon, 02 Jun 2025 11:31:03 +0800</pubDate>
+      <guid>/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1%E6%A1%86%E6%9E%B6/</guid>
+      <description>跟打游戏一样，有一份手册，就能做到稳步前行。&#xA;我们都是沿着惯性前行，设想这样一个场景，当你油尽灯枯，回首自己的一生，发现有很多事想做却没做成，这何尝不是一种遗憾。&#xA;人生中有些问题反复出现，我在20年就发现了，所以试着完成这样一份手册，一来作为对这些问题的回应(如果现在解决了，30、40就不用面对这些问题)，二来梳理过程中也许能发现新东西。&#xA;ref:《悉达多》、《活在此时此刻》、《练习的心态》、《当下的力量》、《传习录》&#xA;这些书讲的是一个道理，人生重在体验，而唯一真正有力量的，是当下。&#xA;人生建模 可以用有限游戏与无限游戏作类比，人生是一场无限游戏，这场无限游戏由很多个有限游戏组成。唯一确定的是，时间是有限的，所以结论1：在有限的时间内完成尽可能多的事，或者是获得尽可能多的体验。&#xA;用打游戏作类比，还有个阶段问题。“十有五志于学，三十而立，四十不惑，五十知天命，六十耳顺，七十从心所欲不逾矩”，十五年才明白了为人处世的道理，圣人尚且如此，我等普通人就不必说了。而且很多事急不来，需要旷日持久的战斗。结论2：人生分阶段，每个阶段有不同的任务&#xA;再细分：&#xA;34，也怕中年危机。&#xA;第一个五年，需要建立正确的成长模型以及工作价值观；&#xA;正常情况下，职场新人成长速度会非常快，这是因为这个时期多数困难只要靠自身努力就能完全解决。&#xA;所以新人需要快速找到最适合自己成长的方式，尽快达到这个阶段能够达到的瓶颈，一般是5年左右可以达到这个阶段的尽头。&#xA;所以，第二个五年最重要的两件事，首先是找到自己喜欢并且适合自己的事情，其次你需要验证你是否真的适合，因为这条路走下去可能是一条不归路，不可不慎。&#xA;第三个五年，独立思考能力尤为重要，尽快建立自己的思维闭环；&#xA;到第三个五年，能力、心态已经得到社会的毒打，经过了一层又一层的淬炼，完全可以担当大任，专业领域方面，不在话下；心态方面可上可下。&#xA;这个时候大家可能会觉得技术、管理似乎也就那么回事的，但所面临的困难却比原来更大、更抽象了。&#xA;这个阶段所面临的问题，多数是无据可依，就算有相似的案例，也会因为环境不同而无法得到启示，这一切都要求我们独立思考，要求我们捕风捉影，很费脑子，所以独立思考的能力变得尤为关键。&#xA;不管以何种路径，最终都能通关，但是体验很不一样，如果在游戏初始阶段拿到S级装备，那后续就很轻松了。很多时候都是在迷雾中前行，这个没关系，可以自己放路标；在前进过程中会出现很多随机的事物，这个是乐趣所在，我觉得就人生而言，不可能穷尽所有的事物，在你的整个生命历程，都能保留这份乐趣；而且前人也留了很多东西，我觉得靠读书，通过自己实践，也能铺出一条路，这个过程得自己把控。结论3：人生的乐趣在随机性，在前进的过程中抬头看路，不要做重复的事。&#xA;有了上面的建模，可以把日常事项纳入该框架。&#xA;活在当下 方向的问题解决了，但是想要和现实根本不是一回事。&#xA;有很多东西阻碍你聚焦当下，第一个注意力，人一天可以产生一百多个想法，深受其害；第二个是控制力，事物总是朝着无序变化，要使其有序，就得注入能量。&#xA;只有当下是真实的，也只有当下是最有力量的。&#xA;步骤1：冥想。冥想应该是通过引导注意力焦点来消解其他念头，从而使得大脑进入一种高度集中的状态，可以通过呼吸调整；散步、念经，都能起到类似的效果。&#xA;用GTD系统可以挪出一部分大脑的东西，很简单，无论是冥想还是其他，最终目的是清空大脑。&#xA;步骤2：行为引导。“合抱之木，生于毫末；九层之台，起于累土”，未来是当下一点点做出来的。B=MAT，T，Trigger，有很多东西触发，打断当前状态，这个也简单，屏蔽触发源就行。&#xA;通过设计MAT进入心流状态，对我来说，当前最难受的是A，Ability。通过外界系统增强A，比如我之前搭了博客，各种笔记系统，都是增强能力的体验；GTD系统，通知，这两个是管控T；M我觉得不应该管控，除非那种特别不切合实际的。&#xA;更细粒度的工具 AEIOU&#xA;这是《斯坦福人生设计课》里的工具，A activity，E env；I interface；O object；U user；这个工具从日常生活中提取出五种要素，如果想有什么改变，就从这五个方面下手。所以说它是一种更细粒度的工具。&#xA;透视未来场景&#xA;可能会说，未来如何如何，写下来，然后用AEIOU透视，很容易找出要改变的点。&#xA;结语 有一段话想摘抄一下：读《练习的心态》&#xA;问你自己: 一朵鲜花的生命， 从撒下种子到完全盛开， 在什么时候可以达到完美？&#xA;让我们看一看， 我们每天走过的花园中的鲜花旁时， 大自然会教我们一些什么。 在什么时候， 鲜花是完美的？ 当它还只是你手中的一粒种子， 等待着你种下时， 它完美吗？ 在那一刻， 它就是一粒种子。 当这粒种子在几厘米深的土壤中开始悄无声息地第一次发芽时， 它是完美的吗？ 在那一刻， 它首次展现了我们称之为创造的神奇信号。 那么， 当它的嫩芽第一次钻出地面， 第一次接受阳光的照射时， 它完美吗？ 它用尽其所有的能力来寻找这种生命之源； 在这一刻之前， 它只是在地下悄无声息地成长着， 告诉自己要以怎样的方式成长。 当它开始开花的时候呢？ 它完美吗？ 这个时候， 它的个体属性开始显现。 叶子的形状、 花苞的数量， 所有这些， 都是这朵鲜花独一无二的属性， 尽管他们在同一物种中的其他花朵也是独一无二的。 或者， 在鲜花盛开的时候， 花朵的所有能量与努力是不是达到了它生命中的完美时刻？ 不要忘记， 花朵会谦虚地、 静静地调谢， 到那个时候， 它会回到曾经养育它的大地之中。 那么， 在什么时刻， 花朵是完美的呢？</description>
+    </item>
+    <item>
+      <title>软件开发体系</title>
+      <link>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB/</link>
+      <pubDate>Fri, 30 May 2025 07:55:24 +0800</pubDate>
+      <guid>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB/</guid>
+      <description>代码组织及构建 c/c++: cmake&#xA;python: uv&#xA;javascript: pnpm&#xA;代码阅读 doxygen&#xA;doxygen -g vim Doxyfile doxygen Doxyfile # c/c++ config # 启用调用图生成（依赖 Graphviz） HAVE_DOT = YES CALL_GRAPH = YES CALLER_GRAPH = YES # 输入文件（递归扫描） INPUT = . RECURSIVE = YES # FILE_PATTERNS = *.py //python项目开放这一项 # 输出格式 GENERATE_HTML = YES GENERATE_LATEX = NO # 提取私有/静态成员（可选） EXTRACT_ALL = YES EXTRACT_STATIC = YES 代码补全 lsp服务&#xA;vscode+ pylance(python)、C/C++ IntelliSense(c/c++)、&#xA;协作 git\&#xA;alias c=&amp;#34;git log | grep ^comment | wc -l&amp;#34; \\cout all comments alias statis=&amp;#34;git shortlog -sn --no-merges&amp;#34; \\every people comments alias dif=&amp;#34;git diff HEAD~1 HEAD&amp;#34; \\the diff between now commit with last commit j.</description>
+    </item>
+    <item>
+      <title>Cmake管理c_cpp项目</title>
+      <link>/posts/cmake%E7%AE%A1%E7%90%86c_cpp%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Sat, 24 May 2025 13:06:16 +0800</pubDate>
+      <guid>/posts/cmake%E7%AE%A1%E7%90%86c_cpp%E9%A1%B9%E7%9B%AE/</guid>
+      <description>项目管理 cmake&#xA;xxx.toolchain.cmake + cmakelists 构建编译环境，可复用&#xA;交叉编译 纯命令行管理、vscode编译运行、qt-creator&#xA;个人偏向纯命令行，出问题好定位&#xA;windows下：&#xA;msvc: cl.exe + rc.exe + mingw64: gcc.exe + g++.exe \&#xA;llvm clang&#xA;包管理 canon&#xA;vcpkg&#xA;手动编译&#xA;实践遇到的问题点 1 PcapPlusPlus无法和qt包结合到一起 会出现无法使用window.dll的情况，即使能找到window.dll，也无法使用 这可能是底层问题</description>
+    </item>
+    <item>
+      <title>Windows软件管理 Nirsoft&#43;sysinternals</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</link>
+      <pubDate>Fri, 23 May 2025 08:48:44 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</guid>
+      <description>scoop install openark&#xA;nirsoft in openark, we can install Nirsoft&#xA;sysinternals scoop install sysinternals&#xA;other tools scoop install rufus&#xA;图拉丁工具箱</description>
+    </item>
+    <item>
+      <title>Do</title>
+      <link>/resource/do/</link>
+      <pubDate>Wed, 21 May 2025 11:10:50 +0800</pubDate>
+      <guid>/resource/do/</guid>
+      <description>do，遇到不会的再想办法解决，that`s core!&#xA;end this topic!</description>
+    </item>
+    <item>
+      <title>Aider使用第三方api</title>
+      <link>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</link>
+      <pubDate>Sun, 11 May 2025 23:10:25 +0800</pubDate>
+      <guid>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</guid>
+      <description>gemini pro 2.5的编程能力大幅提升，而且结合过去的案例看，AI确实能大幅提升个人的生产力，所以有必要将AI纳入工作流。&#xA;我这边点的技能树仅限编程，所以用aider，之前使用ai的流程是：写prompt、复制、运行测试，aider相当于把这三个步骤合成一个，而且提供repo-map功能，AI通过repo-map，能更精准给出代码。&#xA;还有位emacs大神，也在emacs实现相同的配置。仅从生产力角度，使用他的eaf，很容易进入心流状态，但是我常用的电脑没装linux系统，暂且先用aider。&#xA;aider预置了很多AI厂商的api接口，只要在环境变量中配置api-key、base-url，并在aider命令模式下指定模型，就会用该模型辅助编程。我用了deepseek和gemini pro。&#xA;gemini pro会出现因ip归属地导致访问失败的问题，使用openrouter作为代理访问gemini pro可突破地域限制，因为我的主要目标是gemini，openrouter需要充值10美元才能使用openrouter/gemini pro exp模型(模型本身是免费的，但是有门槛)。&#xA;没有办法，只能找第三方api集成商了，有不少这样的网站。23年7月10日注册了一个类似的网站，api价格貌似也便宜。&#xA;第一个思路是用litellm，作为代理，在后台开一个服务，然后aider访问litellm提供的服务，litellm对接第三方api平台。后面发现是多此一举，因为这个api集成商的api设计成了openai的格式，所以直接用openai接口调用就行。&#xA;经过一番折腾，最终配置如下：&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; alias aider-deepseek=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model deepseek/deepseek-coder --no-git --no-auto-commits&amp;#34; alias aider-gemini=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model openrouter/google/gemini-2.5-pro-exp-03-25:free --no-git --no-auto-commits --no-show-model-warnings&amp;#34; 重点讲一下gptgod这个第三方集成商的api是怎么用的，因为从这个可以访问几乎所有模型；openrouter也能做到，但是收钱了。同理，换任何一个第三方api都是一样的操作。&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; open-api-base也可以放进系统变量，openai/model-name，model-name是api集成商提供的所有model，这个里面就能用gemini pro 2.5。&#xA;使用效果如下： </description>
+    </item>
+    <item>
+      <title>Vscode开发qt Pyside6</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
+      <pubDate>Mon, 21 Apr 2025 08:45:35 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-pyside6/</guid>
+      <description>用qt creator创建一个pyside6 qt项目，和之前的qmake、cmake项目一样，先看构建套件，再看编译过程，再看运行过程。&#xA;python虚拟环境配置&#xA;构建套件需要标明python.exe的位置，我自己手动指定了一个 构建过程需要pyside6-uic.exe, pyside6-project.exe，参考下面的文章，还需要配置pyrcc，这三个软件均可以从配置的环境中找出 配置完插件后直接在命令行运行py文件 全局安装PySide6</description>
+    </item>
+    <item>
+      <title>技能习得与提升</title>
+      <link>/resource/%E6%8A%80%E8%83%BD%E4%B9%A0%E5%BE%97%E4%B8%8E%E6%8F%90%E5%8D%87/</link>
+      <pubDate>Wed, 16 Apr 2025 20:35:23 +0800</pubDate>
+      <guid>/resource/%E6%8A%80%E8%83%BD%E4%B9%A0%E5%BE%97%E4%B8%8E%E6%8F%90%E5%8D%87/</guid>
+      <description>这段时间学习c++，主要看&amp;lt;c++ primer&amp;gt; &amp;lt;c++ primer plus&amp;gt;两本，在这个过程中，对技能习得有一些感悟。&#xA;新手入门最大的问题是不知道关注点，这样会导致看很多跟目标无关的资料，运气好的话一段时间后能梳理出该领域图景，运气不好可能需要很长时间。&#xA;所以好的教程会给一张大图，然后针对大图给几个抓手，就能基本入门，然后碰到什么场景就学哪些工具，效率高。&#xA;1 把该领域最权威的资料都翻了，关注点在哪也能出来，就是耗时间。&#xA;然后是技能的巩固和练习，练习的目的是增加熟练度，分为两层，一层是基础技能，比如写个tcp通信，写个基础的排序算法；第二层是对需求建模，看到目标，在心里盘算怎么把基础的东西组合，得到一个想要的结果。&#xA;具体操作：&#xA;2 模仿，需要通过模仿练手感，熟悉基础知识点&#xA;3 技能练习：让ai给出练习题&#xA;犯错触发反馈：&#xA;4 在训练的时候尽量用自己的语言去写，这样能暴露当前的理解和最好模型之间的gap，得到修正方向。&#xA;5 检测掌握情况：能否根据名字带出很多细节&#xA;6 检查是否理解：能否用自己的话说出来&#xA;可能空间，声明周期 闭环+验证 数据间的变化关系 用项目学习 目标不清晰 6 学习速度测算 一般只需要获取大图和抓手，每个小项做针对性练习，比如平均做两个吧，就能算出自己的学习速度，然后安排工作即可。&#xA;但学习是非线性的，一个知识点可能要间隔重复三遍才能完全掌握，碰到场景不全的情况会pending很久。&#xA;对此的策略是：&#xA;a 要留痕，原始资料，二次加工，得出的一些成果，都要留痕。&#xA;b 检查对材料的吸收程度，哪怕一篇很简单的文章深究也会牵扯到很多细节，看要探究多深。&#xA;c 检查自己的思维，如果大脑的概念和逻辑链，及自身的技能不能满足需求，说明这两块得继续扩展。&#xA;练习分为两种方式，一种是交互式的，一种是大脑中演练。熟练度由脑中相关的神经链路决定，可以想象最初的链路是文字、行为激活的，当链路成型后，只是在大脑中不断演练，也有很好的提升效果。&#xA;经过这么久的实践，目前理解学习就是压缩信息，确定一个范围，确定该范围所有的输入输出，用尽可能好的结构组织这些输入输出。所以习得有一个概念展开在收缩的过程。&#xA;进入任何一个领域，按照我上面说的找出该领域的知识结构，在知识结构的基础上找出行业最佳实践，就能躺着玩了。&#xA;学习&amp;ndash;&amp;gt;掌握阶段 状态1：完全陌生 看资料，补充逻辑 状态2：能想起几个名词，但还是陌生 看资料，补充逻辑，动手实践 状态3：能用基本要素写一些简单功能，但只能覆盖很小一部分场景 (间接经验)补充使用场景，在场景中反复折叠逻辑，反复动手实践 状态4：能完成功能模块，但限于项目，有些场景依然无法覆盖 (直接经验)寻找这些场景，学习开源项目 状态5：能完成需求，但是无法主导项目 主动获取资源，拿到经验包，直面需求 状态6：掌握20%的核心知识(反复折叠得到)，覆盖80%的场景，并能分析场景给出方案 封装知识复用 </description>
+    </item>
+    <item>
+      <title>Vscode开发qt Cmake</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>
+      <pubDate>Mon, 14 Apr 2025 23:07:03 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-cmake/</guid>
+      <description>新建一个cmake qt项目，看构建步骤&#xA;cmake configure cmake build cmake run 对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了&#xA;第二步，安装cmake tools、cmake插件，配置这两项 然后在CmakeList.txt文档中加&amp;quot;set(CMAKE_PREFIX_PATH &amp;ldquo;D:/qt6.8.2/6.8.2/mingw_64&amp;rdquo;)&amp;quot;，目的是cmake编译时能找到qt相关的库&#xA;ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成 </description>
+    </item>
+    <item>
+      <title>无痛英语环境打造2</title>
+      <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</link>
+      <pubDate>Fri, 04 Apr 2025 14:59:59 +0800</pubDate>
+      <guid>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</guid>
+      <description>我有这样一种信念，方向对了，拿到结果是早晚的事；方向不对，折腾到死也到达不了目的地。&#xA;就英语来说，跟任何运动类项目一样，得浸泡在环境中，分解每一个动作，刻意训练至纯熟。&#xA;每个人都应该针对自己的学习习惯出一套符合自己的英语学习流程。&#xA;听力和口语练习 “有效输入理论”，意思是说在输入大量听力材料后，听力水平提升，口语水平就跟着提升了。这个理论不对，因为如果不做口语输出，根本不知道关注点在哪&#xA;所以第一步仍然是泛听，熟悉英语的表达方式后，做口语输出。泛听没什么好方法，就是硬听，看美剧磨耳朵，磨上个一两年，应该会有质的飞跃&#xA;然后需要做口语输出练习，比较有名的有“影子跟读法”，Miraa(ios)、听力播放器(ios)，这两个软件很好的实践了这个理念，但是我自己尝试，效果并不好&#xA;效果不好的原因是我没有场景，没有话题，不知道关注点在哪；没办法纠偏。所以得想办法去构建这个场景&#xA;从大脑一个模糊的想法到嘴里说出来，这里的gap在哪？在基础词汇，在短句，在表达方式。所以需要一个框，积累提到的这几种要素，针对单词，用burning vocabulary插件(一键收藏不熟悉的词汇，且在其他的网站标注)，burning vocabulary搜集到的词汇导出到List生词本、list背单词；针对短句，用文本文件+简悦同步助手(标注作用)，用标签的方式把搜集到的句子中的短语、句式、场景区分，且能保留来源(通过标签无限分类)&#xA;抽离出的短语还能在yourenglish找例句，将其补充到短句本 当然最关键的是用起来，英语环境搭建就到此为止了！</description>
+    </item>
+    <item>
+      <title>投资观察</title>
+      <link>/posts/%E6%8A%95%E8%B5%84%E8%A7%82%E5%AF%9F/</link>
+      <pubDate>Sat, 29 Mar 2025 06:55:31 +0800</pubDate>
+      <guid>/posts/%E6%8A%95%E8%B5%84%E8%A7%82%E5%AF%9F/</guid>
+      <description>1 同花顺从200涨到300，然后一直维持在300上下浮动&#xA;key: 估值&#xA;比如该企业的估值是15-20倍PE，以后就长期在这个估值处浮动&#xA;2 交易-股价变动细节&#xA;股价变动：&#xA;股价变动的核心是供需关系&#xA;股价变动是通过交易实现的&#xA;交易分三个时段：开盘/尾盘 盘中&#xA;交易规则：&#xA;开盘/尾盘：集合竞价：交易所将所有订单按价格优先、时间优先的原则排序，找到一个价格，使得该价格下能够成交的股票数量最大，这一价格当为当日的开盘价或者收盘价&#xA;盘中：连续竞价：买单 价格高的订单优先成交、价格低的订单优先成交&#xA;限价购买总是比当前股票价格高，当前股票价格就是买一的价格 大盘情况及交易金额 只有挂单数量，没有具体金额 3 股票价格在实时波动，选择时间区间的长短交易，额外重要&#xA;pending</description>
+    </item>
+    <item>
+      <title>Shaarli服务</title>
+      <link>/resource/shaarli%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 20 Mar 2025 00:15:49 +0800</pubDate>
+      <guid>/resource/shaarli%E6%9C%8D%E5%8A%A1/</guid>
+      <description>前置准备 vps服务器一台、shaarli插件&#xA;参考freshrss服务搭建&#xA;部署 docker-compose.yml&#xA;version: &amp;#39;3&amp;#39; services: shaarli: image: shaarli/shaarli:latest container_name: shaarli restart: unless-stopped ports: - 8005:80 volumes: - /home/ubuntu/serv/shaarli/cache:/var/www/shaarli/cache - /home/ubuntu/serv/shaarli/data:/var/www/shaarli/data $ sudo docker-compose up -d 执行上一条指令，即可开启服务，volumes选项。&#xA;宿主机的cache和data文件的所属用户和用户组可能跟容器内部的所属用户、用户组不一样，这时候要切到容器内部。\&#xA;$ sudo docker exec -it ID bash $ cd shaarli $ chown -R nginx:nginx data $ chown -R nginx:nginx cache 最终效果 数据迁移 $ alias sync_ucloud=&amp;#34;rsync -avz -e ssh ubuntu@ip:~/serv/shaarli/* &amp;#39;/d/g/area/serv&amp;#39;&amp;#34; 用这条指令同步所有数据，然后执行&#xA;$ sudo docker-compose up -d 即可迁移和一键恢复(注意docker-compose.yml中-volumes选型的宿主机目录，要更改为当前宿主机目录)。</description>
+    </item>
+    <item>
+      <title>生活节奏</title>
+      <link>/posts/%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</link>
+      <pubDate>Sun, 16 Mar 2025 06:38:31 +0800</pubDate>
+      <guid>/posts/%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</guid>
+      <description>隐约有一些想法，这篇文章是为了梳理大脑中的这些概念。&#xA;某天突然冒出这样一种想法：有些无效的、或者对个人状态有负面影响的行为或者事物，应该提早识别并去除。&#xA;紧接着疑问就来了：什么是负面影响？什么是无效？&#xA;关键词 我的目的是找逻辑把大脑中的这些关键词串联在一起 心流、生活节奏 第一个问题需要给出正常状态的定义&#xA;参考文章：物理人生对策论（下）- 大脑经济学&#xA;我的假设是，任何一个人生的范式，都可以被分解成某种节奏性的信息。比如你所做的事情如何给你反馈的频率。&#xA;寻找到那个恰当的生命之序，并用心流把无序发散的心理能量联合起来，你就解决了人生最大的命题。其它的问题，人生的目的，意义都成了钻牛角尖的废话。你只需要进入你的范式，人生必然精彩。&#xA;所以正常状态是一天有10%的时间处在心流状态，但这是不现实的。把目标定为一周有一次心流状态，再慢慢提升。&#xA;注意力 行动 现在要找出这些节奏性的信息，《自我管理》中提到了“反馈分析法”(pendind)。&#xA;生命过程即感知及行动的一系列连锁反应。感知是大脑中建立世界的模型，这个模型将指导你行动， 行动过程中你会得到反馈看你的模型是否正确。人们在知和行完美结合的状态中感受到的快乐是最大的。&#xA;最核心的还是你的大脑对特定信号的阐述能力，你可以极为有效的提取在信源里提取信息而不是噪声。&#xA;你每天接受无数外界输入（感觉，信号），但是只有被我们大脑阐述为有序的信号才叫信息，其余则是噪声。但是为什么对于某些人常认作信息的东西， 却是噪声？ 因为我们的大脑结构天生能够对某一类的外界信号建立有序，抽取信息。 而其它麻木&#xA;开始监控：大脑对哪些信息敏感；都做过哪些行动；反馈周期&#xA;比如我能很快提取出文本中的信息，但关于文本的元信息就差点；面对面交流能提取20%，元信息0；&#xA;元信息：信息的信息，比如信息质量的评估&#xA;元思考：对思考过程的思考，原来的思考可能忽视了某些视角，或者没有对对象信息做层次划分&#xA;所欲 人时常会陷入痛苦和无聊。痛苦是因为想得得不到，无聊是因为不知道想要什么。&#xA;所以所欲也分为两种：一种是有限的，一种是无限的&#xA;比如对世界的好奇心，这个是无限的；比如谋得一份稳定的收入，这个是有限的，所欲，应该是有限和无限的交织。&#xA;把所欲框定在有限范围内，就能明确反馈，进而引导注意力、行为。&#xA;但是所欲在无限范围内，才是乐趣所在。&#xA;从所欲出发，引导注意力、行为，尽量往心流状态靠。一切与之无关的属于无效；对上述过程有伤害的，属于负面影响。</description>
+    </item>
+    <item>
+      <title>精神能量</title>
+      <link>/posts/%E7%B2%BE%E7%A5%9E%E8%83%BD%E9%87%8F/</link>
+      <pubDate>Sun, 16 Mar 2025 05:13:03 +0800</pubDate>
+      <guid>/posts/%E7%B2%BE%E7%A5%9E%E8%83%BD%E9%87%8F/</guid>
+      <description>能量积累？&#xA;人和其他物种的大脑可“同频共振”</description>
+    </item>
+    <item>
+      <title>Vscode开发qt qmake</title>
+      <link>/resource/vscode%E5%BC%80%E5%8F%91qt-qmake/</link>
+      <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
+      <guid>/resource/vscode%E5%BC%80%E5%8F%91qt-qmake/</guid>
+      <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
+    </item>
+    <item>
+      <title>知行合一</title>
+      <link>/posts/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/</link>
+      <pubDate>Fri, 21 Feb 2025 11:31:08 +0800</pubDate>
+      <guid>/posts/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可观测指标构建</title>
+      <link>/posts/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%8C%87%E6%A0%87%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Fri, 21 Feb 2025 11:15:57 +0800</pubDate>
+      <guid>/posts/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%8C%87%E6%A0%87%E6%9E%84%E5%BB%BA/</guid>
+      <description>观测指标跟目标相关，列举一些观测指标的例子：&#xA;计算机程序：分析程序运行流程及可能出现的问题点&#xA;windows系统：转储文件&#xA;windows进程：转储文件、windows日志、程序日志&#xA;投资：分析趋势、买卖策略及操作&#xA;技术指标：均线、形态&#xA;很多不同的对象，不同对象的不同层次，都能构建可观测指标，这是一套通用的方法，上述列表持续补充。</description>
+    </item>
+    <item>
+      <title>多巴胺与行为设计</title>
+      <link>/posts/%E5%A4%9A%E5%B7%B4%E8%83%BA%E4%B8%8E%E8%A1%8C%E4%B8%BA%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Fri, 21 Feb 2025 06:13:14 +0800</pubDate>
+      <guid>/posts/%E5%A4%9A%E5%B7%B4%E8%83%BA%E4%B8%8E%E8%A1%8C%E4%B8%BA%E8%AE%BE%E8%AE%A1/</guid>
+      <description>之前在养成跑步习惯的时候，怎么都启动不了；后面买了一副耳机，在跑步前先放音乐，然后就能做到每天都坚持跑步，所以我认为行为的发生，跟多巴胺有紧密关联。&#xA;在该文章行为设计产品应用-福格模型中找到一种解释&#xA;B=MAT 上述想法对应动机-提前感知 预期释放多巴胺和通过其他行为释放多巴胺，效果一样。完美！</description>
+    </item>
+    <item>
+      <title>如何提高对周围环境的控制力</title>
+      <link>/posts/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E5%AF%B9%E5%91%A8%E5%9B%B4%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8E%A7%E5%88%B6%E5%8A%9B/</link>
+      <pubDate>Wed, 19 Feb 2025 21:06:45 +0800</pubDate>
+      <guid>/posts/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E5%AF%B9%E5%91%A8%E5%9B%B4%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8E%A7%E5%88%B6%E5%8A%9B/</guid>
+      <description>提高对周围环境的控制力，要从可控性入手，其出弥远，其知弥少，能控制的就是平时接触到的这些东西&#xA;如果平时接触到的东西不包括想控制的，let it flow，让资源流动到你这里，或者让你自己流动到资源在的那个领域&#xA;如何让资源流动呢，管理预期&#xA;能调动资源的人毕竟是少数，其实很多事情没有对错，这跟找对象是一样的，你追的那个人，和能调动资源的人，他们的主观世界，就是真实世界&#xA;所以得弱化自己的主观意识，融入到其他人的主观世界，管理预期，从而让资源流到你这里。为什么会流到你这里，从资源掌控者的视角看，是一件很自然的事。但很多人怨天尤人，各种不满，终究是自我意识过强了。&#xA;自己流动到资源在的领域，这个有多难我就不说了，说多了都是泪。如果把你看成资源，那就变成了让资源流动到需要的地方，这个层面讲，这两种方法是对立统一的。\</description>
+    </item>
+    <item>
+      <title>心智带宽</title>
+      <link>/posts/%E5%BF%83%E6%99%BA%E5%B8%A6%E5%AE%BD/</link>
+      <pubDate>Wed, 19 Feb 2025 21:06:27 +0800</pubDate>
+      <guid>/posts/%E5%BF%83%E6%99%BA%E5%B8%A6%E5%AE%BD/</guid>
+      <description>心智带宽是我们处理问题时大脑缓存，可以理解成电脑的内存条&#xA;缓存是有限的，但是人在思考问题的时候喜欢绕来绕去，为什么会绕来绕去，有两点原因：&#xA;1 人类拥有过去的记忆&#xA;2 人类能基于当前的信息推演未来，未来也会被当成现实的一部分&#xA;准确来说，人类是生活在过去、现在、未来的混合体，未来是假象，用来引导当下资源投入；过去则在大脑的神经网络和信息网络中留下痕迹&#xA;在当下，过去的经历一遍遍上演，未来的场景也一遍遍重复，再结合当前的资源，这三者决定了个体的认知能力和执行控制力&#xA;导致带宽降低的因素 稀缺：资源不足会把人的注意力引导至资源寻找上，影响认知及任务执行&#xA;任务复杂度：任务太过复杂，里面的逻辑链超出个体短时间接收水平，会导致心态奔溃&#xA;压力过大、情绪变化&#xA;外界环境影响&#xA;增加带宽的方法 自动化：GTD就是很好的方法、PKM也是&#xA;技能内化：也是自动化，但是对象是自己，强化技巧</description>
+    </item>
+    <item>
+      <title>子弹日志</title>
+      <link>/posts/%E5%AD%90%E5%BC%B9%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Tue, 18 Feb 2025 08:57:23 +0800</pubDate>
+      <guid>/posts/%E5%AD%90%E5%BC%B9%E6%97%A5%E5%BF%97/</guid>
+      <description>虽说有gtd+日历，但gtd不能实现日志功能&#xA;日志要求按时间顺序记录一些关键节点，且能追踪事件。子弹日记是个很不错的选择，结合emacs、rga搜索，很容易就能实现功能&#xA;如下是符号定义，能看到符号能无限扩展 这个是安排的两个任务 这个是任务追踪情况，代表15号安排一个任务，18号完成；18号安排两个任务 日常工作界面 </description>
+    </item>
+    <item>
+      <title>学习理论v1.0</title>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</link>
+      <pubDate>Sat, 15 Feb 2025 17:33:23 +0800</pubDate>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</guid>
+      <description>参考 wxf blog/project/学习专题，之前的文章比较散，这一篇结合实践重新组织一下逻辑。&#xA;阅读顺序：&#xA;学习工程化 资料同步&#xA;学习工程化 搭建文档池及建立搜索入口&#xA;主题阅读方法&#xA;材料覆盖率&#xA;领域驱动+搭积木&#xA;这个话题不想再提了。&#xA;1 学习 ！= 阅读、刷课&#xA;学习是有目的性的把对方的概念空间转化成自己的，一个概念包含大量的细节，需要反复折叠才能摸到概念的边界&#xA;唯一重要的是思想，思想是看事物的视角，基于此视角形成概念空间。概念是信息的压缩&#xA;所以如果要检验是否看到真东西，就把概念还原成场景，忘掉概念&#xA;2 学习需要状态&#xA;如上提到的，如果今天很困，或者不是很想看书，效率会很低&#xA;第一点要确保精力充足，睡好、吃好、玩好，心无杂念，效率是最高的&#xA;第二点要确保随时进入状态，B=MAT&#xA;M很简单，热爱，能从中获得乐趣，或者说不得不学；T得设计，可以把两个动作串起来(行为链)，比如在GTD里面放数学题，或者埋几个外部触发的点(这两个都是很自然的触发器)；A的话需要降低行为过程中的阻力，需要：整块不被打扰的时间、笔记(留更多带宽给大脑思考)、实践平台&#xA;3 启发式学习&#xA;在工程实践过程中，更多的是没有方向。&#xA;效率最高的是问从业者，他们已经形成一套稳定的解决方案；第二是看源码；第三是阅读相关领域书籍、论文，穷举所有可能性，方案也就出来了(这个最怕的是视角不对，视角不对，很多概念出不来)&#xA;看源码或文献，从历史开始研究，效率最高&#xA;focus: 历史、已经出现的概念空间、各种影响因素&#xA;4 如何构建复杂逻辑&#xA;这个需要一个思维模型：一个框，所有遇到的概念或逻辑链丢到这个框里，等需要的时候再拿出来用。或者说时不时拿一两个出来做推演或观察(可能出现gap的情况)&#xA;要保证短逻辑链的稳固，需要在一个场景中能很纯熟的使用现有概念+工具解决问题&#xA;(类似于飞行员检查清单)、(这里建议看下《穷查理宝典》，有很多有用的工具)&#xA;ref git 飞行规则&#xA;在稳固的前提下扩展，尽量不影响原有逻辑。只要模型跟现实世界相符，偏底层，很少出现推倒重建的情况&#xA;5 实战流程&#xA;问题列表&#xA;问题&amp;ndash;&amp;gt;框定范围&amp;ndash;&amp;gt;资料搜集&amp;ndash;&amp;gt;断语拼凑&amp;ndash;&amp;gt;短逻辑链整理&amp;lt;&amp;ndash;&amp;gt;练习、维持手感&amp;ndash;&amp;gt;敲掉问题&#xA;资料搜集，参考“主题阅读”&#xA;断语拼凑，参考“文档池及搜索入口搭建”&#xA;短逻辑链整理，参考“demo，及开源代码阅读方法，简言之，先跑起来”&#xA;练习，参考“环境搭建”&#xA;现在特别喜欢工作里遇到不懂的问题，这意味着我当前的知识和问题之间，存在不少的gap点，我是这样“递归”来解决遇到的问题的： 1. 把遇到的问题一个个写下来，形成一个“问题列表”（list of problem），对问题的描述越具体越好； 2. 遍历第一步形成的“问题列表”，逐个解决。过程中记录、整理下来当前知识到解决这个问题之间，需要新增的知识点； 3. 第2步解决问题时如果同样遇到了问题，同样按照第一步的流程，把解决这个问题时遇到的子问题添加到“问题列表”里； 4. 重复以上三步，直到清空“问题列表”中的所有问题。 （附图中是这个流程的伪代码，但是不够准确，修改后的伪代码见评论） 四步下来之后，基本就完成了当前知识到问题之间，所有问题点的清理，以及新增知识点的整理。 知识点整理，需要落到具体的（文件）存储中，而不能仅仅局限于自己脑子里的“内存记忆”，而落到存储中需要有以下的要求： * 条理化、结构化； * 如果有可能，尽量增加图形化描述； * 时常回顾，确保每次回顾都能看懂以前的表述，如果没有就修改或者润色。 整个流程的重点是： * 把大的问题，划分成一个个的子问题，划分的标准是：是否能够解决这个子问题，如果不能就接着划分，让大的不能直接解决的问题“越具体越好”。 * 解决问题的过程中，把缺失的知识点整理补上，这样以后遇到类似的问题就能直接解决了。将原有的知识和新增的知识连接起来。 5 学习策略</description>
+    </item>
+    <item>
+      <title>FAEB</title>
+      <link>/resource/faeb/</link>
+      <pubDate>Tue, 11 Feb 2025 08:20:07 +0800</pubDate>
+      <guid>/resource/faeb/</guid>
+      <description>FABE FABE是销售培训的入门课 FABE法简单地说，就是在找出顾客最感兴趣的各种特征后，分析这一特征所产生的优点，找出这一优点能够带给顾客的利益，最后提出证据，通过这四个关键环节的销售模式，解答消费诉求，证实该产品确能给顾客带来这些利益，极为巧妙的处理好顾客关心的问题，从而顺利实现产品的销售诉求。&#xA;FABE有很多变体，(此处pending)&#xA;乔哈里视窗 真正而有效的沟通，只能在公开区內进行，因为在此区域内，双方交流的资讯是可以共享的，沟通的效果是会令双方满意的。但在现实中，很多沟通者对彼此都不很了解，很无奈地进入了封闭区，沟通的效果就可想而知了。 为了获得理想的沟通效果，就要通过提高个人信息曝光率、主动征求反馈意见等手段，不断扩大自己的公开区，增强信息的真实度、透明度。在沟通的策略上，可以在隐藏区内选择一个能够为沟通双方都容易接受的点来进行交流，这个点被叫做“策略资讯开放点”。</description>
+    </item>
+    <item>
+      <title>并发编程 消费者模式</title>
+      <link>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 10 Feb 2025 10:00:44 +0800</pubDate>
+      <guid>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>pipe作为缓冲区 queue作为缓冲区</description>
+    </item>
+    <item>
+      <title>Photos</title>
+      <link>/photos/</link>
+      <pubDate>Sun, 09 Feb 2025 20:09:29 +0800</pubDate>
+      <guid>/photos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docsify搭建技术博客</title>
+      <link>/resource/docsify%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 09 Feb 2025 19:11:29 +0800</pubDate>
+      <guid>/resource/docsify%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</guid>
+      <description>参照文章win配置node环境配置好node后，&#xA;照着文档docsify document一步步执行即可。&#xA;参考我的配置：peis doc repository&#xA;部署的话在本地创建gh-pages分支，github创建新仓库，推送到远程仓库即可</description>
+    </item>
+    <item>
+      <title>Node项目解析</title>
+      <link>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Sat, 08 Feb 2025 05:48:42 +0800</pubDate>
+      <guid>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</guid>
+      <description>npm init //生成package.json pnpm init //是一个高性能的包管理工具，旨在解决 npm 的一些性能和存储问题&#xA;package.json&#xA;src //原代码 dist //存放编译后的文件&#xA;package @types 是 TypeScript 中用于提供第三方 JavaScript 库类型定义的命名空间</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;基础</title>
+      <link>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 24 Jan 2025 10:08:49 +0800</pubDate>
+      <guid>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</guid>
+      <description>basic data bool char int float double void arr ptr &amp;amp;ref func struct class union enum&#xA;typedef using&#xA;var type var_list (默认初始化)&#xA;作用域： 存储： auto static extern&#xA;control 循环、判断&#xA;func 函数参数（传值、指针、引用(引用就是别名)） lambda函数&#xA;&amp;amp; 和 * 的区别 指针作为函数参数 函数返回指针 int* 声明指针变量，ptr为地址；*作为运算符取地址中的数&#xA;other 库文件： vector&#xA;名称空间、预处理器、模板、信号处理&#xA;CRTP&#xA;RTTI&#xA;(实现多态的基础，pending) ref cplusplus&#xA;《深度探索C++对象模型》&#xA;对《深入C++对象模型》中的一个疑问——虚函数表的type_info的位置&#xA;RTTI的原理/ C++雾中风景14:CRTP, 模板的黑魔法</description>
+    </item>
+    <item>
+      <title>基金的收入来源</title>
+      <link>/posts/%E5%9F%BA%E9%87%91%E7%9A%84%E6%94%B6%E5%85%A5%E6%9D%A5%E6%BA%90/</link>
+      <pubDate>Thu, 23 Jan 2025 20:14:05 +0800</pubDate>
+      <guid>/posts/%E5%9F%BA%E9%87%91%E7%9A%84%E6%94%B6%E5%85%A5%E6%9D%A5%E6%BA%90/</guid>
+      <description>回报来源 市场大类资产的自然配置(公募基金市场 || 银行理财子公司净值化产品)&#xA;公募基金配置、股票市场、债券市场()、货币市场(解决流动性问题)&#xA;作为基准，判断一年(较长期)的收益&#xA;+- 战略资产配置的超额回报（投资期限，风险偏好，回报率，市场能不能够提供[短期看估值 || 长期看财报]）&#xA;=AR 战略性资产配置（财富管理投资业绩基准）回报 +- 战术资产配置的超额回报（根据个人风险承受能力微调）&#xA;+- 地域配置的超额回报&#xA;=SR 投资策略回报 +- 成分基金净值或价格带来的超额回报（基金优选带来的回报或成本降低）&#xA;- 积极的投资者交易费用&#xA;=投资者投资组合回报 投资组合理论 如果两个资产不是完全相关，波动性 混合资产&amp;lt;单个资产&#xA;回报=每一个成分回报占比&#xA;波动性=每一个成分的波动性占比&#xA;静态资产配置 均值方差最优模型：&#xA;基于超长期历史数据&#xA;对应每一个风险水平找到最大化收益配置&#xA;对应每一个收益水平找到风险最小化配置&#xA;动态资产配置 Black &amp;amp; Litterman模型&#xA;历史数据的基础上融入前瞻性判断&#xA;(动态调整，降低风险，增加收益)&#xA;主观判断&#xA;指标阈值&#xA;事件触发</description>
+    </item>
+    <item>
+      <title>Qml</title>
+      <link>/posts/qml/</link>
+      <pubDate>Thu, 23 Jan 2025 18:59:57 +0800</pubDate>
+      <guid>/posts/qml/</guid>
+      <description>code &amp;ndash;list-extensions&#xA;code &amp;ndash;install-extension qt-vscode.qt-vscode&#xA;qpaintdevice class&#xA;qpainter class&#xA;QQuickPaintedItem Class&#xA;ref Qt 学习之路 2\&#xA;qt 5&#xA;qml book english&#xA;qml book chinese&#xA;玩转qml</description>
+    </item>
+    <item>
+      <title>Lsp配置</title>
+      <link>/posts/lsp%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 22 Jan 2025 16:07:27 +0800</pubDate>
+      <guid>/posts/lsp%E9%85%8D%E7%BD%AE/</guid>
+      <description>lsp即language server protocol，如图： 为了实现自动补全，减少查手册的频率，首先我尝试了lsp-bridge，里面的本地开发、ssh开发、本地容器开发模式都试了，可惜没跑通。&#xA;其实我需要一个自动补全的工具，vscode完全满足需求，没必要瞎折腾。&#xA;参考前一篇vscode安装的文章，安装完毕vscode，需要配置lsp服务器，我选pyright作为python的服务器，vscode配置优先级如下： 在项目目录下新建.vscode/settings.json文件，内容填写：&#xA;{ &amp;#34;python.languageServer&amp;#34;: &amp;#34;Pyright&amp;#34; } 然后执行，ref win配置node环境&#xA;npm install -g pyright 安装pyright服务器，重新打开一下vscode，就可以使用pyright提供的自动补全服务了 </description>
+    </item>
+    <item>
+      <title>Vscode初配置</title>
+      <link>/resource/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 21 Jan 2025 22:15:01 +0800</pubDate>
+      <guid>/resource/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;code --list-extensions 列出安装的所有插件&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 eslint-config-prettier 与 eslint-plugin-prettier (pending)&#xA;vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.</description>
+    </item>
+    <item>
+      <title>信息流监控</title>
+      <link>/posts/%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 20 Jan 2025 20:21:20 +0800</pubDate>
+      <guid>/posts/%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9B%91%E6%8E%A7/</guid>
+      <description>为了塑造个人信息环境，需要引入各种工具：&#xA;1 索引+信息库(结构化信息)&#xA;学习工程化&#xA;学习工程化2 搭建文档池及建立搜索入口&#xA;自定义搜索引擎yacy&#xA;2 信息流推送&#xA;主要方式就上面两个，今天这篇文章主要解决信息流监控.&#xA;check酱 这里要提到一个模式：外部事件触发，比如手机有短信通知，或者某天微信收到一条消息。通知这个动作被外部对象接管了，比如各种手机app的推送，微信消息。这部分应该掌握到自己手里。&#xA;当前思路是：rss订阅博客、wewerss订阅微信公众号、check酱监控网页变动。&#xA;docker-compose.yml 首先，你得有一台服务器。参考文章freshrss搭建配置服务器，启动docker-composer服务&#xA;version: &amp;#39;3&amp;#39; services: chrome: image: easychen/checkchan:latest volumes: - &amp;#34;./data:/checkchan/data&amp;#34; environment: - &amp;#34;CKC_PASSWD=abc6677&amp;#34; - &amp;#34;VDEBUG=OFF&amp;#34; - &amp;#34;VNC=ON&amp;#34; #- &amp;#34;WIN_WIDTH=414&amp;#34; #- &amp;#34;WIN_HEIGHT=896&amp;#34; #- &amp;#34;XVFB_WHD=500x896x16&amp;#34; - &amp;#34;API_KEY=abc7788&amp;#34; - &amp;#34;ERROR_IMAGE=NORMAL&amp;#34; # NONE,NORMAL,FULL #- &amp;#34;SNAP_URL_BASE=&amp;lt;开启截图在这里写服务器地址（结尾不用加/），不开留空&amp;gt;...&amp;#34; #- &amp;#34;SNAP_FULL=1&amp;#34; - &amp;#34;TZ=Asia/Chongqing&amp;#34; # - WEBHOOK_URL=http://... # 云端 Webhook地址，不需要则不用设置 ports: - &amp;#34;5900:5900&amp;#34; - &amp;#34;8080:8080&amp;#34; - &amp;#34;8088:80&amp;#34; 安装check酱插件 download link zip check&#xA;配置界面如下： 配置 使用server酱推送 server client 效果 ref Check酱：监测网页内容变化</description>
+    </item>
+    <item>
+      <title>Freshrss搭建</title>
+      <link>/posts/freshrss%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Thu, 16 Jan 2025 16:03:14 +0800</pubDate>
+      <guid>/posts/freshrss%E6%90%AD%E5%BB%BA/</guid>
+      <description>前置准备 需要一台1G1核心的云主机，我用ucloud；操作系统选择ubuntu&#xA;配置ssh登录 ssh-keygen -t rsa -f ~/.ssh/ucloud_ubuntu ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost 比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥 修改配置文件~/.ssh/config Host ucloud_root HostName 132.43.143.434(修改过的) User root Port 22 IdentityFile ~/.ssh/ucloud_root ssh user@remotehost 安装docker sudo apt install docker - add mirror web /etc/docker/deamon.json { &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://registry.docker-cn.com&amp;#34; ] } 安装vraya docker镜像有很多时候pull不下来，需借助魔法&#xA;https://github.com/ningmoon/v2ray $ sudo apt install v2ray v2raya $ sudo systemctl start v2raya.service 运行服务 准备docker-compose.yml文件 version: &amp;#34;3&amp;#34; services: freshrss-app: image: freshrss/freshrss:latest container_name: freshrss-app hostname: freshrss-app restart: unless-stopped ports: - &amp;#34;7000:80&amp;#34; depends_on: - freshrss-db volumes: - .</description>
+    </item>
+    <item>
+      <title>编程语言关注点</title>
+      <link>/posts/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Sat, 21 Dec 2024 13:22:30 +0800</pubDate>
+      <guid>/posts/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>快速翻了sicp，对编程语言及编程技巧，做一快速总结。&#xA;过程抽象 一般而言，程序语言会对可计算元素的可能使用方式加上某种限制，带有最少限制的元素称之为具有“第一级”状态，具有“第一级”状态的元素特权包括：&#xA;使用变量命名&#xA;使用过程作为参数&#xA;过程作为返回结果&#xA;可以包含在数据结构中&#xA;上述四个限制可以实现很复杂的过程抽象，具体等用到了再翻书。&#xA;数据抽象 层次性数据、闭包特性(一种类似粘合剂的技巧，来构建数据抽象)&#xA;base: 表数据(序列数据)&#xA;map+递归&#xA;信号流处理方式&#xA;分层设计&#xA;模块化及状态 函数式编程：数据处理引入流，这样可以保证过程抽象的一致性，但是存在性能问题&#xA;面向对象：直接操作数据，引入环境模型，同时引入了并发的问题&#xA;约束系统&#xA;元语言抽象 运用上面提到的三种技巧，通过自举，实现求值器，通过求值器，来实现不同功能的编程语言&#xA;end 对编程语言的表达力探索，到此为止，基本就是上面提到的内容了，next，linux系统核心</description>
+    </item>
+    <item>
+      <title>2024年总结</title>
+      <link>/posts/2024%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 14 Dec 2024 21:40:08 +0800</pubDate>
+      <guid>/posts/2024%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+      <description>正好晚上有空，把总结写了。&#xA;2023年总结&#xA;计划及完成情况 有6个目标，只完成了一个。因为存在不知不知的部分，首先要找方向，其次得搭建框架，再其次得填充细节。&#xA;我的目标很简单：自由&amp;lt;-经济保障&amp;lt;-商业(资源+机遇)、产品(知识+生产资料)，看看今年的进度。&#xA;第一个目标是基础技能构建，针对这个目标问两个问题：什么技术值得投资，怎么才能判定技术能力到达某一层次？&#xA;第一个问题，技术和场景有关，有些东西可能永远都用不到，所以先检查自己所在的场景覆盖哪些技术栈，将其作为主要攻克方向。其他的找自己感兴趣的学。有个标准，好的技术能提供很强的控制力。&#xA;第二个问题，分两段，第一段是学习，第二段是应用，这两段的流程跑通了，再辅以大量实践到纯熟，就能很轻松判断自己的技术能力。&#xA;针对学习的流程：原始资料(简悦+ebooks 20250227add百度云在线阅读pdf)-&amp;gt;结构化(坚果云+markdown 20250227add博客园)-&amp;gt;索引(本地知识库索引 rga、自定义搜索网络)+间隔重复&#xA;针对应用的流程：实践平台(msys2)-&amp;gt;猜想及验证&#xA;基于对这两个问题的回答，来构建基础技能，一年前我对这个目标的理解很肤浅，有了对两个问题的解答后，就有了完成标准。&#xA;基础技能的构建分为四块:机械、电气、电子、计算机，其中有些没补充完整，但已经有框架了，暂且认为完成。&#xA;什么是设计：&#xA;首先规定设计参数，然后针对具体情况添加约束，选出一组满足需求的参数，这个过程叫设计。我的重心放在设计参数库搭建上，具体如下：&#xA;机械：&#xA;材料选取&#xA;绘图原则&#xA;常用机械结构&#xA;电气：&#xA;plc程序设计&#xA;电气网络分析(接地故障、短路、人体安全)&#xA;选型库 电气绘图标准&#xA;电子：&#xA;计算机：&#xA;图灵机+编程语言(表达力边界)&#xA;linux系统&#xA;高性能程序构建&#xA;上述就是针对“基础技能构建”计划生成的框架类的东西，往里面填了一些内容。但是细节填充得靠项目，得引入资源，所以拿到框架就好，细节填充可以放到“项目”计划。&#xA;实际经历及收获 4月底到非标行业，岗位变化：plc设计-&amp;gt;售后-&amp;gt;现场调试-&amp;gt;上位机开发。&#xA;售后去了大量现场，要让设备在现场良好运行，需要关注的地方挺多的。&#xA;现场调试涉及到机械类、电气类、上位机产品，印象最深的是为了提升产品性能，需要一点一点，从每一个环节去压榨时间，所以从性能角度考虑去做产品一定不会错。&#xA;上位机我是从0开始，用qt做了一些小工具，在学习系统和设计参数库的双系统加持下，切入一个领域还是很轻松的。&#xA;plc设计则需要跟现场不断变化的需求作斗争，技术是跟着需求走的，所以这个时候不需要多强的技术，需要对需求的深入理解。&#xA;在这个过程中确定了职业方向，还有可能的定居点。&#xA;总结一下，今年最大的收获是学习能力有了质的变化，还有技术基础的构建，工作生涯中一些场景的覆盖。遗憾的是拿到的资源太少了，做事情没有魄力，有很多计划未完成，还有一些短板不知道怎么改。&#xA;明年展望 明年买个车，尝试下不一样的生活。&#xA;电气和计算机优先，切入做项目；社交、投资补充场景。越快越好吧，每一年下来都感觉啥都没干，焦虑。</description>
+    </item>
+    <item>
+      <title>材料覆盖率</title>
+      <link>/resource/%E6%9D%90%E6%96%99%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <pubDate>Fri, 13 Dec 2024 12:31:05 +0800</pubDate>
+      <guid>/resource/%E6%9D%90%E6%96%99%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <description>log:材料覆盖率章节增加材料索引相关内容&#xA;如何保证材料覆盖率？ 所有的东西都是为了满足某些需求，人为创造出来的，所以需要知道这套控制方案产生的驱动力是什么，在创造这一套控制框架的过程中，是如何选取组织材料的，有哪些取舍，效果如何，未来如何演化&#xA;降一层，自己构建出这个工具，(原子语言、基于原子语言构建的一个平台类的东西)&#xA;然后以该工具提供的接口为基础，在不同场景的应用；如何确保构建的程序可控(基于SDK，再做一层抽象，为了满足具体业务)&#xA;应用过程中出现的问题及排查措施、解决方案(补全2中的逻辑、工程漏洞)&#xA;最终得到的是一个不人为干预，完美运行的机器(理想状态)，事实上，没有完美的系统&#xA;材料覆盖率，说的就是材料中上面四个层次信息的覆盖情况。&#xA;step1: 因为信息都是人产出的，要么是网页形式，要么是书本，视频。&#xA;找该领域的20-30人，把他们产出的所有资料遍历一遍，这样做的目的是画一张大图，标几个关键点。&#xA;具体操作：搜索：电气设计 xxx，然后必然会搜出些书、知乎文章类似的，顺藤摸瓜，把里面提到的所有参考资料、人汇聚到一起，凑够30个，就大功告成了&#xA;实际操作：&#xA;ref 自定义搜索引擎&#xA;参考这篇文章，把平时索引搜集到的使用频率较高、内容质量相对比较高的网站放到google的自定义搜索引擎，可大大提升检索效率&#xA;ref 搭建个人文档池&#xA;实例：&#xA;在想办法解决qt界面自适应的时候，直接从google搜索，效率很低；在博客园搜，大概半个小时找到了解决方案。所以自定义搜索引擎可以加速从未知到已知的速度。&#xA;还有一个好处是可以不断积累，一切问题从已积累的材料入手，清晰划出了个人能力的边界，如果问题超出了能力圈，也知道怎么扩展能力圈。&#xA;还需要实践场景，解决的是从已知到熟练&#xA;step2: 无学习路径&#xA;通过各种方式搜集断语，用自己的话写下来&amp;ndash;&amp;gt;凑逻辑链&amp;ndash;&amp;gt;做练习，从不同角度检测逻辑链&amp;ndash;&amp;gt;淘汰没用的概念，成熟的闭环逻辑封存备用(注：可能需要花很长时间)&#xA;搜集断语路径：&#xA;技术文档 &amp;gt; 博客 &amp;gt;&#xA;2024/03/16 实践&amp;ndash;&amp;gt;技术文档&amp;ndash;&amp;gt;书单(扩充概念)&#xA;step3: 用工程手段探测，分析系统，找系统的控制点。这样相当于把视角切入到系统内部，有庖丁解牛，不见全牛的感觉。&#xA;依然是上面提到的四个层次，关注三个点：基本要素、抽象机制、组合机制。一个系统肯定能分解成最基本的部分。这里主要解决一个方向的问题，费曼有句话，凡我不能创造，我就不能理解。&#xA;如果step1的覆盖率足够的话，应该是能解决方向的问题，如果不行就求助有经验的员工，学习他们debug的思路，补全这块知识&#xA;2024/07/21 搜素proteus仿真相关书籍，内容有：所有功能介绍(当手册看)，经典电路，proteus构建仿真的思路及流程(此为上述覆盖率的一个实例)&#xA;2024/07/27 出现找一个资料死也找不到的情况，这时候要check下文档搜集路径(即网络)&#xA;2024/12/13 给出具体的索引方案，更新step1</description>
+    </item>
+    <item>
+      <title>Python面向对象</title>
+      <link>/posts/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 12 Dec 2024 09:36:49 +0800</pubDate>
+      <guid>/posts/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>在写软件的过程中发现很多基础知识不牢固，快速过一遍。&#xA;风格：面向对象，面向对象实现方法：封装、继承、多态，首先从python类开始&#xA;函数调用方法 class cat: index = 0 def __init__(self,name): self.name = name def run(self): print(&amp;#34;cat run&amp;#34;) def main(): p = cat(&amp;#34;miao&amp;#34;) p.run() if __name__ == &amp;#34;__main__&amp;#34;: main() python默认main函数为其入口，def main，然后添加if name xxx，这两段后，在main中实现逻辑，执行即可&#xA;类和函数 类比函数多了一个self参数，self是类的实例(具体是类实例的地址)，index可以在类实例间共享&#xA;类调用是先生成实例，然后用实例的指针(self)去访问内部变量，比如self.name&#xA;class声明语法实现了类的封装&#xA;类的继承 class SubClassName (ParentClass1[, ParentClass2, ...]): 按上述语法将父类指针传递到子类，就可以在子类实例中实现父类方法了，一个子类可以继承多个父类&#xA;父类方法查找：&#xA;解释器按照MRO中的顺序，逐个在父类中查找这个方法。一旦找到，解释器就会使用找到的方法。&#xA;也就是说，在执行过程中，python解释器会自己去父类中索引子类中没有的方法并调用，而不是拷贝父类方法到子类再调用&#xA;class animal: def __init__(self): pass def echo(self): print(self.name) class cat(animal): index = 0 def __init__(self,name): self.name = name def run(self): print(&amp;#34;cat run&amp;#34;) def main(): p = cat(&amp;#34;miao&amp;#34;) #p.</description>
+    </item>
+    <item>
+      <title>选型</title>
+      <link>/posts/%E9%80%89%E5%9E%8B/</link>
+      <pubDate>Tue, 10 Dec 2024 08:19:45 +0800</pubDate>
+      <guid>/posts/%E9%80%89%E5%9E%8B/</guid>
+      <description>选型需要关注两块：&#xA;1 元器件工作原理、类型&#xA;2 元器件厂家/型号&#xA;所以需要一个选型系统，之前的思路是用qt或者python或者nodejs写一个写一个界面，数据库用txt或者json或者mysql，试了五六天后发现其实纯文本也能实现类似选型软件的需求。具体如下：&#xA;我规定了这样一种文本格式，里面的3D模型或者图片部分以链接形式添加，然后根据需要添加元器件就行了，需要索引的时候执行“rga {name}”命令，如下： </description>
+    </item>
+    <item>
+      <title>Plc之状态图</title>
+      <link>/posts/plc%E4%B9%8B%E7%8A%B6%E6%80%81%E5%9B%BE/</link>
+      <pubDate>Fri, 06 Dec 2024 13:53:19 +0800</pubDate>
+      <guid>/posts/plc%E4%B9%8B%E7%8A%B6%E6%80%81%E5%9B%BE/</guid>
+      <description>start 五月份误入非标行业，蹲到现场从0到1复原了一个程序，虽然之前接触过倍福、西门子，kingscada，但没有真正自己负责做过东西。why，因为涉及到电气元器件选型。&#xA;断路器的选择依据是什么? 一般回答，选择额定电流为总电流8-10倍，断路器可在2s内脱扣。&#xA;我的思路是先分析电网，然后计算电网的短路电流，在根据短路电流选择断路器。&#xA;短路电流是感抗产生的，一般变压器端出现的感抗最高，针对不同条件的电网有不同的计算公式；回到我接触的设备中，感抗就是在一个闭合回路中，如果出现短路，闭合回路的磁场会产生变化，进而导致短路电流的出现，具体计算公式没找到。&#xA;根据上面的图，感抗产生的短路电流应该有额定电流的n倍，这样就能解释通为什么选择8-10倍额定电流作为断路器参数。&#xA;电气元器件涉及的知识太多了，抓不住重点，只能慢慢积累。&#xA;plc plc的设计方法，是我在一本书上看到的，当时困扰我的是变量的依赖关系，看其他人的程序，有些输出前面加了一堆又臭又长的条件，同类型条件分布在程序的各处，毫无规律可言。翻了这本书，才发现可以用状态图(sfc)把程序逻辑捋出来，再用M变量表示中间状态，再用一些常规的方法做变量的开闭，就能把程序捋的很清楚。&#xA;那么plc编程的重点就是，状态图、M变量、状态开闭，针对这些东西构建工具&#xA;状态图 试过很多plc软件提供的sfc工具，都很垃圾，最后我想到了dot语言，专门用来画流程图的，然后基于此搜索，找到了一个叫plantuml的程序，可以根据xx.uml自动生成png图，具体配置如下： 既然是编程语言，就能用上次提到的aider辅助生成状态图代码了，如下： 如此就解决了状态图的问题&#xA;M变量 这个就不赘述，文末我放那本书的链接，里面有详细的说明&#xA;状态开闭 st语言 非标程序框架&#xA;书里提到了五种方法，上面那个是写起来最简单的&#xA;end 这样基本解决plc程序编写问题，剩下选型，我打算做一个选型软件，然后一点点补充，end!</description>
+    </item>
+    <item>
+      <title>项目管理</title>
+      <link>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 02 Dec 2024 21:41:51 +0800</pubDate>
+      <guid>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>今天有人问我，有没有工具可以管理项目，要求如下：&#xA;1 计划&#xA;2 显示执行情况&#xA;3 随意更改计划&#xA;4 异常报警&#xA;别说，还真有。之前找甘特图工具时发现的，zz-plan，一个轻量级项目管理工具，我说下怎么使用。&#xA;计划 流程为：创建项目-&amp;gt;清点资源(时间、人)-&amp;gt;创建任务-&amp;gt;为任务创建约束项(物料约束、时间约束、人力约束、任务依赖关系)&#xA;如图，我创造了一个名为黄石的项目，五个任务，任务间定义依赖关系，分配人员、时间 执行 在执行过程中会改动计划，所以给初始计划建一个快照。&#xA;改动要保证整体计划会随着我的改动项整体修改，比如我插了一个一天的任务，整体计划时间就要延长；或者我缩短了某任务时间，整体计划时间缩短。zz-plan提供了这个功能。 执行完成后填入实际执行时间，更新该图表即可&#xA;分析 任务进行到一半，要分析异常，比如当前跟最初的计划到底偏离了多少，这时候打开计划初保存的那个快照，就能看到异常 这个显示总时间多了一天，原因：任务1延后一天，这时候找到相关负责人交流就成。\&#xA;如果跟踪每日进度，则每天应该更新进度并建立快照，周进度直接对比六天前的快照就行，一目了然。&#xA;end </description>
+    </item>
+    <item>
+      <title>GTD工具一览</title>
+      <link>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
+      <pubDate>Mon, 02 Dec 2024 20:58:03 +0800</pubDate>
+      <guid>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
+      <description>我是2020年开始接触gtd，当时在学emacs，并在此基础上实现自己的gtd系统。有一句话深以为意，“虽然gtd的理念很简单，但是打造成熟的gtd系统需要两年时间”。&#xA;反正当时有这么个念头，今天又翻到了之前做的GTD列表，意外发现，可以直接复用原来的系统，之前有些做不了的todo项现在可以做了。有一种穿越时空的感觉。&#xA;我个人实现了三套GTD系统，如下：&#xA;1 flomo(tag)&#xA;2 qqmail+omnifocus&#xA;3 emacs+beorg+orgzly&#xA;flomo gtd 参考文章flomo实践gtd和para&#xA;用flomo的标签功能，标签划分如下:&#xA;sys-gtd/ sys-gtd/inbox sys-gtd/act/TODO | DONE | Trash sys-gtd/porject sys-gtd/life \&#xA;新任务搜集进inbox标签，然后归类至project或life标签，在添加状态标签。一般是在TODO标签找任务做，做完后将TODO标签转为DONE。&#xA;qqmail+omnifocus omnifocus在文章gtd系统扩展+calender提及，实现后界面如下图 通过邮箱给一个特定邮箱发邮件，该邮件会同步至omnifocus，可以将其当作inbox。一般是看due、delegate，这两栏清空后再看defer。&#xA;emacs+orgzly emacs就有点复杂了，把下面的文件丢到kimi，让它解释一遍。emacs中的TODO项通过坚果云同步至orgzly，遗弃的todo项加ARCHIVE标签，这样就不会出现在检索列。&#xA;然后依然是从TODO状态找任务做，做完后状态切换至DONE&#xA;在pc端，一般用Ctrl+a+m来检索标签，我当时做出了覆盖很全的标签体系，这套体系后来可以直接复用到flomo (global-set-key (kbd &amp;#34;C-c l&amp;#34;) #&amp;#39;org-store-link) (global-set-key (kbd &amp;#34;C-c a&amp;#34;) #&amp;#39;org-agenda) (global-set-key (kbd &amp;#34;C-c c&amp;#34;) #&amp;#39;org-capture) ;;(setq org-directory &amp;#34;g:/area/emacs-notes/GTD&amp;#34;) (setq org-directory &amp;#34;C:/Users/whens/Nutstore/1/docs/GTD&amp;#34;) (setq org-capture-templates `((&amp;#34;i&amp;#34; &amp;#34;Inbox&amp;#34; entry (file &amp;#34;inbox.org&amp;#34;) ,(concat &amp;#34;* TODO %?\n&amp;#34; &amp;#34;/Entered on/ %U\n&amp;#34; &amp;#34;\n&amp;#34;)))) (setq org-todo-keywords &amp;#39;((sequence &amp;#34;TODO(T!</description>
+    </item>
+    <item>
+      <title>Qt Python开发流程</title>
+      <link>/posts/qt-python%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sat, 30 Nov 2024 14:56:41 +0800</pubDate>
+      <guid>/posts/qt-python%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</guid>
+      <description>用cpp+cmake开发，太繁琐了，切换到qt-python&#xA;环境配置 需要python解释器、pyside6包&#xA;下面三张照片展示python解释器是怎么配置的，其中python的虚拟环境搭建可以参考文章msys2使用anaconda 根据上述文章搭建一个名为qt的环境，激活环境，并安装pyside6的包&#xA;conda env list conda create -n qt python=3.10 conda activate qt pip install pyside6 conda deactivate 然后可以放手开发了。&#xA;界面开发 这个是ui界面，可以在上面拖拽放控件，这个ui文件对应一个xml文件，如下： 可以直接编辑xml文件，让ai生成相应界面，但是太难调整了，不如直接拖拽。实践中发现最好前后端分离，就是说前面的界面拖拽生成，界面样式和逻辑分开实现。&#xA;要在python代码中使用ui文件，必须通过uic.exe把xx.ui转换为xx.py，再把这个生成的xx.py作为包引入，为此我写了一个脚本，如下&#xA;#!/bin/bash if [ -f &amp;#34;$1.py&amp;#34; ]; then rm &amp;#34;$1.py&amp;#34; pyside6-uic.exe &amp;#34;$1.ui&amp;#34; -o &amp;#34;$1.py&amp;#34; echo &amp;#34;转换完成，文件地址：$(realpath &amp;#34;$1.py&amp;#34;)&amp;#34; else pyside6-uic.exe &amp;#34;$1.ui&amp;#34; -o &amp;#34;$1.py&amp;#34; echo &amp;#34;转换完成，文件地址：$(realpath &amp;#34;$1.py&amp;#34;)&amp;#34; fi 代码组织 新建ui.py文件，所有ui相关的逻辑都放在这个文件，特点就是ui绘制、界面行为、信号-槽的实现解耦，可以随意扩充。 打包发布 同样写了一个脚本，该脚本会在项目根目录下的.dist文件下生成可执行的exe文件及相关库文件，可以在没有python环境的电脑上运行 。里面用到的工具pyinstaller、上面的pyside6-uic，在qt虚拟环境中去找&#xA;#!/bin/bash # 检查是否提供了Python脚本作为参数 if [ -z &amp;#34;$1&amp;#34; ]; then echo &amp;#34;Usage: $0 &amp;lt;python_script.py&amp;gt;&amp;#34; exit 1 fi DISTPATH=&amp;#34;.</description>
+    </item>
+    <item>
+      <title>Qt初探索</title>
+      <link>/posts/qt%E5%88%9D%E6%8E%A2%E7%B4%A2/</link>
+      <pubDate>Tue, 26 Nov 2024 20:36:21 +0800</pubDate>
+      <guid>/posts/qt%E5%88%9D%E6%8E%A2%E7%B4%A2/</guid>
+      <description>有用qt的需求，就学了一下，看下怎么玩的。&#xA;安装qt ustc mirror qt&#xA;下载在线安装的exe文件，执行，选择所有组件&#xA;配置qt编译环境 我用的msys+cmake，cmake在windows界面下需要单独安装cmaek.msi&#xA;安装完cmake后将xx/cmake/bin/cmake.exe放到windows系统的环境变量，尝试，直到出现如下界面 C++编程核心要点 qt是c++实现的，所以使用qt的前提是对c++很熟悉，那就来研究一下&#xA;主要用到c++的面向对象特性，而面向对象是通过：封装、继承、多态实现的，再往下拆&#xA;封装就是把数据和方法放到一个class中&#xA;继承类通过层次结构和对象的内存分布实现(不深入了解)，关注点：构造函数、析构函数&#xA;多态，关注点：虚函数、纯虚函数&#xA;而这些可以通过qt引导项生成，常用的主要是：class类生成&#xA;跑通流程 qt ref 野火，参考第七章，跑通hello流程&#xA;熟悉控件 我的目标是做桌面开发，翻qt帮助文件 可以看到，主要用qt quick和qt widget组件，这两个组件里面是一堆class类，所以随后需要做的工作是遍历，搞清楚这一堆class类是怎么组合，为什么目标服务&#xA;end 这样，qt就基本入门了，然后根据目标组织代码就行了</description>
+    </item>
+    <item>
+      <title>领域知识</title>
+      <link>/posts/%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Tue, 26 Nov 2024 08:30:53 +0800</pubDate>
+      <guid>/posts/%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86/</guid>
+      <description>有两个房间，一个房间中是一个小孩，他对面的桌子上有个苹果；另一个房间中是个大人，他的桌子上什么都没有&#xA;现在想要知道苹果的颜色，请问找谁比较合适&#xA;这就是领域知识，就算你很聪明，你是神，在苹果是什么颜色这个问题上，还得问小孩</description>
+    </item>
+    <item>
+      <title>引入aider辅助编程</title>
+      <link>/posts/%E5%BC%95%E5%85%A5aider%E8%BE%85%E5%8A%A9%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Sun, 24 Nov 2024 17:31:48 +0800</pubDate>
+      <guid>/posts/%E5%BC%95%E5%85%A5aider%E8%BE%85%E5%8A%A9%E7%BC%96%E7%A8%8B/</guid>
+      <description>aider aider是一个AI结对编程工具，可以给提示词，让aider直接生成代码或文件。aider提供了很多llm的调用接口，最便宜的是deepseek。&#xA;配置aider 接上篇文章，通过anaconda解决了python包管理的问题，剩下的很简单了&#xA;直接执行即可&#xA;实际演示 cd d: mkdir demo cd demo aider --deepseek 执行完毕后： 其他尝试 想让aider直接使用其他ai中转站提供的api-key，发现除了它支持的那些llm中转站，其他的调用不了。这样能跑起来就行了，后续有需要的话接入其他模型。</description>
+    </item>
+    <item>
+      <title>Msys2使用anaconda</title>
+      <link>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
+      <pubDate>Sun, 24 Nov 2024 17:04:25 +0800</pubDate>
+      <guid>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
+      <description>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。&#xA;msys2: windows下的类linux环境&#xA;anaconda：windows下python集成环境&#xA;安装anaconda 配置msys2 conda info \\显示当前conda安装的信息 conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改 conda config --show envs_dirs \\显示env环境安装目录 vim .condarc \\修改env安装目录&#xA;envs_dirs: - D:\softwares\Anaconda3\envs vim .bash_profile \\绑定shell:msys2与conda&#xA;eval &amp;#34;$(&amp;#39;D:/softwares/anaconda3/Scripts/conda.exe&amp;#39; &amp;#39;shell.bash&amp;#39; &amp;#39;hook&amp;#39;)&amp;#34; conda env create -n {env_name} -f xxx.yml conda activate {env_name} conda deactive \\退出环境 退出环境 退出环境后，需要执行&#xA;source ~/.bashrc 方可使用之前bash的配置&#xA;conda使用教程 conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。&#xA;至于项目迁移、其他的一些操作，等日后有需要再补充。&#xA;conda install {package_name} \\安装包 conda list \\查看已安装的包 conda update {package_name} \\更新包 conda remove {package_name} \\删除包 conda create -n {env_name} python=3.</description>
+    </item>
+    <item>
+      <title>Ref 分享2023年最大的收获</title>
+      <link>/resource/ref-%E5%88%86%E4%BA%AB2023%E5%B9%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7/</link>
+      <pubDate>Sun, 17 Nov 2024 22:40:48 +0800</pubDate>
+      <guid>/resource/ref-%E5%88%86%E4%BA%AB2023%E5%B9%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7/</guid>
+      <description>分享 2023 年最大的收获 如果此时此刻，你正面临艰难的选择，我十分建议你花刷 5 分钟时间看完。&#xA;这算是我的一篇年终总结。&#xA;小故事 一切得从那套大概 400W 的瞰江大平层说起。&#xA;大概今年 5 月份左右的时候，那是我今年最舒服的几个月，新产品被动收入持续攀升，加上其他的收入，每个月少量的工作，可以带来大概 4 W 左右的收入，我不得不说，我飘了，可哪知道，那是我的巅峰时刻，从那时候开始，基本上就收入持续下降。有一天我躺床上刷朋友圈，我就刷到一套房子，瞰江大平层，大概 400W，一眼相中。&#xA;于是飘了的我开始盘算，我怎样才能在一年内买下这套房，算上贷款，我支付首付的话，我也需要每天赚 8300 多软妹币才够，遗憾的是，我发现我无论如何我都赚不到。&#xA;于是我继续思考，我为什么赚不到？因为我手上没有一块小生意、小业务能给自己带来持续性每天 8K+ 的收入。那我手上为什么没有这样的小生意？因为过去十年，我一直在给别人打工。&#xA;于是我继续思考，那既然这样，我能不能放弃，我不要这套房子了？不，不可以，我向来不是一个没有努力过，就直接放弃的性格。我想要的东西，我可以接受自己得不到，但原因只能是两个：&#xA;我没兴趣了。 我用尽了全力，办不到。 这套大平层，不符合，所以我一定要，时间可以长一些，但一定要。&#xA;于是我继续思考，我为什么一定要这套大平层？再给我十年时间，我相信自己肯定可以赚到，为什么现在办不到？我过去十年的时间，都浪费给了愚蠢的老板，余生剩下时间，我要做什么？&#xA;我开始思考「时间」，我早晚要死的，我死了以后，我儿子记得我，我孙子可能记得我，我的重孙大概率根本不记得我，就算是记得我，但我都死了，又有什么意义？人生就是一场体验，我要做的是丰富自己的人生体验，不要太过在意外人对自己的看法，做自己真正想做的事情。&#xA;于是我继续思考，人生剩余的几十年，我到底想过成什么样？既然我死了以后，可以一了百了，啥也不管，假如我不管别人的看法，假如不管社会规则、甚至不顾及伦理道德，我最希望把自己的有限人生过成什么样？我希望多丰富一些体验，做一些没做过的事情，看一些没看过的风景。我希望有一天可以把时间用在自己身上，而不是用在工作上，不是在那些不重要的人，或者事身上。更具体一点，我希望家人身体健康、平平安安，有爱，有陪伴，我也希望有一天可以走遍中国、走遍世界，看那些没看过的风景，吃那些没吃过的美食。&#xA;当我想到这里，我豁然开朗，我知道我终其一生追求的是什么，剩余的，都不重要的。那么，我怎样才可以？我需要时间，我需要钱。&#xA;从此开始，我所有的事情都围绕着这个目的展开，只要某件事情，对我的人生最终目的是有推进作用，无论多么艰难，我都必须做，是的，必须，没有任何商量的余地。&#xA;工作上的杂事，我掏钱请别人干，因为浪费我时间。 陪老婆、孩子去做以前从来没做过的事情。 尽全力尝试一些方向，做产品扩大被动收入。 缩减所有耗费自己心神的短期收益的事情。 陪伴家人，坦诚沟通 锻炼身体 学习外语 看书 我建立了一个「人生体验推进计划」，所有对我最终目标有推进作用的事项，全部列进去，我希望有一天我的时间表上都是绿色，只有少量的红色。&#xA;人这一生最稀缺的是时间，回头看，太多的时间浪费在没有意义的事情上。&#xA;过去的很多不成熟的想法和选择，造成的现状。现在的一些想法也同样会决定未来的走向。&#xA;以后尽量不要去做短期收益的事情，当然，长期收益的事情也不仅仅是赚钱。&#xA;当我想清楚，我这一生，想要过成什么样，我接下来所有的事情都围绕着这个目的来。不论遇到什么样的选择，都有了共同的判定标准，那就是让自己离这个目标更近一些。无论它有多难，都必须做，没有任何商量的余地。&#xA;很感谢对我的认可，你花时间看到这里，我很希望这篇文章对你有价值。同时，我也很希望你能想清楚「你想要过什么样的人生」，当你有了这个判定标准，你任何一个抉择，都会无比轻松。&#xA;故事完~&#xA;毕竟是一篇年终总结，我总得总结一下，再展望 2024 年吧。 2023 年，我的收入没细算，大概增长了 30% 左右，但是能自由支配的时间，确比 2022 年多了 50% 左右，最让我开心的，不是收入的增长，而是想通的这个道理，会让我接下来的人生变得无比踏实，我知道自己要什么，想变成什么样，并且在过去的这半年，我正在践行着我的「人生体验推进计划」&#xA;关于 2024 年，我之前没想过，我会在 30 岁的时候开始一段「新的人生」&#xA;我最近开始尝试之前没穿过的风格的衣服，我甚至想开始护肤了，归根结底，可能是我希望自己能再年轻一些，以及团哥说的一句话，我们在家虽然可以很随意，甚至油头垢面，但我们更应该把自己清清爽爽的一面展现给自己的家人，而不是每次出门的时候，打扮给外人看，家人比外人更值得我们认真对待。 新产品一定要盈利，一定 持续刷多邻国，不能停 刷了两个月多邻国下来，发现坚持似乎也不难，我给自己定的目标是每天 15 分钟。我希望自己多读一些书，这周冲了微信读书年卡，新的一年，我也希望自己能坚持下来，每天读书 15 分钟。 做一下身材管理，5 月份之前，将体重降低到 62KG 陪伴家人，多一些耐心，多一点包容。 现在遇到困难的时候总会想起一句话：道阻且长，行则将至。</description>
+    </item>
+    <item>
+      <title>职业发展方向</title>
+      <link>/posts/%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91/</link>
+      <pubDate>Sun, 17 Nov 2024 21:46:00 +0800</pubDate>
+      <guid>/posts/%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91/</guid>
+      <description>去年一年，包括今年到9月份都在思考工作方向，囿于学习能力提不上去，一直困在技术基础的学习上，我怀疑过是学习习惯的问题，抑或是资源引入的问题。&#xA;理想中的工作要保证自由度，一个人可以独立产出完整产品，且有源源不断的需求。&#xA;技术能力提不上去的原因是缺乏想象力，缺乏科学的学习体系，表现就是不知道一个东西做到什么状态才算完整，或者卡到某技术点就动不了了(很多人都卡在这两点)&#xA;参考前两篇“学习工程化”的文章，目的是为了实现碎片化、增量学习；另一点，技术实力的提升跟技术本身没多大关系，跟审美有关系，所以需要大量的阅读与实践。 为什么选工作一定要确保上述三个要求呢，为了平稳度过35岁危机，有时候我跟三十多、四十多岁的人聊天，能看到他们二十多岁的状态，显而易见，随着年龄的增长，可能性越来越小，提前布局可能会好点。&#xA;结合个人经历：非标、网站、教培算是三个可能的方向。&#xA;再扯远点，主题还是要回到“想要过什么样的人生”，这个可以参考我人生设计系列文章，end!</description>
+    </item>
+    <item>
+      <title>学习工程化2 搭建文档池及建立搜索入口</title>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</link>
+      <pubDate>Wed, 13 Nov 2024 22:51:07 +0800</pubDate>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</guid>
+      <description>留存文档分类 1 保留最原始出处&#xA;2 分层组织，运用para规则，+article 学习工程化提到的第三点：构建自己的命名空间&#xA;3 检索历史也要保存到log文件，追加至留存文档&#xA;问题1： 建一个大文件夹，保存内容如下&#xA;简悦自动保存离线网页，丢进去&#xA;聊天记录定期导出，丢进去&#xA;使用频率较高的pdf，丢进去&#xA;md(我试了，可以展示图片，也可以用latex显示数学公式)或org格式写的笔记，丢进去&#xA;工程文件，丢进去&#xA;这样，基本所有的文档都汇到一个池子了&#xA;问题2：&#xA;这里主要是笔记和工程类文件&#xA;笔记以doc-area分类，比如doc-dianqi，doc-jixie，doc-front，doc-soft，doc-host，etc&#xA;工程类文件建pro文件夹，按项目分&#xA;检索 经过上面的操作，可以确保文件库大部分文件是文本格式，然后找一个文本检索工具，作为检索入口&#xA;recoll，它可以扫描这些文本文件，生成索引表，很快能检索出需要的文本信息&#xA;fix:2024/12/05&#xA;引入rga，scoop install rga，可以点对点搜索，命令行也更符合使用习惯&#xA;对学习和知识的看法 学习就是建模，跟之前提的构建逻辑链相似。穷举所有状态，让这些状态全部包含在构建的模型当中，就获得了对这个状态空间的控制力&#xA;最难的地方在确定最终状态、找出影响要素&#xA;假设观测到某种现象，这种现象受到三个要素影响，即使想到了这三个要素，也很难去验证&#xA;从0知识出发，建立复杂系统，注定有很长的路要走。&#xA;构建的这个叫pkm系统，它解决的是过往经验复用的问题，做时间的朋友。</description>
+    </item>
+    <item>
+      <title>学习工程化</title>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
+      <pubDate>Fri, 01 Nov 2024 17:43:22 +0800</pubDate>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96/</guid>
+      <description>不知从何说起，首先说两个观察：&#xA;1 很多时候人是在不断重复自己，重复固定的行为模式 2 很多人在自己不熟悉的领域表现的很“慢”&#xA;基于此，我提出学习工程化的方法，以解决兴趣太广泛的问题。&#xA;流程：原始材料&amp;ndash;&amp;gt;加工&amp;ndash;&amp;gt;提取(适配场景)&#xA;在遇到具体场景的时候，我发现很多知识点提取不出来，三个原因：&#xA;1 不能即时接触(行为设计角度来讲，阻碍越大，行为就越小几率出现)&#xA;2 加工后的材料应该结构化，形成一组组完整的概念空间&#xA;3 已经经历的场景生成的概念空间应该保存，以便后期复用&#xA;做一套机制，解决上述三个问题，就能不间断学习，且学习速度越来越快。&#xA;问题1，我的解决方式是:&#xA;md文档归纳知识点，坚果云同步至不同设备，docsify建站分享 问题2，我的解决方式是通过反复折叠，跑通流程，并将关键点记录在上述md文档中，文档归类完毕，应用频率高的知识点往文档顶部走，时间一长，使用频率高的知识点就都顶到头部了。&#xA;问题3，我觉得很有必要形成自己的名称空间，你得想办法去实现这些名字代表的具体内容，并将其固化。 bash脚本实现书签管理&#xA;通过bash脚本接管所有操作。或者一直建立并维护资源类通道&#xA;我的常用名称空间大概这样 通过上述三个动作，就能把除了材料加工，场景外的所有内容都交出去。&#xA;在没有场景的时候可以通过材料加工构建逻辑链，有场景的时候直接提取，完善修正。&#xA;这是操作流程化，涉及到数学知识，计算类的，也要固化成概念，碰到具体场景直接使用做好的概念就成。&#xA;end</description>
+    </item>
+    <item>
+      <title>Node版本管理</title>
+      <link>/posts/node%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Fri, 01 Nov 2024 16:24:43 +0800</pubDate>
+      <guid>/posts/node%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</guid>
+      <description>win配置node环境&#xA;配置node_modules及索引路径 配置完成后写一个demo，如下：&#xA;//server.js const express = require(&amp;#39;express&amp;#39;); const app = express(); app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; { res.send(&amp;#39;Hello, World!&amp;#39;); }); const PORT = 3000; app.listen(PORT, () =&amp;gt; { console.log(`Server is running on http://localhost:${PORT}`); }); 执行 node server.js 是索引不到express模块的位置，那就看看node执行的时候索引位置在哪：&#xA;代理开启tun模式(tun模式是一种有限的全局代理) which node \\找node位置\ npm prefix -g \\找全局node_modules目录\ npm config set prefix &amp;#34;xxx&amp;#34; \\设置全局node_modules目录\ node \\进入ide\ module.paths \\打印出node索引node_modules的位置\ 添加路径至全局变量&amp;#34;NODE_PATH&amp;#34;中 npm install express -g \\安装express包 node server.js 这样就运行成功了&#xA;发布npm包 registry here:&#xA;npmjs.com&#xA;npm init \\生成配置信息，会生成package.</description>
+    </item>
+    <item>
+      <title>情境创设 资源引入</title>
+      <link>/posts/%E6%83%85%E5%A2%83%E5%88%9B%E8%AE%BE-%E8%B5%84%E6%BA%90%E5%BC%95%E5%85%A5/</link>
+      <pubDate>Sat, 26 Oct 2024 22:56:24 +0800</pubDate>
+      <guid>/posts/%E6%83%85%E5%A2%83%E5%88%9B%E8%AE%BE-%E8%B5%84%E6%BA%90%E5%BC%95%E5%85%A5/</guid>
+      <description>这篇主要分析如何引入资源&#xA;当然，我是为了提升技术而讨论此主题；但实际上，有比技术更重要的东西，比如说产品、商业，或者说，你是想做一些有意义的事情&#xA;关于技术已经讨论的很多了，ref&#xA;如何适应一家公司&#xA;技术栈&#xA;namespace和贝叶斯推理&#xA;超越理论 情景创设&#xA;关于资源引入，正常情况是，看到了机会，把握住了机会，在一定概率下获得了成功&#xA;这些事的前提是要有目标，想做什么事，再考虑资源的引入&#xA;“看到”机会，首先要排除干扰信息，其次捕捉有用的信息，所以需要一个软件，聚合所有网站信息，实时更新那种，然后添加需要监控的网站即可(follow)；第二是需要社交，之前认识一个人说她有啥事发个朋友圈，马上能找到相应的朋友解答。&#xA;当然，不管网络信息，还是社交得到的信息，都需要技巧，需要深挖，如果不思考就会流于表层。我感觉这个主题讨论下去会涉及到哲学层面，暂时pending。&#xA;把握住机会，需要发挥个人的主观能动性，积极展示自我的价值，并发掘一切有可能出现机遇的点。类似于销售。单纯技术来讲，我得进入到那个场景，如果不具备进入条件，就渐进式渗透，通过外围工作逐步抵达核心区域；商务来讲，与其说资源引入，不如说是资源整合，打造利益共同体，必须要能提供一些东西。&#xA;成功的概率，天时、地利、人和缺一不可，多算者胜。&#xA;关于资源引入，还有一条，给予也是引入的一种方式，我创造了一个环境，这个环境也会输出到我，反者道之动，在考虑资源引入的时候，如果做资源输出，也许也能达到资源引入的目的。&#xA;Thats all。</description>
+    </item>
+    <item>
+      <title>反馈分析法</title>
+      <link>/posts/%E5%8F%8D%E9%A6%88%E5%88%86%E6%9E%90%E6%B3%95/</link>
+      <pubDate>Wed, 23 Oct 2024 20:36:45 +0800</pubDate>
+      <guid>/posts/%E5%8F%8D%E9%A6%88%E5%88%86%E6%9E%90%E6%B3%95/</guid>
+      <description>这也是发现的一种pattern，用来发现和补充思维盲区。&#xA;半年时间，用这种方法，我发现了自己身上的五处缺陷，可能之前我不觉得这是个缺陷。&#xA;需要用到三个工具：&#xA;1 便签类工具，记录想法用&#xA;2 注意捕捉感觉不顺畅的地方，这里可能存在思维死角或者视觉盲区&#xA;3 注意一个想法的产生到推进的过程&#xA;我自己的经历是这样的，4月末我觉得认知范围已经覆盖很多领域了，在去年11月有了对道德经的深刻理解后，剩下的就是搭积木，而且任何问题，出现异常我能第一时间判断出问题点在哪里。&#xA;可当真的接触项目后，才发现自己缺的是设计的能力，设计一个完整的产品涉及到很多细节，而我的思维是what，而不是how，这要求一点点补充设计相关的细节知识。先是电气系统，从最基本的电阻、电流、电压概念起，然后是电气网络，再然后是接地保护，再是配电计算，再是plc系统设计思路，再是三维图绘制思路，etc&#xA;所以4-7，6-10，我的博客都是要构建技术栈为主，在此过程中我又发现，技术栈跟具体的场景有关，如果一个技术没有场景使用，根本不可能学会，所以我得让自己进入那个场景。这个机会很难等。&#xA;本来社交我是准备放到技术栈成熟后在发展的，但是在工作这段时间，社交影响太大了，之前我很不在乎跟人交流，一来没这种意识，二来觉得没必要。但是实际观察到一两句话的巨大影响后，我意识到，别人的评价也会对我所在的这个世界产生影响。所以别人的评价作为一个影响因素被放进决策模型。&#xA;而且我也观察到其他人的行为模式，这是之前从未有过的。&#xA;刚才又是脑中闪过一丝想法，虽然短短一瞬，但我捕捉到了：就是我的思维是解释型的，其实应该转为构建型，这样做后面的场景就都是自己引入的了，而解释型的后果是后面的场景都是被动滑入的，区别很大吧。这个是思维视角的变化。&#xA;所以在之前我的认知中，我的想法逻辑自洽，没什么不对；但是后面新的视角出现后，再审视之前的想法，发现有很多死角。于是我找出了反馈分析法，用来加速这一过程。&#xA;反馈分析法，是找出的一种新的pattern，用来帮助找思维死角的。</description>
+    </item>
+    <item>
+      <title>Namespace和贝叶斯推理</title>
+      <link>/resource/namespace%E5%92%8C%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</link>
+      <pubDate>Sun, 20 Oct 2024 08:23:01 +0800</pubDate>
+      <guid>/resource/namespace%E5%92%8C%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</guid>
+      <description>贝叶斯推理&#xA;凭借我在电气、计算机、机械领域的所见所闻，结合从各处搜集来的关于学习、神经学理论，可以确定，人脑对于世界的控制力，是通过name，name是无数细节的综合。&#xA;这里分化出两个方向：做科研，做工程&#xA;做科研是从0到1生出一个namespace(观察-归纳-建模)，做工程是解决附加在namespace中各种约束冲突问题()&#xA;name有个特征，可以拆分、可以合并。在一个namespace中，有原本归纳总结得到的name，有指向name的name，有些name间有约束关系。一组name，配合约束关系，就构成了逻辑链，而逻辑链是展现控制力的核心。&#xA;所以很多时候我们需要的，就是一套自洽的namespace，工作是这样，生活也是这样。&#xA;在构建namespace的过程中，观察处于第一位，因为name是“我”总结出来的，namespace中的约束关系，是“我”添加上去的。所以知道很多道理却仍过不好一生，是因为拿到的只是name，而没有其中包含的无数细节。&#xA;构建namespace的过程中会遇到如下问题：&#xA;namespace不完备，缺要素(参考文章开头&amp;lt;贝叶斯推理&amp;gt;) 有些要素要在具体场景中出现，如果没遇到这种场景，可能就永远无法补齐 鼓励年轻多试错 按理说如果爱折腾，经过足够长的时间，基本所有场景都能覆盖 可能具有要素的场景已经出现了，但是自己没好好观察 间接经验、找人指导 同一类型场景多走几次 namespace要素齐全，但是结构不对 出现新约束，原来的namespace不适用 没有新的约束关系进来，依然是场景覆盖不够，但是此刻的关注点要放在约束关系上 新的约束关系出现，可能要增加新的name，或者调整之前的结构 关于namespace就论述完毕了，但每个人追求不一样，namespace的抽象层次越高，解释力越强，对于细节问题的控制力也就越弱。不是说抽象层次越高就越牛逼，跟个人的目标相关，适合的就是最好的。但好的namespace一定是逻辑自洽的。&#xA;基于此，就能确定方向，假以时日，构建出完整的namespace。</description>
+    </item>
+    <item>
+      <title>Win配置node环境</title>
+      <link>/posts/win%E9%85%8D%E7%BD%AEnode%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Tue, 15 Oct 2024 21:35:04 +0800</pubDate>
+      <guid>/posts/win%E9%85%8D%E7%BD%AEnode%E7%8E%AF%E5%A2%83/</guid>
+      <description>测了半天，用到如下工具：msys2、scoop、pnpm，具体操作如下：&#xA;ref scoop&#xA;安装nodejs&#xA;scoop install nodejs 设置npm目录&#xA;npm config ls npm config get prefix \\获取当前设置的目录 npm config set prefix \\设置node_modules目录 npm root -g \\全局位置 安装pnpm&#xA;corepack enable pnpm@latest ref&#xA;Since v16.13, Node.js is shipping Corepack for managing package managers. This is an experimental feature, so you need to enable it by running: info If you have installed Node.js with pnpm env Corepack won&amp;#39;t be installed on your system, you will need to install it separately.</description>
+    </item>
+    <item>
+      <title>Cpolar&#43;ssh登录ubuntu服务器</title>
+      <link>/posts/cpolar&#43;ssh%E7%99%BB%E5%BD%95ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Sun, 13 Oct 2024 22:27:39 +0800</pubDate>
+      <guid>/posts/cpolar&#43;ssh%E7%99%BB%E5%BD%95ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>私人pc装ubuntu系统，作为远程服务器使用。 经测试，只要后台程序在运行，就不会影响ssh远程链接。所以休眠对远程ssh不产生影响。&#xA;cpolar official web，登录官网，注册账号，创建通道，ssh相关通道如下： 然后用公网链接登录即可，如下： </description>
+    </item>
+    <item>
+      <title>Win11保持屏幕常亮&#43;取消密码登录</title>
+      <link>/posts/win11%E4%BF%9D%E6%8C%81%E5%B1%8F%E5%B9%95%E5%B8%B8%E4%BA%AE&#43;%E5%8F%96%E6%B6%88%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Sun, 13 Oct 2024 22:17:13 +0800</pubDate>
+      <guid>/posts/win11%E4%BF%9D%E6%8C%81%E5%B1%8F%E5%B9%95%E5%B8%B8%E4%BA%AE&#43;%E5%8F%96%E6%B6%88%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid>
+      <description>取消密码登录 win11有两种login验证方式：pin码+密码&#xA;要取消密码登录，登录本地账户，密码设为空即可 屏幕常亮 需要用到一个小工具：PowerToy&#xA;里面的awake选项保持常开即可</description>
+    </item>
+    <item>
+      <title>贝叶斯推理</title>
+      <link>/resource/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</link>
+      <pubDate>Thu, 10 Oct 2024 07:18:18 +0800</pubDate>
+      <guid>/resource/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</guid>
+      <description>贝叶斯推断最关键的点是可以利用贝叶斯定理结合新的证据及以前的先验概率，来得到新的概率（这和频率学派推断相反，频率论推断只考虑证据，不考虑先验概率）。&#xA;而且贝叶斯推断可以迭代使用：在观察一些证据后得到的后设概率可以当作新的先验概率，再根据新的证据得到新的后设概率。因此贝叶斯定理可以应用在许多不同的证据上，不论这些证据是一起出现或是不同时出现都可以，这个程序称为贝叶斯更新（Bayesian updating）。</description>
+    </item>
+    <item>
+      <title>人生课题遍历</title>
+      <link>/resource/%E4%BA%BA%E7%94%9F%E8%AF%BE%E9%A2%98%E9%81%8D%E5%8E%86/</link>
+      <pubDate>Sat, 05 Oct 2024 09:48:09 +0800</pubDate>
+      <guid>/resource/%E4%BA%BA%E7%94%9F%E8%AF%BE%E9%A2%98%E9%81%8D%E5%8E%86/</guid>
+      <description>ref-提到“课题概念”&#xA;我意识到人的精力是有限的，无序扩张的结果是啥也做不成；过将就的人生会消耗机会成本，也是对生命的浪费。所以TODO项中出现这么一项 its some examples:&#xA;姚尧的33岁生日&#xA;我人生的前28年&#xA;我眼中的婚恋连载（1）&#xA;看得出，事业方面需要持续的投入，艰苦奋斗才能有所成就，坚持下去的动力，可能只有热爱了；爱情方面可遇不可求。&#xA;至此，人生的每个阶段需要拿到什么成果，往哪个方向去努力，就很清晰了！！！</description>
+    </item>
+    <item>
+      <title>GTD系统扩展&#43;calender</title>
+      <link>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</link>
+      <pubDate>Fri, 04 Oct 2024 16:17:06 +0800</pubDate>
+      <guid>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</guid>
+      <description>老是觉得事情推不动，应该在时间上做限制，下面两篇文章完美解决了我的困惑。&#xA;准确定位calendar与 omnifocus ，整个世界都清楚了&#xA;双剑合璧，结束混乱：任务管理中omnifocus 与日历的配合使用&#xA;GTD系统用omnifocus、日历选用&amp;quot;优效日历&amp;quot;(跨平台，能预览一个月的时间安排)&#xA;时间管理相关 2min原则：一件事能在2min内完成的，马上去做&#xA;5h原则：阅读-反思-实验，每周至少花5h在自己感兴趣的事情上面，平均每天1h(不至于负荷太重)</description>
+    </item>
+    <item>
+      <title>保持精力</title>
+      <link>/posts/%E4%BF%9D%E6%8C%81%E7%B2%BE%E5%8A%9B/</link>
+      <pubDate>Fri, 04 Oct 2024 16:07:50 +0800</pubDate>
+      <guid>/posts/%E4%BF%9D%E6%8C%81%E7%B2%BE%E5%8A%9B/</guid>
+      <description>发现身体江河日下，每天到下午思绪飘散，有办法解决，从humbernman lab中找了几条关于energy的总结，如下。&#xA;以&amp;quot;精力&amp;quot;为关键词索引google、bilibili，没发现几个能用的东西，本着实用至上的原则，NSDR、IAP、番茄钟这些就是这篇文章找出的保持精力的方法，这个列表后续会持续更新&#xA;试了下NSDR，效果不错，睡得很香&#xA;the Huberman Lab: Here are several insights on maintaining energy levels from the Huberman Lab:&#xA;Sleep and Temperature Control: A key factor in maintaining energy is ensuring good sleep quality. Controlling the temperature of your sleeping environment can significantly enhance sleep. Andrew Huberman recommends using tools like Eight Sleep, a smart mattress cover that regulates bed temperature to help you fall and stay asleep, and wake up refreshed.</description>
+    </item>
+    <item>
+      <title>理解道德经</title>
+      <link>/posts/%E7%90%86%E8%A7%A3%E9%81%93%E5%BE%B7%E7%BB%8F/</link>
+      <pubDate>Sun, 08 Sep 2024 13:39:33 +0800</pubDate>
+      <guid>/posts/%E7%90%86%E8%A7%A3%E9%81%93%E5%BE%B7%E7%BB%8F/</guid>
+      <description>从第一章到最后一章，解读到哪算哪。&#xA;道可以说，但是说出来那个道不是&amp;quot;恒&amp;quot;道，名字也能说，说出来就不是&amp;quot;恒&amp;quot;名。然后老子开始造概念：名“无”，天地之始，名“有”，万物之母。从“有”来观察事物边界，“无”来观察世界之妙。这两个统一名“玄”，玄之又玄，即有无不停地相互转换，这三个概念是洞悉万物变化的基础。&#xA;天下人都认为这个东西“美”，那它就“不美”，大家都说这个东西“好”，那它就“不好”，因为评价标准一旦显露，就会有不实的成分掺进来，评价标准就得改。&#xA;所以圣人做“无为”之事，因为“有为”本身会消耗一部分筹码，这跟目标不符。&#xA;就治理国家层面，圣人如何“无为”呢。想要使民不争，就不尚贤，想要使民不为盗，就不贵难得之货，想要使民不乱，就不见可欲；让他们吃饱肚子，不要有攀比心，不要有远大志向，身子骨练好些，给我好好种粮食，不要瞎折腾，这样我们的国家才会富强。&#xA;“道”包含天地万物，好像是一切的根源，又混在万事万物当中，我不知道它是怎么来的，好像是天帝的祖先。&#xA;天地无所谓仁慈，对待万事万物就像刍狗一样，任其自生自灭，圣人也是一样。天地之间就是一个大风箱，少作为还好，做的越多，事情反倒越多，最终会承受不过来，最好的方法是“守中”(ps 就是盯着自己要干的事，多余的事情不要管)&#xA;“道”就是一切的根源，连绵不绝。&#xA;而且我发现“道”的规律是反的，后其身而身先，外其身而身存，奇妙呵。&#xA;“上善”，就跟水一样，水善利万物而不争，人们都忽略它，所以最接近“道”，居善地，心善渊，与善仁，言善信，政善治，事善能，动善时(这是“合道”的策略)。就因为善利万物，不争，所以“合道”&#xA;如果推动整体利益向前，却不显露自我，这个就叫“玄德”&#xA;“有”是利，“无”才是用&#xA;很多无关的事都会对个人、集体产生影响，所以圣人追求饱腹，其他无关的因素都消解掉&#xA;如果以天下为己任，而不是时时刻刻想着自己，那么就能治理好天下\&#xA;视而不见，听而不闻，搏而不得，不知其起始，不知道用什么名字称呼，暂且称之为“恍惚”，用早已存在的“道”，驾驭现存的具体事物，就能认识“道”的规律&#xA;古代擅长行道的人，深不可识，我就暂且描述下，xxxx(他的行为很难让人理解)，他不满，因为不满，所以能够去故更新&#xA;回到最初始状态，万物并作，放眼望去，都返回它们的根。“归根”叫静，“静”叫复命。“复命”叫常，“知道常”叫“明”，“不知常”就会遭受凶险。“知常”就会无所不包，无所不包就会公正，公正就能周全，周全就是符合天道，符合天道才能长久，终身不会遭受风险&#xA;最好的统治者，民众不知道有他存在；其次，大家都亲近他；再其次，大家都害怕他；再其次，大家都骂他。统治者诚信不足，大家够不相信他。悠哉游哉，很少发号施令，事情干成后，大家都说“我自然”</description>
+    </item>
+    <item>
+      <title>Delicious</title>
+      <link>/resource/delicious/</link>
+      <pubDate>Thu, 05 Sep 2024 13:16:32 +0800</pubDate>
+      <guid>/resource/delicious/</guid>
+      <description>2024/09/05 一个人值不值得深交，看ta吃饭的样子就知道了 KnowYourself</description>
+    </item>
+    <item>
+      <title>多元思维模型</title>
+      <link>/resource/%E5%A4%9A%E5%85%83%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Tue, 03 Sep 2024 19:14:35 +0800</pubDate>
+      <guid>/resource/%E5%A4%9A%E5%85%83%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
+      <description>可以跟查理芒格一样，用一个框架把所有的思维模型组织起来，碰到任何问题，从这些模型中找能用的，辅助解决问题。&#xA;列表如下：&#xA;Type Name Description 课题分离 三个空间 xxx xxx 三个空间 这是一个假设，大脑中的是主观空间，外围是客观空间，主客观世界夹杂的是实践空间&#xA;主观空间，通过各种信息建模，颠覆模型的速度取决于聚焦点和获得反馈的速度&#xA;实践空间，重要的是资源，通过各项资源导入促成目标的实现&#xA;客观空间无时无刻不在进行信息和资源的流动(可称为能量的流动)，如果观测，或者介入，就会变成实践空间；否则，就是视而不见，听而不闻&#xA;(期望集)(事实集)&amp;ndash;&amp;gt;&#xA;这样的话“我”就只会关注大脑的建模过程，资源的流动过程，而不会分散太多注意力到“我”这个概念&#xA;课题分离 具体是这样：&#xA;“一切烦恼都是人际关系的烦恼”，这句话太绝对了，因为我经常被技术相关的东西困扰。但是阿德勒心理学以这个为前提，我们默认接受&#xA;&amp;ldquo;我们需要社会认同。因为他人会对我们产生评价，相应的，我们会在脑中塑造一个他者，来评价自我&amp;rdquo;，人的意图随时在变化，他人的评价，只能靠捕捉到的部分信息去判断，在意他人的评价，更多的是在他人的正向评价中寻求安全感(&amp;ldquo;我&amp;quot;和群体在一起，&amp;ldquo;我&amp;quot;就是安全的，不会被抛弃)&#xA;&amp;ldquo;因为他人会对我们产生期待，所以他人的期待和我们自身的期待混在一起，这时常让人感觉痛苦&amp;rdquo;，这个我深有体会。&#xA;&amp;ldquo;某种选择所带来的后果由谁承担，这就是谁的课题，谁的课题谁自己负责，不要干涉其他人的课题&amp;rdquo;。这是阿德勒给出的解决方法，每个人都是独立的个体，所有的事情必须自己独立去面对，后果由自己承担。其他人只能给出建议，而不能妄加干涉，甚至用意志逼迫其他人做事。&#xA;有个例子我觉得的很好：&#xA;我追一个女孩，我的课题是表达出对这个女孩的好感，并让她对我也产生好感；她的课题是在她平静的生活中有个人要硬塞进来，是否接纳。这两者是由冲突的。解决方法就是课题分离，我解决我的，你解决你的。&#xA;我表达了，也做了一些行动，我的课题就算完成了。不会去预设一些结果，比如害怕失败，而不去行动。可以看出，&amp;ldquo;课题分离&amp;quot;可以削弱人际关系对我们精神状态的影响。</description>
+    </item>
+    <item>
+      <title>通过复盘优化行为模式</title>
+      <link>/resource/%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E4%BC%98%E5%8C%96%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 01 Sep 2024 08:02:08 +0800</pubDate>
+      <guid>/resource/%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E4%BC%98%E5%8C%96%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</guid>
+      <description>通过复盘，可以用后来的经验优化过去的行为模式。&#xA;有很多在当时情境下我们自认为没问题的行为时候来看都是不合适的，主要受制于当时环境、资源的制约&#xA;读历史时发现有些人物很蠢，比如吴王夫差，为何不直接灭掉勾践呢；比如韩信，为何不自己称王呢。他们不是不想做，可能是条件达不到。&#xA;复盘主要看三个点：目标是什么，我是怎么做的，应该怎么做。每个人一天会做无数决策，挑几个有代表性的复盘即可，因为很多决策都是简单的重复&#xA;通过这种方式，我发现了自身思维的一些缺陷，比如我的思维总是在过去时和将来时，并且通常把这两个当成现实；借用aeiou模型，对自己的现在处境做透视，就能知道应该做什么，不应该做什么；还有，我对概念比较敏感，对现实世界处于一种视而不见的状态，也可以用我上面提到的aeiou工具完善&#xA;思维的死角，可以构建脚手架去完善；现实流程中的问题，可以通过预设制度补充；这可能是我发现的比较有用的pattern吧</description>
+    </item>
+    <item>
+      <title>游黄山</title>
+      <link>/posts/%E6%B8%B8%E9%BB%84%E5%B1%B1/</link>
+      <pubDate>Sun, 25 Aug 2024 21:49:59 +0800</pubDate>
+      <guid>/posts/%E6%B8%B8%E9%BB%84%E5%B1%B1/</guid>
+      <description>出差地就在黄山周围，有这个便利，自然就去黄山逛了一圈。&#xA;听很多人说日出、日落很美，因为今天有云，啥也没看到。&#xA;一般人上下山需要6h，我用了4个半小时就完成了，间接证明体力不错；另外还想检查下耐力，我想知道在爬山途中会不会出现爬到一半因为体力不够而放弃的情况，答案是没有，因为难度太低了。&#xA;我感觉爬山就像加速版的模拟人生游戏，很可能你跟某个人并肩而行，不到两分钟，对方就连你的脚后跟都看不到了&#xA;爬完整个旅程，让我精神振奋的是拍到了一只猴子、一只松鼠、一览众山小时生出的一丝自豪感，在平淡的生活中发现这么些小惊喜，还是挺值的；(具体可以去bilibili看)&#xA;晚上去了宏村，听说里面很漂亮，但花了一百块买票进去后，就稀稀落落几个农村院子(ps 跟我们那边差不多)，加很多精心装修的民宿，加在路灯下拍照的小姐姐，再加出村后的夜市一条街，在这边吃了安徽特产毛豆腐，味道还不错奥&#xA;经此一役，我对旅游彻底失去兴趣了，就几个山几个水，没什么好看的；也许我的关注点应该放到美食，end!</description>
+    </item>
+    <item>
+      <title>刻意练习</title>
+      <link>/posts/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Wed, 14 Aug 2024 19:37:02 +0800</pubDate>
+      <guid>/posts/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/</guid>
+      <description>愈来愈发现资源的重要性，逻辑链是这样的：如果想学会某项技能，必须得到反馈；反馈只能由环境提供，无论客观环境或虚拟环境；而环境需要引入资源去塑造。&#xA;所以最好的策略是基于此时此刻手头的资源去行动，不符合条件的动作pending。&#xA;不符合条件的动作，也提出一套方法：维护一组需求列，去考虑它的逻辑实现。反馈可以通过多种方式获得，扩展社交和活动空间，在里面找验证逻辑的方法；咨询该领域高手，最好让他们动手做一遍，自己复刻一遍；自己掏钱搭建环境验证(下下策)&#xA;&amp;mdash;-(分割线)&#xA;第二点有个模型：心力&amp;ndash;&amp;gt;脑力&amp;ndash;&amp;gt;体力。三者都凑齐了才能做成想做的事&#xA;我之前心力很高，想搞清楚世界运行的底层逻辑，并且想对现实世界有很强的控制力；但是这么多年过去了，我发现脑力跟体力完全跟不上&#xA;脑力说的是构建逻辑闭包的能力，一个点是要控制注意力方向，另一个就是组织各种概念成体系来指导实践；第一个点参考flomo实践para和gtd；第二个点就是我上面提到的，得维护一组需求列，做出模型并想办法验证。&#xA;体力说简单也不简单，就一个到点睡觉就难做到，日复一日的锻炼就更不用说了。可以讨论一下行动是怎么触发的，比如，到点我会去跑步。ref 福格行为模型。身体跟大脑共享一套调节系统，两者相互影响，所以得想想办法让多巴胺维持在一个相对较高的位置；减少其他抑制生理活动激素的分泌。&#xA;&amp;mdash;-(分割线)&#xA;上述两层到达一个稳定状态后，才能稳定的进行“刻意练习”，快速进步。&#xA;路漫漫其修远熙，吾将上下而求索。</description>
+    </item>
+    <item>
+      <title>电解质饮料</title>
+      <link>/posts/%E7%94%B5%E8%A7%A3%E8%B4%A8%E9%A5%AE%E6%96%99/</link>
+      <pubDate>Sun, 11 Aug 2024 20:02:48 +0800</pubDate>
+      <guid>/posts/%E7%94%B5%E8%A7%A3%E8%B4%A8%E9%A5%AE%E6%96%99/</guid>
+      <description>在高温天气，大量出汗的情况下，需要补充电解质，但是商店的电解质水动辄6块一瓶，偏贵。&#xA;用药店里的口服补盐液，三型的屯两盒，7.41，可兑3L水；二型的屯5盒，4.41，可兑15L水；&#xA;三型的比二型的副作用小，但是价格偏贵，两个混着用即可。&#xA;这样电解质饮料的成本就降下来了!</description>
+    </item>
+    <item>
+      <title>鞋子除异味</title>
+      <link>/posts/%E9%9E%8B%E5%AD%90%E9%99%A4%E5%BC%82%E5%91%B3/</link>
+      <pubDate>Sun, 11 Aug 2024 19:57:43 +0800</pubDate>
+      <guid>/posts/%E9%9E%8B%E5%AD%90%E9%99%A4%E5%BC%82%E5%91%B3/</guid>
+      <description>江南一带梅雨季节鞋子特别容易发愁，得找办法去除异味。&#xA;我找到的方法是用碘伏泡，然后加入维c去除碘伏的颜色，再用无磷洗衣粉清洗，晾干&#xA;(20240930 碘伏倒入鞋底，用塑料袋密封包裹1晚，再用维c水浸泡一晚，刷干净即可)&#xA;碘伏买500ml的，5块一瓶；维c可以上拼多多搜食品级，维c，买1kg，27块&#xA;每天下班后穿拖鞋，喷酒精。&#xA;如果鞋子有轻微潮湿的话，用烘鞋器，这里推荐aca烘干器，便携，功率高。&#xA;如此，就完成了鞋子的维护！</description>
+    </item>
+    <item>
+      <title>Winsoft</title>
+      <link>/resource/winsoft/</link>
+      <pubDate>Sun, 11 Aug 2024 04:38:29 +0800</pubDate>
+      <guid>/resource/winsoft/</guid>
+      <description>geek 软件卸载&#xA;banzip 解压缩&#xA;snipaste 截图&#xA;向日葵 远程&#xA;百度网盘&#xA;IDM 下载&#xA;netsetman 快速ip切换&#xA;PC Related CPUZ&#xA;work related </description>
+    </item>
+    <item>
+      <title>彦彦，想你了</title>
+      <link>/posts/%E5%BD%A6%E5%BD%A6%E6%83%B3%E4%BD%A0%E4%BA%86/</link>
+      <pubDate>Mon, 05 Aug 2024 19:46:34 +0800</pubDate>
+      <guid>/posts/%E5%BD%A6%E5%BD%A6%E6%83%B3%E4%BD%A0%E4%BA%86/</guid>
+      <description>彦彦，想你了。</description>
+    </item>
+    <item>
+      <title>切换模式</title>
+      <link>/posts/%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 05 Aug 2024 16:32:04 +0800</pubDate>
+      <guid>/posts/%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F/</guid>
+      <description>迄今为止，我做事情主要出发点是构建完美的逻辑链。拿电气中的配电来说，我的知道配电网络的各种特性，以及如何保证人在用电网络中的安全性。&#xA;机械我考虑的是选取何种材料，材料通过什么工艺加工，常用的结构有哪些(这些结构自身有局限性)，整机的拆解方法。&#xA;不完美的逻辑链意味着不可靠，意味着失去控制力。而我本身是一个很缺乏安全感的人。&#xA;所以一直在扩展技术面，到现在，我看到，所有的技术岗就四个领域：电气、电子、机械、计算机，这四个领域的大图已经画的差不多了，所以要切模式。&#xA;管他有没有道理，直接怼，搞出来再说，虽然我不赞同这种方式，但尝试起来还是很爽的。just enjoy youselof!!!</description>
+    </item>
+    <item>
+      <title>季度复盘0428 0730</title>
+      <link>/posts/%E5%AD%A3%E5%BA%A6%E5%A4%8D%E7%9B%980428-0730/</link>
+      <pubDate>Tue, 30 Jul 2024 20:58:32 +0800</pubDate>
+      <guid>/posts/%E5%AD%A3%E5%BA%A6%E5%A4%8D%E7%9B%980428-0730/</guid>
+      <description>整整三个月，对这三个月的经历做一回顾。&#xA;2024/04/28 进入涡流探伤、非标领域&#xA;2024/06/10&#xA;2024/06/15 搞定公司某设备改造项目&#xA;2024/07/10，解决了住宿和出行问题，我觉得需要一辆床车&#xA;2024/07/27，凑齐生产力工具，数据上云&#xA;剩下的就是各种出差、现场，跟着做设备。&#xA;非标领域项目周期短，现场居多，反馈多，加之能涉及到机械、电气、电子、计算机领域，耳濡目染对技术、做产品有了直观感觉。&#xA;我观察到其实得引资源到自己这里，本来有几次机会，因为自身能力不足放弃了。而我一直紧盯着的技术领域，推进也非常慢，因为涉猎太广，而我面对具体的技术细节问题就失去耐心，不愿意思考了。&#xA;我规定三个月为一个周期，三个月一到必须切模式，考察现在身处的环境，里面的人、物、和各种要素的交互，里面有很多需要优化的地方。也许还是太浮躁。&#xA;做一总结，三个月内进入了大量设备制作、调试，与客户面对面的场景，补充了前两段职业生涯的缺陷。不足的地方是商务、技术研发场景太少，后续得抓机会引入。第三点是缺一个房车，后续也要引入。&#xA;下三个月的主题依然是技术，多引进一些技术研发的场景。</description>
+    </item>
+    <item>
+      <title>螺旋式改进</title>
+      <link>/resource/%E8%9E%BA%E6%97%8B%E5%BC%8F%E6%94%B9%E8%BF%9B/</link>
+      <pubDate>Sun, 14 Jul 2024 08:12:15 +0800</pubDate>
+      <guid>/resource/%E8%9E%BA%E6%97%8B%E5%BC%8F%E6%94%B9%E8%BF%9B/</guid>
+      <description>经过很长时间的实践，之前生活设计的方向仅仅盯着功能性、可迁移性，现在得往舒适性、便捷性扩展。因为日常生活用品的维护很费精力 ref 断舍离&#xA;人生设计的思维跟软件设计有点像，在需求不明朗的前提下，尽量保持结构的简单性，为后面的变化预留空间&#xA;针对需要解决的问题，形成一套逻辑自洽，自动化程度高的解决方案，尽量减少人为干预&#xA;在之前积累的基础上，迭代功能。这个就是所谓螺旋式改进，以时间为轴，迭代特定次数便会到达一个稳定状态。那个时候，又是新的人生经历的开启。</description>
+    </item>
+    <item>
+      <title>行为修正log</title>
+      <link>/resource/%E8%A1%8C%E4%B8%BA%E4%BF%AE%E6%AD%A3log/</link>
+      <pubDate>Sat, 13 Jul 2024 09:27:57 +0800</pubDate>
+      <guid>/resource/%E8%A1%8C%E4%B8%BA%E4%BF%AE%E6%AD%A3log/</guid>
+      <description>2024/07/13 check 第一件事：先去仓库查看已有东西，并挑出能用的&#xA;2024/09/16 check 关注周围行为触发源，想办法调整、关闭或者创造触发源</description>
+    </item>
+    <item>
+      <title>年中总结</title>
+      <link>/posts/%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 30 Jun 2024 23:20:12 +0800</pubDate>
+      <guid>/posts/%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</guid>
+      <description>有点被周围环境同化的感觉，但这跟我的目标不符，所以接年初的发展规划，捋一遍整个流程。&#xA;之前是有一个粗浅的想法，先搞技术，在做产品，然后营销。根据之前给的okr，7-9月，构建个人成长基准，事实上这个目标直到11月才完成；9-11月构建基础技能，已经过去大半年了，只能说我用手机尽可能降低了学习状态的触发，实际效果不好，跟环境有关系。&#xA;在5-7月的工作过程中，我发现个人缺点在资源的引入上，就拿一个普通的电气元器件来说，如果不拿到实物反复测试，很难在设计工作中快速反应。所以跑了大量现场，那现在我缺的是设计方面的刻意练习，计划是从原材料&amp;ndash;&amp;gt;机加工工艺(其他加工工艺)&amp;ndash;&amp;gt;机械结构及设计&amp;ndash;&amp;gt;装配设计；另一条线是网站建设、维护、性能优化&#xA;技术&amp;ndash;&amp;gt;产品&amp;ndash;&amp;gt;营销，在我的工作场景中很容易缺失这些相关技能的练习，可能是主题太大了，得继续分解，并穿插到每一天。接下来一段时间，我会有意识引入资源，创建场景，看能不能把技术体系给完善了吧。</description>
+    </item>
+    <item>
+      <title>念起念无</title>
+      <link>/resource/%E5%BF%B5%E8%B5%B7%E5%BF%B5%E6%97%A0/</link>
+      <pubDate>Sun, 30 Jun 2024 01:33:39 +0800</pubDate>
+      <guid>/resource/%E5%BF%B5%E8%B5%B7%E5%BF%B5%E6%97%A0/</guid>
+      <description>起因是某一个人，我决定干掉她，清空了所有与之有关的信息，但是过了5s，我又疯狂的去翻，希望能翻出一些与之有关的内容，电话号码啥的。&#xA;在现在的我看来，是心生妄念。&#xA;于是我用第三个视角观察上述过程中我的大脑变化，首先是什么东西触发，激活与之相关的神经链路，然后进入死循环，没有退出条件&#xA;ok，在拉出最近工作上一个闭环的案例做对比，首先客户需求到我这，然后写出的程序运行完全在掌控范围，客户现场跑了两周无问题反馈，这件事也就被抛在脑后了&#xA;我想像第二种情景一样推进第一种情景，就得找这两件事共同的pattern（这两件事是靠直觉捕获的）&#xA;找出的pattern是这样：念起、念灭&#xA;然后找出之前进入“无念”状态的场景：冥想，或者是散步&#xA;我意识到，佛家的理论也许对我有用&#xA;从记忆库提取佛家相关的内容：诵经&#xA;（ps. 张朝阳谈神经可塑性时提到的，妄念，在大脑中有一条自我增强的神经回路，就是你越控制自己不去想一件事，这个事就越在你脑海中反复出现。佛陀也发现了，人的痛苦很多来自于想太多，所以他给了一些方法，比如诵经，能辅助打破神经回路的自我强化）&#xA;在从记忆库中提取大脑神经链路相关内容：&#xA;要弱化一条神经回路，只需加强另一条神经回路\&#xA;综合一下，我其实提供了两个自我控制的方法：&#xA;内索、外求&#xA;内索就是追踪大脑中念头的起灭，发现有害的念头立刻干掉，或者pending。&#xA;怎么干掉：转换视角、或者闭环&#xA;比如我碰到一个难题，很不爽，不想做，拖延，最后啥也没干成，也可以认为解决难题是能力增长的机会；或者是老板喂了个饼，感觉天下我有，把视角切到现在，发现实际上个人也就吃了个饼，待遇并没有提升（这个是转换视角）。不同的视角决定不同的态度，产生不同的行为，导致不同的结果&#xA;闭环就跟上述提到的第二件事一样，得构建一套控制器，让外部世界跟自己的预期一致&#xA;转移注意力何其难，“无念”也只是暂时的。这四个方法综合起来，也许能让自己变得稍微自洽点吧！！！</description>
+    </item>
+    <item>
+      <title>&#43;开车</title>
+      <link>/resource/&#43;%E5%BC%80%E8%BD%A6/</link>
+      <pubDate>Sun, 30 Jun 2024 01:26:25 +0800</pubDate>
+      <guid>/resource/&#43;%E5%BC%80%E8%BD%A6/</guid>
+      <description>在苏州找到工作的两个月，去了许多地方，开着公司的破车慢慢也练出了开车技术，构想是这样：衣食住行，服务都是分散的，“行”能把这些东西串起来。&#xA;2024/09/07 已纯熟</description>
+    </item>
+    <item>
+      <title>无痛英语环境打造</title>
+      <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</link>
+      <pubDate>Mon, 24 Jun 2024 02:54:01 +0800</pubDate>
+      <guid>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</guid>
+      <description>废话不多说，用到的工具如下：&#xA;anki、pdf guru web、burning vocabulary、sealos&#xA;流程如下：&#xA;该英语学习环境以句子为基本单位，句群为一个训练单元，情景为引导点&#xA;先通过burning vocabulary标注出pdf中的所有生单词(标注一个单词，该工具能自动标注该pdf中所有一样的单词)&#xA;在通过pdf guru anki，以一个完整的句子为基本单位，挖空纸卡，完成后导入到anki&#xA;sealos一键搭建anki同步服务器，一天几分钱，划算&#xA;然后就可以全平台刷anki卡片了，消灭掉所有材料就ok，推送间隔时长anki内置算法已经优化完了&#xA;接下来就是个学以致用的问题，怎么分割材料，怎么在实际生活中使用这些训练得到的成果</description>
+    </item>
+    <item>
+      <title>干掉拖延&#43;产出导向</title>
+      <link>/resource/%E5%B9%B2%E6%8E%89%E6%8B%96%E5%BB%B6&#43;%E4%BA%A7%E5%87%BA%E5%AF%BC%E5%90%91/</link>
+      <pubDate>Fri, 31 May 2024 12:27:10 +0800</pubDate>
+      <guid>/resource/%E5%B9%B2%E6%8E%89%E6%8B%96%E5%BB%B6&#43;%E4%BA%A7%E5%87%BA%E5%AF%BC%E5%90%91/</guid>
+      <description>开头 为了提升做工程的效率，对标题说的两点做诠释，希望能帮助自己提升。&#xA;为什么拖延不好 摘录《目标》中的一段。高德拉特是以色列物理学家，著名的生产专家，其TOC(theory of constraint)理论大幅提升了工厂的生产效率。&#xA;假如我们的最终目的是产出，在产出之前会经过一系列步骤，看看这些步骤是怎么影响产出的。&#xA;健行： 发现队伍行进速度跟预期不一致: 注意到最直接影响因素： 提取要素： 注意到另一个直接影响因素： 抽象模型： 通过火柴游戏揭示拖延导致有效产出降低：&#xA;游戏规则： 游戏结果: 拖延带来的有效产出降低： 结论：瓶颈决定有效产出 产出导向 所以需要发现自己工作流程中的约束点，一个一个敲掉。对于我来说，最大的约束点可能是对新知识的消化吸收速度，以及设计完获得反馈的速度，这两个依赖于对领域底层知识(原理性的、工程性的)的熟悉程度，以及用外界构建资源去搭建一个模拟环境，来测试逻辑链。&#xA;后续得想办法加强这两块。</description>
+    </item>
+    <item>
+      <title>电气工程师概览</title>
+      <link>/resource/%E7%94%B5%E6%B0%94%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%A6%82%E8%A7%88/</link>
+      <pubDate>Mon, 27 May 2024 22:17:49 +0800</pubDate>
+      <guid>/resource/%E7%94%B5%E6%B0%94%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%A6%82%E8%A7%88/</guid>
+      <description>ref-技术栈&#xA;开头 这是一个系列文章，包括电气工程师用到的所有技术栈，一点点完成一个完整的项目。以下是更新的电气工程师技术栈：&#xA;0 找项目&#xA;1 配电&#xA;2 功能实现&#xA;3 选型（计算）&#xA;4 出原理图、接线图&#xA;5 出BOM 表&#xA;6 报价&#xA;7 装调&#xA;8 项目交付</description>
+    </item>
+    <item>
+      <title>妈的，做项目能力太差了</title>
+      <link>/posts/%E5%A6%88%E7%9A%84%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%83%BD%E5%8A%9B%E5%A4%AA%E5%B7%AE%E4%BA%86/</link>
+      <pubDate>Sat, 25 May 2024 21:21:56 +0800</pubDate>
+      <guid>/posts/%E5%A6%88%E7%9A%84%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%83%BD%E5%8A%9B%E5%A4%AA%E5%B7%AE%E4%BA%86/</guid>
+      <description>让写一个plc项目，推的很不顺利。&#xA;反思一下，妈的，自己做项目能力太差劲了。&#xA;项目能力上不去，怎么搞钱，妈的。</description>
+    </item>
+    <item>
+      <title>软硬件调试九法</title>
+      <link>/resource/%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%B0%83%E8%AF%95%E4%B9%9D%E6%B3%95/</link>
+      <pubDate>Wed, 22 May 2024 21:02:15 +0800</pubDate>
+      <guid>/resource/%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%B0%83%E8%AF%95%E4%B9%9D%E6%B3%95/</guid>
+      <description>在公司做了四天电工，接了四天线，突然顿悟，于是翻出这本珍藏已久的《软硬件调试九法》，作者无疑是个有大量调试经验的高手工程师，本文摘出重点。&#xA;概览 在调试系统前，要坚定一个信念，系统存在一个稳定状态，而且经过各种手法，一定能把系统调试至稳定状态。&#xA;如果迟迟达不到理想状态，一定是对系统不够了解&#xA;这个了解有三个方向：分解系统的颗粒度、观察范围、探测系统的工具。&#xA;颗粒度是指把系统细分到什么程度，比如一套低压电器系统，刚开始只需关注配电；如果这个层面解决不了问题，细分到具体低压元器件；再往下，关注电气控制信号、网络信号(这两个比较难观测，需要制作相应工具)。&#xA;观察范围也好理解，看过城阳电工视频的人应该有直观感受，本来是一个空调漏电的事，最后排查到电线杆子上的配电箱。系统出现问题有可能是外界环境导致的，而很多人在调试的时候只是盯着系统本身。&#xA;拿到一个新东西，如果有说明书、demo之类的东西，先跑一跑，建立直观印象。然后我就思考，假如我要实现另外一种功能，可以拆解哪些要素出来，怎么观测这些要素，怎么组合这些要素。&#xA;书本逻辑 以上面三条为主线，摘出我感兴趣的内容(一个小标题代表一个调试规则)：&#xA;理解系统&#xA;方法：阅读手册、知道什么是正常的、知道工作流程、了解你的工具、查阅手册&#xA;制造失败&#xA;方法：引发失败、不要模拟失败、如何处理间歇性bug、如果做了所有尝试之后问题依然间歇性发生、那不可能发生、永远不要丢掉调试工具&#xA;真实生产环境用控制变量法，找出导致问题的要素&#xA;间歇性bug可能是动作序列引起的，跟状态有关系，这时候要对系统的各个组件做状态推演&#xA;失败肯定有原因，一定能找出来，目前找不到是因为其“巧妙地”隐藏在尚未发现的大量随机因素背后&#xA;不要想，而要看&#xA;不要让仪器影响了系统，仪器引入会使系统发生变化，但可以想办法隔离引入的影响&#xA;动手测试猜想的正确性&#xA;分而治之&#xA;上文说的颗粒度也有帮助快速排查的作用，比如确定问题出在这个子系统，只细分探索确定有问题的子系统即可&#xA;一次只改一个地方\&#xA;保持审计跟踪&#xA;记录调试过程中的所有操作，也许能发现新的关联项&#xA;检查插头&#xA;怀疑任何假设，比如我用软件没探测到需要的数据吗，那有没有可能是工具本身的问题。或者我认为某个地方是绝对不会出问题的，问题可能正好是那边产生的。&#xA;寻求帮助&#xA;ref &amp;lt;软件开发者路线图-组织知识来源&amp;gt;&#xA;如果你不修复bug，它将依然存在&#xA;确定bug得到解决，修改设计文件，从根源杜绝bug的产生&#xA;结尾 我觉得没什么说的，这都是常识。相比于调试思路，最重要的反倒是动手实践。</description>
+    </item>
+    <item>
+      <title>主题阅读方法</title>
+      <link>/resource/%E4%B8%BB%E9%A2%98%E9%98%85%E8%AF%BB%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 14 May 2024 08:11:56 +0800</pubDate>
+      <guid>/resource/%E4%B8%BB%E9%A2%98%E9%98%85%E8%AF%BB%E6%96%B9%E6%B3%95/</guid>
+      <description>主题阅读首先要扩充样本库，然后从样本库里找跟自己目标相关的内容&#xA;annas-archive，是一个开源书籍项目，里面存了各种渠道得来的两千多万本书，先挑出所有相关书籍，然后复制粘贴也好，ocr识别也好，手写也好，把所有目录抄一遍。差不多抄到20本书的时候，能对整个主题的脉络有把握，剩下的就是攻破细节了！！！&#xA;log: 20240620:配套相关设施，安卓+阅读软件，+京东读书，+微信读书，+calibre-web，pc +logseq，接下来看实际运行效果&#xA;20240621:淘宝、拼多多搜素也能找到一些线索&#xA;20250320:比如python，有些人已经完成了python的学习，并将资料聚集到一起，找到这些资料可以保证覆盖率，（这是一种取巧的方法）&#xA;skills:&#xA;1 通过各种渠道搜书，汇集到一起&#xA;2 翻书，翻到有兴趣的点截图保存&#xA;3 每周翻一本&#xA;4 将截图的内容手打一遍，并分类保存</description>
+    </item>
+    <item>
+      <title>超越理论-情景创设</title>
+      <link>/resource/%E8%B6%85%E8%B6%8A%E7%90%86%E8%AE%BA-%E6%83%85%E6%99%AF%E5%88%9B%E8%AE%BE/</link>
+      <pubDate>Wed, 08 May 2024 09:12:54 +0800</pubDate>
+      <guid>/resource/%E8%B6%85%E8%B6%8A%E7%90%86%E8%AE%BA-%E6%83%85%E6%99%AF%E5%88%9B%E8%AE%BE/</guid>
+      <description>从这两天的经历说起吧，从0开始写s7-200 smart plc程序，过程如下：&#xA;我先找手册找出自认为重要的点，然后用单元测试拆解别人的程序，拆解过程中发现了自己很多盲区，然后结合手册和其他人的程序攻破盲区。&#xA;在攻破盲区的过程中，最常见的一个问题是没线索，找不到方向(逻辑闭包)；第二个问题是思路闭环了，却没办法验证(环境)；第三个问题是具体操作层面，涉及到很多细节，不自己跑一遍流程就很难受(工程实践)&#xA;看一下产品是怎么完成的:&#xA;我写程序（大部分是平台级软件，比如bootload，OS，驱动，中间件等。但如果是UI，可能我会省略其中一些步骤）的过程是这样的：&#xA;先写基础逻辑&#xA;进行逻辑优化&#xA;在所有逻辑不straightforward的，或者对不太可靠的库的输入有要求的地方，一概加上ASSERT()&#xA;在所有在运行中不会引起性能瓶颈的执行分支上都加上性能统计参数&#xA;单元测试 集成测试（通常集成到单机一级）&#xA;系统测试，战地测试（这时重点关注所有的性能统计参数，看现网条件下，程序是否按预期运作）&#xA;下一个开发循环，复用上一次的单元测试用例&#xA;通常我的程序在单元测试后，逻辑错误几乎为0，剩下都是同步，性能一级的错误了，而且，我可以很得意的说，我的程序在数百万乃至上千万个节点上运行，能反馈回来给我的错误也是少之又少的。&#xA;这是商业产品开发的样子&#xA;基于上述两段话，可以0知识，即使是一个小白，也能很快打通从技术到产品的整个流程，还差一个市场端(不在本文范围)。初始阶段只能通过拆解别人的程序补盲区，积累设计方法，后续开始设计同类型产品，技巧积累的差不多就能自己主导设计了。&#xA;可以看出，每一步都是难点。我主要卡在环境和工程实践上，难道除了进公司，借助外部环境外就没别的办法了吗？望指点。</description>
+    </item>
+    <item>
+      <title>断舍离</title>
+      <link>/posts/%E6%96%AD%E8%88%8D%E7%A6%BB/</link>
+      <pubDate>Sun, 05 May 2024 12:16:50 +0800</pubDate>
+      <guid>/posts/%E6%96%AD%E8%88%8D%E7%A6%BB/</guid>
+      <description>如下： 初始状态，什么物品都没有，自然不存在维护的问题。&#xA;然后为了生活、工作的便利，开始引入物品，比如电子产品、厨具、etc；其中一部分是有目的引入的，另一部分是无良商家利用人性弱点，宣传，失手买回来的。&#xA;从全生命周期来看，随着着物品的增多，第一个难点是为了维护新引入的物品，需要引入更多消耗品；第二个难点是不好区分必需品和非必需品。\&#xA;随着引入物品的数量越来越多，维护新引入物品和管理物品的引入引出将占据越来越多的时间&#xA;断舍离的思路是从一开始就搭建一个框架，引入物品的时候走一遍流程，在源头杜绝非必需品的引入；然后再走一遍已有物品的流程，筛出必需品，丢掉非必需品(这是个非常主观的选择)&#xA;我觉得什么断舍离就是吃饱了撑着没事干，你身上只有100块试试，穷治百病</description>
+    </item>
+    <item>
+      <title>确定方向</title>
+      <link>/posts/%E7%A1%AE%E5%AE%9A%E6%96%B9%E5%90%91/</link>
+      <pubDate>Fri, 03 May 2024 10:36:54 +0800</pubDate>
+      <guid>/posts/%E7%A1%AE%E5%AE%9A%E6%96%B9%E5%90%91/</guid>
+      <description>在22年6月去青岛开始，我的个人发展就一直处于很短视的状态，因为我不知道10天后会发生什么，什么都是不确定的，所以我的所有决策以保证未来发展的自由度为主。&#xA;探索了很多方向，就三个主题：就业市场、金融市场、婚恋市场&#xA;现在是2024年5月3日，地理方面就在苏州安家了；事业方面以非标和做网站为主、基金为辅；婚恋方面等后半年再说吧。&#xA;两年啊，挺不容易的</description>
+    </item>
+    <item>
+      <title>旅行的意义</title>
+      <link>/posts/%E6%97%85%E8%A1%8C%E7%9A%84%E6%84%8F%E4%B9%89/</link>
+      <pubDate>Thu, 02 May 2024 16:11:50 +0800</pubDate>
+      <guid>/posts/%E6%97%85%E8%A1%8C%E7%9A%84%E6%84%8F%E4%B9%89/</guid>
+      <description>起因：五一放假，闲来无事，就拿出两年前探索兰州的方案看了看，我觉得应该完善一下，为什么要旅行，深入到细节方面，怎么把控。我来尝试解答 要素拆解 去一个地方，主要看三个东西：景观、风俗人情、考察。考察的范围宽泛一点，比如经商环境、市场状况、历史变迁，以前两种为主。&#xA;不同的气候，地理环境会塑造独特的自然景观，还有人工景观。所有构成景观的物品，都是我们的观察对象。比如说鸟，美国有个人花几十年看了一万多种鸟；这个和个人兴趣相关。对于普通人来说，5A级景区，抽空一个个看完就完事，有精力再研究其他内容。&#xA;风俗人情是人类社会的东西，在这块区域，人们会达成某种共识，比如周六开放市集，特定节日举行某些仪式。我找的是该地方特有的东西：社交关系分类及达成途径(比如有公共空间创造的社会关系连接数远远大于没有公共空间)、生产关系、群体特有内容(民俗、语言)、物品及服务的丰富度(从这些物品和服务中挑出该地方特有的)&#xA;上面四个方向是通过对比不同的环境得出的，我有种预感，通过对比这些差异得出的结论应该是：存在即合理，没有这种环境比那种环境好的说法&#xA;考察范围就很广泛了，取决于具体的目的。比如我是研究历史变迁的，要搞清楚当地当年发生了什么事，就去图书馆借地方志；那如果我是研究动物的，有种动物只在这个地方出没，我只能过来，搞一些东西观察；或者我对37°的环境不感冒，我要去北极或南极做研究，真有这样的，是个程序员，除了维护一些检测、通讯设备，其他时间都在用来研究北极环境。&#xA;具体方法 拆解完我觉得可以收缩范围了，从自然景观中拿出5A级景、拿出所有人工景观、风土人情中拿出物品及服务、再拿出社交关系（这四个现在是空集），然后想办法填满这些集合。&#xA;查地图: App查找: weibo 大众点评 美团 小红书 bilibili douyin 美食纪录片、书籍: 舌尖上的中国 询问陌生人、朋友、当地美食家: 司机 民宿老板 靠运气: 菜市场或周围 (该列表可继续补充)&#xA;制定旅行计划 再补充一点：&#xA;一个人旅游、两个人旅游、还是三个人旅游，人数不同，就算是去同一个地方，也会有不同的体验&#xA;先确定人数，再划定区域，然后从上面的四个集合中抽出筛选完毕的要素，一个旅行计划就制定好了&#xA;以上就是我的所有思考，以飨大众</description>
+    </item>
+    <item>
+      <title>最近面试的一些情况</title>
+      <link>/resource/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%85%E5%86%B5/</link>
+      <pubDate>Fri, 26 Apr 2024 18:40:37 +0800</pubDate>
+      <guid>/resource/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%85%E5%86%B5/</guid>
+      <description>面了一些，记忆不好，只记得最近的，分享一下。&#xA;有提供整套解决方案的，有细分领域耕耘的，我感触最深的，小作坊式的企业，一个技术能手就能创造上百万产值。而且技能要求要很全面，机械、电气、电子、编程、业务都要懂一点。&#xA;业务第一个就是抓需求，创造需求；第二个是不同组织协作，的一个利益分配，责任归属，合同方面的；第三个是安全的供应链，经常会有做着做着某些器件厂商倒闭的情况；第四个就是公司内部利益分配&#xA;1 楼宇电气智能化，通过各种探测器侦测办公大楼内部的用电设备能耗情况，分析数据，找出那些耗能高的，比如灯呀，打印机呀，更换成能耗低的设备；其次，中央空调，暖通系统，通过改变这些设备的运行策略，比如夜间停止，白天提供，或者插一些传感器，检测到特定信号就触发设备运行，达到减少能耗的目的&#xA;主要是政府项目，资金来源政府预算呗。该公司成立了网关、电气、服务器方面、大屏动画、楼宇建设，很多部门吧，挺高大上的。老板的诉求，希望人人都能成为这种懂业务、懂技术、能独立负责项目的人才，你能力强，我挣钱就多。&#xA;2 工业产品器件良率检测，通过电磁给金属表面探伤，如果是同一批次制造出来的产品，他们的设计文件、工艺程序都是一样的，所以电磁检测出来的波形也应该是近似的，如果出现偏差，说明这是一件次品&#xA;主要应用场景是工业领域，订单是通过销售团队走访获得。这种设备涉及到plc、pcb板、电机运动控制。比较牛逼的是部门老大通过wireshark获取串口数据，然后板子也是自己做的。这可能是常规操作，但是在我的认识中，这种全栈的见得少&#xA;假如有稳定的产品线，团队一个人说了算，还是很舒服的&#xA;3 三维金属打印，市场主要是传统制造业，飞机、汽车，三维打印好处是非标，各种形状的器件都能打印；强度高，这个是反常识的，因为我印象中三维打印是以塑料为主嘛，先入为主，就算是金属打印，强度应该也没有铸造件高吧。但是是错的，传统铸造颗粒度是百纳米为单位，铸造过程中金属中会混入杂质，对硬度有影响，金属打印是nm为单位，结合的紧密度不是传统铸造件能比的，而且少杂质，强度更高。&#xA;问题是成本太高，出一个成品的成本大概是传统工艺做出来成品的十倍。耗材是金属粉末，高温加热金属至蒸汽状态，然后吹，比如我需要1nm的铁粒，那就吹1nm出来，最后就是一堆铁粉，颗粒度为1nm的铁粉。三维打印的话对算法也有要求，通过算法来补偿吧，让其打印出的东西更平整？&#xA;接着谈了这个产业，说他们公司10年开始做，面试官还形象的说了些产业方面的东西，一个技术要发展，头三年为发展期，中间三年为低潮，后三年过渡到平稳期。三维打印11-13是发展期，14-17是低潮，17-现在已经成熟了，市场也被占的差不多了。他们公司的话有几套成熟的产品线，后续就是围着这几条产品线做一些创新，维护类的工作&#xA;我在就业市场上的一些感受，只要有需求，你能提供产品，别人就愿意付钱，就能活下去。当然，可能有各种约束，比如什么准入资质，政府监管。老板和各类领导解决这一块问题。&#xA;企业为什么会释出岗位呢，因为工作量太多了，不招人干不完。招人的逻辑就是，擦边就能进，进了就拿来用，找工作难，企业找到合适的人也难，所以学习能力强也愿意培养一下。&#xA;一言以蔽之，没有稳定的工作，只有抓住需求-产品这条主线，才能立于不败之地。</description>
+    </item>
+    <item>
+      <title>体检手册</title>
+      <link>/posts/%E4%BD%93%E6%A3%80%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Tue, 16 Apr 2024 01:08:18 +0800</pubDate>
+      <guid>/posts/%E4%BD%93%E6%A3%80%E6%89%8B%E5%86%8C/</guid>
+      <description>rss推送到了体检这个话题，身体健康很重要，且以预防为主，记录一下查资料的结果：&#xA;策略 三甲医院体检科、肿瘤内科，开检查单，检查完毕后找医生看就ok&#xA;体检报告留存，积累到一块，供医生分析用&#xA;保险 惠民保&#xA;百万医疗险&#xA;统筹医疗&#xA;专题-基础项 专题-癌症 专题-工具 ios/健康笔记&#xA;ios/icare&#xA;ios\就诊问问&#xA;具体项目 ref 链接：https://pan.baidu.com/s/1HyHdSmZsDEdRo0I3z3nHHw?pwd=2oki 提取码：2oki&#xA;思路分享：制定最适合你的体检项目&#xA;健康体检基本项目专家共识（2022） http://gzhongen.com.cn/upcase/%E4%BD%93%E6%A3%80%E7%A7%91%EF%BC%88%E9%80%82%E5%90%88%E9%9D%9E%E5%BF%83%E6%A0%87%E9%A1%B9%E7%9B%AE)-2022%E5%81%A5%E5%BA%B7%E4%BD%93%E6%A3%80%E5%9F%BA%E6%9C%AC%E9%A1%B9%E7%9B%AE%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86.pdf</description>
+    </item>
+    <item>
+      <title>设计模式</title>
+      <link>/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sat, 13 Apr 2024 19:35:56 +0800</pubDate>
+      <guid>/posts/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+      <description>开篇 [[https://refactoringguru.cn/design-patterns/cpp][C++常用设计模式]]&#xA;[[https://refactoring.guru/design-patterns/catalog][The Catalog of Design Patterns]] /Entered on/ [2022-05-24 二 10:39]&#xA;UML 关系：关联 依赖 泛化 实现&#xA;用例图：客户角度描述系统功能 参与者 用例 关UML 关系：关联 依赖 泛化 实现&#xA;用例图：客户角度描述系统功能 参与者 用例 关系&#xA;面向对象遵循原则 单一职责 里氏替换 接口隔离 迪米特 优先使用组合而不是继承 依赖倒置 开闭原则&#xA;开闭：类的改动是通过增加代码实现，而不是源代码&#xA;依赖倒置：依赖抽象（接口），不要依赖具体类&#xA;单一职责：一个类只负责一项职责（职责扩散），引起类变化的原因只有一个&#xA;接口隔离：一个接口只提供一种对外功能&#xA;里氏替换：任何抽象类出现的地方都可以用他的实现进行替换&#xA;迪米特：一个对象应该对其他对象有尽可能少的了解，例如一个程序中，各个模块相互调用时，通常会提供一个统一的接口来实现&#xA;类A进行功能增强：修改类，继承，指针传递，obj汇编&#xA;多态：使用后来人写的代码(框架的例子：见demo02)&#xA;传统设计模式倾向于使用高层次的模块依赖于低层次的模块，抽象层依赖于具体的层次&#xA;两个人都往抽象层靠，实现业务和实现层的解耦合&#xA;23种设计模式 （简单工厂模式不属于） ** 创建型(提供创建对象机制) | 单例模式 | 原型模式 | 抽象工厂模式 | 工厂方法 | 生成器 |&#xA;** 结构型(将对象和类组装成较大的结构) | 适配器 | 桥接 | 组合 | 装饰 | 外观 | | 享元 | 代理 |</description>
+    </item>
+    <item>
+      <title>冲突图</title>
+      <link>/resource/%E5%86%B2%E7%AA%81%E5%9B%BE/</link>
+      <pubDate>Fri, 12 Apr 2024 14:42:53 +0800</pubDate>
+      <guid>/resource/%E5%86%B2%E7%AA%81%E5%9B%BE/</guid>
+      <description>《决不是靠运气》书中提到冲突图，是用来解决矛盾的一种方法。&#xA;矛盾出现的原因：双方对对方的假设和预期不一致，可以用冲突图对齐假设，共同探索找出化解矛盾的方法。&#xA;当然，我提供另一种方法，那就是推迟该事件的发生。在矛盾产生的时候按下暂停键，过三天去处理，可能有意想不到的发现。</description>
+    </item>
+    <item>
+      <title>学习本质</title>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/</link>
+      <pubDate>Thu, 11 Apr 2024 23:12:18 +0800</pubDate>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/</guid>
+      <description>哪有什么学习本质，坐而求道，不如行之。&#xA;也许我是困在“求本质”这个“名”中太久了。&#xA;20240602&#xA;补充一点，学习是为了快速解决问题，分三层，第一层我解决了从0到1的问题；第二层得补充领域知识做缓存，达到快速提取的目的；第三层就是结合具体场景快速给出框架或者敲掉问题。&#xA;借用之前《软硬件调试九法》里的话，问题的出现是因为对系统不了解造成的，一定能调试出稳定的系统</description>
+    </item>
+    <item>
+      <title>Ref 如何设计想要的人生</title>
+      <link>/resource/ref-%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%83%B3%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F/</link>
+      <pubDate>Tue, 09 Apr 2024 13:53:07 +0800</pubDate>
+      <guid>/resource/ref-%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%83%B3%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F/</guid>
+      <description>2024/04/09 ref-(如何设计、打造我们想要的人生)\</description>
+    </item>
+    <item>
+      <title>斯坦福人生设计</title>
+      <link>/resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Tue, 09 Apr 2024 01:22:21 +0800</pubDate>
+      <guid>/resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>依次使用用红笔标注出的几个工具即可&#xA;斯坦福人生设计模板&#xA;白板工具：作为上述模板的补充</description>
+    </item>
+    <item>
+      <title>福格行为模型</title>
+      <link>/resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sun, 07 Apr 2024 20:46:43 +0800</pubDate>
+      <guid>/resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>基准比对&#43;环境切换</title>
+      <link>/resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9&#43;%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/</link>
+      <pubDate>Sun, 07 Apr 2024 10:41:03 +0800</pubDate>
+      <guid>/resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9&#43;%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/</guid>
+      <description>有时候遇到一个许久未见的人，交流两句，就开始惊叹，这个人变化怎么这么大。其实你也在变化，人脑只能通过对比感受变化，这也是此前说的：时间是记忆的增量。只不过你的变化是一点点叠加起来的，非常细微，所以观感没有直接感受其他人变化来的强烈。&#xA;在人生的不同阶段，面对的课题是不一样的，有些阶段难解决的问题放到其他阶段可能很容易，所以可以规定不同课题的出场顺序。但是这样面临一个问题，你无法感知你30、40、50岁的生活，也就不能确定什么是真正重要的课题，更谈不上编排顺序了。&#xA;我给一个解决方案，就是基准对比+环境切换。假如我现在25，那我就找一堆30岁的人，跟他们聊天，协作，看他们平时研究的东西，生活状态，然后在回到25，朝那几个重要的课题投资源。这是一种间接复盘的手段吧！&#xA;以3年为一个单位依次遍历，就能遍历完整个人生。借用一个隐喻:生活就像鱼缸。这也是一种找约束的方法!!!&#xA;环境切换：&#xA;AEIOU做分析，后面补充方法论</description>
+    </item>
+    <item>
+      <title>领域驱动&#43;搭积木</title>
+      <link>/resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8&#43;%E6%90%AD%E7%A7%AF%E6%9C%A8/</link>
+      <pubDate>Tue, 02 Apr 2024 00:47:41 +0800</pubDate>
+      <guid>/resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8&#43;%E6%90%AD%E7%A7%AF%E6%9C%A8/</guid>
+      <description>说说我是怎么学习c语言的。&#xA;我认为c语言是构建出的工具，为了使用好这个工具，得往下降一层，去学习编译器相关原理，但是也不用学的太多，有这么一张表足够，上面写了基本元素和语法规则、语义，此两者相当于象棋规则。&#xA;知晓规则后便是为了实现我们的目标，精心编排代码段。编排代码段跟搭积木类似，不管多复杂的逻辑，最终要回到这些基本要素，要做的是把相关的逻辑链跑通，然后看看人家是怎么搭积木的，用自己的方式实现一遍。&#xA;如此不断遍历，学会编程只是时间问题。但是，我在网上看到的c语言教学，都是教着写语句，++循环，乱七八糟的，那玩意用教么，给个表照着写不成吗，误人子弟 第二种是领域驱动，因为代码反映现实，跟具体领域相关，只有对编程的理解还不够，需补充领域相关知识，这时候需要请领域专家，一起建模，直到模型跑通了，产出产品为止。</description>
+    </item>
+    <item>
+      <title>延迟满足</title>
+      <link>/resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/</link>
+      <pubDate>Mon, 01 Apr 2024 07:19:15 +0800</pubDate>
+      <guid>/resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/</guid>
+      <description>很多决策是因一时冲动做出，一个方法就是写下来，第二天在做决策，能有效避免情绪对决策的干扰。</description>
+    </item>
+    <item>
+      <title>全栈资源</title>
+      <link>/posts/%E5%85%A8%E6%A0%88%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Sat, 30 Mar 2024 09:07:42 +0800</pubDate>
+      <guid>/posts/%E5%85%A8%E6%A0%88%E8%B5%84%E6%BA%90/</guid>
+      <description>即时设计 (原型图设计)</description>
+    </item>
+    <item>
+      <title>正则语法</title>
+      <link>/posts/%E6%AD%A3%E5%88%99%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 29 Mar 2024 14:39:50 +0800</pubDate>
+      <guid>/posts/%E6%AD%A3%E5%88%99%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>策略-追踪模型</title>
+      <link>/resource/%E7%AD%96%E7%95%A5-%E8%BF%BD%E8%B8%AA%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 23 Mar 2024 23:08:47 +0800</pubDate>
+      <guid>/resource/%E7%AD%96%E7%95%A5-%E8%BF%BD%E8%B8%AA%E6%A8%A1%E5%9E%8B/</guid>
+      <description>说说做投资的思路，投资就是低买高卖，在金融市场，每天有无数买进卖出，但是无论个体还是机构，资金量有限，只能做有限次交易，首先得筛选出交易机会&#xA;分为价值、技术两个流派，价值就是对市场和企业做详尽的调研，判断企业后续发展情况，提前锁定收益；技术是通过k线分析趋势的运行情况，捕获交易机会。两者有个共同模式，即制定策略&amp;ndash;&amp;gt;确定策略的执行周期&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;调整策略(事件触发)，因为有可能因为环境变化导致策略不适用&#xA;上述模式可以用于人生设计，能大大缩短在每个场景下的停留时间，如下，再复述一遍&#xA;制定策略&amp;ndash;&amp;gt;确定策略的执行周期&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;调整策略(事件触发)&#xA;然后我提供一个策略模板：AEIOU(《斯坦福人生设计》)，通过AEIOU透视自己生活中的缺项，至于什么缺项，你想让你的生活是什么样，现在是什么样，就能知道缺项了，想办法补充，如上！！！</description>
+    </item>
+    <item>
+      <title>自定义搜索引擎yacy</title>
+      <link>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
+      <guid>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;google自定义搜索引擎 网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 批量添加索引网站并打标签 1 维护一张网站列表blog.csv&#xA;2 运行python脚本run.py&#xA;3 上传运行python脚本后得到的blog.xml文件 改外观 这样就行了 最终所得网址如下 效果评估 按理说能检索到我写的网址的所有网页&#xA;以01.me为例，选取关键词&amp;quot;本科生&amp;rdquo;、&amp;ldquo;邂逅&amp;rdquo;、&amp;ldquo;创业&amp;rdquo;，分别在google、ces引擎搜索，结果如下： 原博客 google语法搜索&#xA;大差不差，inurl更深入 ces搜索&#xA;很垃圾啊，也就是说之前的工作白做了 继续探索 这个时候得搞清楚搜索引擎的工作原理，可以认为搜索引擎是以某种数据形式拆解网页，结合算法+算力，实现大量网页的索引&#xA;一个点是爬取相关网站的所有内容，以特定形式存储，另一个点是算法、分布式&#xA;我的目标是搜索特定网站内容，有两种解决方案&#xA;第一种是用google 的api，拿到数据后自建页面排序展示，工作量巨大&#xA;第二种如下\&#xA;&amp;gt; 提问：开源检索网络的网站 &amp;gt; 回答： 开源检索网络的网站中，一个备受推荐的是**YaCy**。YaCy是一个去中心化的搜索引擎，由网络上的众多参与者共同维护。它的目标是创建一个公开、透明且不受单一实体控制的搜索引擎。 ### YaCy的特点包括： - **去中心化**：YaCy利用P2P技术，使搜索索引分布在全球范围内的参与者之间，而不是存储在中心服务器上。 - **隐私保护**：由于其去中心化的特性，YaCy提供了较高的匿名性和隐私保护。用户的搜索请求不会被跟踪。 - **自主爬虫**：YaCy拥有自己的网络爬虫技术，用户可以自定义爬虫的行为，包括要爬取的网站和内容。 - **开源**：YaCy是完全开源的，这意味着任何人都可以查看其代码、进行修改或贡献。 YaCy适合那些希望建立自己的搜索引擎、研究搜索技术或者关心隐私保护的用户和开发者。它可以被部署为个人的搜索门户，也可以作为一个组织内部的搜索解决方案。YaCy的开源性质和去中心化架构为搜索引擎领域提供了一个独特且有力的选择。 yacy docker run -d --name yacy_search_server -p 8090:8090 -p 8443:8443 -v /d/local_data/yacy:/opt/yacy_search_server/DATA --restart unless-stopped --log-opt max-size=200m --log-opt max-file=2 yacy/yacy_search_server:latest 如此，在浏览器的8090端口就能访问yacy服务了，数据映射在本地&amp;quot;d:/local_data/yacy/&amp;ldquo;目录</description>
+    </item>
+    <item>
+      <title>定时推送随机任务</title>
+      <link>/resource/%E5%AE%9A%E6%97%B6%E6%8E%A8%E9%80%81%E9%9A%8F%E6%9C%BA%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Wed, 20 Mar 2024 02:12:35 +0800</pubDate>
+      <guid>/resource/%E5%AE%9A%E6%97%B6%E6%8E%A8%E9%80%81%E9%9A%8F%E6%9C%BA%E4%BB%BB%E5%8A%A1/</guid>
+      <description>一个有点奇怪的工作流…… 我用 todoist 很多，这天想起来它有完善的 api 支持，于是大概看了下，然后定时推送rss feed 到 todo里… 居然很好用哎&#xA;然后我就真的好多天没打开过 reeder 了。&#xA;担心过文章摘录等情况，但现在看来没多大需求，后续再看。&#xA;大不了自己实现一个它的前端。&#xA;· 3月12日&#xA;发现这个后我一发不可收拾，我做了个随机推送锻炼的任务，随机发送一些适合办公室里做的小的身体活动的事项，每30分钟推一次，这样我没事看看 todo，就有一些新的东西，正好锻炼下。\&#xA;对我来说这个比 iOS 通知好用的多…</description>
+    </item>
+    <item>
+      <title>Ref 浅谈最佳学习路径</title>
+      <link>/resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Tue, 05 Mar 2024 11:21:18 +0800</pubDate>
+      <guid>/resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</guid>
+      <description>封面选自归藏与莱森一同构建的 Catjourney&#xA;最近因为 Yu 又迭代优化了文章功能，就着这个话题， 我顺便再帮忙测试一下文章功能。&#xA;抄，找到一个优秀的老师，然后 100% 抄袭（模仿）&#xA;超，完成多次抄袭后，会有自己的感悟，站在巨人的肩膀上创新，超越&#xA;钞，最终因为给用户提供了超额价值，赢得钞票汇报&#xA;人们在做一件事情之前，往往缺少很多认知，就无法理解。如果没有实践，就无从谈 “知”，所以实践的最佳方式是参考。“模仿”，“临摹”，“借鉴”，“抄袭”，其实是一件事儿，只是人们看待事情的视角有差别，对于模仿的程度有差别，所以衍生了不同的措辞。&#xA;在艺术领域上，如果你做到 100% 相似，人们会说：太像了&#xA;换到商业领域上，如果你做 100% 相似，人们会说：抄袭&#xA;差别无非就是，艺术你不赚钱，商业你赚钱而已。人们是觉得你侵害了他人的利益。&#xA;但从学习的角度上来说，最佳实践路径，往往就是借鉴模仿。&#xA;抄别人的产品设计，抄别人的代码，抄别人的内容思路，抄别人的内容形式，甚至抄别人的文案脚本，抄别人的剧本。&#xA;你总能在优秀的产品中看到别人的影子。QQ 秀是抄的，摩尔庄园是抄的，人人网是抄的，看准网是抄的，大量的产品都是抄的。因为优秀，所以向他们学习，这往往是开端，也是第一步必须要走的路。&#xA;因为前人的经验宝贵，在你没接触那个事物前，你要把别人的路快速走一遍，踩过别人踩过的坑，加之自己的理解，才能成为卓越的专家。&#xA;“你的意思是说，你比这些在行业内专精了十几年的人，更了解用户，踩过更多的坑，想出了一帮精英都想不出的创意点子？”&#xA;“为什么人家这样设计？为什么没有按照我想的思路来设计？”&#xA;不断的反问自己，找到了原因。最终接纳了别人的设计方案。&#xA;当项目做的多了，竞品看的多了，他开始融会贯通，把四面八方优秀的方案拿来缝合的天衣无缝。&#xA;我见过很多抄袭者，人家的产品 100 分，他照着抄只抄明白了 60 分。发布后没再优化过分毫。&#xA;这种抄袭对于一个项目是没意义的，优秀的细节往往在那 60-100 分的空间里。&#xA;不论结局是不是更好，但一定有这种想法，才能做的更好。&#xA;持续不断拿到用户反馈，优化迭代，结合国内环境因地制宜，在巨人肩膀创新，往往能出奇效。&#xA;如果你只是抄了壳子，换了层皮，但没能理解灵魂和本质，这样的产品也不会有太强的生命力。&#xA;就像考试时，你总不会抄一个 60 分的人，而是找考高分的人去抄答案。&#xA;所以这个问题转变为了：如何筛选并找到优秀的学习对象。&#xA;优秀的学习对象，你要先能定义优秀。优秀往往意味着超出行业平均水平非常高。&#xA;然后针对优秀有一些数据标准，比如达到哪些指标他就叫优秀了。&#xA;如果以涨粉为目的，那优秀的标准就是 “均篇作品转粉数（粉丝数 / 作品数）”&#xA;当你看了很多作品后，你发现均值大概是 300，然后你发现一两个账号是可以做到 5，6 百的，那就是该学习的对象了。&#xA;这里面比较高的是单篇转粉 1 万 7 的浅爸和浅浅聊英语。&#xA;那就找到这种账号去看内容就好了，如果能模仿，下一步就是实践与输出，在这个过程里去感悟内容的方法。&#xA;第一步模仿可以完完全全照搬，然后看看反响，找到再逐步优化。</description>
+    </item>
+    <item>
+      <title>Vedio</title>
+      <link>/resource/vedio/</link>
+      <pubDate>Tue, 05 Mar 2024 09:34:37 +0800</pubDate>
+      <guid>/resource/vedio/</guid>
+      <description>&amp;lt;风筝&amp;gt;&#xA;entered on : 2023/03/05&#xA;movie &amp;lt;周处除三害&amp;gt;&#xA;archived &amp;lt;全职猎人&amp;gt;&#xA;&amp;lt;进击的巨人&amp;gt;&#xA;jojo</description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>/resource/book/</link>
+      <pubDate>Tue, 05 Mar 2024 09:34:33 +0800</pubDate>
+      <guid>/resource/book/</guid>
+      <description>2023/07/08 自我管理&#xA;2023/07/10 改变，问题的形成和解决&#xA;2023/07/11 软件开发者路线图&#xA;2023/12/17 我在北京送快递</description>
+    </item>
+    <item>
+      <title>如何复盘</title>
+      <link>/resource/%E5%A6%82%E4%BD%95%E5%A4%8D%E7%9B%98/</link>
+      <pubDate>Mon, 04 Mar 2024 23:33:45 +0800</pubDate>
+      <guid>/resource/%E5%A6%82%E4%BD%95%E5%A4%8D%E7%9B%98/</guid>
+      <description>提供几个视角：&#xA;如何做出较优决策 同样的场景，不同年纪、不同背景的人会做出截然不同的决策，怎么评价决策的好坏呢，看事情的发展是否与预期相符，是否对实现目标有帮助。&#xA;ok，现在面对一个场景，基于现有的信息和经验，我迅速做出了决策，问题是：存不存在比我的这个决策更好的决策？如果有，为什么我没有想出这个更好的决策呢？&#xA;假设有一个全知全能的人物，他的所有决策都是最优，所有事情都按他的预期走，跟这个全知全能的人物对比一下，就知道为什么做不出最优决策了&#xA;信息：全知全能人掌握所有层次、所有细节的信息；而个人只能基于全人类共识，通过观察、语言提取信息&#xA;思维模型：全知全能人能串起所有跟目标实现相关的要素，并梳理出要素的动态作用关系；个人只能提取一部分要素，梳理部分要素作用关系，从中拿几个切面&#xA;如上，能否做出较优决策主要影响因素是信息和思维模型&#xA;信息首先要有多样性的信息渠道，我在上家公司观察到信息流动是有时延的，靠近信息中心位置可能能更快获取信息；第二点是验证信息准确性，这个涉及到信息质量的评估，得有意识的去验证&#xA;模型参考《模型思维》p53，本章证明了多模型预测的准确度要高于单模型。如何获取多模型，找三个跟你完全不同背景的人讨论下，这样就得到三个模型了(头脑风暴吧！)&#xA;如上，提供打破个人局限的思路</description>
+    </item>
+    <item>
+      <title>Windows软件管理 msys2</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</link>
+      <pubDate>Thu, 08 Feb 2024 07:53:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;msys配置 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行&#xA;然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!&#xA;main-init.sh&#xA;#!/bin/bash # change environment variables . chg-env-var.sh # change reg . chg-reg.sh # install cmd tool . command-install.sh chg-env-var.sh&#xA;#!/bin/bash # Set the system environment variable list SYS_ENV_VARS=( &amp;#34;&amp;#34; ) # Create the system batch file cat &amp;gt; update_sys_env.bat &amp;lt;&amp;lt; EOF @echo off REM Update system environment variables EOF for env_var in &amp;#34;${SYS_ENV_VARS[@]}&amp;#34; do var_name=&amp;#34;${env_var%=*}&amp;#34; var_value=&amp;#34;${env_var#*=}&amp;#34; echo &amp;#34;setx $var_name \&amp;#34;$var_value\&amp;#34; /M&amp;#34; &amp;gt;&amp;gt; update_sys_env.</description>
+    </item>
+    <item>
+      <title>Windows软件管理 scoop</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</link>
+      <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;scoop ref scoop blog&#xA;卸载：默认在“C:\Users\whens\scoop\&amp;#34;，删除该目录即可 - env:powershell &amp;gt; admin $env:SCOOP=&amp;#39;D:\softwares\scoop&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;USERSCOOP&amp;#39;,$env:SCOOP,&amp;#39;User&amp;#39;) $env:SCOOP_GLOBAL=&amp;#39;D:\softwares\scoop\globalApps&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;SCOOP_GLOBAL&amp;#39;,$env:SCOOP_GLOBAL,&amp;#39;Machine&amp;#39;) &amp;gt; user Set-ExecutionPolicy RemoteSigned -Scope CurrentUser iwr -useb get.scoop.sh | iex scoop uninstall scoop ------------------------------------- &amp;gt; proxy scoop install git scoop config proxy socks5://127.0.0.1:1081 scoop config rm proxy &amp;gt; add buckets scoop bucket add extras #scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps scoop bucket add dorado https://github.com/h404bi/dorado &amp;gt;install tools scoop install yt-dlp ffmpeg miniconda scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp scoop install python ruby go nodejs &amp;gt; manage scoop list xxx scoop update xxx scoop search xxx scoop info xxx scoop install spc/&amp;lt;app_name&amp;gt; scoop bucket list scoop bucket known scoop update scoop bucket add scoop reset xx [[https://www.</description>
+    </item>
+    <item>
+      <title>Flomo实践gtd和para</title>
+      <link>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
+      <pubDate>Tue, 06 Feb 2024 15:28:26 +0800</pubDate>
+      <guid>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
+      <description>前天火车上翻搜集的电子书，发现一本，这本书是twitter其他人推过来的，当时在找信息的分类方法，提到了para。&#xA;今天给我妹讲了一下flomo+标签(gtd体系、para体系)的使用方法，觉得挺有逻辑的，摘抄出来，以飨大众。&#xA;主要解决三个问题：&#xA;1 资料归类&#xA;2 待办事项组织&#xA;3 目标管理&#xA;成型后系统效果是这样的：任何内容，大脑中的想法、工作相关任务、生活中瞬间、触发灵感的阅读材料，任何内容，统统丢进inbox，然后继续忙自己当前的事。晚上打开inbox走一遍流程，归类所有内容，第二天继续丢内容进inbox，往复循环&#xA;有三套流程，一套是gtd，一套是para，一套是每日计划，均使用flomo的标签实现，如下 可以看到，有三套标签，sys-gtd、sys-para、normal、2024\&#xA;sys-para para是存资料的，一般看到感觉有用的资料，统统丢进inbox，夜深人静的时候走流程，&#xA;传统笔记分类为主，比如：生活，工作，xxx&#xA;para分类法以推动action为主：&#xA;proj是有时间限制的任务组，规定时间内要有成果交付&#xA;area是长期关注，并有投入责任的领域&#xA;resource则是以文本块为最小组织单元，有可能会用到的信息&#xA;archive是失去兴趣的领域&#xA;+ inbox，捕捉用&#xA;一个笔记先进inbox，然后走流程，归类完毕后重点关注proj，这样能确保信息无遗漏，且提取的信息跟当前的场景匹配&#xA;具体如下： sys-gtd gtd用于组织日常事项，最小单位是action，action组织成project。一个复杂的动作往往有很多action构成，无所谓，只关心action的状态即可 依然是先放进inbox，然后拆解成具体action，：洗衣服、写文章，等等，非常具体的且可执行的事项。然后分配到act/Todo(这个todo列后面要用到)。proj则是由这些action组织起来的，用flomo的@(链接)功能&#xA;action有三种状态：TODO、DONE、waiting，waiting是需要外部辅助的，比如你的材料需要其他人的数据，这个时候就要等，但是不能干等啊，所以转移到waiting列表，定个时间，比如2h后提醒自己check一次。&#xA;waiting列表我们也可以附带时间和地点，如图，我有一个aeiou列表，里面维持了地点、跟其他人的谈话信息，这种我们下次谈话就能接着之前聊的话题继续聊，gtd的waiting需要哪些人的协助，@进去，或者在哪些地方，@进去，定期核查这个列表，能确保任务无遗漏&#xA;同理，不时地翻翻proj列表，看看哪些能推进，顺手干掉。sys-gtd相当于一个动态的任务分配系统吧，且能做到很精细的资源管理&#xA;2024 okr 接下来我想谈谈每日的任务安排，在工作时，我们的大脑只能记住一小段内容，如果要完成一个时间、空间跨度都很大的任务，仅凭工作记忆是不够的。现在有sys-para帮我们处理了资料的问题，sys-gtd帮我们处理了任务分配的问题，接下来问一个问题：我想干什么？&#xA;2024有1年的时间，能做成哪些事，拆解这些事到具体的每一天，在这一天应该做什么事。&#xA;首先对每天做的事情分类：自己想做的、外部触发要做的；生活上的、工作上的；投资自己的、浪费时间的，有很多维度，我选择用okr做目标分类、追踪、对齐，如下&#xA;OKR 2024/week1/day6 任务安排(直接从sys-gtd/act/Todo提取action即可) 2024/week1/day6 任务完成情况 形成自己的标签体系 举个例子吧，aeiou是在《人生设计课程》知道的概念，我可以做tool/activ、tool/user、tool/envi、tool/object、tool/xxx五个标签，用这个列表记录一些关键的事，比如搬家、工作、跟某个人的交流等，为以后的决策提供数据支持。&#xA;举这个例子是想说，标签体系千变万化，只要能搞成一个闭环体系，什么名字都无所谓。下面是实际生活中自己形成的一些标签 flomo用了三个月，对我的生活产生了很大的影响，更多的是上面的几套方法论的影响吧。4个月可以产生这么大变化，也许我们对生活应该乐观点，说不定下四个月你能做出什么了不起的突破呢，共勉！！！ </description>
+    </item>
+    <item>
+      <title>构建现金流渠道</title>
+      <link>/resource/%E6%9E%84%E5%BB%BA%E7%8E%B0%E9%87%91%E6%B5%81%E6%B8%A0%E9%81%93/</link>
+      <pubDate>Mon, 08 Jan 2024 14:17:44 +0800</pubDate>
+      <guid>/resource/%E6%9E%84%E5%BB%BA%E7%8E%B0%E9%87%91%E6%B5%81%E6%B8%A0%E9%81%93/</guid>
+      <description>考察过很多职业，尽量能照顾全局(即掌控从需求到产出的整个链条)，我自己选的是老师、软件开发全栈工程师、非标全栈工程师&#xA;还需要构建一些需要过渡的临时性工作，或人脉：销售、设计、司机、陪玩、翻译、摄影（技能服务吧）&#xA;最终自己构建、维持几个赚钱机器：经营店铺、产品交付&#xA;收入结构观察：&#xA;Log：&#xA;2020/07&amp;ndash;&amp;gt;2022/06 贵州航天特种车，电气工程师&#xA;2023/01&amp;ndash;&amp;gt;2023/06 普民环保科技，电气工程师&#xA;2024/01/07 兼职某教辅机构&#xA;2024/04/28 某金属探伤公司</description>
+    </item>
+    <item>
+      <title>期望-现实模型</title>
+      <link>/resource/%E6%9C%9F%E6%9C%9B-%E7%8E%B0%E5%AE%9E%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 08 Jan 2024 12:48:08 +0800</pubDate>
+      <guid>/resource/%E6%9C%9F%E6%9C%9B-%E7%8E%B0%E5%AE%9E%E6%A8%A1%E5%9E%8B/</guid>
+      <description>首先会有一个期望，然后有事实的合集(ps..事实要经过校验)，根据已有的事实，推测期望实现的可能性。最好的状态是预测领先事实，其次是五五开，最次是预测落后。要努力做到预测领先，这样能以最小代价获取最多筹码!!!&#xA;需要自己构建一些东西，让事实集合朝期望靠拢，构建过程中会出现各种约束，一种方法是等，等机会；另一种是从其他地方引入资源，如果了解该过程全貌，能大大缩短期望实现的时间。&#xA;在执行过程中发现两个问题：&#xA;1 变化速度太慢&#xA;分析：缺乏相应的资源支撑&#xA;解决方案：构建指向这几类资源的通路&#xA;但是资金是个鸡生蛋、蛋生鸡的问题，容易陷入恶性循环&#xA;借用《福格行为模型》，主要限制有：心力、脑力、体力、时间、资金、日程&#xA;借用《亚马逊工作法》，你必须了解系统的“投入指标”是影响“产出指标的”&#xA;2 闭环速度太慢&#xA;分析：没有行动的动力&#xA;解决方案：B(行动)=M(动机)A(能力)P(提示)&#xA;动机：从行为角度考虑事情，而不是愿望/心愿角度&#xA;能力：从微行为开始，用获取资源、提升技能、做入门步骤，代替直接行动！&#xA;提示：行为锚点：做完一个动作后接着做第二个动作&#xA;积极情绪：即时奖励、随机奖励、找时机奖励&#xA;Log:&#xA;20240331 &amp;ldquo;设计人生-纠偏&amp;rdquo;&amp;ndash;&amp;gt;&amp;ldquo;期望-现实模型&amp;rdquo;</description>
+    </item>
+    <item>
+      <title>《我在北京送快递》</title>
+      <link>/posts/%E6%88%91%E5%9C%A8%E5%8C%97%E4%BA%AC%E9%80%81%E5%BF%AB%E9%80%92/</link>
+      <pubDate>Wed, 27 Dec 2023 12:19:10 +0800</pubDate>
+      <guid>/posts/%E6%88%91%E5%9C%A8%E5%8C%97%E4%BA%AC%E9%80%81%E5%BF%AB%E9%80%92/</guid>
+      <description>去年我也是经历了一个思想重塑的过程，看待事物的思维发生了巨大变化，12月在某青旅住，隔壁有个外卖小哥和滴滴司机，经常听到两人对话，一些跑单技巧、夜店啥的，这也是一种生活方式。&#xA;这本书我翻了一遍，主要描写自己的工作经历，以及由此引发的哲学思考(短短几句)，很有启发，推荐观看。下面以我的方式拆解这本书。&#xA;时间线 按时间线从上往下排列&#xA;【】:补充说明性内容&#xA;(打工经历 途径 岗位 薪资 工作时长 补充说明)&#xA;ctrl+f:{主编}(这是个比较重要的人)&#xA;【成大夜校】&#xA;1 xx 酒店服务生(未毕业) 600 实习半年，宴会部2+西餐厅4&#xA;2 xx 服装店营业员 2000出头 大半年 步行街 代理Moon Goon的韩国小众品牌&#xA;3 通过报纸招聘启事 某石化加油站营业员 1800 编外人员 4个月+新石油站2个月&#xA;4 xx 中式快餐连锁店送餐 无底薪，收入靠提成 半年&#xA;5 同学主动介绍 雪糕批发部送货 几个月&#xA;6 同学主动介绍 绘制三维建筑效果图 600 学徒 半年&#xA;【23岁】&#xA;7 常看漫画杂志学徒启事 600/1000(其他人) 半年&#xA;【24岁 夜校毕业】&#xA;8 xx 新创刊的动漫资讯杂志做美编 1500 试用3个月 老板看好动漫类书刊前景 {主编}&#xA;【和之前动漫社的朋友约定去北京&amp;quot;流浪和创作&amp;quot;】&#xA;9 xx 文印店 1000、1200 2个月 (过渡职业)&#xA;【漫画社 半年 (这段经历塑造了最初的作者，给了作者一个起点。如果没有这段经历，今天的作者将是跟之前很不同人)】</description>
+    </item>
+    <item>
+      <title>个人技术栈追踪</title>
+      <link>/resource/%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E6%A0%88%E8%BF%BD%E8%B8%AA/</link>
+      <pubDate>Tue, 26 Dec 2023 19:13:05 +0800</pubDate>
+      <guid>/resource/%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E6%A0%88%E8%BF%BD%E8%B8%AA/</guid>
+      <description>遇到一个事，c基础学完后应该能进行程序开发了吧，但是不知道学习哪些技术栈，nodejs+react？先考察一圈招聘软件市场，决定要引入的技术栈:&#xA;（我的学习策略就是引入断语：比如在学这个简单的IM项目时我想到一个词：业务逻辑，对应4+1视图的逻辑视图，在知乎搜索，捕获一个关键词：数据库表的设计）&#xA;html+css+typesript vue/react&#xA;python、c、c++、rust、go&#xA;业务相关：&#xA;以一个IM软件为例，不知道从哪里入手，先做概念建模：&#xA;前端:&#xA;登录界面、用户管理界面、通讯界面&#xA;后端:\</description>
+    </item>
+    <item>
+      <title>职业考察log</title>
+      <link>/resource/%E8%81%8C%E4%B8%9A%E8%80%83%E5%AF%9Flog/</link>
+      <pubDate>Tue, 26 Dec 2023 17:22:46 +0800</pubDate>
+      <guid>/resource/%E8%81%8C%E4%B8%9A%E8%80%83%E5%AF%9Flog/</guid>
+      <description>直接、间接搜集到的工作信息，记录一下：&#xA;上市公司管培生():&#xA;该公司业务扩张，准备在摩洛哥、泰国、xxx几个地方建厂，需要储备相应的技术管理人才，筛选方法:理工类专业全国前100，一本以上院校&#xA;有完善的培训体系，淘汰率5%，面试不严格，条件优越，比较有吸引力的是期权激励，该公司20年上市，技术人才有10-12w的期权分红/year，但是制造业，你懂的!&#xA;红娘销售/情感挽回():&#xA;这个比较有意思，总体就是交多少会员费(3000吧)，给你安排相亲 3次/月，尽量按照你的需求找对象，或者提供情感挽回方法，服务性质岗位&#xA;正好，我住的地方有个干这个工作的，他有一句话我印象深刻：我们就是负责把钱从他们兜里掏出来，服务体验啥的，管他呢！&#xA;外卖员的日常():&#xA;200-300/8h，远单单价高、近单单价低，某外卖小哥的策略：远处某栋楼临近中午会出现很多单，他选择7-10公里的单子，一次多拿点，时间要求55min-&amp;gt;1h，如此一趟可挣60-&amp;gt;70吧，一天4h。100/3(60/h(4单)+20/h(2单)+20/h(2单))&#xA;(130/11:00&amp;ndash;12:30，xxx)&#xA;滴滴司机的日常():&#xA;日夜颠倒，400-500/d，8-10h。 单不停，都是小单，400/17单，时间:pm 11:00&amp;ndash;&amp;gt;am 10:00&#xA;电气助理工程师():&#xA;总包性质公司，做PPP项目，业务逻辑较简单，所有制造相关内容外包。人少，所以缺乏培训体系和管理制度，本部门的领导能力很强，但是手下带的人很差&#xA;泵类销售(当兼职做)：&#xA;这家是一个销售公司，在即墨开有工厂，但是我面试的这个是纯销售公司。设置辅助性岗位，6000+2人间+餐补，后期往销售转化，产品为泵类，小众领域，销售就是要了解目标客户需求，提供解决方案，技术销售更有优势&#xA;小公司，内部等级分明，老板个人实力强。这个岗位长期招聘，我的话因为有理工背景，转销售比较受欢迎，但是资源支持太少了&#xA;云闪送司机(当兼职做):&#xA;乱糟糟的一堆人排队，那些招聘的人应该是有业绩指标，比如今天接待多少个人etc，这种浪费其他人时间的hr让人很不爽!&#xA;教师():&#xA;某上市教育公司，内部培训体系完善，晋升体系明确，薪资可观，但是这些hr给人的感觉很不爽&#xA;总结：甭管大小公司，感觉所有人都是围绕这些赚钱机器转。挺没劲的!&#xA;技能进度：4+1视图&amp;ndash;&amp;gt;卡在业务方面</description>
+    </item>
+    <item>
+      <title>设计人生 约束模型</title>
+      <link>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A6%E6%9D%9F%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 25 Dec 2023 19:14:05 +0800</pubDate>
+      <guid>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A6%E6%9D%9F%E6%A8%A1%E5%9E%8B/</guid>
+      <description>我们做出的所有决策背后都隐藏着一些假设，这些假设限制了自由度&#xA;而这些假设有的可能是错的，比如我经常认为A&amp;ndash;&amp;gt;B，但实践下来，这两者没有相关性&#xA;所以要观察，如果预期的事情没有发生，要及时纠偏(复盘)。&#xA;我会根据目标有意识的引入约束(这些约束一定要是真正的、避不开、跟我们的目标强相关的约束)&#xA;人生设计而言：你想过什么样的人生，你正在过什么样的人生，有哪些东西在阻止状态间的迁移。理想情况，30%时间用来投入资源，促成状态的转移，70%的时间享受新状态带来的好处！！！</description>
+    </item>
+    <item>
+      <title>社交浅思考</title>
+      <link>/resource/%E7%A4%BE%E4%BA%A4%E6%B5%85%E6%80%9D%E8%80%83/</link>
+      <pubDate>Fri, 22 Dec 2023 10:16:48 +0800</pubDate>
+      <guid>/resource/%E7%A4%BE%E4%BA%A4%E6%B5%85%E6%80%9D%E8%80%83/</guid>
+      <description>正如我们打游戏有微观世界一样，社交也有其微观世界。&#xA;生物机制 从最底层出发，就是激素：肾上腺素、多巴胺、内啡肽等，受到外界触发，这些激素作用于神经链路，大脑拿到神经信号做分析，输出各种直觉和感受。&#xA;体内有两套系统(《思考：快与慢》)，前额叶皮质负责主观部分，摘录如下：&#xA;前额叶皮质是专门负责思考，计划以及为事物提供理性解释和产生主观体验的地方。比如你就是很喜欢某个牌子的笔，你觉得它用起来很舒服，如果你真的花了大量时间来关注并且谈论这支笔的话，这个过程就真的会提高你的多巴胺水平。这并不是说明你就是容易释放多巴胺，而是说 只要我们越来越多的深度参与一件事情，我们说的话和我们的想法真的会对这件事情的回报感产生深远影响。 当然，这并不能简单的理解成，你可以随便骗自己说我喜欢这个或者我喜欢那个（其实你喜欢个屁），但是很多研究表明，如果你天天说或者记录有关某事的想法，或者你不断尝试欣赏或爱某件事，那么那件事就会真的能更多地提高你的多巴胺水平。所以说，如果你很不喜欢锻炼，你可以试着想想锻炼的好处。&#xA;另外，你一定要小心下面这种说法，即“我讨厌锻炼/学习/某个人，但是我喜欢干了之后给我带来的好处”，这种关注于事后奖励的想法实际上会让事情更糟糕，并不会让你更喜欢锻炼或者学习，反而会降低由此产生的多巴胺水平。 巧克力的效果也许会因人而异，因为可能有人不喜欢吃巧克力，但是性、尼古丁、可卡因和安非他命这类东西对于所有人来说都有提高多巴胺的功效，反之锻炼身体、学习、繁重的工作或者解决感情中的一个棘手问题，对于多巴胺的功效则取决于你的主观认知。（所以通过mindset是真的可以把自己的身体给黑了）&#xA;第二套就是反射系统&#xA;如果你已经知道如何行走，你不会思考你的行走。你只是行走。这是因为神经系统希望尽可能多地让反射动作来处理。这被称为底层处理。它实际上只是意味着信息通过你的感官流动，不管你在感知什么，这些信息都在上升并指导你的行动。&#xA;有效沟通 第二层有诸多规则，因为每个人都有其独特的经历和思维，就对方经历而言，你拿到的是一些片段，通过这些片段+自己的想象拼凑出对方的整体形象。但我们依然可以相互理解，因为相同的文化背景、类似的经历、相同的生物机制吧。&#xA;回答第一个问题：为什么要沟通?&#xA;1 情感交流 2 信息交换 3 协作&#xA;我拿了两个销售的样本和一些不会说话的朋友做对比，两者的主要差别在：目标、理解、表达。&#xA;(一些技巧)&#xA;目标：&#xA;理解：《鬼谷子》第一章是捭阖，捭就是开，阖就是闭，“捭者，或捭而出之，或捭而纳之；阖者，或阖而取之，或阖而去之”，翻译为：采用开放的方法，要么使对方显露真实意图，或者让对方接受自己的观点，采用封闭的做法，可以获取有价值的东西，可以避开潜在的危险。\&#xA;(下面放一些断语)&#xA;拿出一段对话，遮住一半，就能分析出另一个人在说什么，但是就算两个人聊得火热，也存在各说各的情况(同理，也能分析别人的对话)&#xA;如果让你主导一段对话，有哪些思路：\&#xA;表达：\</description>
+    </item>
+    <item>
+      <title>2023年总结</title>
+      <link>/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 21 Dec 2023 13:17:44 +0800</pubDate>
+      <guid>/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+      <description>先看22年底的总结吧： 23/01.04&amp;ndash;&amp;gt;23/06/28，入职到新公司&amp;ndash;&amp;gt;辞职，get新技能：开车、eplan绘图、plc编程、低压电气元器件选型。 我还顺带研究了下公司业务范围、组织结构，及基本电气系统搭建方法 所有材料如下： 此为上半年进度！下半年主要在修复上半年发现的缺陷，简言之，我弄了一堆工具帮助我纠偏 工具演化过程如下： 闭环了搬家相关主题；&#xA;闭环人生道路相关主题，规划、纠偏相关工具：okr、gtd、渐进式阅读；&#xA;闭环人生设计主题，8月15经过小倩朋友圈，参加了读书会，引发出人生设计主题；&#xA;闭环快速学习主题，12月用3天闭环快速学习专题；&#xA;现在正处于okr的基础技能构建阶段，如下： _ _进度：c语言刚半只脚趾踏入算法门槛(具体进度去主页的wiki看吧) 展望 24年主题：挣钱，闭环上述几个项目。适当提升工作优先级！</description>
+    </item>
+    <item>
+      <title>如何适应一家公司</title>
+      <link>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</link>
+      <pubDate>Mon, 11 Dec 2023 22:05:17 +0800</pubDate>
+      <guid>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</guid>
+      <description>之所以有快速学习章节，是因为在我工作的过程中，发现自己老是抓不住重点，说明我的学习方式有问题。而快速学习的目的，是为了在劳动力市场竞争，目前来看，还没有迈出第一步。&#xA;要在职场中使用快速学习能力取得优势，需要聚焦哪些点？&#xA;业务模式 得搞清楚钱从哪来，怎么分配。&#xA;从末端出发，订单为王，我们看律所，地位最高的合伙人，他们的优势就是案源；还有很多小工厂老板，搞些什么酒、衣服啥的，凑吧凑吧就上场，结果还卖的不错。&#xA;分类付费主体：政府、企业、居民&#xA;居民根据购买力划分：高净值人群、中产、普通人群&#xA;围绕这几个主体，从订单的数量、单价、总价、获取成本、连续性划分，可以分为(稳定 获利高低)四个象限。&#xA;科研为例，资金来源是科研项目基金，稳定，获利高低不好说，如果项目成果孵化成产品并卖的好(条件很苛刻)，获利高，反之获利低；&#xA;大厂呢，IBM为例，产品是大型计算机，主要卖给政府、银行、保险公司和大型制造企业，稳定获利高；小工厂呢，不稳定获利高(看环境)，胜在灵活&#xA;分配机制，纯打工者看定薪体系就行；不同的是，项目制公司有项目提成，销售岗位有销售提成，这两个都跟订单密切相关。所以为了更好的获利，职场人更应培养的是业务能力。&#xA;leancode&#xA;这么一切割，就能分析出想工作的环境。&#xA;职场环境 信息：上下级存在信息差，因为上级站在更高层面看问题；部门之间也存在信息墙。&#xA;这种你只能利用一些通用技能，去创造交集，比如修电脑啥的。尽可能多的搜集信息，分析&#xA;(20240911 上级的信息渠道丰富性远大于底层员工，所以需要向上管理，释放信息影响上级决策，而不是整天抱怨)&#xA;资源：资源的分配权在老板和几个部门领导手里，唯一能做的，就是画大饼。资源就是个人能力成长经验包，你有一个设想，但是实际执行发现很多漏洞，如果没有资源支持，你就得不到这些经验&#xA;势能：如果要推动某些事，有些人可能不配合，这是因为势能低，但是假如你主持成功了几个项目，在团队中有了技术影响力，再推动事情阻力可能会小点&#xA;认知：认知不到位，就会在错误方向用力，造成金钱、时间、资源的浪费，提升认知需要不断打破舒适圈，一个坑一个坑踩。&#xA;熟悉业务 到这快速学习就能派上用场了。现在手里有现成的产品，从0到1开始做拆解：&#xA;原始需求、方案设计思路(取舍)、具体实现(有很多细节)&#xA;基于实际产品和文档资料构建逻辑链，不管怎么样，你得分析出当前产品可能存在逻辑断点的地方，以及部分完整的逻辑链。&#xA;(具体参考前面四篇关于学习的文章)&#xA;2024/06/07 熟悉公司技术栈，内容：技术栈的选取及取舍&#xA;技术栈相关基础操作的摸索，所有的技术栈基础都要亲手过一遍，这样在现场能快速定位解决问题 技术栈相关的领域知识也要手写一遍,etc&#xA;(ps. 这个逻辑是很稳固的，23/11&amp;ndash;&amp;gt;24/06，半年内基本无变化。所以关注点转移到具体的逻辑链条(细化)，该逻辑封存)&#xA;维护及创新 在维护原有产品的基础上改进，可能要维护一个需求列表。&#xA;但更重要的是，你得有从0到1的能力，在需求不明朗的前提下，跟客户反复沟通确定一套方案，验证方案可行性，申请资源，推动设计落地、交付售后&#xA;综上，为了快速适应，得有意识培养自己做项目的能力&#xA;聚焦点：需求分析、可行性分析、方案设计、工程实现、交付运维&#xA;log:&#xA;2024/06/07 补充熟悉业务相关内容&#xA;2024/09/11 也许</description>
+    </item>
+    <item>
+      <title>快速学习 终篇</title>
+      <link>/resource/%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0-%E7%BB%88%E7%AF%87/</link>
+      <pubDate>Sun, 10 Dec 2023 11:30:18 +0800</pubDate>
+      <guid>/resource/%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0-%E7%BB%88%E7%AF%87/</guid>
+      <description>学习的目的是为了解决问题，我来讨论学习成果及有效性。&#xA;首先得定义范围，问题、解决问题所需要的知识，均需定义范围。&#xA;探索过程：从图中你的位置出发，有很多可能方向，你得把这些虚线描述的错误方向排除(要求自己动手测试)。如此反复，最终得到整个知识网&#xA;名称空间 自我探索要求我们有一定的“抽象”和“细节”能力&#xA;抽象可以帮助我们隔绝，控制复杂度，更快的掌握某个知识&#xA;细节可以敲碎黑盒，让我们一窥黑盒内部的究竟&#xA;善用这两个工具，可以帮助我们得到一个系统的，成体系的知识，也可以指导我们探索缺乏研究的领域，更好更快的探索未知&#xA;20241003：直接从细节出发，将对方的概念空间替换成自己的，这样就完成了知识的内化(ps.这个这个理解更具实操性)&#xA;复用过程：得保证知识网可靠，用到逻辑闭包的概念 </description>
+    </item>
+    <item>
+      <title>技术栈</title>
+      <link>/resource/%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+      <pubDate>Fri, 01 Dec 2023 15:41:38 +0800</pubDate>
+      <guid>/resource/%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+      <description>选取原则 实业pass，实业太受地理位置限制 服务业，最好带点技术护城河，不然谁都能进来 尽量保证闭环的完整性(需求-&amp;gt;商业-&amp;gt;产品、服务) 机械工程师技术栈 同电气工程师，只是原理图偏结构，打交道的对象是工艺、现场生产工人&#xA;工业电气产业链 电气工程师技术栈 (电气方案设计、实施) 控制要求及方案 电气原理图、接线图，PLC程序 器件选型 报价(整体产品对外、非标准件外包) 现场装调(物料调度、项目进程监控) 交付、培训 ref 标准 图纸标准 ref 低压电气元件设计、测试流程 (需求端) 大屏数据展示 运动控制 自动化控制 集成产品(电气控制柜、非标自动化产品) 上位机(qt界面、HMI触摸屏) 控制平台(CODESYS、SCADA、TWINCAT) 数据采集、简单自动化(PLC) 基础设施(各类传感器) 半导体产业链 电子产品产业链 电子工程师技术栈 程序员-底层 图灵机 逻辑电路 CPU 指令集架构(X86、ARM、RISC-V、MIPS) 内核 驱动 编译器 语法分析 语法分析树 语义分析 目标代码生成 逻辑：&#xA;硬件层面，输入状态可以用1001100这种形式，跟电路的高低电平对应&#xA;此基础上抽象出指令集&#xA;指令集变成人容易记住的语言，就是汇编语言&#xA;内核负责各种资源的调度，具体实现原理先不管&#xA;内核有用户空间和系统空间，在用户空间的c程序经编译器编译成汇编程序，交付内核去调度CPU执行&#xA;(注：通过该总结知道程序执行的底层依赖，不必深究。计算机就是这一层层抽象构建起来的)&#xA;程序员-应用层 linux、c、c++&#xA;服务器(游戏后台)(pass)、嵌入式软件开发+芯片、saas开发&#xA;其他 辅助岗位：行政、售后、助理、人事、现场调度、质量(etc)</description>
+    </item>
+    <item>
+      <title>金钱观</title>
+      <link>/resource/%E9%87%91%E9%92%B1%E8%A7%82/</link>
+      <pubDate>Thu, 30 Nov 2023 18:21:39 +0800</pubDate>
+      <guid>/resource/%E9%87%91%E9%92%B1%E8%A7%82/</guid>
+      <description> 不要负债 借钱给其他人就要做出收不回的打算，不要让它影响到你正常的现金流 可能因为各种原因掉进负债陷阱(主要是被骗，提防陷阱) 流量财富 增加收入渠道多样性 确保能加杠杆，比如能通过借贷、信用卡、小额贷 保持现金流稳健(流动性) 逐步减少劳动力在该体系中的参与度，代之资本、人脉 发财靠康波，收入增长是非线性的 需求&amp;ndash;&amp;gt;商业&amp;ndash;&amp;gt;产品、服务 存量财富 留半年够生活的钱做缓冲 通过投资增值 一辈子能挣多少钱，可以算出来，抓住每一次吃进红利的机会 </description>
+    </item>
+    <item>
+      <title>关键点</title>
+      <link>/resource/%E5%85%B3%E9%94%AE%E7%82%B9/</link>
+      <pubDate>Fri, 24 Nov 2023 19:31:30 +0800</pubDate>
+      <guid>/resource/%E5%85%B3%E9%94%AE%E7%82%B9/</guid>
+      <description>展示一些快速学习实践过程中抓到的关键点及硬限制。&#xA;材料是否充分 对材料的消化吸收是否到位 模型是用来帮助思考的，所以除去理论，肯定有一些工程手段帮助验证对系统运行情况的了解&#xA;通过工程手段建立对事物的直觉&#xA;提取练习：&#xA;场景&amp;amp;系统设计、调试过程？&#xA;反馈：标准答案纠错&#xA;2024/06/04 最快速的方法就是从现场获得反馈。最重要的一点，基础一定要牢固，不然现场解决问题很慢的!!!&#xA;卡顿及如何提速 卡顿是因为逻辑存在不清晰部分，检查是否所有底层概念都理解透了(用自己的话写出来)，概念的组合层次关系划分是否正确(即是否是一块块的闭环逻辑)&#xA;20250208 但是存在一些非标的东西，找不到线索&#xA;答案就是穷举和寻求外界帮助，除非经过特别精心的设计，工具、思维都有漏洞，所以流程跑不通很正常，要有毅力&#xA;很多事情都是可以穷举出来的 如何确定终点 20250208 到达理想状态可以认为到达终点&#xA;以开源项目为例，比如MFC框架，很久都没更新，说明目前的架构满足需求&#xA;QA 快速进入状态&#xA;溺水法：直接丢进场景，在场景摸索&#xA;有学习路径&#xA;逻辑链是现成的&amp;ndash;&amp;gt;做练习，从不同角度检测&amp;ndash;&amp;gt;封存备用&#xA;卡顿及如何提速&#xA;卡顿是因为逻辑存在不清晰部分，检查是否所有底层概念都理解透了(用自己的话写出来)，概念的组合层次关系划分是否正确(即是否是一块块的闭环逻辑)&#xA;如何快速摸清楚认知边界&#xA;用自己的话说，说不清楚就是这一块存在盲区&#xA;如何快速拓展知识边界&#xA;搜集外界线索&amp;ndash;&amp;gt;写断语&amp;ndash;&amp;gt;xxx&#xA;搜集线索方法：知乎等类似网站提问&#xA;如何内化吸收&#xA;做练习，从不同角度检测概念或逻辑链，确定其内涵和外延&#xA;逻辑链条很长怎么办&#xA;只能从基础开始一点一点推，欲速则不达，采取的策略：对实现目标有帮助的优先&#xA;怎么确定某知识效果&#xA;提假设&amp;ndash;&amp;gt;构建观察指标&amp;ndash;&amp;gt;验证，这里存在负反馈循环。&#xA;怎么构建观察指标呢？凭经验、或者该关键词关联的其他线索，进行广度优先遍历，确定大体方向，再做深度优先遍历&#xA;怎么快速构建长逻辑链&#xA;偷其他人的逻辑链，看他们面对问题怎么找线索，怎么选择方向，怎么检测，怎么做练习，怎么解决问题&#xA;Log:&#xA;想靠看文档学会，这个不现实，有三个层次的“学会”，建模、实践摸到边界、补全概念空间，xxx&#xA;任务分解及解决：xxx 急于求成，基础不牢&#xA;缺少了一点勇气，和决心 目标+勇气&#xA;面对一大片知识怎么办：一点一点攻克，抓重点&#xA;Ai当搜索引擎用，不要指望给出好的解决方案&#xA;小步迭代：贝叶斯方法 | 榨干资料、或者项目的所有信息&#xA;抓大放小&#xA;单纯记载知识没用，要实战&#xA;知识点：分支预测的方法 建模：正交&#xA;哪些东西重要，不能光靠想象或者阅读；实践，通过项目找关注点；；光靠阅读找不到重点&#xA;还有一种办法是先实践(实践也得先看资料，构建一个初始的概念空间，然后用手段去检测)，实践过程中会遇到很多疑问，带着疑问找线索，理清逻辑，封存；；&#xA;知行合一： 知和行之间有gap，行涉及到很多细节的判断，知只需要缕清逻辑&#xA;学习： 记忆与信息编码方式&#xA;渐进式阅读：&#xA;知识不足以覆盖目前场景； 学到的知识一定能覆盖目前场景吗？？？？，或者说怎么才能达到让知识能覆盖目前场景的状态&#xA;缺少现实世界的触发&#xA;工具手册怎么组织：xx&#xA;技术栈本身，do it，面对问题，解决问题&#xA;抓住一切机会去争取调度资源</description>
+    </item>
+    <item>
+      <title>怎么改变自己的行为</title>
+      <link>/resource/%E6%80%8E%E4%B9%88%E6%94%B9%E5%8F%98%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A1%8C%E4%B8%BA/</link>
+      <pubDate>Thu, 23 Nov 2023 12:19:32 +0800</pubDate>
+      <guid>/resource/%E6%80%8E%E4%B9%88%E6%94%B9%E5%8F%98%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A1%8C%E4%B8%BA/</guid>
+      <description>本文章延续《改变，问题的形成和解决》的观点，主要是我自己的实践，持续补充！&#xA;问题 想象中我是个很高效率的人，实际上是重度拖延症患者，怎么从一个拖延症转变成高效率呢？&#xA;分析 我就统计自己每天的时间花销，如下： 找到效率最高的一天，看看自己那天做了些啥事。经过核对，这一天一直在处理待办事项，如下： 从历史中找出效率最低的一天，那天刷了一天抖音。&#xA;回顾进入这两种状态的过程，如出一辙，打开软件&amp;ndash;&amp;gt;处理事情&amp;ndash;&amp;gt;退出。刷抖音会上瘾，因为它的动作很简单，一根手指往上划，预期能看到新奇的东西，这种预期促进多巴胺分泌，你会感觉很爽；处理事情不会，有很多未知情况，面对未知人的第一本能是躲开。&#xA;这种不同的奖励机制强化了拖延行为，抑制了高效率行为。这个线索跟我之前搜集的“上瘾模型”匹配。&#xA;上瘾模型 六要素：&#xA;诱人的目标 不可抗拒的积极反 毫不费力的进步 逐渐升级的挑战 未完成的紧张感 令人痴迷的社交互动 四步骤：&#xA;触发：内部触发 外部触发 内部：让产品与用户的思想、情感或者是已有的常规活动密切关联。情绪就是一种很好的内部触发器 外部：外部触发是指会用奖励等充当诱饵，以清晰的行动步骤，引诱或暗示人们接触或使用他们的产品，包括：付费型触发、回馈型触发 公关媒体的正面报道、人际型触发 熟人间的相互推荐、自主型触发 长期持续在用户面前出现，促使用户最终选择它 行动：充分的动机、完成这一行为的能力、动机和能力，先解决能力问题 酬赏：渴望酬赏的迫切希望、让事情不按常规去发展 投入：在用户享受过酬赏后，鼓励用户向系统投入一些有价值的东西 “上瘾”只是通过反复的、自我强化的反馈循环形成的思维和行为模式&#xA;设置奖罚机制 触发：&#xA;隐藏低效率事件的触发线索，以刷抖音为例，我用两个手机，把微信、抖音等容易上瘾的软件和记录、计算等日常使用的软件隔开，非必要不打开。&#xA;用flomo作为todo工具，搜集要处理的事项，有空闲我就打开flomo，刷刷自己记录的想法，或者解决todo项&#xA;酬赏：&#xA;(pending)，酬赏基于多巴胺，</description>
+    </item>
+    <item>
+      <title>可以停止了</title>
+      <link>/posts/%E5%8F%AF%E4%BB%A5%E5%81%9C%E6%AD%A2%E4%BA%86/</link>
+      <pubDate>Tue, 21 Nov 2023 18:38:09 +0800</pubDate>
+      <guid>/posts/%E5%8F%AF%E4%BB%A5%E5%81%9C%E6%AD%A2%E4%BA%86/</guid>
+      <description>昨天看完in nek的架构方法后，我觉得可以停止了，我找到了那个不变的“一”。&#xA;从高中时代到现在，感觉我的大脑就没停过，总是有很多稀奇古怪的想法，一直在构建高层逻辑，无法闭环。后面自己聚焦一下：资源、环境、变化，我一直是在众多变化中找确定的东西。这个东西就是架构方法，即面对不确定性如何聚焦、确定边界、确定执行路径，最后成功完成目标。&#xA;不需要再构建高层逻辑，聚焦到现实生活中的具体事项上就好。</description>
+    </item>
+    <item>
+      <title>Ref 学习</title>
+      <link>/resource/ref-%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 21 Nov 2023 14:10:27 +0800</pubDate>
+      <guid>/resource/ref-%E5%AD%A6%E4%B9%A0/</guid>
+      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论&#xA;+The &amp;lsquo;illusion of knowledge&amp;rsquo; that makes people overconfident&#xA;//学会的&amp;quot;幻觉&amp;quot;&#xA;黑客的学习方法&#xA;099 高效学习：面对枯燥和量大的知识&#xA;SuperMemo 渐进学习大型指北</description>
+    </item>
+    <item>
+      <title>效率工具Android</title>
+      <link>/resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7android/</link>
+      <pubDate>Fri, 17 Nov 2023 19:02:14 +0800</pubDate>
+      <guid>/resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7android/</guid>
+      <description>我用的是《斯坦福大学人生设计课》提供的框架，分析现状&amp;ndash;&amp;gt;从历史数据找激情的时刻&amp;ndash;&amp;gt;探索式试错。&#xA;这篇文章的核心是怎么搜集历史数据，怎么用历史数据做分析，怎么给未来制定计划并追踪复盘。&#xA;工具的核心是两个：时间轴、事件。首先用gtd的思想对事件做二级分类，例如#娱乐/刷视频、#学习/投资，etc；然后记录具体事件的开始、结束时刻，具体操作就这两个，很简单。&#xA;然后从总量和结构分析不同事件的时间投入。从状态机的视角看，一个事件，有初始状态、状态间转移、终止状态。重复上一段的记录动作，能得到该事件完整的生命轨迹，事件发生前我们会有预估，对比预估和实际执行，就能发现偏差。&#xA;比如，我感觉事情越做越多，可能是某个历史节点的错误决策，导致后续需要投入更多资源；或者是卡在某个点迟迟无法推进，经过回溯发现可能是时机未到，自己也没有做相应推进；或者是秀操作，发现对结果不产生影响，但成本实实在在增加了；或者是事情根本就没做的必要，etc。&#xA;再来分析不同事件每天的时间占比，假如建设性任务占比很小，都是一些日常维护类的，这样下去要出大问题；拉长时间轴，有些无用的事件时间占比过高，经过一番操作，该类事件时间占比下降。这就是有数据的好处，看比例、看趋势，成果也能具体反映。&#xA;再，我可以设定一个目标，比如某时间区间某件事时间投入50h，这样就会想方设法完成这个目标，保证了时间投入，效果另说。&#xA;具体软件 想法处理：flomo+logseq、简悦 剩下主要是时间的处理，按照上面的说法，安卓软件有：timesince、timeplanner(计算时间间隔)、dotetimer(对比计划和实际执行)、时间日志(nfc无感记录)&#xA;备忘、追踪：时间戳日记、数据方舟(记录一些习惯)、zettel notes。&#xA;结尾 设计人生项目完结了。下面的两个主题是：高效学习、挣钱。</description>
+    </item>
+    <item>
+      <title>最小生活、学习单元_end</title>
+      <link>/resource/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%B4%BB%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%85%83_end/</link>
+      <pubDate>Thu, 16 Nov 2023 17:32:54 +0800</pubDate>
+      <guid>/resource/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%B4%BB%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%85%83_end/</guid>
+      <description>想法初 很简单，我喜欢没有约束的生活。工作开始，我就尽量把使用频率较高的东西打包成一个单元，小单元组合成大单元，这样就不用等变故发生再手忙脚乱的应付&#xA;实践 从22年7月到青岛，已经过去一年半，我换了十几处住的地方，行李也在打磨中逐渐成熟。随便给我一个房子，我能在5min内恢复到正常的生活状态。&#xA;在广州、兰州、青岛、西安四处检验，很稳健。&#xA;具体如下：洗漱包、吹干机、加热器、便携热水杯、衣物、鞋袜、帆布袋(携带食物、碗筷、清洗用具)；PC*2，其他电子产品；便携电动车。&#xA;结语 目的是为了摆脱具体的物理环境，有更多试错空间。当然最后肯定要稳定在一个状态，那是下一个项目的事情了。此项目完结。</description>
+    </item>
+    <item>
+      <title>渐进式阅读</title>
+      <link>/resource/%E6%B8%90%E8%BF%9B%E5%BC%8F%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Sat, 11 Nov 2023 12:39:50 +0800</pubDate>
+      <guid>/resource/%E6%B8%90%E8%BF%9B%E5%BC%8F%E9%98%85%E8%AF%BB/</guid>
+      <description>作用 人脑的带宽小的可怜，但是能做出很复杂的东西，是因为人脑能像搭积木一样把抽象出的东西组合起来。概念：知识是信息的压缩。有一阶知识和二阶知识，一阶知识是信息间的映射，二阶知识是一阶知识的组合。&#xA;在学习过程中，我们会摄取大量信息，但是因为人脑带宽有限，很多信息丢失了，现在我来放慢整个流程：&#xA;正向：注意力投射、搜集资料、提取资料中有用的内容（形式：知识树）、调整知识树结构、手动操作一遍，验证及补充细节、再调整、记忆。&#xA;逆向：(想做一些事 | 碰到一些感兴趣的事)、遇到问题、无思路、有线索、沿着线索深挖、发现知识缺项&#xA;有很多事要做，假如每一件事都经历这么多阶段，那么在不同状态间切换很消耗注意力资源，像GTD一样，得用外部系统接管，减轻负担。&#xA;结构+工具 回到注意力投射阶段，因为会被动接触很多信息，所以大脑会出现很多想法，假设你的大脑是一块屏幕，一天会出现成百上千个画面，很多创意都来源于这些画面，所以我用卡片捕捉（借鉴卢曼卡片）&#xA;看上述流程，接下来我要把这些毫无干系的卡片组织起来，用标签，分类体系为para(project、area、resource、archive)。我觉得应该再加一个时间轴，这样能看到某个分类的演变历史&#xA;卡片+标签的结构有助于下一阶段：调整知识树、再调整。而且验证某一具体知识点时，可以把卡片打碎或组合，很柔性&#xA;谈到记忆，我希望此刻看到的东西一段时间后再看到，不然会遗忘，所以需要卡片推送&#xA;上述结构就是supermemo的核心功能，但是supermemo只能在PC使用，所以需要同类软件平替，最好三端同步，数据保存在本地。flomo，功能重叠，+logseq，能覆盖大部分阅读材料，如上。&#xA;这样任何时刻都能复用之前积累的知识，减少了切换状态所需要的时间。&#xA;使用效果 如果没有全局的了解，我很容易什么都做不出来，因为我很懒，不愿意做无意义的工作。而从一两个线索触发去勾勒出全局的画面，很容易迷失在细节，而且我的注意力很散，很容易进入不同的方向。&#xA;所以需要一个全局的视图，上述内容提供了一套工具，安抚我无处安放的大脑，很有用！</description>
+    </item>
+    <item>
+      <title>数据备份</title>
+      <link>/resource/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Sun, 05 Nov 2023 14:06:35 +0800</pubDate>
+      <guid>/resource/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</guid>
+      <description>数字资产很重要，每一次脑力劳动获取的成果及过程，都应做记录，并保证数据安全，推荐几个工具：&#xA;Keepass 记录密码，所有密码放在一个.kdbx文件中，同步此文件至坚果云，就能在三端做密码管理了&#xA;除了1password，这个应该是最安全的方案了&#xA;ios：奇密&#xA;android：Keepass2Android\ pc：keepass+chrome插件&#xA;syncthing 用来同步logseq笔记，还有其他需要单独同步的文件夹&#xA;我尽量保证产生的所有数据(配置文件、脚本、文章)都是离线的，然后根据需要同步相关文件至安卓手机。&#xA;所有离线数据均保存至U盘，U盘通过syncthing同步至一台128G的安卓手机；另一些常用的，比如logseq笔记同步至常用手机，因为要经常翻看&#xA;KDE connect 剪切板同步工具，手机、PC相互传文件，共享剪切板。&#xA;手机传输至PC(windows系统)的文件在“文档”文件夹下</description>
+    </item>
+    <item>
+      <title>效率工具PC</title>
+      <link>/resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7pc/</link>
+      <pubDate>Sat, 04 Nov 2023 15:41:48 +0800</pubDate>
+      <guid>/resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7pc/</guid>
+      <description>继上一篇文章，我研究了很多效率工具，这一篇相当于pro2的工程实践&#xA;命令行环境恢复 执行如下指令，安装命令行工具 从github msys2 conf下载之前缓存的msys2配置文件&#xA;flomo flomo有每日回顾，用来做间隔推送；&#xA;卡片+层级标签，可以用来做渐进式阅读，代替supermemo(不能制作挖空卡片，这个无所谓)；&#xA;多端同步，提供api，可以跟其他工具联动，例简悦&#xA;简悦 这个工具用来标注网页，之前我都是用chrome插件“save page WE”下载成离线html，用hamsterbase标注，简悦集成了所有操作，配合readwise做间隔推送。跟flomo一样，划线标注成卡片，+间隔推送&#xA;离线html版剪藏配置&#xA;该配置库实现了自动离线下载功能，附带标注，我的配置如下： 对我来说，要标注在没有用到简悦之前的离线文件，第二张图片中红线部分，右边有两个按钮，点击第一个就可以打开离线html标注了&#xA;第二个是我需要readwise做间隔推送，简悦提供了自动化选项，具体参考 sync readwise&#xA;# readwise 无需配置，直接使用即可&#xA;logseq logseq主要用来看pdf，认为有用的内容可以用标签#card制成卡片，间隔推送&#xA;用标签组织文件，每一个新文件可以插入&amp;rsquo;#tag/subtag/subtag&amp;rsquo;，这样就生成一个三级标签结构，完成文本组织；再用#card做间隔推送 # 高效todo 此工具有两个优点：多端同步、时间轴。我用标签追踪一些重要的东西&#xA;这个列表记录了我用过的不同效率工具，什么时候出现的，什么时候消失的。这样一来是review，因为在实际寻找效率工具的过程中一直处于搜索、信息缺失状态，时间轴列表可以帮忙监控整个过程；另，如果下一次出现同样的任务，我可以透视之前的行为来完善当前任务的策略(主要看重它的时间轴功能)&#xA;项目借用gtd思想，就是归类同一主题任务，有可能复用到之前同类型任务留下的资源&#xA;~~这三个tool是实际介入的内容及效果分析，比如我觉得刷twitter是个低ROI的行为，不想再刷了，就可以通过数据看这个行为具体改善情况，数据当然是通过manictime搜集来的啊&#xA;manictime 破解版下载（某些功能破解版才有）&#xA;链接：https://pan.baidu.com/s/1I4DFl6e7ywhqjKENGEr4Fg?pwd=t6bj&#xA;标签组合：&#xA;1-xxx表示大类，这样就有每天刷各种娱乐网站的信息了，我主要看花了多少时间及趋势，如果ROI太低就想办法减少这方面的时间投入；&#xA;ref: 筛选语法 autotag&#xA;数据备份与恢复：设置&amp;ndash;&amp;gt;备份和还原&#xA;recoll 这个用来搜索全局文本， 这三个即为搜索目录，重要的pdf、txt等文件资料可以放这&#xA;总结 综上，工具很重要，但更重要的是思想，我用到了：渐进阅读(卡片+标签)、间隔推送、时间轴；数据积累与检索</description>
+    </item>
+    <item>
+      <title>信息管理方案</title>
+      <link>/resource/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 21 Oct 2023 10:36:20 +0800</pubDate>
+      <guid>/resource/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</guid>
+      <description>信息搜集 信息分类 https://readwise.io/access_token get_token (同步微信读书笔记) 6R2jpQzfRm8EnoNlqS6tAjwbmqfrVdVYc28s5oMPNexEUpaxOf(readwise api token) 2023-10-21_10:44:43&#xA;简悦导入readwise 简悦同步助手+自动化&#xA;qq开启smtp 授权码：okgzxlbuidzmdfib&#xA;uid: wiava73y-c4xx-hsx4-un1n-523muk66yxc2&#xA;logseq: src.ref.mannual https://northnight.gitee.io/logseq-documents/#/page/Contents 抽认卡 (尘埃落定 2023-10-22_15:32:05) 图谱 (做思维扩展，有关联的信息能聚类到一起) 同步 (syncthing)&#xA;渐进式阅读 提取训练/间隔推送 https://sct.ftqq.com/ (server酱) 2023-10-21_22:06:53&#xA;pushdeer需商家小米商店才能推送通知，风险大；改用官方app 用pushdeer是考虑到场景扩展，各种约束 https://github.com/easychen/pushdeer/issues/150 check酱+server酱&#xA;后台运行得自建服务器，这是一年后的事了 https://fwalert.com/rules/6533dbc082101a6023449d40 2023-10-21_22:47:53 (没有网页解析，还是得用server酱)&#xA;原则 1 文件备份在本地</description>
+    </item>
+    <item>
+      <title>Health</title>
+      <link>/posts/health/</link>
+      <pubDate>Fri, 20 Oct 2023 10:25:21 +0800</pubDate>
+      <guid>/posts/health/</guid>
+      <description>1 亚健康（当前关注重点）&#xA;2 恶性肿瘤（35岁以后了）&#xA;慢性病：&#xA;（其实我更想从宏观层面，找数据，看疾病的发展趋势，没书提到这么些东西）&#xA;《第五次健康报告》&#xA;流行病：&#xA;核心器官：心 肝 肾 肺 胃&#xA;几大系统：内分泌系统、循环系统、呼吸系统、泌尿系统、消化系统、生殖系统、免疫系统&#xA;心血管、呼吸、消化、神经系统&#xA;常见体检项 | 现有检查手段(从医疗器械入手 | 好吧，文章已经囊括了)&#xA;性价比&#xA;年轻人的体检指南01 体检在检查什么&#xA;年轻人的体检指南02：个性化筛查&#xA;年轻人的体检指南 03：你该掌握的自查手段&#xA;/Entered on/ [2022-10-07 周五 23:41]&#xA;怎么体检 才能救命&#xA;/Entered on/ [2022-10-08 周六 00:23]&#xA;大龄单身青年自我保障指南 – Ouroboros&#xA;/Entered on/ [2022-11-13 周日 20:59]&#xA;程序员延寿指南&#xA;/Entered on/ [2023-02-26 周日 01:06]&#xA;blog-如何看病&#xA;/Entered on/ [2023-10-20 周五 10:20]</description>
+    </item>
+    <item>
+      <title>博客搭建</title>
+      <link>/resource/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Wed, 18 Oct 2023 22:55:45 +0800</pubDate>
+      <guid>/resource/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>安装scoop powershell执行命令:&#xA;Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex 修改配置:&#xA;# 设置环境变量 $env:SCOOP=&amp;#39;E:\Softwares\Scoop&amp;#39; [Environment]::SetEnvironmentVariable(&amp;#39;SCOOP&amp;#39;, $env:SCOOP, &amp;#39;User&amp;#39;) $env:SCOOP_GLOBAL=&amp;#39;E:\Softwares\GlobalScoopApps&amp;#39; [Environment]::SetEnvironmentVariable(&amp;#39;SCOOP_GLOBAL&amp;#39;, $env:SCOOP_GLOBAL, &amp;#39;Machine&amp;#39;) # 设置环境变量之后，建议将默认目录下的所有文件复制到新目录下 # 搜索软件 scoop search xxx # 找不到软件？添加软件库 scoop bucket list scoop bucket add &amp;lt;bucketname&amp;gt; # 常用软件库 extras https://github.com/ScoopInstaller/Extras 2023/9/8 12:26:26 1890 main https://github.com/ScoopInstaller/Main 2023/9/8 12:25:39 1241 # 列出已安装软件 scoop list 安装hugo scoop install hugo 配置hugo 执行下述命令&#xA;# 新建站点，会生成一个quickstart目录 hugo new site quickstart cd quickstart # 初始化git，生成.git目录 git init # 为了避免quickstart/themes的.</description>
+    </item>
+    <item>
+      <title>工作规划</title>
+      <link>/resource/%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%88%92/</link>
+      <pubDate>Wed, 18 Oct 2023 21:04:10 +0800</pubDate>
+      <guid>/resource/%E5%B7%A5%E4%BD%9C%E8%A7%84%E5%88%92/</guid>
+      <description>商业观察 先考虑下工作岗位怎么来的，因为有需求要满足，当服务群体比较大，一个人忙不过来，就需要招募人手，工作岗位就产生了。产品可以是实体产品，也可以是服务，参考申万行业划分。&#xA;市场是最主要的，因为其最靠近需求端，我们需要从需求端拿钱，好的销售善于发现需求、创造需求。&#xA;其次是研发制造，这里面的顶层是架构师，即在需求不明朗的情况下提供并选择相对较优的方案，决定资源投入方向；设计师在拿到需求后在架构师给出的硬限制基础做设计方案(规格约束、成本约束、开发时间约束)，工艺师决定加工方案，再由车间工人现场加工、组装，交付。&#xA;这是关键链条，其次就是一些辅助岗位：行政、财务、法务、售后&#xA;组织 我来做透视，第一个概念是组织，市场上不只有你一个服务提供商，如果客户被竞争者或潜在代替者抢走，组织就失去了存在的土壤，结果就是散伙，组织的所有积累打散流失到其他不同的组织。&#xA;我们不希望这种事情发生，因为这意味着从头再来，我们失去了复利带来的滚雪球效应。所以先考察组织的竞争力，组织的竞争力体现在更快、更好的交付产品，这要求：&#xA;准确把握市场动向 销售 技术实力 组织成员协作效率 组织变革速度 在博客文章《软件开发者路线图》中提到过组织知识的来源，诸位可以check来考察公司的技术潜力&#xA;成员协作效率依赖OA系统，linux是分布式协作最好的案例，可以看看github提供的协作方案，我觉得这是工作最理想的形态，不必去现场、不必去工作室、不必通勤，只需贡献代码。&#xA;产品及客户 有本书《长尾理论》，如果找到利基市场，所得的现金流也能维持组织的运转。但是搜索入口被擅长SEO的人占领，如何保证产品能被推送到目标群体眼前。通过社交媒体、地推、代理加盟、跑业务，这个就是销售的活了。&#xA;客户分类，私企、国企、政府、外企、事业单位。&#xA;通过分析组织现金流来源，就能知道其发展可不可持续；比如疫情期间，有很多小地方公务员开不起工资，小企业贷不到款关门的新闻；但是在线办公支持类企业市场份额猛涨。非市场手段下，国家也在支持一些小型国企不垮。&#xA;人们常说的公务员、国企稳定，公务员工资由国家财政发，国企因为占据资源，一定限度避免被市场竞争淘汰，所以这两个相对稳定。但凡事没有绝对，小地方公务员发不了工资就是很好的例证。&#xA;个人在组织的利益 有这样一种现象，为了保证自己地位的稳定性，某个项目创始人会留一手，防止卸磨杀驴。这就像屠龙少年终成恶龙的故事，管理者会创造各种障碍，使得自己具有不可代替性，可能是保留关键技术，也可能是创建一些制度。&#xA;当然，这是在有能力构建出完整系统，满足客户需求的前提下。除了透视组织的利益，组织利益如何转化成个人利益，这个路径，需要尤其关注。&#xA;建立抓手 一般路线是：&#xA;组织架构：组员&amp;ndash;&amp;gt;技术小组长&amp;ndash;&amp;gt;技术专家&amp;ndash;&amp;gt;团队领导&amp;ndash;&amp;gt;boss&#xA;项目：实施者&amp;ndash;&amp;gt;模块实施&amp;ndash;&amp;gt;项目策划&amp;ndash;&amp;gt;项目组织&#xA;可以看出，初期以解决技术问题为主，后期以资源调度为主，再后期以资源支持为主。&#xA;初期技术栈选择很重要，我认为任何市场都有周期，比如08年起房地产迎来了3万亿，开始起飞，22年熄火了，18年新能源和国产芯片行业开始起飞，因为碳中和和美国制裁，造成波动的原因是多方面的，除了专门研究金融的。普通人很难有精力去预测。所以技术栈选用以范围广、可扩展、不可替代、多技能组合为主。&#xA;列举几个：农业、畜牧业、基建、房地产、制造业（机电一体化、电子）、服务业（教练、餐饮服务）、互联网&#xA;用技术栈选用标准来筛选，电子和互联网明显可迁移能力最强。&#xA;我希望以以终为始的眼光去看待，自己的核心竞争力是什么，要么是技术、要么是管理、要么是资源，在这三方面有哪些积累，不然35岁被裁是迟早的事。&#xA;这里我想说一下我国的教育制度和劳动力市场，感觉本科教育方差很大，很多混日子的，也有技术特别厉害的，原因是每个人的禀赋不同，学校做的不好的一点是太宽松，很容易通过学科考试和毕业答辩，除了几所比较有钱的学校，其他的都一般般吧。&#xA;学校教育和劳动力市场脱节，大部分学生基本不参与工作实践，我认为还是教师工作评价体系和教育经费少造成的。&#xA;自动化运作 上面指出了就业市场上的关注点，需要一些工具来帮助我们实时审查和纠偏&#xA;PDCA循环：重点说review环节，我们知道一个事情要做成功需要各因素都到位，所以review分以下几项：&#xA;思维&#xA;有无识别并把握时机&#xA;如果时机未到，有无自己去构建&#xA;有没有未捕获到的因素(信息/知识 缺失)&#xA;思维过程出了什么问题 执行&#xA;物料缺项&#xA;人员不配合&#xA;有无授权问题，有承担风险隐患&#xA;执行顺序不对&#xA;执行效率不高 数据积累：最重要的是经验和知识的积累、比如电气工程师会维护一张元器件清单，以及之前做过的项目文件，方便日后同类型项目复用，像我一样写博客出来最好，或者是用markdown做笔记；内容当然是技术栈还有市场、公司调研咯。&#xA;简历维护：定期更新项目和个人技术栈&#xA;log init date: 2023-09-13T15:33:15+08:00&#xA;update: 2023-10-18_21:05:24</description>
+    </item>
+    <item>
+      <title>设计人生-想法雏形</title>
+      <link>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</link>
+      <pubDate>Sat, 09 Sep 2023 22:28:42 +0800</pubDate>
+      <guid>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</guid>
+      <description>缘起 有时候大脑会出现各种画面，在众创学校，在桃源居，在依山伴城，我在这些空间短暂生存过一段时间，看起来也是当时较优的选择，但是我不知道为什么要在这些地方，我想得到什么？我得到了什么？&#xA;我观察自己在不同环境的行为，总是趋向一种行为模式，只是一个模糊的轮廓，这种模式很局限，我想打破，引入新的行为。但是前面关于学习的文章提到了，首先你的注意力要聚焦到要改善的方向，这要求我们有一个框架，能解释行为模式出现的原因，然后提供控制方案。&#xA;实践 我的想法，通过分析数据得到一个基准，然后在这个基准上提升。&#xA;所以得积累数据，之前写了一堆日记，分析不出所以然，太混乱了；22年10月我发现自己想法太多，整个人要崩溃，就把所有想法都记录下来了，这些想法太分散，分析不出所以然。所以数据积累一定要贴着目标走。&#xA;8月16开始记日志，如下: 见rsc;&#xA;能看出，注意力一直在偏移，每一天都是这样，这也能解释为什么我要出现在那些地方，我的注意力焦点只能放在当前，随便一个触发就陷进去，没有工具链接过去、现在和未来。我认为，势必发展出两套工具：&#xA;根据未来的目标反推现在的行为 根据过去的数据复盘、修正现在的操作 见log&#xA;第一个工具我选了gtd，数据如下 这样就能看到每天做了什么事，还发展出了日复盘，复盘项很好，但是一直执行偏。我的item抽象层次较高，经常出现一天完不成一个item的现象&#xA;见log&#xA;戒断手机 196min&amp;ndash;&amp;gt;50.7min，怎么办到的？简单，强制限制手机的使用。之前只要精力状态不行，就拿出手机刷刷，不知不觉就陷进去了；我指定了一天只能看60min，为了应对意外情况，我只能尽量不看手机，时间就降下来了&#xA;见log&#xA;精力曲线 本来想用软件记的，软件的操作不符合习惯，容易被打断，阴影部分是睡眠时间，下面的1-9是精力值，10分满分，记录了三天数据发现：睡眠对精力影响很大，而且一天只能专注固定的时间，趁这些时间做些困难的工作吧；另外根据第二天期待的精神状况修正前天的入睡时间。&#xA;完善 9月初&amp;ndash;&amp;gt;9月15，读书会读了《斯坦福人生设计课》，上述是我的一些实践，人总归要完蛋，完蛋之前总归要画一个好看的形状。像我上面记录的，天天偏移，最后连妈都认不出，这肯定不行，我们对自己的人生应该多点掌控。还是我之前说的，搭一个框架来分配注意力，分析数据提供控制方案&#xA;加几个人生设计课提供的工具（保留一些线索）：&#xA;评估当前生活、美好时光日志、制定多个人生剧本、原型设计、etc (后续完善)&#xA;5个要素：活动、环境、互动、物体、用户 (这个可以加到我的精力曲线表，需要在特定时间拿到一些东西，时机很重要，那张表能帮我找到时机)&#xA;7月初我看过一本书《目标》，高德拉特认为我们只需对常识思考，解决方案会在思考常识的过程中自己浮现。我认为这句话很正确。&#xA;#rsc log 20231018 22:47:24 update:&#xA;设计人生&amp;ndash;&amp;gt;设计人生-想法雏形&#xA;20240320 update: add rsc gantt peoject manege\&#xA;gantt project manage&#xA;做出所有任务，排程，每天保存一份快照，通过对比检查进度&#xA;iphone12 , 使用omnifocus，其“检查”功能很好用&#xA;环境隔离，把之前常用的软件隔离出来，新手机只备常用功能</description>
+    </item>
+    <item>
+      <title>生产力-python环境搭建</title>
+      <link>/resource/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 04 Sep 2023 17:25:55 +0800</pubDate>
+      <guid>/resource/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>学习方法 思维导图+做习题，通过做习题巩固基础语法，思维导图组织形成知识树。要以实际问题为导向，可事半功倍。&#xA;注：习题可以帮助熟悉语法，但是对构建项目帮助甚微，因为构建项目是一项创新活动，有很多路径能抵达。不过，高以下为基，不熟悉语法就上手项目无异于痴人说梦。&#xA;环境搭建 miniconda+docker搭建复用环境，展示一下如何用miniconda管理环境。集成开发环境一般选用vscode，我在windows下用msys2仿linux环境，用emacs+gcc&#xA;下载miniconda，安装，添加condabin目录至环境变量，下述脚本就能用了，成功标志： 用conda搭建开发环境，看看conda使用方法 conda 环境管理&#xA;conda env list //列出所创建的环境 (E:/miniconda/env/py3.6) conda create --n env_name python=3.8 pandas //创建环境 conda info --envs //查看虚拟环境 conda activate env_name //激活环境 conda deactivate //冻结环境 conda remove --n env_name --all //删除环境 conda包管理&#xA;conda search package-name conda install package-name=2.2.3 -n env-name conda update package-name pip install package-name conda list 创建python3.6的环境，然后激活，使用下述两个资源做python语法的基础训练&#xA;问题记录 log: CommandNotFoundError: Your shell has not been properly configured to use &amp;#39;conda activate&amp;#39;. slove: source activate //linux下使用该命令激活activate Rsc 《笨办法学python3》</description>
+    </item>
+    <item>
+      <title>睡眠及注意力</title>
+      <link>/resource/%E7%9D%A1%E7%9C%A0%E9%A5%AE%E9%A3%9F%E5%8F%8A%E6%B3%A8%E6%84%8F%E5%8A%9B/</link>
+      <pubDate>Tue, 29 Aug 2023 06:08:33 +0800</pubDate>
+      <guid>/resource/%E7%9D%A1%E7%9C%A0%E9%A5%AE%E9%A3%9F%E5%8F%8A%E6%B3%A8%E6%84%8F%E5%8A%9B/</guid>
+      <description>感冒 昨日晚上睡觉被风吹了，第二天起来浑身酸痛，头疼欲裂。加上前天一整天没怎么吃东西，整个人很虚弱。我出去买了两个饼，间隔半小时，分两次吃完，喝完一杯热水，然后空调开到最高温，整个人捂在被子里，这样反复多次。还可以用姜糖水，奈何没材料。&#xA;第二天感冒的症状基本消失，整个人的精力基本恢复。出乎意料的是，昨天玩手机的时间直线下降，感冒还是有好处的嘛。&#xA;有个健康的身体很重要，我发现很多人对慢性病并不重视，慢性病是一种亚健康状态，可能是大家对健康、亚健康、疾病的分界线并没有清晰的认知，找一个正常状态做参照。&#xA;睡眠 什么决定你在特定时间感到困倦？什么决定我们睡眠质量和清醒状态的好坏？&#xA;腺苷。腺苷是我们神经系统和体内积累下来的一种分子，随着我们清醒时间的增加而增加，腺苷和其对应的受体结合，就会使我们困倦。咖啡因可以占据腺苷的受体，使我们保持清醒。&#xA;生物钟。每天醒来，肾上腺会分泌一小撮皮质醇，向身体发出警报，告诉它是时候增加心率了，然后会形成逐渐上升的皮质醇浪潮。与此同时，松果体开始分泌褪黑激素(困意信号)。皮质醇和褪黑激素的节律就是我们说的内源性节律，在没有外界输入的情况下一直在我们体内发生。皮质醇会有一个高峰，然后随着时间的推移逐渐下降，大约12-14h后，褪黑激素会升高。&#xA;光线是中央时钟的主要同步方式，眼睛里有一组特殊的神经元，称作“视网膜神经节细胞”，能感知特定类型光线，并将信息传递给位于口腔顶上方的名为“丘上视交叉核”的中央时钟。&#xA;皮质醇、褪黑色素的节律跟中央时钟锚定。每天早上睁开眼，大量蓝光和黄光进入视网膜，激活中枢神经，然后皮质醇、褪黑色素开始起作用。生物钟可以通过光子的强度和光的种类判断大体时间，因为太阳从不同角度照射，人体所接收到的光子的种类和强度会变化。特定强度的光子才能激活皮质醇、褪黑色素节律，电子产品可能只有蓝光，没有黄光，不一定能激活相关节律；如果戴墨镜接收太阳光，因为光子强度不够，需要在光照环境中曝露多一点时间。&#xA;可以用人造光源，如果想早睡，起床前45min打开人造光源，通过眼睑进入，虽然你依然处于睡眠状态，但是体内的节律早已运行，晚上会更早感觉到困意；如果在晚上接触到更多光照，生物钟推迟，你会睡不着；如果早上接触更多光照，生物钟提前，会早起。&#xA;纯黑暗环境下人体依然可以保持24h节律，口腔上方有一个被称为“间皮灰叶片”的结构，产出每天24h节律，通过它与你身体的其他器官和组织进行通讯。它通过参与非光照、非光线的因素，如锻炼和进食等来调节节律输出。&#xA;所以我们只需要提供锚点，通过控制睡眠环境，运动时间，就能把生物钟恢复到正常状态。主要两个点：&#xA;光照，每天早上醒来接收太阳光2min，晚上夕阳落山接收太阳光5min，8点后尽量减少光刺激。&#xA;腺苷，腺苷积累没那么有规律，通过小憩，趴在桌子上睡15min，来清理一部分腺苷，什么时候有倦意，什么时候小憩。\&#xA;注意力 有一个模型：肾上腺素的释放提高能量和警觉性，乙酰胆碱突出显示应该比其他神经元更活跃的神经元，多巴胺激发动机，这三者配合使得我们专注。&#xA;任何状态的转入都是逐渐进行的，无论这种状态是睡眠还是其他。我们的注意力很分散，随着时间推移，当我们进入专注状态，注意力窗口收窄，然后有时震荡并再次变宽，再收窄，注意力是动态的。&#xA;每一次专注多长时间呢？跟生物钟一样，我们的大脑和身体在每一天遵循90min超日周期运作，90min专注完成后，给自己一些时间来有意缓解压力，让精神状态空转，不专注于任何一件事，这种间隙时间对专注能力的训练非常重要。一天大概能够完成3个超日周期的专注时间。&#xA;有些人能很快进入专注状态，这是因为他们大脑中有相关的神经回路，对于没有这种神经回路的人来说，只能通过刻意练习，激发神经可塑性，形成相关的回路。&#xA;提供一些工具，使得能更快进入专注状态：&#xA;物理工具：40hz声音，brainwave，设置40hz节拍播放，我认为这跟白噪音起到的作用是相同的&#xA;激素工具：&#xA;酮体能作为神经元最佳燃料使用，研究表明，当大脑有足够的葡萄糖时，大脑能更快速的反应，血糖也会提供葡萄糖，但血糖过多我们会感觉困倦，因为血糖过高，神经系统会向副交感神经模式转变(交感神经提供活跃模式，副交感神经提供平静模式)，它有一个平衡点，过了这个点专注力会降低。&#xA;咖啡因，咖啡因通过在大脑和身体中增加肾上腺素的释放来增加警觉性。压力也会调节肾上腺素的释放，把我们的视野变得更窄，更集中。&#xA;冷水浴，冷水浴可以使多巴胺释放达到基线的2倍以上，能增强我们的动机。&#xA;行为工具：&#xA;冥想，冥想就是通过练习来不断重建神经回路。设置一个13min的闹钟，闭上眼睛，简单的专注于呼吸，并将意识聚焦在额头顶部大约一英寸位置，会有思绪飘移，你得想办法把它拉回来。&#xA;NSDR，nsdr是一种引导冥想的形式，它利用特定的呼吸技巧来引导身心的深度放松，会处于一个半睡半醒的状态，清醒后整个人的专注力会大幅提升(好像之前经历过这种状态)。&#xA;锚定，通过集中注意力在特定位置，并在您的注释从该位置漂移时强迫自己重新集中注意力到该位置。&#xA;隐秘焦点，我的眼睛看着笔，但是注意力在其他地方，比如在门那边，通过逐步提升注意力时长达到改善注意力的目的。&#xA;除了nsdr，其他三个都跟神经回路改善相关。&#xA;结尾 这样就能对每日的睡眠和专注状态有一个预判，如果某一天这个周期被打乱，我可以在第二天把它拉回来。&#xA;关于专注，还要提到一点是手机的干扰，福格行为模型：触发&amp;ndash;&amp;gt;动机&amp;ndash;&amp;gt;能力，上瘾模型：触发&amp;ndash;&amp;gt;行动&amp;ndash;&amp;gt;多变的奖赏&amp;ndash;&amp;gt;投入，手机上瘾就是因为这一切都太容易了，而且过程中我们也感觉很舒服，唯一的办法就是对其他事物上瘾，运用上面两个模型。</description>
+    </item>
+    <item>
+      <title>关于学习的思考</title>
+      <link>/resource/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%80%9D%E8%80%83/</link>
+      <pubDate>Fri, 18 Aug 2023 18:35:09 +0800</pubDate>
+      <guid>/resource/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%80%9D%E8%80%83/</guid>
+      <description>为什么要学习 学习就是为了解决问题，绝学无忧&#xA;学习流程 知识留存率： 流程： 方法（基于思维状态）（概念性学习）：&#xA;从学习开始的时候，就要开始整理自己的逻辑，让你的知识有一个“框架”可以依附，否则你会一直是离散的状态。 但不要指望你的框架一开始就是完善或者对的，只要有效把你当前的认知总结出来就好，甚至只花10分钟的时间都可以，因为没有细节去填充，你花的时间越多，你就越被自己迷惑了。 然后开始看教材，修正你原来的逻辑框架，这种修正，既可以是对框架整个认识的修正，也可能是对框架“断语”的修正。比如，你一开始认为立体几何是“计算体积的几何”，后来看到细节后，发现它是计算线性三维空间中位置关系的几何，你可以调整你原来的范围定义。你一开始“断言”：理解一个立体形状，需要找到一些和视线垂直的面才能获得那个面的真正长度。但后面你在教材中找到了从任意切面计算非垂直切面的计算方法，这个断言可以改变或者进行补充。 当教材中，或者我们生活中，实验中，你发现和你的框架不符的东西，作为一个和逻辑不一致的断言记录下来，它们就像当初说的“物理大厦的最后两朵乌云”一样，会成为你更进一步的关键逻辑的。这一点很重要：不要为了模型的完美，而拒绝对事实的认知。是事实定义模型，而不是模型定义事实。 用自己的语言或者典型例子重新描述教材的概念，好记比严谨更重要，因为这可以是两件事：用你好记的语言记住概念，然后用严谨的表述去解决问题，这不需要统一在一起的。 在自己重新描述教材概念的时候，尽量和教材的概念不一样，尝试用“其实就是XXXX嘛”这种方法去表述它，这样能让你最终明白教材为什么要那样定义。 不要指望模型可以取代细节知识和经验，模型知识帮助你整理知识，让你快速发现知识细节，它不能取代你去不断学习和实习细节知识。模型只属于你自己，其他人看你的抽象，也学不会你掌握的知识；反过来，你看别人的总结，可能对你有所帮助，但一定无法取代你本身去学习那些细节，所以，反复实习，反复刷题，仍是你进一步学习进去的必要条件，那是不可取代的，但模型可以避免你无效刷题，刷了半天一点进步没有。 生理学（神经可塑性）：&#xA;细节参考文章，我拿出粗略的框架。&#xA;神经系统是可变的，25岁前，这种变化主要是去除不符合目标的连接过程(突触连接形成的神经网络)；25岁后，必须经过一系列步骤来改变内部状态，以使得能够改变你的大脑。&#xA;神经系统有两个广泛的功能集，一些是反射性的，比如呼吸、心率，行走。当我决定改变某种行为，某种反应，需要将它带入我们的意识，这种意识提示大脑和其他神经系统，未来参与这些反射性行为时，这些反射性行为需要特殊处理。所以神经可塑性第一步是意识到你想改变某些东西。&#xA;当我们有意识地想要做一些改变，我们的前脑，特别是前额叶皮层，会向神经系统发出信号，告诉我们注意到这里即将发生的东西、感受或体验是值得关注的。当仔细关注时，大脑会从不同地方释放神经化学物质，跟神经可塑性紧密关联的：肾上腺素、乙酰胆碱&#xA;表皮素：从大脑中释放的肾上腺素我们称之为表皮腺素，从肾上腺腺体释放的称之为肾上腺素，两者是同一类化学物质。&#xA;表皮腺素从脑干的蓝斑区域释放，蓝斑通过轴突的小线发送，将大脑用神经化学物质表皮腺素冲刷(只有高度警觉的时候才会释放表皮腺素)，它会使大脑变得很警觉。但获得可塑性的关键是同时存在表皮素和乙酰胆碱 乙酰胆碱：脑干有一个区域，丘脑，不断接受来自各种感觉输入，过滤向上发送信号。当我关注某件事时，我会产生一个关注锥，生理层面是乙酰胆碱正在增强我关注部分的信号。所以表皮素用来警觉，乙酰胆碱用来聚焦这些输入。 前脑区域：该区域应该是引导形成神经链接？该区域释放乙酰胆碱，进一步整理过滤完一次的信号，引导形成新的神经链接 所以现在，加大对这三个部位的刺激，就可以获取快速学习的能力，用电极插进大脑，放电刺激。&#xA;原理性层面解释完了，具体到操作层面。第一步是，如何创造深度专注。我们有物理工具、药物、行为工具。&#xA;考虑行为工具，大脑的注意力与我们的视觉系统有关，当我们眼睛稍微内向移动以对准特定的视觉目标时，我们的视觉世界缩小了，视觉聚焦水平提高，这是因为大脑中可塑性相关的区域的乙酰胆碱和肾上腺素的释放导致。对于听力学习导向的人，他们会闭上双眼，创造一个听觉注意力力锥。&#xA;也可以通过激励、恐惧、爱等心理技巧，或者药物增加警觉，但是注意力还是得靠听觉、视觉来聚焦。&#xA;要注意，典型的学习过程顶多持续90min，且一天顶多进行3-4次有效学习过程。学习完一个周期，需要结合睡眠让新形成的神经序列自动巩固，可以小睡，也可以冥想，还有去散步，冥想和散步属一种特殊的非睡眠深度休息模式。&#xA;生理学(运动学习)：不涉及&#xA;提高效率 综上，既然学习的目标是解决问题，那就看看我们如何解决问题：&#xA;意识到问题&amp;ndash;&amp;gt;界定问题&amp;ndash;&amp;gt;寻找线索&amp;ndash;&amp;gt;提出解决方案&amp;ndash;&amp;gt;执行方案&amp;ndash;&amp;gt;返回3、4步(重复)&amp;ndash;&amp;gt;解决问题。所以学习的核心在3、4、5、6步，有没有办法可以加速这个过程呢？&#xA;我寻找线索的方法是问搜索引擎，有些人喜欢问人。搜索引擎就是把关键词相关的网页抓过来，如果其他人解决过同类问题并文字化或视频化，我就能参照他的经验解决问题。&#xA;现在出现chatgpt，它可以解析自然语言，给出相应的解决方案，无疑降低了搜索引擎的使用门槛。&#xA;有一种可能，我们已经看过相关材料，但是并没有深刻理解，等到几年后碰到类似的问题，又重新查资料，我的做法是保存这些材料，用recoll搜索关键字，大大加速寻找线索的过程。我自己写的东西也加入到被搜索材料，这样可以保持一个增量的知识库，减少动用搜索引擎的次数(搜索历史也要加入被搜索文件：recoll的搜索历史，搜索引擎的搜索历史)。&#xA;如果提不出解决方案，说明缺乏前置知识，需要补充知识库，引入一些新概念。通过搜索引擎或问人来找线索&#xA;执行方案最重要的是条件是否具备，需要调动资源，搭建环境，然后才能验证解决方案。在我们生活中，会频繁用到某些环境，比如开发环境，工作环境，这类环境的设计和维护就很重要。比如我之前提到的：电脑环境的无缝迁移、地理环境的无缝迁移、工作环境的无缝迁移。&#xA;具体的搭建过程，肯定要集齐一组相互依赖的资源，且要维持这个环境存在一段时间。资源，有的话直接用，没有的话找人交换，如果可以复用其他人的资源，成本最低，就酱&#xA;返回3、4步，最好有一个纠错机制，比如错题本，记录下解决同一类问题每次卡壳的地方，形成一张清单。&#xA;具体下面链接提到了：&#xA;泛化目标(孤立使用指令和归纳学习) 材料瓶颈(没搞清楚前置知识，返回去搞清楚不清楚的知识点) 模型瓶颈(先用实例型材料构建感知，再解除描述性材料) 无效训练(对有效材料进行完正的有效训练；对指令性材料进行精细加工，扩充新例子，与旧知识建立联系) 成果测试(一定要提供回溯方向，提供原始材料的上下文) 知识验证(输出，我这篇文章就是) 巩固学习成果 我的个人成长管理体系里有一个产出成果管理，成果管理分为两部分：学习成果、项目成果，学习成果包括思维和生产力。我想解答学习成果的产出是什么，以下是我的思考：&#xA;什么是产出成果？&#xA;这个跟目标相关，所有对推进实现目标有帮助的，都算有效产出成果； 不管是选题，路径探索，通道建设，调整前两者，获取成果 怎么衡量呢？ 我在日复盘加一句吧：今天的产出成果是什么？&#xA;0811&#xA;注意产出成果的复用&#xA;0818&#xA;每天的关注点就是产出成果，得设计一套系统让产出成果留存&#xA;0819&#xA;产出成果留存，第一种方式是文字，可以通过recoll调取，反正我记录了整个过程，调取的时候能带出相关上下文。&#xA;第二种是我搭建的程序，如《播客转移方法》中提到的，那些bash脚本，网站服务，就是我的产出成果。&#xA;思维的改变是一个很不直观的事，只能通过分析这些留存的资料，你可以维持一张列表，一些需要持续关注的问题，隔两三个月拿出来，看看有新思路木有，有的话可以追溯留下的资料，寻找新思维的起点。&#xA;ref_src in nek 快速学习&#xA;学习观 断墨寻径&#xA;how to focus to change your brain_ the humab lab</description>
+    </item>
+    <item>
+      <title>生活的态度</title>
+      <link>/posts/%E7%94%9F%E6%B4%BB%E7%9A%84%E6%80%81%E5%BA%A6/</link>
+      <pubDate>Thu, 03 Aug 2023 07:32:44 +0800</pubDate>
+      <guid>/posts/%E7%94%9F%E6%B4%BB%E7%9A%84%E6%80%81%E5%BA%A6/</guid>
+      <description>看了《生存之民工》，为了遏制心中的无力感，写此文&#xA;有一本书《活出生命的意义》，作者被关到奥斯维辛集中营，遭受了非人待遇。他写这本书是为了记录普通囚徒在集中营的日常生活中的所思所想所为。&#xA;具体的遭遇可以去看书。&#xA;作者的观点：一些不可控的力量可能会拿走你很多东西，但它唯一无法剥夺的是你自主选择如何应对不同处境的自由。你无法控制生命中会发生什么，但你可以控制面对这些事情时自己的情绪与行动&#xA;作者提供的方案是“意义疗法”，即通过创造生命的意义来获得维持日常行为的动力&#xA;人不可能拥有绝对的自由，只有相对自由。既然有相对自由，就要找通往相对自由的路径。&#xA;我的方案是找约束点，破除约束点，获得比之前更高的自由度。&#xA;如果我是电视剧中的农民工，首先控制开支，大头是孩子上学和老人看病，老人健康预防为主，孩子上学可以间隔两年，积累初始资本；投资自己，学一门手艺，搓澡、理发、厨师，everything；扩展社交，寻找机会，适时推销自己；紧抓记者，梳理签合同注意点及流程，避免下次出现同样的情况；工商局反映，政府层面引导解决欠薪问题 | 或者跟项目组长商量分成比例，让对方拿钱办事 | 聚众闹事，引起舆论，政府出面（组团行动，防止黑社会报复）&#xA;并非没有方法哈。如果被限制人身自由，如果你能给对方提供相应的价值，也能获取相对自由度。总之，“改变能改变的，适应不能改变的”，这就是我的生活态度</description>
+    </item>
+    <item>
+      <title>设计人生-okr、gtd</title>
+      <link>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9Fokrgtd/</link>
+      <pubDate>Wed, 02 Aug 2023 17:04:42 +0800</pubDate>
+      <guid>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9Fokrgtd/</guid>
+      <description>缘起 去年我花了三个月的时间准备考研；今年我到新公司，设定了多个目标，但是完成情况不尽如人意，所以肯定有什么地方出问题了。印象当中，一般是目标设置的很准确，能抓住问题的核心，但是 在解决过程中出现各种偏离，然后目标被遗忘&#xA;我的想法是，靠个人的意志力没用，需要外部约束保证个人行为的规范，保证行驶在正确轨道，保证下限，这个约束可以是软件，可以是制度，everything。所以我7月份初把《the human lab》的内容用chatgpt翻了一部分，内容是人的身体调优，从神经科学角度阐述应该怎么学习、怎么培养习惯、怎么样吃、怎么样运动、怎么构建亲密关系、怎么激活多巴胺释放&#xA;有人说，你这不是不务正业么，在世俗意义上，没有花时间在挣钱娶媳妇上，确实有点不务正业了&#xA;构建流程 首先我需要找一个OKR工具，个人OKR找到了ios系统上的vision，我初步建立了几个目标，如下:&#xA;初始化管理项框架我选了四个：OKR、GTD、渐进阅读、时间记录&#xA;时间记录不具可行性，我用软件记了一段时间，但是不知道这玩意有啥用，我想重点说说GTD和OKR&#xA;GTD 拿出纸笔，记下今天要做的事情：打扫卫生、看某书的第几章节、某项目需要推进&#xA;然后你正有条不紊的做着事情，一个突发事件飞过来：上次交付的产品界面设计交互性太差，手册写的也不好，客户不知道怎么使用，你去搞下培训。然后看书就延期了&#xA;第二天，你又写下三件事：给老妈打电话、完成某个功能并测试、参加聚会&#xA;然后这个功能实现难度超过了你的预期，接下来三天你都在做这个事情&#xA;很快你的待办列表就花了，到了周复盘的时候，你拿出笔记本，这周好像啥也没干哪。你的脑子就跟笔记本一样乱糟糟。日复一日，时间就这样被浪费了&#xA;所以需要一套程序记录、分发这些待办事项。&#xA;能否成功做成某事，取决于时机是否成熟，时机成熟就是各种条件都具备了。这套系统首先要记录待办项，其次帮我们挑选出具备条件的待办项&#xA;我选的工具是ominifocus，介绍视频如下： OmniFocus + Getting Things Done (GTD)&#xA;第一步很简单，将所有待办事项丢进inbox，等待下一步处理。目的是清空大脑&#xA;然后规范化待办项，拆解一下打扫卫生这个代办项，把它的限制条件都加上：在x时x地，xxx和xxx用xxx工具做了xxx，即我们的行为受到空间、时间、物质的约束。在这个行为完成后得到结果。所以gtd最小单元是一个可执行动作，然后我们给可执行动作加上各种限制&#xA;根据视频描述，三种判断：&#xA;&amp;lt;2min，赶紧执行(短生命周期) delegate，委托给其他人(这里涉及到一个追踪的问题) defer() 如果可执行动作可以拆分成很多步完成，即拆分成很多个可执行动作，那就defer到project，如果只是单独一个动作，defer到single list；有些project性质类似，比如娱乐、party、钓鱼，就可以归类到同一个文件夹；每次defer新的action，看看能不能归纳到之前的项目，避免重复建设。如此，就完成了action的归类（注意：project需要不断维护更新）&#xA;（small tips: 刚开始记录的待办项可能是project，defer后可以裂变出action）&#xA;其次，归类时添加制约因素，用标签，比如，地点约束、人的约束、截至时间&#xA;现在所有待办项都躺在列表了，还需要解决两个问题：待办项以什么顺序执行？怎么保证按计划执行，出现偏离怎么办？&#xA;问题1：&#xA;待办事项过载是迟早的事，所以问题核心是确定待办事项的优先级。这个用到四象限法，加大在重要紧急和重要不紧急事项上的投入。什么是重要的事呢？资源积累或者生产材料的积累，这两个积累不上，让自己快乐也可以&#xA;问题2：&#xA;这个依赖定期review，不同项目有不同review周期，看你觉得哪些项目重要，需要定期核查；我自己&#xA;delegate review，看项目分给哪些人了，快到对方给我递交成果时就通知一下 daily review 清空inbox 写日报 安排明日任务 还有weelky review、monthly review、yearly review待完善。这些东西很难搞&#xA;出现偏离当然是分析偏离原因，要么是action分解不对，要么是个人执行力不强，要么是omnifocus的提示不到位，对症修改，重新执行&#xA;还有一个project review，其实个人更偏好执行某些特定类型的任务，有些project放了一两年不动，这些project必须得到执行&#xA;在回顾一下，首先搜集，然后规范化成最小动作单元或项目，分发、加约束条件，组织；执行（在执行层提到了优先级问题），review发现并修正偏离。&#xA;OKR GTD写了一个小时啊，要命。OKR更难，开始吧&#xA;我先看了《目标》一书，我认为所有人都应该看看这本书，因为OKR最难的是确定目标，而本书则是教你怎么样通过考察常识，考察一套逻辑的假设条件，来提出真正的目标，并找出通向目标的具体路径。&#xA;我不详述书里的内容&#xA;之前我的思考方式：集齐所有材料，然后通过案例建立几根细线，就能以不变应万变&#xA;看完后：必须以一种科学的方式思考我们认为的常识，它是基于什么假设引申出什么结论？这些结论在当前的环境是否适用？如果不适用，应该怎么修改，才可以适应当前环境且不引入更多问题？&#xA;通过阅读本书我得到一套思维程序，还有该思维程序作用于制造业得到的成果：TOC&#xA;拥有了确定目标的能力，就需要具体的落地工具，我找了三个okr的案例，拼接这些断语得到一个合逻辑的okr流程：&#xA;定义 Objective(目的)」，目标，这里的目标并不是冷冰冰的数字目标，而是有一定激励性的价值目标。&#xA;「Key Result」，关键结果，包括实现Objective(目的)的途径描述、Key Result完成之后达到目标的数字评估。</description>
+    </item>
+    <item>
+      <title>播客转译方法</title>
+      <link>/posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 23 Jul 2023 07:59:49 +0800</pubDate>
+      <guid>/posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/</guid>
+      <description>缘起 有听国外播客的需求，播客太长了，动辄1-2h，纯英文吸收效率太低，抓不住重点，但是其内容又很吸引我，如果转换成翻译版文字稿，吸收效率要高点&#xA;流程v1 第一步是下载播客的文字稿，在我提及的两个播客网站，文字稿属于vip服务提供的内容，我用yt-dlp下载相关YouTube视频字幕，代码如下 经过下载字幕、转换格式、打印成pdf(注：批量打印pdf)，就得到了完整的文字稿 再用知云或小绿鲸辅助翻译阅读，就可完成播客的消化吸收&#xA;流程v2 这两个软件的阅读体验和翻译流畅度很不好，后面有了chatgpt，我试着翻译了一段，流畅度堪比deepl，果断删掉了前两个软件&#xA;流程v1太麻烦了，后面播客去掉了youtube视频的字幕，给我带来了很大的困扰。我试了很多转录的工具，飞书的memo，其他人提供的cloab代码，都不太满意。一番查找，最后发现两个工具&#xA;插件revoldiv&#xA;AI transfer audio to txt&#xA;免费，不要钱 chat academic&#xA;中科院出的一款科研软件&#xA;先是本地搭建，淘宝购买api key&#xA;后找到其他人搭建的服务器，可直接使用 飞书分享 酒好也怕巷子深，这些生理学的内容对个人自我调节很有帮助，真心希望有缘看到的朋友能好好读读，学以致用</description>
+    </item>
+    <item>
+      <title>搬家</title>
+      <link>/resource/%E6%90%AC%E5%AE%B6/</link>
+      <pubDate>Thu, 13 Jul 2023 21:59:51 +0800</pubDate>
+      <guid>/resource/%E6%90%AC%E5%AE%B6/</guid>
+      <description>开始前，我搜到两篇关于搬家的文章 东西太多，搬家很不方便，所以要做断舍离。下面是我的搬家史，一年内十几次，所以在搬家这件事上有优先发言权 搬家流程 行李分六块：衣食住行、学、社交&#xA;首先考虑收纳，对个人来说，一个行李箱+短途旅行包+背包若干+纸箱若干，这个是收纳极限，纸箱的作用是收纳大件，两个背包用来出差(一个放生活用品，一个放办公用品)，短途旅行包收纳一些常用工具&#xA;其次，看看为了维持正常生活需求，需要哪些用品&#xA;衣&#xA;季节：初到青岛是夏季，没准备冬季衣服，结果到了2月份冻成狗&#xA;收纳：行李箱(空间一定不够，选最大号行李箱)&#xA;打理：找干洗店；洗衣机自己洗；衣物潮湿，+便携式吹干机&#xA;更换频率：搭建个人衣橱，先凑基本款，基本款可以在之前下单的店无脑购买 食&#xA;收纳：电热锅+炒锅+煮锅+便携式厨具+便携式餐具+收纳袋(调味料、蔬菜、零食)+饭盒&#xA;打理：洗洁精+抹布*3&#xA;(注：收纳袋用那种锡纸的，易清洗，防护效果好) 住&#xA;收纳：便携式被子+床单*2+加热棒+医药箱+插座+数据线收纳+卫生纸&#xA;(其他床上用品太占收纳空间，一般搬家就扔掉) 行&#xA;收纳：便携式电动车(微迹) | 摩托车&#xA;(微迹的好处是可以放后备箱，电池抽下来放室内充电，方便)&#xA;(另，搞定了开车，+公共交通，出行基本无障碍) 学习&#xA;收纳：电脑+资料打印(扫描)+纸质书+文具盒+便携式椅子+随身wifi+手机&#xA;(打印和扫描可以外包，我有店铺，需要联系)&#xA;(电脑：零刻+pc)&#xA;(便携式椅子是图书馆抢座的无奈之举) 社交&#xA;收纳：洗漱包&#xA;(社交主要整理好个人形象，洗漱包内包含：吹干机、刷牙三件套、镜子、定型水、洗面奶，洗发水+沐浴露+剃须刀) 再考虑行李的空间位置移动，分两种情况：&#xA;找到住处&#xA;找个车拉过去，或自己分两次搬过去 没找到住处&#xA;这时候会暂居青旅或酒店，带着行李很不方便。我的策略，找一个第三方寄存点，这个寄存点离当前住的位置越近越好。第三方寄存点分为三类：个人经营(咸鱼找、需押金)、连锁经营(存知己、途简单 | 蚂蚁仓储 etc)、非寄存点。个人经营环境好，一般是自己家，但是地处偏远，动辄二三十公里；连锁经营好处是寄存点多，但是环境一般，分为按天付和按月付，按天付机动性好，总价高。最后我的策略是租个地下室，月租300，免受奔波苦。 最后，找房&#xA;找房是最难受的，我不像很多人，工作敲定，先租房半年，工作我也觉得可以说换就换，所以势必发展出一套动态的租房策略，经实践，如下:&#xA;不要找中介&#xA;中介动辄签一年的合同，说可以帮你转租，其实签了合同就任人家摆布了，我的印象，中介没什么责任心 找转租房&#xA;为了高性价比，去咸鱼找转租房。有些人签了一年合同，干了几个月，公司倒闭了，或者离职了，或者转正未通过，房子就空置了，找到他们，去谈判，可以拿一个不错的价格。时刻留意，看自己的住房时间安排，有机会就出手 核心问题 经过上述的推导，不难发现，搬家问题的核心找房子+搬东西，搬东西要求做到极简，满足现有需求情况下物品最少，极简已搞定；找房子则受制于工作地点，这时候问一个问题：为什么要工作？不就是为了钱么，所以我只考虑如何挣钱，而工作是挣钱的一种方式，钱我要，但是工作带来的种种限制我不要。&#xA;考察现有的工作模式，远程工作(打消这个念头，远程被当作廉价劳动率的概率极大，当然不排除能找到少数靠谱的远程，需要特殊渠道)，可以摆脱具体的工作地点限制，这是因为互联网行业基建做的最好，且知识为其主要生产资料；&#xA;另外，可以利用资本增值，即理财，在金融市场套利；；还有资源整合，通过连接需求方和供给方套利；；&#xA;这三条就是我以后的发展方向!!!</description>
+    </item>
+    <item>
+      <title>《软件开发者路线图》</title>
+      <link>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
+      <pubDate>Tue, 11 Jul 2023 16:20:02 +0800</pubDate>
+      <guid>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
+      <description>内容组织 这本书是为学徒写的，学徒即进入职场的新人。大概内容是在每个阶段，学徒采取什么策略，才能一步步站稳脚跟，最终成为大师，因为作者也是从学徒过来的，所以内容编排为场景+指导+实践指南，跟着书中的实践指南练习就行&#xA;假设你是公司的老员工，你的知识不在更新，积累的知识足够应付日常工作，以终为始，新人的第一步就是获取老员工的所有知识，达到应付日常工作的目的，然后再做优化。所以我首先研究知识在组织内部的流动过程，看看获取相关知识储备的方向。然后结合该书做具体实践，如下&#xA;组织知识的获取与传播 &amp;lt;第十章 管理组织中的知识获取&amp;gt; &amp;lt;法尔科尼管理方法&amp;gt;&#xA;知识在组织中的获取和传播 组织中的学习过程 心理潜能&#xA;马斯洛：每个人天生具有一种精神潜力，这种精神潜力与“学习速度”相关，即每个人每天能学习的知识是一定数量的 训练必须每天持续不断进行 高潜能的人可能很长一段时间接触不到具有挑战性的学习环境，因此获得的知识并不比常人多 对于需要汲取大量知识的特定工作岗位，应该由具备高潜能的额人才担任\ 目标或职位变动造成原有知识不够用，经过上述2、3、4阶段，该成员最终补充了完整的知识&#xA;组织获取知识阶段 &amp;lt;第五章 组织传播层面的知识创新框架&amp;gt;&amp;lt;知识传播，有效性及其理论&amp;gt;&#xA;资源角度看知识&#xA;“知识”是一种由组织的经验、价值观、相关信息和洞察力组成的动态集合，该集合的框架可以不断评价和吸收新的经验和信息&#xA;组织层面，知识被看作组织的核心资源，组织顺利发展预购取决于是够拥有在有利于知识传播和创造的环境基础上&#xA;根据传播难易程度划分，将知识分为隐性和显性知识两类。显性知识是可以编码的知识，即可以通过口头交流或文字、图表等书面文件清楚的表达的知识。该类知识易于在组织内部和组织之间进行转移，因此并不能给组织带来竞争优势。相比之下，隐性知识是高度个人化的内隐性知识，表现为组织成员积累的技能和经验，因而不仅难于编码和表达，还需要花费大量时间才能获取。该类知识根植于个体思维与所处的环境中，具有群体特征，主要通过成员间交流互动进行传播，且很难在组织间进行转移，因而比显性知识更具价值。具体来说组织隐性知识是内部成员在参与组织实践过程中将个体知识整合后转化而成的组织运行模式和行为惯例，其在技能方面表现为组织独特的核心技能，例如研发和生产技能等，而在认知方面表现为组织文化与价值观等。&#xA;组织内知识传播有效性框架 隐性知识内部化过程：&#xA;知识的内部化传播过程指组织内外成员在密集交互的情境中，知识需求方通过观察、模仿等方式，将获得的显性知识选择性消化吸收(通过局部搜索、经验积累以及日常工作的选择和重新利用所进行的学习)后转为个人知识体系，然后在实践中加以应用的过程。由内部化定义可知，知识主题之间的密集交互，不仅与其知识吸收能力相关，同时也与其所处的空间位置相关，即空间地理临近带来的反馈效应&#xA;显性知识组合化过程：&#xA;组织发展到成熟期，基于内部化过程的知识创新导致资源日趋同质化，此时，组织需要拥有冗余的知识资源以及进行探索式学习的能力，以重新构建知识资源。知识的组合化传播过程指组织内外成员在广泛联络的场景中，将组织零散的显性知识进一步系统化和复杂化，该过程在组织层面可呈现为组织成员通过形成书籍、报告等方便查阅的知识载体使得经过整合的个体知识上升为组织知识并最终形成组织的知识资源库。总的来说，组织在知识重构阶段的创新实践应该侧重于搭建有利于与外部环境进行广泛联络的传播环境并促进内部成员主题整合能力的提升，从而实现内外显性知识的组合化&#xA;渐进式创新：&#xA;渐进式知识创新过程可以通过知识识别、消化和利用三个步骤解释，组织在识别新的隐性知识时，总是倾向于在其原有知识的基础上对专业程度更高的知识进行搜寻，从而决定了知识需求主体获取知识的范围和路径。&#xA;因为劳动分工不同，所以不同组织形成了不同的知识积累依赖途径和显、隐性知识的积累，而这个，也是企业的竞争力所在&#xA;消化吸收外部获取的知识后经过内部化过程转化为组织内隐性知识，实现组织内部知识储备增长&#xA;波兰尼认为隐性知识内嵌于实践活动中，不能以正规的话语形式加以传递，只能通过学徒制的形式在行动与对话中展现、被觉察、被意会，因而对于默会知识的掌握，只能通过“观察、模仿、练习和试错的方式进行”&#xA;简言之，个体获取相关专业知识，在对话场通过和知识主体对话传播，接收到相关知识的知识主体在实践场通过反复练习、不断熟练，达到无需意识操作状态时，主体的思维中就形成了领悟性的隐性知识。&#xA;探索式创新：&#xA;该过程中，知识整合能的绩效之一就是在各类主题的显性知识见建立联系，从而获得多样化的组织知识，以适应外部环境变化&#xA;创新路径&#xA;团队决策&#xA;在环境中进行知识搜寻并与各类知识主题建立连接时，组织应该在内部同时建立处理各类知识的柔性团队，以通过团队决策协调个体知识模块，从而最大限度获取网络协同效应 方向与目标&#xA;组织明确方向和目标，并在外部知识主体见进行传播以促成共同意图的形成，从而可以最小化沟通成本，并使专业化知识的整合更具效率 例行规则&#xA;组织通过对自身文化倡导形成相对完整的知识指导传播过程的行为规则，使其成为明文规定，从而提升知识整合效率 顺序机制&#xA;将知识的整合过程切割成为多个连续性阶段 学徒模式及来源 模式是作者对学徒过程中遇到不同问题的归类，呈现形式为：情景+问题描述+解决方法+行动指南&#xA;书本内容最初提取自两个人学徒期的故事，后来通过访谈对30余位从业者的经验做了检验，主要是检验这些模式是否是针对常见问题的一般解决方法，内容经得住考验&#xA;个人觉得有用的模式及实践 暴露无知 你刚进入一个岗位，有很多你不知道的东西&#xA;暴露无知，最简单的方法就是问问题。如果采用最直接的可用途径，通往熟练工的道路就可以被缩短&#xA;技师所拥有的最重要的品质之一就是学习的能力，他们能找出无知的领域并通过努力工作来减少这样的领域。在学徒期结束，你会掌握一些技术的丝线，凭借这些丝线，你可以在少数的平台和领域中编织出健壮的软件应用&#xA;写下跟工作相关，而且自己不甚了然的五件事，将这份列表放到其他人可以看到的地方，然后随工作内容的改变养成不断更新这一习惯&#xA;正视无知 你需要一些工具和技术，却不知从何开始。在这些工具和技术中，有一些是你周围的没隔热还能看起来都已经了解的，而且别人认为你也了解&#xA;采用一种对你最有效的方法来做这件事。对于某些人，最好的方法可能是阅读能接触到的所有文献和FAQ，来获得知识概览。其他人则可能觉得直接动手构造一个“质脆玩具”才是理解一样东西的最有效途径，不管哪种方式适合你，都不要忘了问问周围的“同道中人”和指导者，看看他们是否愿意指导&#xA;针对“暴露无知”模式中列出的项目，努力学习其中的每一项，每学会一种就把它从列表中划掉。这些新知识又会揭示你以前没注意到的新空白，把这些新空白也加入列表中&#xA;这一块有很多问题，好长时间，一些技术层面的东西没解决 提高带宽 你已经掌握了一组基本技能，但是对软件开发的理解较狭隘，只关注日常工作中的低层次细节&#xA;对学徒来说，提高获取新知识的能力是关键一步，尽管有时只是会多的让人崩溃，你必须开发一些技巧来高效的获取、理解、维持并应用新知识&#xA;我21年意识到这一点，所以找各个领域的悟道者，这些人不管什么行业，都有一套自己的行事逻辑，其中对我影响较大的：徐春、姚尧，一个教投资的方法论，用数据说话；另一个身上有读书人的孤傲，这种心态影响了我。&#xA;现在我主要看rss(150)、微信公众号(120)、twitter list(200)、telegram，涉及到各个领域，有少部分一手信息，其他均为二手信息，但是一手信息我不会分析，所以这个列表要找时间重构 常用工具 每一个项目都充满了需要学习的新东西，但是有些东西是不变的&#xA;找出一组常用的工具并关注它们，最好这些工具是不需要读文档的&amp;ndash;要么你心里知道所有最佳的使用方法，要么你已经将它们写在了博客。有了这些知识，你就能对工作中的特定部分提供可靠的时间估算，从而将峰先限制在新的、未探索过的领域&#xA;写下自己常用的工具列表，如果少于五项，就着手搜寻一些工具，以填补工具箱的空白&#xA;因为一直换电脑，维护了一张windows软件表，主要是msys2+chrome，经测试，非常稳定；另外我也注重个人数据的积累，在安卓手机上用“一木记账”和“应用定时器2”记录开支及时间，syncthing同步emacs笔记&#xA;找人指导 你意识到自己并不是第一个走这条长路的人，你花了大量时间在探索死胡同</description>
+    </item>
+    <item>
+      <title>《改变，问题的形成和解决》</title>
+      <link>/posts/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Mon, 10 Jul 2023 21:50:25 +0800</pubDate>
+      <guid>/posts/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/</guid>
+      <description>start 该书是Limboy推送，作者看书的口味跟我很相似。我曾经开过一个变化专题，本书也许能解答一些困惑 核心观点 首先问两个问题：“这一状况为什么持续不变？”，“如何才能改变？”&#xA;解答这个问题有两个思路，一个是对照自己过去解决事情的经验，把案例拿出来复盘，找到变与不变的相关因素，微调看效果&#xA;另一个是作者提到的，借助群论和逻辑类型理论(简单了解下即可)的模型类比，分为两种变化，一种变化发生在系统内，系统不变(第一序改变)，另一种则是变化导致系统结构改变(第二序改变)&#xA;从实践角度来看，如何发生第二序改变呢？&#xA;第二序改变比第一序改变高一个层次，也就是说，要跳出原有问题，在更高层次对原问题的假设做检验。做游戏规则的创造者，而不是遵守游戏规则&#xA;问题的形成 看不见问题 很好定义，问题就是事与愿违；事与愿同，问题就消失了。&#xA;因为人会面临各种约束，物质上的约束、思维上的约束、行为上的约束、制度的约束、生产体系的约束，所以问题是一直存在的。&#xA;因为人的精力是有限的，思维有盲区，所以会忽视一些问题，等到问题出现在眼前才想办法解决&#xA;针对此类“看不见问题”的问题，可以整理一个问题清单，做好归类，个人生活不是每天都在发生颠覆性变化，有了历史数据，就能“看见”问题了。&#xA;处理不当导致新问题 企图否定问题，应当采取行动，却没有采取行动&#xA;专家呼吁，中国内需不足，居民要增加开支，不然中国经济增长动力不足，对国家、企业、个人发展都不利。问题的实际原因不是居民可支配收入占GDP比例低导致内需不足吗？这里，居民可支配收入占比低的问题被否定了&#xA;否定问题的原因是默认接受某些假设，这些假设是约定俗成，或被有意植入。总之，人们依靠简化的线索思考问题，这会造成误判 企图改变困难，但是困难根本不存在，不应当采取行动，却采取行动&#xA;当一个人试图按照自己的前提去建立自己的世界而遭遇挫折，并不反省自己是否有不合情理之处，例如杞人忧天。&#xA;这是一种错误的思维习惯引起的，因为大脑太过活跃，头脑中概念太多，所以思维一直在递归概念，这一切依赖一个前提假设：能凭借思维找出完美的方案，或构建完美的系统。&#xA;大脑一直在递归，反映到最终行动却很少，拿不到足够的反馈，自然会做出很多多余的行动。这是一个第二序改变才能解决的问题 在错误的层次上采取行动 错误的解决方法导致新问题产生 比如你晚上睡不着，你心里暗示自己一定要睡着，暗示的本意是解决睡不着这个问题，但是暗示导致问题的恶化&amp;ndash;你更睡不着了&#xA;又比如，你跟对象分手了，你告诉自己，此人不过如此，天涯何处无芳草，但是，你越想忘掉她，忘掉它这个念头又强化你记起她&amp;ndash;你更忘不掉了&#xA;所以这种类型的问题，如果不从结构进行调整，即进行第二序改变，问题永远得不到解决&#xA;问题的解决 我们很多时候都在做第一序改变相关的行为，因为第二序改变太难了，很多时候根本意识不到，所以需要一些技巧，来促成第二序改变的发生；从日常生活中“自发性改变”的案例来获取第二序改变的技巧，如下：&#xA;第二序改变就是跳出问题本身，从上面的例子可以看出，引入一些不相干行为反倒有助于问题的解决。第二序改变要求对前提假设做检验，但是这不符合人类思维特点，所以需要一些方法。&#xA;重新框定(原理) 重新框定就是改变认知，要么增加新的知识点，要么对原有知识点的排列顺序做调整。第一步是要认识自己思维的局限性，但是做到这一点很难。我们探究一下认知是如何形成的，生理学层面就是神经元不断受到外界信息的刺激，某些突触间信号交流得到强化，最后形成特定的神经链路，如果要改变这个神经链路，就要通过犯错使大脑进入学习模式&#xA;比如，某个习题你做了三个小时，感觉无从下手，这时候，停下手头的工作，去倒立，完成后发现思维更清晰了。这是因为之前你的大脑注意力集中在和习题相关的神经链路，倒立将你的注意力拉回来了，你有机会审视其他的神经链路，里面可能有解决问题的线索&#xA;(该书是1974年写的，当时的神经、行为科学没有计算机加持，作者对一些细节不了解，这一段是我根据“Huberman lab”的内容加的)&#xA;(作者在“重新框定”小节提到了“困惑技术”，我觉得就是通过犯错扰乱前庭神经，使大脑进入学习模式，重新审视问题)&#xA;处理问题四步骤 四步骤的目的是让我们将注意力集中在问题“是什么”上&#xA;以具体的词语清楚的界定问题&#xA;分辨假性问题和真实问题&#xA;探究截至目前为止已企图用过的解决对策&#xA;看看是第一序变化还是第二序变化，发现什么使问题在此时此地继续维持，打断这一个反馈路径为主&#xA;对想要达成的具体改变有一个清晰的定义(清晰的目标)&#xA;清晰界定并不容易，错误的问题会引导至错误的方向，问题不能长时间被挂着&#xA;形成与执行一个能产生这一改变的计划&#xA;介入方法(一般性策略) 策略要翻译成当事人能理解的语言 悖论可以产生第二序改变 特定的战术或战略 失败原因&#xA;不恰当的目标&#xA;了解信息的过程中，改变就已经发生，目标需要动态调整 介入方法错误&#xA;通过研究介入案例，调整介入方法 未能与当事人思维对齐&#xA;病人踌躇满志的执行，过几天回到常态，这有赖于机制的设定 上述四个步骤执行过程中出现问题 执行，看看效果 第10章给了一些4步骤的应用案例，感兴趣的可以自己看书。（注：实例才是本书的精髓所在，可以对照我的内容看实例）&#xA;尾声 我自己有很多改变失败的案例，这本书给我一个重新审视过去的机会，后面贴一些我自己解决问题和改变的案例&#xA;resource 《改变，问题的形成和解决》 提取码：epz9</description>
+    </item>
+    <item>
+      <title>Inbox</title>
+      <link>/resource/inbox/</link>
+      <pubDate>Sun, 09 Jul 2023 14:23:19 +0800</pubDate>
+      <guid>/resource/inbox/</guid>
+      <description>(一些未归类的资源)</description>
+    </item>
+    <item>
+      <title>list-series-of-articles</title>
+      <link>/resource/list-series-of-articles/</link>
+      <pubDate>Sat, 08 Jul 2023 21:45:45 +0800</pubDate>
+      <guid>/resource/list-series-of-articles/</guid>
+      <description> Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 </description>
+    </item>
+    <item>
+      <title>list-soft</title>
+      <link>/resource/list-soft/</link>
+      <pubDate>Sat, 08 Jul 2023 18:18:19 +0800</pubDate>
+      <guid>/resource/list-soft/</guid>
+      <description>开机必备 scoop msys2 KDE Connect (共享剪切板 with phone) snipaste (截图) geek (软件卸载) msys2 (类linux环境) banzip (解压缩) syncthing (同步) winxray (科学上网) weasel (开源输入法) everything (搜索文件) 福昕阅读器 (pdf阅读) neatreader (epub、mobi阅读) emacs filelocator (文本检索) anytext(放弃) devonthink、Archivarius 3000、recoll 远控软件 向日葵 rustdesk todesk 其他 copyq IDM autohotkey tld tool chrome windirstat sm18 quicker goldwave manictime btsync traccar reg snap tld tool </description>
+    </item>
+    <item>
+      <title>list-articles</title>
+      <link>/resource/list-articles/</link>
+      <pubDate>Sat, 08 Jul 2023 18:16:41 +0800</pubDate>
+      <guid>/resource/list-articles/</guid>
+      <description>数据安全 evernote“解散”危机之后，如何高质量转移笔记 技术投资 如何评估一项技术是否值得长期投入 有没有安全的工作？ 阮一峰 主观 主观时空扭曲，如何利用对时空的感知活出丰富的人生 移民 草根女DIY润加拿大：30岁出国留学，34岁拿到永居 经济 推进消费转型需要“全民国企持股计划” 徐高 云存储 zpan 私人云盘、共享文件(pass,用icloud) 创业 一个独立创造者的五年 chatgpt-4 使用 gpt4free-ts 完全免费白嫖 GPT-4 Depay信用卡亲测：从USDT到美元和人民币 开通 ChatGPT Plus 攻略 博客 我的博客技术栈 个人音乐存储，终极解决方案 个人成长 职场上从高层还是基层路线开始？ 其他 去哪里安度晚年？心安处即归处 </description>
+    </item>
+    <item>
+      <title>list-infostream-src</title>
+      <link>/resource/list-infostream-src/</link>
+      <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
+      <guid>/resource/list-infostream-src/</guid>
+      <description>Log 2023/07/08 start 2024/10/20 把该文章内容工程化成工作流，display&amp;ndash;selector&amp;ndash;rsc，初步设想这种模式 \&#xA;2025/04/11 + 信息规范 \ 静态 动态 策略 book(calibrate) rss search checklist assocaition(八卦) Subscription(被动推送) - Notification product one on one Monitor(主动check) - Notification 说明 最高层次就是预测信息，通过把控事物的演化规律预判有哪些信息产生，能为我所用。可以有目的的制造信息&#xA;这个世界每天产生大量的信息，不管是有意识、无意识，都会有大量信息流过，所以需要构建一个主题聚焦器、多个监控器、多个发送器、多个过滤器、多个存储库，以便高效、迅速的提取信息。迅速是为了应对环境变化&#xA;体系化：论文 &amp;gt; 出版书籍(审核ing) &amp;gt; 博客(rss) &amp;gt; 会议 &amp;gt; 电话1v1 实时性：实地调研 &amp;gt; 电话1v1 &amp;gt; 会议 &amp;gt; 社交媒体&#xA;元信息：参考&amp;lt;完美软件 对软件测试的各种幻想&amp;gt; chap5 元测试：思考信息从0到1出现的过程(关于信息质量的信息) 技巧：视角切换(拿其他人的信息库、信息流、提取的思路和习惯做测试) 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善) 常用 freshrss&#xA;yacy(自定义元搜索引擎)&#xA;爬虫爬取某网站 检索 ref yacy google search (主动)&#xA;模板：&#xA;框定范围&#xA;确定搜索目标&#xA;制定搜索策略&#xA;评估，封存策略备用</description>
+    </item>
+    <item>
+      <title>《自我管理》</title>
+      <link>/posts/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sat, 08 Jul 2023 16:27:58 +0800</pubDate>
+      <guid>/posts/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</guid>
+      <description>德鲁克的观察 观察：知识劳动者寿命在增加，雇佣组织的寿命在缩短&#xA;知识劳动者的新特征：拥有属于自己的生产资料(知识)、寿命长于大部分用人组织&#xA;知识劳动者的竞争优势：生产率&#xA;知识劳动者的生产率 (生产过程分析)&#xA;确定任务、集中完成任务、制定考核标准&#xA;在商品生产和流通领域，任务很明确，比如在电子厂干活，就是一些明确的动作；而在知识工作领域，“任务是什么”需要被首先考虑&#xA;德鲁克的观察： 某公司案例：“任务不是预测未来，而是确定我们的企业方向和目标以及实现目标的战略”&#xA;在组织内部，工作越分越细，组织中的实际从事知识劳动和服务生产的成员，承担着越来越多的临时性工作和额外业务活动，这些工作和活动几乎不会或完全不会创造价值，并且与他们拿报酬从事的工作几乎没关系&#xA;所以在知识劳动领域，提高生产力的关键在绩效。知识劳动的质量和数量构成了绩效。百货商店女售货员的绩效是“顾客满意”，绘图员的绩效是其绘制图纸的质量和数量，etc&#xA;可以根据上述生产率的定义，制定某一给定工作的考核标准&#xA;流程&#xA;从工作流程角度分析：知识工作者的工作必须与相关从事知识工作的人员合作完成，流程也是影响其生产率的因素之一&#xA;学习与传授&#xA;提高生产率需要不断学习 只对工作进行重新设计，培训，并不足够（以教代学的效果更好） 发挥效能 (生产力的制约因素)&#xA;知识劳动者不产生任何自身产生效能的东西，他们生产知识、创意和信息，而这些东西是另外的知识工作者的输入。知识劳动者的生产率就意味着叫别人正确做事的能力，也就是发挥效能&#xA;我们把因为担任职位或拥有知识而在正常的工作过程中做出的决策关系到组织整体绩效和结果的知识劳动者、管理者或者个体自由职业者叫做“决策者”&#xA;导致决策者缺乏效能的情况&#xA;决策者的时间属于组织内每一个其他成员 决策者被迫始终保持准备行动的状态 只有当组织中其他成员对决策者的贡献加以利用时，决策者才具有效能 一切成果存在于组织外部，而决策者的控制力在组织内 解决方案就是通过人类劳动必须的工具，而不是通过突击提高人类能力来扩展人类的能力范围。不要期待无所不能的天才出世，相反，要更好地利用具有一技之长的天才&#xA;观察得：富有成效的人的共同之处：他们都有过能使自己发挥效能的实践经历 效能是一种习惯，是后天可以练习的结果&#xA;注重贡献 (解除组织效能约束)&#xA;知识劳动者是某方面的专才，他们只有经过专业化后，才具有效能；很多专业的产出结合在一起，才能产出成果&#xA;组织的任务是使得每个专才使用其专业产生效能，这就意味着知识工作者必须思考谁会使用他们的产出，以及使用者需要知道和了解哪些信息才能利用专才的产出来生产产品&#xA;了解自己的长处和价值观 (解除个人效能约束)&#xA;自己的长处在哪&#xA;发现自己长处的唯一方法是反馈分析法&#xA;“反馈分析法”&#xA;记录预期结果，9个月或者1年后，对照实际结果与预期结果，就能知道那些方面做的不错，哪些技能和知识还需要掌握。该方法会向人们显示应该做什么或者应该舍弃什么&amp;ndash;舍弃自己不擅长的领域&#xA;(德鲁克)得出的行为结论：&#xA;集中自己的优势，把自己定位于凭借长处能够完成任务和取得成果的方面 努力完善自己的长处 识别因知识分子狂妄自大导致无知而丧失能力的领域(与巴菲特的“能力圈”对照) 改正不良习惯&amp;ndash;抑制效能和绩效的因素 反映一个人因为不注意方法而没能收到成效的情况（比如因为没有说“谢谢”而导致双方的摩擦） 不应该做什么 尽可能再缺乏能力的领域少浪费自己的精力，从而把精力集中在自己能力强或技能高的领域 自己如何取得绩效&#xA;(反馈分析法有可能会展现出在如何取得绩效方面存在的某些错误，但很少能查明原因，不过有几年工作经验就能搞定)&#xA;如何学习(有人擅长动手做、有人擅长阅读、有人擅长跟人对话) 能否在压力下取得很好的绩效（是否需要一个高度组织化的可预知环境） 作为决策者还是作为顾问才会更有成效 能否与别人很好地共事，在什么关系下能够与别人很好的共事 自己的价值观是什么&#xA;可能知道的比较晚，但是一定要知道自己的长处，如何取得绩效，价值观&amp;ndash;&amp;gt;职业归宿&#xA;掌控时间 三流程：记录时间的去处；；管理时间；；整合时间 (该流程是决策者发挥效能的基础)&#xA;观点&#xA;必须支配大块时间，才能发挥效能 组织成员越多，有关人事的决策就越多，人事决策所包含的内容，只有经过多次反复才会变得明了 创新和变革使得决策者的时间紊乱不堪 （管好自己的时间将变得越来越重要） 记录时间的使用&#xA;[此处仍在探索，后面补充]&#xA;管理&#xA;识别根本不应该做的事（反问自己：如果不做这件事会怎么样） 哪些事情可以由别人代劳 不要浪费别人的时间（询问：有没有打乱你的计划） 浪费时间的因素：信息传递不通 组织不善，会议成灾 人浮于事 缺乏远见导致的时间浪费</description>
+    </item>
+    <item>
+      <title>Hello Wrold</title>
+      <link>/posts/hello-wrold/</link>
+      <pubDate>Sat, 08 Jul 2023 12:00:56 +0800</pubDate>
+      <guid>/posts/hello-wrold/</guid>
+      <description>很早就有写博客的想法，随着时间的流逝，我的知识面越拓越宽，但是专业性一直原地踏步，究其原因，主动输出、与人沟通这两块做的很不好，写博客是为了弥补这两个短板&#xA;搭建经历 22年1月，我通过nikola+github page搭建博客，界面很难看，但是本着能用就行的原则还是坚持写了十几篇，最后因为频繁换电脑，放弃了。换完电脑要重新配置环境，有些电脑配置过程中会出现一些莫名奇妙的问题&#xA;后来我了解到travis、github action，CI/CD的概念，就是把博客的build、deploy环节转移到服务商提供的虚拟环境中（docker技术），为此我还研究如何使用docker，因为各种原因最终作罢&#xA;23年7月，我了解到hugo，hugo提供了很多精美的模板，我现在用的smigle，以及团队wiki模板docsify。也可用github action实现远程构建、部署&#xA;至此，博客雏形算是完成了。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/</guid>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2025/02/11 FABE 乔哈里视窗 show your self&#xA;2023/10/18 hugo 博客搭建&#xA;2025/02/09 docsify wiki搭建&#xA;2025/02/09 ref Hugo 添加相册页面 奇怪的工作流&#xA;2025/03/24 启发式&#xA;2025/06/15 ref 冷水澡 pro3 识别模式及构建控制点 项目概述：我们现在的状态是由自己过去一系列选择构成的，在没有对自己的人生思考前，它是一种自然生长状态，这意味着不可控；任何不在我们视野的事物都处于这种“视而不见”的状态。但是你不看它，它就对你没影响了吗？所以我们记录数据，从数据中发现规律(识别)，用一些手段控制该事物的演化方向</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/windows%E9%85%8D%E7%BD%AEemacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/windows%E9%85%8D%E7%BD%AEemacs/</guid>
+      <description>起因 emacs是一个笔记系统，我的目标是可以在不同设备间无缝迁移&#xA;核心功能 1 GTD GTD的实现可以看我的配置文件https://github.com/apeishuai/msys2-config/blob/master/.emacs.d/lisp/GTD.el&#xA;Capture-2023-01-28_06-17-10.png 工作流程： 捕获entry： 在笔记系统中有GTD文件夹，首先C-c c i 捕获一个TODO事项，如果捕获的是网页，C-w转移至Ref；如果是待办事项，C-c捕获至inbox；如果是项目，C-w转移至project；一些间隔重复的，比如每一周做周总结，放到agenda。&#xA;加标签： C-q 加标签，C-c C-s 加待办时间； C-c a m筛选标签，C-c a a，展示今天计划的事项 有一套成熟的标签体系 Capture-2023-01-28_06-20-36.png 01 目前监控点 02 大主题 03 环境 04 清单列 05 媒介 06 小主题 07 06下属小主题 08 参考网站 其他 衍生出的小主题 我一般用01Moniotr、01Monitorpassive监控某些主题，避免遗忘，比如ros仿真机器人。01focus展示当前聚焦点，例如做饭团，04book、04people、04Articlelist、04readlist，一般的阅读性材料都会打上这几个标签，针对主题筛选不同的阅读材料 02life、02self、02work这三个清单列我会经常逛，看到感兴趣或感觉能做的entry，就用C-c C-s计划今天或者明天待办，在和这些主题清单列打交道的过程中，毫无例外，这些主题中都出现construct something，也就是说，生活、工作的一些事项是自己构建的&#xA;综上，核心就是标签和GTD文件夹 因为是用GTD自带语言实现的，所以新电脑只要安装emacs，下载GTD的配置，下载GTD文件夹，就能无缝迁移&#xA;2 网页捕获 原理是emacs运行时会启动Emacs server，可以通过org-protocol和emacs图形客户端通讯，打开emacs，用官方提供的书签即可实现网页捕获功能 javascript:location.href=&amp;#34;org-protocol:///capture?url=&amp;#34;encodeURIComponent(location.href)&amp;#34;&amp;amp;title=&amp;#34;+encodeURIComponent(document.title||&amp;#34;[untitled page]&amp;#34;)&#xA;但是对windows，要注意两个环境变量：EMACS_SERVER_FILE和MSYS2_PATH_TYPE，第一个无需多言，第二个是因为emacs运行在msys2客户端(msys2是win上的一个仿linux运行环境) 为了使网页捕获能正常运行，点击书签完，需要有程序来响应org-protocol，还需要在注册表加一段 Capture-2023-01-28_06-47-56.png&#xA;org-protocol.reg（点击这个注册表文件） #+BEGIN python REGEDIT4&#xA;[HKEY_CLASSES_ROOT\org-protocol] @=&amp;#34;URL:Org Protocol&amp;#34; &amp;#34;URL Protocol&amp;#34;=&amp;#34;&amp;#34; [HKEY_CLASSES_ROOT\org-protocol\shell] [HKEY_CLASSES_ROOT\org-protocol\shell\open] [HKEY_CLASSES_ROOT\org-protocol\shell\open\command] @=&amp;#34;\&amp;#34;G:\\emacs-notes\\Computer_science\§hell\\org-protocol-handler.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/workflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/%E6%95%88%E7%8E%87%E5%B7%A5pc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/%E6%95%88%E7%8E%87%E5%B7%A5pc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F%E5%8E%9F%E5%A7%8B%E8%B5%84%E6%96%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F%E5%8E%9F%E5%A7%8B%E8%B5%84%E6%96%99/</guid>
+      <description>@shuai 于 2024-3-30 导出 11 条 MEMO 筛选 2024-03-30 09:30:57 #normal/tool/行为模式&#xA;&amp;mdash;-纠偏&#xA;问题1：主题太散，设置规则聚焦具体目标，gantt就不错&#xA;3月8日的zz-plan项目太分散了，ganttproject打开频率低&#xA;2024-03-19 15:49:14 说明之前的环境模式有问题，比如呆在房子里&#xA;#normal/tool/行为模式&#xA;2024-03-19 15:40:23 所以综合下来是我的问题，是我的行为模式的问题&#xA;#normal/tool/行为模式&#xA;2024-03-19 02:19:43 其实应该识人，跟这些专家学者大量交流，发展xxx&#xA;(昨天个HR聊完)&#xA;#normal/tool/行为模式&#xA;2024-03-15 20:57:54 行为和动机相关联&#xA;为什么我会做这么多行为呢，找工作_离职 xx&#xA;#normal/tool/行为模式&#xA;2024-03-15 19:48:12 通过具体的实践 改变自己的动手习惯&#xA;通过行为改变行为&#xA;所以第一步就是模仿&#xA;#normal/tool/行为模式&#xA;2023-12-16 00:34:34 #normal/tool/行为模式&#xA;今天找gtd软件，发现高效todo就挺好用。又费心思找了一遍，没必要&#xA;我要找那种提前预估学习量，并安排至每一天学习的软件&#xA;2023-12-16 00:31:58 #normal/tool/行为模式&#xA;11/3 文件传输&#xA;从找《转型中的地方政府》到将其传输至电脑&#xA;找：zlib、google（小众网站）、淘宝&#xA;传输：KDE CONNET、shu、数据线&#xA;5min搞定的事，硬生生拖了1h多，见相关图片，拒绝这种低效的浪费生命的操作&#xA;或者说，这个事没必要做&#xA;2023-11-19 14:57:39 #normal/tool/行为模式&#xA;吃完饭之后有点困，想休息（从数据中发现）&#xA;2023-11-16 18:17:22 #normal/tool/行为模式&#xA;有没有积极主动去寻找突破口？&#xA;2023-10-12 23:31:56 #normal/tool/行为模式&#xA;没那么玄幻，INTP也是人，根据福格行为模型的理论，人做出行为需要的三要素缺一不可：动力，能力，触发&#xA;INTP执行力低的原因是动力。判断一件事值不值得做，值不值得现在就做，INTP的计算公式相当复杂&#xA;比如准备复习四级，他可能质疑“英语四级”必须过的必要性，甚至反思拿毕业证找工作这个路径的必要性，或者会想四级教材太low了，要不直接准备gre雅思，再降维考四级</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>喜欢自由&#xA;领域及阅读列表 wxf`s 知识网 trace weekly run shaarli 书签(keyword: life) wiki 技术文档(wiki log) service platefrom and self host cloud service : cloudfare、vercel、sealos(轻量级，适合快速任务)、github action&#xA;vps : ucloud 1g 1core&#xA;local : docker&#xA;Self host:&#xA;MoonTV //MoonTV 是一个开箱即用的、跨平台的影视聚合播放器。&#xA;gpt-aciademic //quick use , deploy by docker&#xA;radicale //deploy by vps, ref form 跨平台日历同步：使用 CalDAV 和 Radicale 打造个人日历云服务&#xA;luxirty-search //by vercel, search based on google search&#xA;性格 享受独处 不拘小节 质疑权威 关照他人利益 特长 金融、电气、计算机略懂&#xA;擅长全局视角，能快速抓住重点</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/main/</guid>
+      <description>Focus&#xA;探索美食 Resource&#xA;专题 生理学相关 wxf softwares Life &amp;amp; Entertainment&#xA;Playlist · 坠入碧蓝 ♫ 节奏流动 blog guanjihuan music Blog&#xA;About 个人简介</description>
+    </item>
+  </channel>
+</rss>

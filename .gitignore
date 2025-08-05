@@ -1,0 +1,4 @@
+node_modules
+.ssh
+.emacs.d
+qt6.8.3

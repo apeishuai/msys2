@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>我的效率工具 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">我的效率工具</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2023-11-04</time>
+    
+    
+  </strong>
+  <span> • 39 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-04-26</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>继上一篇文章，我研究了很多效率工具，这一篇相当于pro2的工程实践</p>
+<h1 id="flomo">flomo</h1>
+<p>flomo有每日回顾，用来做间隔推送；<br>
+卡片+层级标签，可以用来做渐进式阅读，代替supermemo(不能制作挖空卡片，这个无所谓)；<br>
+多端同步，提供api，可以跟其他工具联动，例简悦</p>
+<h1 id="简悦">简悦</h1>
+<p>这个工具用来标注网页，之前我都是用chrome插件“save page WE”下载成离线html，用hamsterbase标注，简悦集成了所有操作，配合readwise做间隔推送。跟flomo一样，划线标注成卡片，+间隔推送</p>
+<p><a href="https://www.yuque.com/kenshin/simpread/fiyku3">离线html版剪藏配置</a><br>
+该配置库实现了自动离线下载功能，附带标注，我的配置如下：
+<img src="/img/config-jianyue-Snipaste_2023-11-04_16-25-32.png" alt="">
+<img src="/img/jianyue-Snipaste_2023-11-04_16-27-03.png" alt="">
+<img src="/img/jianyue-Snipaste_2023-11-04_16-28-00.png" alt=""></p>
+<p>对我来说，要标注在没有用到简悦之前的离线文件，第二张图片中红线部分，右边有两个按钮，点击第一个就可以打开离线html标注了</p>
+<p>第二个是我需要readwise做间隔推送，简悦提供了自动化选项，具体参考 <a href="http://ksria.com/simpread/docs/#/Sync?id=readwise">sync readwise</a></p>
+<h1 id="readwise">readwise</h1>
+<p>无需配置，直接使用即可</p>
+<h1 id="logseq">logseq</h1>
+<p>logseq主要用来看pdf，认为有用的内容可以用标签#card制成卡片，间隔推送<br>
+用标签组织文件，每一个新文件可以插入&rsquo;#tag/subtag/subtag&rsquo;，这样就生成一个三级标签结构，完成文本组织；再用#card做间隔推送
+<img src="/img/logseq-Snipaste_2023-11-04_16-38-10.png" alt=""></p>
+<h1 id="高效todo">高效todo</h1>
+<p>此工具有两个优点：多端同步、时间轴。我用标签追踪一些重要的东西
+<img src="/img/Snipaste_2023-11-04_16-43-34.png" alt="">
+这个列表记录了我用过的不同效率工具，什么时候出现的，什么时候消失的。这样一来是review，因为在实际寻找效率工具的过程中一直处于搜索、信息缺失状态，时间轴列表可以帮忙监控整个过程；另，如果下一次出现同样的任务，我可以透视之前的行为来完善当前任务的策略(主要看重它的时间轴功能)
+<img src="/img/Snipaste_2023-11-04_16-47-47.png" alt="">
+项目借用gtd思想，就是归类同一主题任务，有可能复用到之前同类型任务留下的资源
+<img src="/img/Snipaste_2023-11-04_16-49-57.png" alt="">
+这三个tool是实际介入的内容及效果分析，比如我觉得刷twitter是个低ROI的行为，不想再刷了，就可以通过数据看这个行为具体改善情况，数据当然是通过manictime搜集来的啊</p>
+<h1 id="manictime">manictime</h1>
+<p>破解版下载（某些功能破解版才有）<br>
+链接：https://pan.baidu.com/s/1I4DFl6e7ywhqjKENGEr4Fg?pwd=t6bj</p>
+<p><img src="/img/Snipaste_2023-11-04_16-59-36.png" alt="">
+标签组合：<br>
+1-xxx表示大类，这样就有每天刷各种娱乐网站的信息了，我主要看花了多少时间及趋势，如果ROI太低就想办法减少这方面的时间投入；</p>
+<p>ref:
+<a href="https://docs.manictime.com/win-client/autotagging">筛选语法</a>
+<a href="https://docs.manictime.com/win-client/autotagging">autotag</a></p>
+<p>数据备份与恢复：设置&ndash;&gt;备份和还原</p>
+<h1 id="recoll">recoll</h1>
+<p>这个用来搜索全局文本，
+<img src="/img/Snipaste_2023-11-04_17-05-11.png" alt="">
+<img src="/img/Snipaste_2023-11-04_17-06-35.png" alt="">
+这三个即为搜索目录，重要的pdf、txt等文件资料可以放这</p>
+<h1 id="总结">总结</h1>
+<p>综上，工具很重要，但更重要的是思想，我用到了：渐进阅读(卡片+标签)、间隔推送、时间轴；数据积累与检索</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2024
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

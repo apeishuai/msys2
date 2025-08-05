@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>series-生产环境 on Wxf`s Fantasy World</title>
+    <link>/tags/series-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83/</link>
+    <description>Recent content in series-生产环境 on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Dec 2024 21:41:51 +0800</lastBuildDate>
+    <atom:link href="/tags/series-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>项目管理</title>
+      <link>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 02 Dec 2024 21:41:51 +0800</pubDate>
+      <guid>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>今天有人问我，有没有工具可以管理项目，要求如下：&#xA;1 计划&#xA;2 显示执行情况&#xA;3 随意更改计划&#xA;4 异常报警&#xA;别说，还真有。之前找甘特图工具时发现的，zz-plan，一个轻量级项目管理工具，我说下怎么使用。&#xA;计划 流程为：创建项目-&amp;gt;清点资源(时间、人)-&amp;gt;创建任务-&amp;gt;为任务创建约束项(物料约束、时间约束、人力约束、任务依赖关系)&#xA;如图，我创造了一个名为黄石的项目，五个任务，任务间定义依赖关系，分配人员、时间 执行 在执行过程中会改动计划，所以给初始计划建一个快照。&#xA;改动要保证整体计划会随着我的改动项整体修改，比如我插了一个一天的任务，整体计划时间就要延长；或者我缩短了某任务时间，整体计划时间缩短。zz-plan提供了这个功能。 执行完成后填入实际执行时间，更新该图表即可&#xA;分析 任务进行到一半，要分析异常，比如当前跟最初的计划到底偏离了多少，这时候打开计划初保存的那个快照，就能看到异常 这个显示总时间多了一天，原因：任务1延后一天，这时候找到相关负责人交流就成。\&#xA;如果跟踪每日进度，则每天应该更新进度并建立快照，周进度直接对比六天前的快照就行，一目了然。&#xA;end </description>
+    </item>
+    <item>
+      <title>GTD工具一览</title>
+      <link>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
+      <pubDate>Mon, 02 Dec 2024 20:58:03 +0800</pubDate>
+      <guid>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
+      <description>我是2020年开始接触gtd，当时在学emacs，并在此基础上实现自己的gtd系统。有一句话深以为意，“虽然gtd的理念很简单，但是打造成熟的gtd系统需要两年时间”。&#xA;反正当时有这么个念头，今天又翻到了之前做的GTD列表，意外发现，可以直接复用原来的系统，之前有些做不了的todo项现在可以做了。有一种穿越时空的感觉。&#xA;我个人实现了三套GTD系统，如下：&#xA;1 flomo(tag)&#xA;2 qqmail+omnifocus&#xA;3 emacs+beorg+orgzly&#xA;flomo gtd 参考文章flomo实践gtd和para&#xA;用flomo的标签功能，标签划分如下:&#xA;sys-gtd/ sys-gtd/inbox sys-gtd/act/TODO | DONE | Trash sys-gtd/porject sys-gtd/life \&#xA;新任务搜集进inbox标签，然后归类至project或life标签，在添加状态标签。一般是在TODO标签找任务做，做完后将TODO标签转为DONE。&#xA;qqmail+omnifocus omnifocus在文章gtd系统扩展+calender提及，实现后界面如下图 通过邮箱给一个特定邮箱发邮件，该邮件会同步至omnifocus，可以将其当作inbox。一般是看due、delegate，这两栏清空后再看defer。&#xA;emacs+orgzly emacs就有点复杂了，把下面的文件丢到kimi，让它解释一遍。emacs中的TODO项通过坚果云同步至orgzly，遗弃的todo项加ARCHIVE标签，这样就不会出现在检索列。&#xA;然后依然是从TODO状态找任务做，做完后状态切换至DONE&#xA;在pc端，一般用Ctrl+a+m来检索标签，我当时做出了覆盖很全的标签体系，这套体系后来可以直接复用到flomo (global-set-key (kbd &amp;#34;C-c l&amp;#34;) #&amp;#39;org-store-link) (global-set-key (kbd &amp;#34;C-c a&amp;#34;) #&amp;#39;org-agenda) (global-set-key (kbd &amp;#34;C-c c&amp;#34;) #&amp;#39;org-capture) ;;(setq org-directory &amp;#34;g:/area/emacs-notes/GTD&amp;#34;) (setq org-directory &amp;#34;C:/Users/whens/Nutstore/1/docs/GTD&amp;#34;) (setq org-capture-templates `((&amp;#34;i&amp;#34; &amp;#34;Inbox&amp;#34; entry (file &amp;#34;inbox.org&amp;#34;) ,(concat &amp;#34;* TODO %?\n&amp;#34; &amp;#34;/Entered on/ %U\n&amp;#34; &amp;#34;\n&amp;#34;)))) (setq org-todo-keywords &amp;#39;((sequence &amp;#34;TODO(T!</description>
+    </item>
+    <item>
+      <title>Msys2使用anaconda</title>
+      <link>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
+      <pubDate>Sun, 24 Nov 2024 17:04:25 +0800</pubDate>
+      <guid>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
+      <description>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。&#xA;msys2: windows下的类linux环境&#xA;anaconda：windows下python集成环境&#xA;安装anaconda 配置msys2 conda info \\显示当前conda安装的信息 conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改 conda config --show envs_dirs \\显示env环境安装目录 vim .condarc \\修改env安装目录&#xA;envs_dirs: - D:\softwares\Anaconda3\envs vim .bash_profile \\绑定shell:msys2与conda&#xA;eval &amp;#34;$(&amp;#39;D:/softwares/anaconda3/Scripts/conda.exe&amp;#39; &amp;#39;shell.bash&amp;#39; &amp;#39;hook&amp;#39;)&amp;#34; conda env create -n {env_name} -f xxx.yml conda activate {env_name} conda deactive \\退出环境 退出环境 退出环境后，需要执行&#xA;source ~/.bashrc 方可使用之前bash的配置&#xA;conda使用教程 conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。&#xA;至于项目迁移、其他的一些操作，等日后有需要再补充。&#xA;conda install {package_name} \\安装包 conda list \\查看已安装的包 conda update {package_name} \\更新包 conda remove {package_name} \\删除包 conda create -n {env_name} python=3.</description>
+    </item>
+    <item>
+      <title>GTD系统扩展&#43;calender</title>
+      <link>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</link>
+      <pubDate>Fri, 04 Oct 2024 16:17:06 +0800</pubDate>
+      <guid>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</guid>
+      <description>老是觉得事情推不动，应该在时间上做限制，下面两篇文章完美解决了我的困惑。&#xA;准确定位calendar与 omnifocus ，整个世界都清楚了&#xA;双剑合璧，结束混乱：任务管理中omnifocus 与日历的配合使用&#xA;GTD系统用omnifocus、日历选用&amp;quot;优效日历&amp;quot;(跨平台，能预览一个月的时间安排)&#xA;时间管理相关 2min原则：一件事能在2min内完成的，马上去做&#xA;5h原则：阅读-反思-实验，每周至少花5h在自己感兴趣的事情上面，平均每天1h(不至于负荷太重)</description>
+    </item>
+    <item>
+      <title>自定义搜索引擎yacy</title>
+      <link>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
+      <guid>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 改外观 这样就行了 最终所得网址如下 qireader脚本 qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入&#xA;# 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的 # 作者: wxf # 版本: 1.0 # 生成日期: 2024/03/20 # 最后修改日期: 2024/03/20 import re import os import subprocess # 从本地文件读取文本 file_path = &amp;#39;QiReader subscriptions - Wed Mar 20 2024.</description>
+    </item>
+    <item>
+      <title>Windows软件管理 msys2</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</link>
+      <pubDate>Thu, 08 Feb 2024 07:53:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;msys配置 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行&#xA;然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!&#xA;main-init.sh&#xA;#!/bin/bash # change environment variables . chg-env-var.sh # change reg . chg-reg.sh # install cmd tool . command-install.sh chg-env-var.sh&#xA;#!/bin/bash # Set the system environment variable list SYS_ENV_VARS=( &amp;#34;&amp;#34; ) # Create the system batch file cat &amp;gt; update_sys_env.bat &amp;lt;&amp;lt; EOF @echo off REM Update system environment variables EOF for env_var in &amp;#34;${SYS_ENV_VARS[@]}&amp;#34; do var_name=&amp;#34;${env_var%=*}&amp;#34; var_value=&amp;#34;${env_var#*=}&amp;#34; echo &amp;#34;setx $var_name \&amp;#34;$var_value\&amp;#34; /M&amp;#34; &amp;gt;&amp;gt; update_sys_env.</description>
+    </item>
+    <item>
+      <title>Windows软件管理 scoop</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</link>
+      <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;scoop ref scoop blog&#xA;卸载：默认在“C:\Users\whens\scoop\&amp;#34;，删除该目录即可 - env:powershell &amp;gt; admin $env:SCOOP=&amp;#39;D:\softwares\scoop&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;USERSCOOP&amp;#39;,$env:SCOOP,&amp;#39;User&amp;#39;) $env:SCOOP_GLOBAL=&amp;#39;D:\softwares\scoop\globalApps&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;SCOOP_GLOBAL&amp;#39;,$env:SCOOP_GLOBAL,&amp;#39;Machine&amp;#39;) &amp;gt; user Set-ExecutionPolicy RemoteSigned -Scope CurrentUser iwr -useb get.scoop.sh | iex scoop uninstall scoop ------------------------------------- &amp;gt; proxy scoop install git scoop config proxy socks5://127.0.0.1:1081 scoop config rm proxy &amp;gt; add buckets scoop bucket add extras #scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps scoop bucket add dorado https://github.com/h404bi/dorado &amp;gt;install tools scoop install yt-dlp ffmpeg miniconda scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp scoop install python ruby go nodejs &amp;gt; manage scoop list xxx scoop update xxx scoop search xxx scoop info xxx scoop install spc/&amp;lt;app_name&amp;gt; scoop bucket list scoop bucket known scoop update scoop bucket add scoop reset xx [[https://www.</description>
+    </item>
+    <item>
+      <title>Flomo实践gtd和para</title>
+      <link>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
+      <pubDate>Tue, 06 Feb 2024 15:28:26 +0800</pubDate>
+      <guid>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
+      <description>前天火车上翻搜集的电子书，发现一本，这本书是twitter其他人推过来的，当时在找信息的分类方法，提到了para。&#xA;今天给我妹讲了一下flomo+标签(gtd体系、para体系)的使用方法，觉得挺有逻辑的，摘抄出来，以飨大众。&#xA;主要解决三个问题：&#xA;1 资料归类&#xA;2 待办事项组织&#xA;3 目标管理&#xA;成型后系统效果是这样的：任何内容，大脑中的想法、工作相关任务、生活中瞬间、触发灵感的阅读材料，任何内容，统统丢进inbox，然后继续忙自己当前的事。晚上打开inbox走一遍流程，归类所有内容，第二天继续丢内容进inbox，往复循环&#xA;有三套流程，一套是gtd，一套是para，一套是每日计划，均使用flomo的标签实现，如下 可以看到，有三套标签，sys-gtd、sys-para、normal、2024\&#xA;sys-para para是存资料的，一般看到感觉有用的资料，统统丢进inbox，夜深人静的时候走流程，&#xA;传统笔记分类为主，比如：生活，工作，xxx&#xA;para分类法以推动action为主：&#xA;proj是有时间限制的任务组，规定时间内要有成果交付&#xA;area是长期关注，并有投入责任的领域&#xA;resource则是以文本块为最小组织单元，有可能会用到的信息&#xA;archive是失去兴趣的领域&#xA;+ inbox，捕捉用&#xA;一个笔记先进inbox，然后走流程，归类完毕后重点关注proj，这样能确保信息无遗漏，且提取的信息跟当前的场景匹配&#xA;具体如下： sys-gtd gtd用于组织日常事项，最小单位是action，action组织成project。一个复杂的动作往往有很多action构成，无所谓，只关心action的状态即可 依然是先放进inbox，然后拆解成具体action，：洗衣服、写文章，等等，非常具体的且可执行的事项。然后分配到act/Todo(这个todo列后面要用到)。proj则是由这些action组织起来的，用flomo的@(链接)功能&#xA;action有三种状态：TODO、DONE、waiting，waiting是需要外部辅助的，比如你的材料需要其他人的数据，这个时候就要等，但是不能干等啊，所以转移到waiting列表，定个时间，比如2h后提醒自己check一次。&#xA;waiting列表我们也可以附带时间和地点，如图，我有一个aeiou列表，里面维持了地点、跟其他人的谈话信息，这种我们下次谈话就能接着之前聊的话题继续聊，gtd的waiting需要哪些人的协助，@进去，或者在哪些地方，@进去，定期核查这个列表，能确保任务无遗漏&#xA;同理，不时地翻翻proj列表，看看哪些能推进，顺手干掉。sys-gtd相当于一个动态的任务分配系统吧，且能做到很精细的资源管理&#xA;2024 okr 接下来我想谈谈每日的任务安排，在工作时，我们的大脑只能记住一小段内容，如果要完成一个时间、空间跨度都很大的任务，仅凭工作记忆是不够的。现在有sys-para帮我们处理了资料的问题，sys-gtd帮我们处理了任务分配的问题，接下来问一个问题：我想干什么？&#xA;2024有1年的时间，能做成哪些事，拆解这些事到具体的每一天，在这一天应该做什么事。&#xA;首先对每天做的事情分类：自己想做的、外部触发要做的；生活上的、工作上的；投资自己的、浪费时间的，有很多维度，我选择用okr做目标分类、追踪、对齐，如下&#xA;OKR 2024/week1/day6 任务安排(直接从sys-gtd/act/Todo提取action即可) 2024/week1/day6 任务完成情况 形成自己的标签体系 举个例子吧，aeiou是在《人生设计课程》知道的概念，我可以做tool/activ、tool/user、tool/envi、tool/object、tool/xxx五个标签，用这个列表记录一些关键的事，比如搬家、工作、跟某个人的交流等，为以后的决策提供数据支持。&#xA;举这个例子是想说，标签体系千变万化，只要能搞成一个闭环体系，什么名字都无所谓。下面是实际生活中自己形成的一些标签 flomo用了三个月，对我的生活产生了很大的影响，更多的是上面的几套方法论的影响吧。4个月可以产生这么大变化，也许我们对生活应该乐观点，说不定下四个月你能做出什么了不起的突破呢，共勉！！！ </description>
+    </item>
+  </channel>
+</rss>

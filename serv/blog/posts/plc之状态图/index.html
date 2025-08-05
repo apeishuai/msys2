@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Plc之状态图 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Plc之状态图</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2024-12-06</time>
+    
+    
+  </strong>
+  <span> • 23 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-01-01</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h1 id="start">start</h1>
+<p>五月份误入非标行业，蹲到现场从0到1复原了一个程序，虽然之前接触过倍福、西门子，kingscada，但没有真正自己负责做过东西。why，因为涉及到电气元器件选型。<br>
+断路器的选择依据是什么?
+<img src="/img/Snipaste_2024-11-14_22-26-14.png" alt="">
+一般回答，选择额定电流为总电流8-10倍，断路器可在2s内脱扣。<br>
+我的思路是先分析电网，然后计算电网的短路电流，在根据短路电流选择断路器。<br>
+短路电流是感抗产生的，一般变压器端出现的感抗最高，针对不同条件的电网有不同的计算公式；回到我接触的设备中，感抗就是在一个闭合回路中，如果出现短路，闭合回路的磁场会产生变化，进而导致短路电流的出现，具体计算公式没找到。<br>
+根据上面的图，感抗产生的短路电流应该有额定电流的n倍，这样就能解释通为什么选择8-10倍额定电流作为断路器参数。</p>
+<p>电气元器件涉及的知识太多了，抓不住重点，只能慢慢积累。</p>
+<h1 id="plc">plc</h1>
+<p>plc的设计方法，是我在一本书上看到的，当时困扰我的是变量的依赖关系，看其他人的程序，有些输出前面加了一堆又臭又长的条件，同类型条件分布在程序的各处，毫无规律可言。翻了这本书，才发现可以用状态图(sfc)把程序逻辑捋出来，再用M变量表示中间状态，再用一些常规的方法做变量的开闭，就能把程序捋的很清楚。</p>
+<p>那么plc编程的重点就是，状态图、M变量、状态开闭，针对这些东西构建工具</p>
+<h1 id="状态图">状态图</h1>
+<p>试过很多plc软件提供的sfc工具，都很垃圾，最后我想到了dot语言，专门用来画流程图的，然后基于此搜索，找到了一个叫plantuml的程序，可以根据xx.uml自动生成png图，具体配置如下：
+<img src="/img/Snipaste_2024-12-08_21-34-22.png" alt="">
+既然是编程语言，就能用上次提到的aider辅助生成状态图代码了，如下：
+<img src="/img/Snipaste_2024-12-08_21-36-44.png" alt="">
+<img src="/img/Snipaste_2024-12-08_21-37-16.png" alt="">
+<img src="/img/Snipaste_2024-12-08_21-37-50.png" alt="">
+如此就解决了状态图的问题</p>
+<h1 id="m变量">M变量</h1>
+<p>这个就不赘述，文末我放那本书的链接，里面有详细的说明</p>
+<h1 id="状态开闭">状态开闭</h1>
+<p><a href="https://www.bilibili.com/video/BV1siqVYjEP4?spm_id_from=333.788.videopod.sections&amp;vd_source=5f0df1465c2a6217cdfee2c39bf1d4db">st语言 非标程序框架</a><br>
+书里提到了五种方法，上面那个是写起来最简单的</p>
+<h1 id="end">end</h1>
+<p>这样基本解决plc程序编写问题，剩下选型，我打算做一个选型软件，然后一点点补充，end!</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

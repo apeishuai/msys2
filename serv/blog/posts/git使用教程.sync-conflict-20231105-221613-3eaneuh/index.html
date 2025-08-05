@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Git使用教程 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Git使用教程</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2023-07-09</time>
+    
+    
+  </strong>
+  <span> • 171 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2023-07-09</time>
+    </div>
+  
+  
+    <div>
+      <span>Tags:</span>
+      
+        <a href="/tags/tool-git">tool-git</a>
+    </div>
+  
+</div>
+
+      <div class="content"><p>书中对git介绍的很详细了，我结合个人需求记录一些操作</p>
+<h1 id="git工作流程">git工作流程</h1>
+<ul>
+<li>
+<p>新建github账号</p>
+</li>
+<li>
+<p>新建repository</p>
+</li>
+<li>
+<p>执行ssh-keygen，生成key，将public key的值填入SSH and GPG keys</p>
+<ul>
+<li><input disabled="" type="checkbox"> ssh原理</li>
+</ul>
+</li>
+<li>
+<p>git clone xx (拉取远程仓库的.git文件夹)</p>
+</li>
+<li>
+<p>本地新建目录</p>
+<ul>
+<li>执行git init (生成.git文件夹（如果通过clone得到.git文件夹就不用执行此步骤）)</li>
+<li>git remote add repo-name xx (关联远程仓库)</li>
+</ul>
+</li>
+<li>
+<p>推送至本地仓库 (注：stage为暂存区)
+<img src="/img/%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81%E5%91%A8%E6%9C%9F_2023-07-09_15-23-53.png" alt="文件状态周期"></p>
+<ul>
+<li>git add .
+<ul>
+<li>git status (查看文件状态)</li>
+<li>git rm &ndash;cache xx.txt (从暂存区移除文件)</li>
+<li>git mv</li>
+<li>git diff &ndash;cached (查看已暂存的将要添加到下次提交的内容)</li>
+<li>git diff  (查看尚未暂存的改动)</li>
+</ul>
+</li>
+<li>git commit -m &ldquo;first post&rdquo;
+<ul>
+<li>git commit &ndash;amend (重新提交)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>推送至远程仓库</p>
+<ul>
+<li>git push origin master
+<ul>
+<li>git fetch (将远程仓库有但是当前仓库没有的信息拉取然后存储在本地数据库)</li>
+<li>git pull (=fetch + merge)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>历史版本回退
+<img src="/img/commit%E5%8E%86%E5%8F%B2_2023-07-09_16-18-22.png" alt="commit历史"></p>
+<ul>
+<li>git log (-p &ndash;stat) (查看提交历史)
+<img src="/img/commit%E7%8A%B6%E6%80%81_2023-07-09_16-27-15.png" alt="commit状态"></li>
+<li>git reset(书本内搜索git reset，第23个索引起做了很详细的解释)
+<ul>
+<li>git reset &ndash;soft HEAD~</li>
+<li>git reset &ndash;mixed HEAD~</li>
+<li>git reset &ndash;hard HEAD~</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="git协作">git协作</h1>
+<ul>
+<li>git branch
+<ul>
+<li>git branch new-branch</li>
+<li>git branch -d new-branch</li>
+<li>git branch -v</li>
+<li>git branch -vv</li>
+<li>git branch &ndash;merged</li>
+<li>git branch &ndash;nomerged</li>
+</ul>
+</li>
+<li>git checkout new-branch
+<ul>
+<li>git checkout -b iss53 (创建新分支)</li>
+<li>git checkout &ndash;track origin/xx</li>
+<li>git push origin &ndash;delete origin/xx (删除远程分支)</li>
+</ul>
+</li>
+</ul>
+<p><strong>合并和变基</strong><br>
+变基是将一系列提交按照原有次序依次应用到另一分支上，最终效果和合并一样，但是其提交历史更整洁</p>
+<ul>
+<li>git merge</li>
+<li>git rebase master experiment
+<ul>
+<li>git checkout experiment</li>
+<li>git rebase &ndash;onto master server client</li>
+</ul>
+</li>
+</ul>
+<p>问题：合并冲突<br>
+如果你在两个不同的分支中，对同一个文件的同一个部分进行了不同的修改，Git 就没法干净的合并它们。但是在merge过程中会显示冲突文件，可以使用git status看哪些文件处于unstage阶段，做修改</p>
+<h1 id="向项目贡献">向项目贡献</h1>
+<p>参考“向一个项目贡献小节”
+<img src="/img/%E7%A7%81%E6%9C%89%E5%9B%A2%E9%98%9F%E6%B5%81%E7%A8%8B_2023-07-09_17-13-10.png" alt="内部团队工作流程顺序"></p>
+<p>向开源项目贡献</p>
+<ul>
+<li>fork项目副本</li>
+<li>从master分支中创建一个新分支</li>
+<li>将分支推送到github</li>
+<li>创建一个合并请求
+<ul>
+<li>push到fork的副本后，会出现一个绿色按钮，检查改动并给源项目创建合并请求</li>
+</ul>
+</li>
+<li>讨论，根据实际情况继续修改</li>
+<li>项目拥有者合并或关闭合并请求</li>
+</ul>
+<p>合并产生冲突怎么办？</p>
+<ul>
+<li>将源版本库添加为一个远端，并命名为&quot;upstream&quot;</li>
+<li>从远端抓取最新内容</li>
+<li>将主分支的内容合并到你的分支</li>
+<li>修复产生的冲突</li>
+<li>再推送回同一个分支</li>
+</ul>
+<ul>
+<li><input disabled="" type="checkbox"> 维护项目
+(能力达不到主导开源项目，这部分暂时pending)</li>
+</ul>
+<h1 id="resource">resource</h1>
+<p><a href="https://progit.cn">PROGIT 第二版</a></p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2023
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

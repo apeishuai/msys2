@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>博客搭建 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">博客搭建</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2023-10-18</time>
+    
+    
+  </strong>
+  <span> • 348 words</span>
+  <span> • 2 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2024-11-03</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><h4 id="安装scoop">安装scoop</h4>
+<p>powershell执行命令:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>Set<span style="color:#f92672">-</span>ExecutionPolicy RemoteSigned <span style="color:#f92672">-</span>scope CurrentUser
+</span></span><span style="display:flex;"><span>iwr <span style="color:#f92672">-</span>useb get.scoop.sh <span style="color:#f92672">|</span> iex
+</span></span></code></pre></div><p>修改配置:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># 设置环境变量
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$</span>env:SCOOP<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>E:<span style="color:#960050;background-color:#1e0010">\</span>Softwares<span style="color:#960050;background-color:#1e0010">\</span>Scoop<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>[Environment]<span style="color:#f92672">::</span><span style="color:#a6e22e">SetEnvironmentVariable</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>SCOOP<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">$</span>env:SCOOP, <span style="color:#960050;background-color:#1e0010">&#39;</span>User<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>env:SCOOP_GLOBAL<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>E:<span style="color:#960050;background-color:#1e0010">\</span>Softwares<span style="color:#960050;background-color:#1e0010">\</span>GlobalScoopApps<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>[Environment]<span style="color:#f92672">::</span><span style="color:#a6e22e">SetEnvironmentVariable</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>SCOOP_GLOBAL<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">$</span>env:SCOOP_GLOBAL, <span style="color:#960050;background-color:#1e0010">&#39;</span>Machine<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 设置环境变量之后，建议将默认目录下的所有文件复制到新目录下
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 搜索软件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>scoop search xxx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 找不到软件？添加软件库
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>scoop bucket list
+</span></span><span style="display:flex;"><span>scoop bucket add <span style="color:#f92672">&lt;</span>bucketname<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 常用软件库
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>extras https:<span style="color:#75715e">//github.com/ScoopInstaller/Extras 2023/9/8 12:26:26      1890
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>main   https:<span style="color:#75715e">//github.com/ScoopInstaller/Main   2023/9/8 12:25:39      1241
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 列出已安装软件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>scoop list
+</span></span></code></pre></div><h4 id="安装hugo">安装hugo</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>scoop install hugo
+</span></span></code></pre></div><h4 id="配置hugo">配置hugo</h4>
+<p>执行下述命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># 新建站点，会生成一个quickstart目录
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>hugo new site quickstart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd quickstart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 初始化git，生成.git目录
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>git init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 为了避免quickstart/themes的.git文件夹和quickstart文件夹下.git冲突，用submodule命令
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>git submodule add https:<span style="color:#75715e">//github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如题用的是ananke主题
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;theme = &#39;ananke&#39;&#34;</span> <span style="color:#f92672">&gt;&gt;</span> hugo.toml
+</span></span><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>下载主题压缩包至/site/themes/<br>
+<a href="https://themes.gohugo.io/">hugo themes list</a><br>
+比如我的主题是smigle，copy /site/themes/simgle/exampleSite/config.toml文件至/site/hugo.toml，按需求修改，我的配置文件如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>baseURL <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>languageCode <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>en<span style="color:#f92672">-</span>us<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>title <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>Wxf<span style="color:#960050;background-color:#1e0010">`</span>s Fantasy World<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>smigle<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.main]]
+</span></span><span style="display:flex;"><span>identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.main]]
+</span></span><span style="display:flex;"><span>identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blog&#34;</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Blog&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.main]]
+</span></span><span style="display:flex;"><span>identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;projects&#34;</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;projects&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.main]]
+</span></span><span style="display:flex;"><span>identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span>weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>abbrDateFmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Jan 2&#34;</span>
+</span></span><span style="display:flex;"><span>author <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Blog Author&#34;</span>
+</span></span><span style="display:flex;"><span>brandIconFile <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;images/wxf.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>dateFmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2006-01-02&#34;</span>
+</span></span><span style="display:flex;"><span>subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;share something useful&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[params.social]]
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GitHub&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/apeishuai&#34;</span>
+</span></span><span style="display:flex;"><span>[[params.social]]
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bilibili&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://space.bilibili.com/1993949543/video&#34;</span>
+</span></span><span style="display:flex;"><span>[[params.social]]
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Weibo&#34;</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://weibo.com/u/6030695929&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>toc<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>genableGitInfo <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>[frontmatter]
+</span></span><span style="display:flex;"><span>  lastmod <span style="color:#f92672">=</span> [<span style="color:#960050;background-color:#1e0010">&#39;</span>lastmod<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span>git<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span>fileModTime<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span>date<span style="color:#960050;background-color:#1e0010">&#39;</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span>publishDate<span style="color:#960050;background-color:#1e0010">&#39;</span>]
+</span></span></code></pre></div><p>界面如下：
+<img src="/img/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E7%95%8C%E9%9D%A2_2023-10-19_17-28-30.png" alt=""></p>
+<h1 id="写文章">写文章</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># 新建文章页面，上述配置中每个menu对应不同目录，直接新建markdown文件丢到这些目录下就ok。具体对应/site/contents/posts/
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>hugo new posts<span style="color:#f92672">/</span>first<span style="color:#f92672">-</span>article.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 图片放在/site/static/img文件夹下，在md文件中这样引用![](/img/xxx.jpg)，如下图
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新索引结构，执行完毕会更新/site/public下相应文件,index.html等
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>hugo <span style="color:#f92672">-</span>D
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 在浏览器localhost:1313预览博客效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>hugo server <span style="color:#f92672">-</span>w
+</span></span></code></pre></div><p><img src="/img/%E5%8D%9A%E5%AE%A2img%E5%BC%95%E7%94%A8_2023-10-19_18-08-44.png" alt=""></p>
+<h1 id="推送至github">推送至github</h1>
+<ul>
+<li><a href="https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site">创建项目(主站点)</a></li>
+<li><a href="https://blog.csdn.net/fenghuibian/article/details/73350890">ssh添加公钥</a></li>
+<li>创建github workflow<br>
+新建/site/.github/workflows/hugo-deploy.yml文件，内容如下：</li>
+</ul>
+<p>token生成参考：<a href="https://lucumt.info/post/hugo/using-github-action-to-auto-build-deploy/">利用GitHub Action实现Hugo博客在GitHub Pages自动部署</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>name: deploy
+</span></span><span style="display:flex;"><span>on:
+</span></span><span style="display:flex;"><span>    push:
+</span></span><span style="display:flex;"><span>    workflow_dispatch:
+</span></span><span style="display:flex;"><span>    schedule:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Runs everyday at 8:00 AM
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#f92672">-</span> cron: <span style="color:#e6db74">&#34;0 0 * * *&#34;</span>
+</span></span><span style="display:flex;"><span>jobs:
+</span></span><span style="display:flex;"><span>    build:
+</span></span><span style="display:flex;"><span>        runs<span style="color:#f92672">-</span>on: ubuntu<span style="color:#f92672">-</span>latest
+</span></span><span style="display:flex;"><span>        steps:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-</span> name: Checkout
+</span></span><span style="display:flex;"><span>              uses: actions<span style="color:#f92672">/</span>checkout<span style="color:#960050;background-color:#1e0010">@</span>v2
+</span></span><span style="display:flex;"><span>              with:
+</span></span><span style="display:flex;"><span>                  submodules: true
+</span></span><span style="display:flex;"><span>                  fetch<span style="color:#f92672">-</span>depth: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-</span> name: Setup Hugo
+</span></span><span style="display:flex;"><span>              uses: peaceiris<span style="color:#f92672">/</span>actions<span style="color:#f92672">-</span>hugo<span style="color:#960050;background-color:#1e0010">@</span>v2
+</span></span><span style="display:flex;"><span>              with:
+</span></span><span style="display:flex;"><span>                  hugo<span style="color:#f92672">-</span>version: <span style="color:#e6db74">&#34;latest&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-</span> name: Build Web
+</span></span><span style="display:flex;"><span>              run: hugo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">-</span> name: Deploy Web
+</span></span><span style="display:flex;"><span>              uses: peaceiris<span style="color:#f92672">/</span>actions<span style="color:#f92672">-</span>gh<span style="color:#f92672">-</span>pages<span style="color:#960050;background-color:#1e0010">@</span>v3
+</span></span><span style="display:flex;"><span>              with:
+</span></span><span style="display:flex;"><span>				  <span style="color:#75715e"># TOKEN需自己生成
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  PERSONAL_TOKEN: <span style="color:#960050;background-color:#1e0010">$</span>{{ secrets.PERSONAL_TOKEN }}
+</span></span><span style="display:flex;"><span>				  <span style="color:#75715e"># 需修改
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                  EXTERNAL_REPOSITORY: apeishuai<span style="color:#f92672">/</span>apeishuai.github.io
+</span></span><span style="display:flex;"><span>                  PUBLISH_BRANCH: master
+</span></span><span style="display:flex;"><span>                  PUBLISH_DIR: .<span style="color:#f92672">/</span>public
+</span></span><span style="display:flex;"><span>                  commit_message: <span style="color:#960050;background-color:#1e0010">$</span>{{ github.event.head_commit.message }}
+</span></span></code></pre></div><ul>
+<li>推送至仓库</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin <span style="color:#e6db74">&#34;username.github.io&#34;</span>
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit <span style="color:#f92672">-</span>m <span style="color:#e6db74">&#34;my first blog&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><ul>
+<li>创建仓库(子站点)<br>
+创建新项目(例docs)，推送至gh-pages分支上，就能通过&rsquo;username.github.io/docs&rsquo;访问该项目，也就是说能无限展示子站点。用docsify搭建一个文档站是很不错的选择<br>
+<a href="https://cloud.tencent.com/developer/article/1391619">ref: 如何用Github的gh-pages分支展示自己的项目</a></li>
+</ul>
+<p>诸位可以访问我的博客<a href="https://apeishuai.github.io">apeishuai</a>和<a href="https://apeishuai.github.io/docs">apeishuai/docs</a>来看效果。完毕！</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="qa">QA</h1>
+<p>2023-11-02_00:03:51<br>
+新建目录下放index.md，hugo引擎会自动索引。至于索引文件夹下内容，需要在模板更改，位置暂时不找了</p>
+<p>2024/07/10<br>
+该文章基本囊括所有内容，不再做更新</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

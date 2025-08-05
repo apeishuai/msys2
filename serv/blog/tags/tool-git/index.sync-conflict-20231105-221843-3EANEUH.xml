@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool-git on Wxf`s Fantasy World</title>
+    <link>/tags/tool-git/</link>
+    <description>Recent content in tool-git on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jul 2023 11:53:48 +0800</lastBuildDate><atom:link href="/tags/tool-git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git使用教程</title>
+      <link>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sun, 09 Jul 2023 11:53:48 +0800</pubDate>
+      
+      <guid>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>书中对git介绍的很详细了，我结合个人需求记录一些操作
+git工作流程 新建github账号
+新建repository
+执行ssh-keygen，生成key，将public key的值填入SSH and GPG keys
+ssh原理 git clone xx (拉取远程仓库的.git文件夹)
+本地新建目录
+执行git init (生成.git文件夹（如果通过clone得到.git文件夹就不用执行此步骤）) git remote add repo-name xx (关联远程仓库) 推送至本地仓库 (注：stage为暂存区) git add . git status (查看文件状态) git rm &amp;ndash;cache xx.txt (从暂存区移除文件) git mv git diff &amp;ndash;cached (查看已暂存的将要添加到下次提交的内容) git diff (查看尚未暂存的改动) git commit -m &amp;ldquo;first post&amp;rdquo; git commit &amp;ndash;amend (重新提交) 推送至远程仓库
+git push origin master git fetch (将远程仓库有但是当前仓库没有的信息拉取然后存储在本地数据库) git pull (=fetch + merge) 历史版本回退 git log (-p &amp;ndash;stat) (查看提交历史) git reset(书本内搜索git reset，第23个索引起做了很详细的解释) git reset &amp;ndash;soft HEAD~ git reset &amp;ndash;mixed HEAD~ git reset &amp;ndash;hard HEAD~ git协作 git branch git branch new-branch git branch -d new-branch git branch -v git branch -vv git branch &amp;ndash;merged git branch &amp;ndash;nomerged git checkout new-branch git checkout -b iss53 (创建新分支) git checkout &amp;ndash;track origin/xx git push origin &amp;ndash;delete origin/xx (删除远程分支) 合并和变基</description>
+    </item>
+    
+  </channel>
+</rss>

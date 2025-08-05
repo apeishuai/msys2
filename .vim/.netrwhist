@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/c/Users/apeishuai/Nutstore/1/docs/doc-soft'
+let g:netrw_dirhist_9='/home/whens/bin/eplan'
+let g:netrw_dirhist_8='/d/g/area/emacs-notes/demo/demo_qml'
+let g:netrw_dirhist_7='/d/g/pro/lib/PcapPlusPlus/cmake'
+let g:netrw_dirhist_6='/d/g/area/emacs-notes/demo/demo_cmake/demo_mingw_chain/cmake'
+let g:netrw_dirhist_5='/d/g/area/emacs-notes/demo/demo_cmake/minum_test'
+let g:netrw_dirhist_4='/d/g/area/emacs-notes/demo/demo_cpp/qt_signal_slots'
+let g:netrw_dirhist_3='/d/g/area/emacs-notes/demo/demo_cmake/demo01/cmake'
+let g:netrw_dirhist_2='/home/whens/bin/conf'
+let g:netrw_dirhist_1='/d/g/area/serve/blog/content/posts'

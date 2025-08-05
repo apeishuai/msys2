@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>Vscode开发qt qmake | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="">
+      <img
+        class="icon"
+        src="/images/wxf.jpg"
+      />
+    </a>
+    <div class="text">
+      <a href=""><h1>Wxf`s Fantasy World</h1></a>
+      <h3>share something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>project</b></a>
+      
+         | 
+        <a href="/photos/"><b>photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+  <main>
+    <article>
+      <h1 class="title">Vscode开发qt qmake</h1>
+      
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-03-07</time>
+    
+    
+  </strong>
+  <span> • 192 words</span>
+  <span> • 1 minute read</span>
+  
+    <div>
+      Last updated on
+      <time>2025-04-14</time>
+    </div>
+  
+  
+</div>
+
+      <div class="content"><p>qt creator太难用了，转到vscode开发qt。</p>
+<h1 id="新建项目">新建项目</h1>
+<p><img src="/img/Snipaste_2025-03-07_16-37-44.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-41-16.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-41-40.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-42-19.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-42-59.png" alt=""></p>
+<h1 id="命令行编译">命令行编译</h1>
+<p>ok，这是一个完整的流程，接下来用命令行实现
+<img src="/img/Snipaste_2025-03-07_16-44-08.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-46-36.png" alt="">
+主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe<br>
+qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；<br>
+mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe<br>
+gcc，顾名思义，编译器，把代码编译成二进制码
+<img src="/img/Snipaste_2025-03-07_16-58-15.png" alt="">
+<img src="/img/Snipaste_2025-03-07_16-59-12.png" alt="">
+<img src="/img/Snipaste_2025-03-07_17-00-09.png" alt=""></p>
+<h1 id="vscode编译">vscode编译</h1>
+<p>vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)<br>
+安装c++插件，设置智能补全<br>
+项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置<br>
+配置完成后 ： ctrl+shift+p&ndash;&gt;run task&ndash;&gt;run-debug
+<img src="/img/Snipaste_2025-03-07_19-14-12.png" alt=""></p>
+<pre tabindex="0"><code>{
+    &#34;version&#34;: &#34;2.0.0&#34;,
+    &#34;tasks&#34;: [
+        {
+            &#34;label&#34;: &#34;mkdir&#34;, 
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}&#34; 
+            },
+            &#34;command&#34;: &#34;mkdir&#34;, 
+            &#34;args&#34;: [ 
+                &#34;-Force&#34;,
+                &#34;build&#34;
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;qmake-debug&#34;,
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build&#34; 
+            },
+            &#34;command&#34;: &#34;qmake&#34;, 
+            &#34;args&#34;: [ 
+                &#34;../${workspaceFolderBasename}.pro&#34;, 
+                &#34;-spec&#34;,
+                &#34;win32-g++&#34;,
+                &#34;\&#34;CONFIG+=debug\&#34;&#34;,
+                &#34;\&#34;CONFIG+=console\&#34;&#34;
+            ],
+            &#34;dependsOn&#34;: [ 
+                &#34;mkdir&#34; 
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;make-debug&#34;,
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build&#34;
+            },
+            &#34;command&#34;: &#34;mingw32-make&#34;,
+            &#34;args&#34;: [
+                &#34;-f&#34;,
+                &#34;Makefile.Debug&#34;, 
+                &#34;-j7&#34; 
+            ],
+            &#34;dependsOn&#34;: [
+                &#34;qmake-debug&#34;
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;run-debug&#34;,
+            &#34;type&#34;: &#34;process&#34;, 
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build/debug&#34; 
+            },
+            &#34;command&#34;: &#34;${workspaceFolderBasename}.exe&#34;, 
+            &#34;dependsOn&#34;: [
+                &#34;make-debug&#34;
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;qmake-release&#34;,
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build&#34;
+            },
+            &#34;command&#34;: &#34;qmake&#34;,
+            &#34;args&#34;: [ 
+                &#34;../${workspaceFolderBasename}.pro&#34;,
+                &#34;-spec&#34;,
+                &#34;win32-g++&#34;,
+                &#34;\&#34;CONFIG+=qtquickcompiler\&#34;&#34;
+            ],
+            &#34;dependsOn&#34;: [
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;make-release&#34;,
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build&#34;
+            },
+            &#34;command&#34;: &#34;mingw32-make&#34;,
+            &#34;args&#34;: [
+                &#34;-f&#34;,
+                &#34;Makefile.Release&#34;, 
+                &#34;-j7&#34;
+            ],
+            &#34;dependsOn&#34;: [
+                &#34;qmake-release&#34;
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;run-release&#34;,
+            &#34;type&#34;: &#34;process&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build/release&#34;
+            },
+            &#34;command&#34;: &#34;${workspaceFolderBasename}.exe&#34;,
+            &#34;dependsOn&#34;: [
+                &#34;make-release&#34;
+            ]
+        },
+        {
+            &#34;label&#34;: &#34;clean&#34;,
+            &#34;type&#34;: &#34;shell&#34;,
+            &#34;options&#34;: {
+                &#34;cwd&#34;: &#34;${workspaceFolder}/build&#34;
+            },
+            &#34;command&#34;: &#34;mingw32-make&#34;,
+            &#34;args&#34;: [
+                &#34;clean&#34;
+            ]
+        }
+    ]
+}
+</code></pre><p><img src="/img/Snipaste_2025-03-07_19-31-22.png" alt=""></p>
+<h1 id="注意点">注意点</h1>
+<p>1 windows下不要在类linux系统执行，code打开项目，会出现路径解析错误<br>
+2 QML文件好好写，弹窗出不来，找了半天原因，发现qml写的不对</p>
+</div>
+    </article>
+  </main>
+
+      </div>
+      <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/apeishuai">GitHub</a>
+      
+         | 
+        <a href="https://space.bilibili.com/1993949543/video">Bilibili</a>
+      
+         | 
+        <a href="https://weibo.com/u/6030695929">Weibo</a>
+      
+         | 
+        <a href="https://www.douyin.com/user/MS4wLjABAAAATCxF5M5podiJIfhKuwdta4Nz0Nl4w__Bfac_WAA59PE?from_tab_name=">Douyin</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href=""><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

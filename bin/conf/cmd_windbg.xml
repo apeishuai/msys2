@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commandtree>
+    <command title="分析当前状态" cmd="!analyze -v" />
+    <separator />
+    <folder title="进程信息">
+        <command title="列出所有进程" cmd="!process 0 0" />
+        <command title="显示当前进程" cmd="!process" />
+    </folder>
+    <folder title="内存操作">
+        <command title="内存摘要" cmd="!address -summary" />
+        <command title="转存堆" cmd="!heap -h 0" />
+    </folder>
+    <separator />
+    <command title="重启调试器" cmd=".restart" />
+</commandtree>
